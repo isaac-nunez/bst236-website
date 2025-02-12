@@ -1,0 +1,21 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "A simple website with multiple pages including main, games, and papers.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

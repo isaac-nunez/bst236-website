@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Games</title>
+</head>
+<body>
+    <header>
+        <h1>Games</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Main (regular stuff)</a></li>
+                <li><a href="games.html">Games (fun stuf)</a></li>
+                <li><a href="papers.html">Papers (sciency stuff)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Enter PACMAN</h2>
+            <p>Pacman is a classic, and shall be revisited frequently.</p>
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <button id="restartButton" style="display: none;">Another chance for glory</button>
+        </section>
+    </main>
+    <script src="scripts/pacman.js" defer></script>
+</body>
+</html>

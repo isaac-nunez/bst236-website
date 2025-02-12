@@ -1,0 +1,147 @@
+body {
+    background-color: gray;
+    color: white;
+    font-family: 'Aptos', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, main {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    background-color: black;
+    border: 2px solid blue;
+}
+
+#restartButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: darkblue;
+}
+
+#papersList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#papersList li {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#papersList h3 {
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+#papersList p {
+    margin: 5px 0;
+}
+
+#papersList a {
+    color: blue;
+    text-decoration: none;
+}
+
+#papersList a:hover {
+    text-decoration: underline;
+}
+
+#reposList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reposList li {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reposList h3 {
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+#reposList p {
+    margin: 5px 0;
+}
+
+#reposList a {
+    color: blue;
+    text-decoration: none;
+}
+
+#reposList a:hover {
+    text-decoration: underline;
+}
+
+.dog-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.dog-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dog-caption {
+    margin-top: 5px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
