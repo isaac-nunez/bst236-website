@@ -1,10 +1,12 @@
 {
-  "name": "my-website",
+  "name": "bst236-website",
   "version": "1.0.0",
   "description": "A simple website with multiple pages including main, games, and papers.",
-  "main": "src/index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "live-server src"
+    "start": "live-server src",
+    "updateRepos": "node scripts/updateRepos.js",
+    "updatePapers": "node scripts/updatePapers.js"
   },
   "keywords": [
     "website",
@@ -14,7 +16,9 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  },
   "devDependencies": {
     "live-server": "^1.2.1"
   }
