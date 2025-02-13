@@ -9,10 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const entries = xmlDoc.getElementsByTagName('entry');
             const papersList = document.getElementById('papersList');
 
+            // Clear existing papers
+            papersList.innerHTML = '';
+
+            // Add new papers
             for (let i = 0; i < entries.length; i++) {
                 const entry = entries[i];
                 const title = entry.getElementsByTagName('title')[0].textContent;
-                const authors = Array.from(entry.getElementsByTagName('author')).map(author => author.getElementsByTagName('name')[0].textContent).join(', ');
+                const authors = Array.from(entry.getElementsByTagName('author'))
+                    .map(author => author.getElementsByTagName('name')[0].textContent)
+                    .join(', ');
                 const summary = entry.getElementsByTagName('summary')[0].textContent;
                 const pdfLink = entry.getElementsByTagName('link')[1].getAttribute('href');
                 const publishedDate = new Date(entry.getElementsByTagName('published')[0].textContent).toLocaleDateString();
