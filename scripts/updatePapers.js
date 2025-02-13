@@ -15,20 +15,19 @@ async function fetchArxivPapers() {
         const xmlDoc = parser.parseFromString(text, 'text/xml');
         const entries = xmlDoc.getElementsByTagName('entry');
 
-        // Read the entire papers.html file
+        // Read the papers.html file
         const papersHtmlPath = 'papers.html';
         let papersHtmlContent = fs.readFileSync(papersHtmlPath, 'utf8');
 
-        // Find the section where papers should be inserted
-        const startMarker = '<section id="papers-section">';
-        const endMarker = '</section>';
-        
-        // Create new papers content
-        let newContent = `${startMarker}
+        // Create new content with only the latest 10 papers
+        let newPapersSection = `
+        <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">`;
             
-        for (let i = 0; i < entries.length; i++) {
+        // Only process the first 10 entries
+        const numEntries = Math.min(entries.length, 10);
+        for (let i = 0; i < numEntries; i++) {
             const entry = entries[i];
             const title = entry.getElementsByTagName('title')[0].textContent;
             const authors = Array.from(entry.getElementsByTagName('author'))
@@ -38,7 +37,7 @@ async function fetchArxivPapers() {
             const pdfLink = entry.getElementsByTagName('link')[1].getAttribute('href');
             const publishedDate = new Date(entry.getElementsByTagName('published')[0].textContent).toLocaleDateString();
 
-            newContent += `
+            newPapersSection += `
                 <li>
                     <h3>${title}</h3>
                     <p><strong>Authors:</strong> ${authors}</p>
@@ -48,18 +47,20 @@ async function fetchArxivPapers() {
                 </li>`;
         }
         
-        newContent += `
+        newPapersSection += `
             </ul>
-        ${endMarker}`;
+        </section>`;
 
-        // Replace the entire papers section
-        const sectionPattern = new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`);
-        papersHtmlContent = papersHtmlContent.replace(sectionPattern, newContent);
+        // Replace the papers section in the HTML content
+        const updatedHtmlContent = papersHtmlContent.replace(
+            /<section id="papers-section">[\s\S]*?<\/section>/,
+            newPapersSection
+        );
         
-        fs.writeFileSync(papersHtmlPath, papersHtmlContent, 'utf8');
-        console.log('Papers list updated successfully');
+        fs.writeFileSync(papersHtmlPath, updatedHtmlContent, 'utf8');
+        console.log('Updated papers.html with the 10 newest papers');
     } catch (error) {
-        console.error('Error fetching Arxiv papers:', error);
+        console.error('Error updating papers:', error);
     }
 }
 

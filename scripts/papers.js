@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const entries = xmlDoc.getElementsByTagName('entry');
             const papersList = document.getElementById('papersList');
 
+            if (!papersList) {
+                console.error('Papers list element not found');
+                return;
+            }
+
             // Clear existing papers
             papersList.innerHTML = '';
 
@@ -23,15 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const pdfLink = entry.getElementsByTagName('link')[1].getAttribute('href');
                 const publishedDate = new Date(entry.getElementsByTagName('published')[0].textContent).toLocaleDateString();
 
-                const paperItem = document.createElement('li');
-                paperItem.innerHTML = `
+                const li = document.createElement('li');
+                li.innerHTML = `
                     <h3>${title}</h3>
                     <p><strong>Authors:</strong> ${authors}</p>
                     <p>${summary}</p>
                     <p><a href="${pdfLink}" target="_blank">Read PDF</a></p>
                     <p><strong>Submitted on:</strong> ${publishedDate}</p>
                 `;
-                papersList.appendChild(paperItem);
+                papersList.appendChild(li);
             }
         })
         .catch(error => console.error('Error fetching arXiv data:', error));
