@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctx = canvas.getContext('2d');
     
     // Set canvas dimensions
-    canvas.width = 800;
+    canvas.width = 600;
     canvas.height = 600;
     
     const tileSize = 30;
