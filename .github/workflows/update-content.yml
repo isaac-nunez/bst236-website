@@ -3,9 +3,6 @@ name: Update Content
 on:
   schedule:
     - cron: '0 5 * * *' # Runs every day at midnight Eastern Time (UTC-5)
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
