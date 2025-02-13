@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple website with multiple pages including main, games, and papers.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "live-server src",
     "updateRepos": "node scripts/updateRepos.js",

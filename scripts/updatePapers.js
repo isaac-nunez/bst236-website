@@ -1,5 +1,6 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
+import fs from 'fs';
+import fetch from 'node-fetch';
+import { DOMParser } from 'xmldom';
 
 async function fetchArxivPapers() {
     const apiUrl = 'http://export.arxiv.org/api/query?search_query=all:causal+inference&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending';
