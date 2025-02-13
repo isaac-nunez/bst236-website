@@ -5,7 +5,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "live-server src",
     "updateRepos": "node scripts/updateRepos.js",
     "updatePapers": "node scripts/updatePapers.js"
   },
@@ -18,9 +17,7 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^3.0.0"
-  },
-  "devDependencies": {
-    "live-server": "^1.2.1"
+    "node-fetch": "^3.0.0",
+    "xmldom": "^0.7.6"
   }
 }
