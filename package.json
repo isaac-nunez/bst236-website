@@ -17,7 +17,15 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.7.0",
     "xmldom": "^0.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaac-nunez/bst236-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isaac-nunez/bst236-website/issues"
+  },
+  "homepage": "https://github.com/isaac-nunez/bst236-website#readme"
 }
