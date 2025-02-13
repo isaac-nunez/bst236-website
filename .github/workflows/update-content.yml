@@ -20,11 +20,11 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Install dependencies
+    - name: Clean install dependencies
       run: |
-        npm init -y
-        npm install node-fetch@3
-        npm install xmldom
+        rm -f package-lock.json
+        npm cache clean --force
+        npm install --no-package-lock
 
     - name: Update GitHub Repos
       run: node scripts/updateRepos.js
