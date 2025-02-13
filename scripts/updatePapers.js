@@ -25,13 +25,16 @@ async function fetchArxivPapers() {
                     <a href="${link}" target="_blank">
                         ${title}
                     </a>
-                </li>
-            `;
+                </li>`;
         }
 
         const papersHtmlPath = 'papers.html';
         let papersHtmlContent = fs.readFileSync(papersHtmlPath, 'utf8');
-        papersHtmlContent = papersHtmlContent.replace(/<ul id="papersList">.*?<\/ul>/s, `<ul id="papersList">${papersHtml}</ul>`);
+        
+        // More specific regex pattern to match the entire papers list
+        const pattern = /<ul id="papersList">[\s\S]*?<\/ul>/;
+        papersHtmlContent = papersHtmlContent.replace(pattern, `<ul id="papersList">${papersHtml}</ul>`);
+        
         fs.writeFileSync(papersHtmlPath, papersHtmlContent, 'utf8');
     } catch (error) {
         console.error('Error fetching Arxiv papers:', error);
