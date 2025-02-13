@@ -25,11 +25,10 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Clean install dependencies
+    - name: Install dependencies
       run: |
-        rm -f package-lock.json
-        npm cache clean --force
-        npm install --no-package-lock
+        npm init -y
+        npm install node-fetch@2 xmldom
 
     - name: Update GitHub Repos
       run: node scripts/updateRepos.js
@@ -43,14 +42,5 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        
-        # Check if there are changes to commit
-        if git diff --quiet; then
-          echo "No changes to commit"
-          exit 0
-        else
-          git add .
-          git commit -m 'Automated update of GitHub repos and Arxiv manuscripts'
-          git push
-        fi
+        git add .
+        git diff --staged --quiet || (git commit -m 'Automated update of GitHub repos and Arxiv manuscripts' && git push)
