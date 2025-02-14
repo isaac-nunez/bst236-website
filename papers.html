@@ -78,268 +78,240 @@
         
         
         
+        
         <section id="papers-section">
-            <h2>These are the latest papers in causal inference from Arxiv.</h2>
-            <h4>I though causal inference sounded cool so I decided to do a PhD about it.</h4>
+            <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Difference-in-Differences and Changes-in-Changes with Sample Selection</h3>
-                    <p><strong>Authors:</strong> Javier Viviens</p>
-                    <p>  Sample selection arises endogenously in causal research when the treatment
-affects whether certain units are observed. It is a common pitfall in
-longitudinal studies, particularly in settings where treatment assignment is
-confounded. In this paper, I highlight the drawbacks of one of the most popular
-identification strategies in such settings: Difference-in-Differences (DiD).
-Specifically, I employ principal stratification analysis to show that the
-conventional ATT estimand may not be well defined, and the DiD estimand cannot
-be interpreted causally without additional assumptions. To address these
-issues, I develop an identification strategy to partially identify causal
-effects on the subset of units with well-defined and observed outcomes under
-both treatment regimes. I adapt Lee bounds to the Changes-in-Changes (CiC)
-setting (Athey & Imbens, 2006), leveraging the time dimension of the data to
-relax the unconfoundedness assumption in the original trimming strategy of Lee
-(2009). This setting has the DiD identification strategy as a particular case,
-which I also implement in the paper. Additionally, I explore how to leverage
-multiple sources of sample selection to relax the monotonicity assumption in
-Lee (2009), which may be of independent interest. Alongside the identification
-strategy, I present estimators and inference results. I illustrate the
-relevance of the proposed methodology by analyzing a job training program in
-Colombia.
+                    <h3>Embed Any NeRF: Graph Meta-Networks for Neural Tasks on Arbitrary NeRF
+  Architectures</h3>
+                    <p><strong>Authors:</strong> Francesco Ballerini, Pierluigi Zama Ramirez, Samuele Salti, Luigi Di Stefano</p>
+                    <p>  Neural Radiance Fields (NeRFs) have emerged as a groundbreaking paradigm for
+representing 3D objects and scenes by encoding shape and appearance information
+into the weights of a neural network. Recent works have shown how such weights
+can be used as input to frameworks processing them to solve deep learning
+tasks. Yet, these frameworks can only process NeRFs with a specific, predefined
+architecture. In this paper, we present the first framework that can ingest
+NeRFs with multiple architectures and perform inference on architectures unseen
+at training time. We achieve this goal by training a Graph Meta-Network in a
+representation learning framework. Moreover, we show how a contrastive
+objective is conducive to obtaining an architecture-agnostic latent space. In
+experiments on both MLP-based and tri-planar NeRFs, our approach demonstrates
+robust performance in classification and retrieval tasks that either matches or
+exceeds that of existing frameworks constrained to single architectures, thus
+providing the first architecture-agnostic method to perform tasks on NeRFs by
+processing their weights.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08614v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09623v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Scalable Thermodynamic Second-order Optimization</h3>
-                    <p><strong>Authors:</strong> Kaelan Donatella, Samuel Duffield, Denis Melanson, Maxwell Aifer, Phoebe Klett, Rajath Salegame, Zach Belateche, Gavin Crooks, Antonio J. Martinez, Patrick J. Coles</p>
-                    <p>  Many hardware proposals have aimed to accelerate inference in AI workloads.
-Less attention has been paid to hardware acceleration of training, despite the
-enormous societal impact of rapid training of AI models. Physics-based
-computers, such as thermodynamic computers, offer an efficient means to solve
-key primitives in AI training algorithms. Optimizers that normally would be
-computationally out-of-reach (e.g., due to expensive matrix inversions) on
-digital hardware could be unlocked with physics-based hardware. In this work,
-we propose a scalable algorithm for employing thermodynamic computers to
-accelerate a popular second-order optimizer called Kronecker-factored
-approximate curvature (K-FAC). Our asymptotic complexity analysis predicts
-increasing advantage with our algorithm as $n$, the number of neurons per
-layer, increases. Numerical experiments show that even under significant
-quantization noise, the benefits of second-order optimization can be preserved.
-Finally, we predict substantial speedups for large-scale vision and graph
-problems based on realistic hardware characteristics.
+                    <h3>LIFe-GoM: Generalizable Human Rendering with Learned Iterative Feedback
+  Over Multi-Resolution Gaussians-on-Mesh</h3>
+                    <p><strong>Authors:</strong> Jing Wen, Alexander G. Schwing, Shenlong Wang</p>
+                    <p>  Generalizable rendering of an animatable human avatar from sparse inputs
+relies on data priors and inductive biases extracted from training on large
+data to avoid scene-specific optimization and to enable fast reconstruction.
+This raises two main challenges: First, unlike iterative gradient-based
+adjustment in scene-specific optimization, generalizable methods must
+reconstruct the human shape representation in a single pass at inference time.
+Second, rendering is preferably computationally efficient yet of high
+resolution. To address both challenges we augment the recently proposed dual
+shape representation, which combines the benefits of a mesh and Gaussian
+points, in two ways. To improve reconstruction, we propose an iterative
+feedback update framework, which successively improves the canonical human
+shape representation during reconstruction. To achieve computationally
+efficient yet high-resolution rendering, we study a coupled-multi-resolution
+Gaussians-on-Mesh representation. We evaluate the proposed approach on the
+challenging THuman2.0, XHuman and AIST++ data. Our approach reconstructs an
+animatable representation from sparse inputs in less than 1s, renders views
+with 95.1FPS at $1024 \times 1024$, and achieves PSNR/LPIPS*/FID of
+24.65/110.82/51.27 on THuman2.0, outperforming the state-of-the-art in
+rendering quality.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08603v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09617v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Toward Universal Laws of Outlier Propagation</h3>
-                    <p><strong>Authors:</strong> Yuhao Wang, Aram Ebtekar, Dominik Janzing</p>
-                    <p>  We argue that Algorithmic Information Theory (AIT) admits a principled way to
-quantify outliers in terms of so-called randomness deficiency. For the
-probability distribution generated by a causal Bayesian network, we show that
-the randomness deficiency of the joint state decomposes into randomness
-deficiencies of each causal mechanism, subject to the Independence of
-Mechanisms Principle. Accordingly, anomalous joint observations can be
-quantitatively attributed to their root causes, i.e., the mechanisms that
-behaved anomalously. As an extension of Levin's law of randomness conservation,
-we show that weak outliers cannot cause strong ones when Independence of
-Mechanisms holds. We show how these information theoretic laws provide a better
-understanding of the behaviour of outliers defined with respect to existing
-scores.
+                    <h3>Variational Rectified Flow Matching</h3>
+                    <p><strong>Authors:</strong> Pengsheng Guo, Alexander G. Schwing</p>
+                    <p>  We study Variational Rectified Flow Matching, a framework that enhances
+classic rectified flow matching by modeling multi-modal velocity vector-fields.
+At inference time, classic rectified flow matching 'moves' samples from a
+source distribution to the target distribution by solving an ordinary
+differential equation via integration along a velocity vector-field. At
+training time, the velocity vector-field is learnt by linearly interpolating
+between coupled samples one drawn from the source and one drawn from the target
+distribution randomly. This leads to ''ground-truth'' velocity vector-fields
+that point in different directions at the same location, i.e., the velocity
+vector-fields are multi-modal/ambiguous. However, since training uses a
+standard mean-squared-error loss, the learnt velocity vector-field averages
+''ground-truth'' directions and isn't multi-modal. In contrast, variational
+rectified flow matching learns and samples from multi-modal flow directions. We
+show on synthetic data, MNIST, CIFAR-10, and ImageNet that variational
+rectified flow matching leads to compelling results.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08593v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09616v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Causal Analysis of ASR Errors for Children: Quantifying the Impact of
-  Physiological, Cognitive, and Extrinsic Factors</h3>
-                    <p><strong>Authors:</strong> Vishwanath Pratap Singh, Md. Sahidullah, Tomi Kinnunen</p>
-                    <p>  The increasing use of children's automatic speech recognition (ASR) systems
-has spurred research efforts to improve the accuracy of models designed for
-children's speech in recent years. The current approach utilizes either
-open-source speech foundation models (SFMs) directly or fine-tuning them with
-children's speech data. These SFMs, whether open-source or fine-tuned for
-children, often exhibit higher word error rates (WERs) compared to adult
-speech. However, there is a lack of systemic analysis of the cause of this
-degraded performance of SFMs. Understanding and addressing the reasons behind
-this performance disparity is crucial for improving the accuracy of SFMs for
-children's speech. Our study addresses this gap by investigating the causes of
-accuracy degradation and the primary contributors to WER in children's speech.
-In the first part of the study, we conduct a comprehensive benchmarking study
-on two self-supervised SFMs (Wav2Vec2.0 and Hubert) and two weakly supervised
-SFMs (Whisper and MMS) across various age groups on two children speech
-corpora, establishing the raw data for the causal inference analysis in the
-second part. In the second part of the study, we analyze the impact of
-physiological factors (age, gender), cognitive factors (pronunciation ability),
-and external factors (vocabulary difficulty, background noise, and word count)
-on SFM accuracy in children's speech using causal inference. The results
-indicate that physiology (age) and particular external factor (number of words
-in audio) have the highest impact on accuracy, followed by background noise and
-pronunciation ability. Fine-tuning SFMs on children's speech reduces
-sensitivity to physiological and cognitive factors, while sensitivity to the
-number of words in audio persists.
-  Keywords: Children's ASR, Speech Foundational Models, Causal Inference,
-Physiology, Cognition, Pronunciation
+                    <h3>SelfCite: Self-Supervised Alignment for Context Attribution in Large
+  Language Models</h3>
+                    <p><strong>Authors:</strong> Yung-Sung Chuang, Benjamin Cohen-Wang, Shannon Zejiang Shen, Zhaofeng Wu, Hu Xu, Xi Victoria Lin, James Glass, Shang-Wen Li, Wen-tau Yih</p>
+                    <p>  We introduce SelfCite, a novel self-supervised approach that aligns LLMs to
+generate high-quality, fine-grained, sentence-level citations for the
+statements in their generated responses. Instead of only relying on costly and
+labor-intensive annotations, SelfCite leverages a reward signal provided by the
+LLM itself through context ablation: If a citation is necessary, removing the
+cited text from the context should prevent the same response; if sufficient,
+retaining the cited text alone should preserve the same response. This reward
+can guide the inference-time best-of-N sampling strategy to improve citation
+quality significantly, as well as be used in preference optimization to
+directly fine-tune the models for generating better citations. The
+effectiveness of SelfCite is demonstrated by increasing citation F1 up to 5.3
+points on the LongBench-Cite benchmark across five long-form question answering
+tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08587v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09604v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Bridging time across null horizons</h3>
-                    <p><strong>Authors:</strong> Anıl Zenginoğlu</p>
-                    <p>  General relativity, as a diffeomorphism-invariant theory, allows the
-description of physical phenomena in a wide variety of coordinate systems. In
-the presence of boundaries, such as event horizons and null infinity, time
-coordinates must be carefully adapted to the global causal structure of
-spacetime to ensure a computationally efficient description.
-Horizon-penetrating time is used to describe the dynamics of infalling matter
-and radiation across the event horizon, while hyperboloidal time is used to
-study the propagation of radiation toward the idealized observer at null
-infinity.
-  In this paper, we explore the historical and mathematical connection between
-horizon-penetrating and hyperboloidal time coordinates, arguing that both
-classes of coordinates are simply regular choices of time across null horizons.
-We review the height-function formalism in stationary spacetimes, providing
-examples that may be useful in computations, such as source-adapted foliations
-or Fefferman-Graham-Bondi coordinates near null infinity. We discuss bridges
-connecting the boundaries of spacetime through a time hypersurface across null
-horizons, including the event horizon, null infinity, and the cosmological
-horizon.
-  This work is motivated by the broader effort to understand the role of time
-in general relativity and reviews a unified framework for handling null
-boundaries in analytical and numerical approaches. The insights developed here
-offer practical tools for numerical relativity, gravitational wave astronomy,
-and other explorations of the large-scale structure of spacetimes.
+                    <h3>CoT-Valve: Length-Compressible Chain-of-Thought Tuning</h3>
+                    <p><strong>Authors:</strong> Xinyin Ma, Guangnian Wan, Runpeng Yu, Gongfan Fang, Xinchao Wang</p>
+                    <p>  Chain-of-Thought significantly enhances a model's reasoning capability, but
+it also comes with a considerable increase in inference costs due to long
+chains. With the observation that the reasoning path can be easily compressed
+under easy tasks but struggle on hard tasks, we explore the feasibility of
+elastically controlling the length of reasoning paths with only one model,
+thereby reducing the inference overhead of reasoning models dynamically based
+on task difficulty. We introduce a new tuning and inference strategy named
+CoT-Valve, designed to allow models to generate reasoning chains of varying
+lengths. To achieve this, we propose to identify a direction in the parameter
+space that, when manipulated, can effectively control the length of generated
+CoT. Moreover, we show that this property is valuable for compressing the
+reasoning chain. We construct datasets with chains from long to short for the
+same questions and explore two enhanced strategies for CoT-Valve: (1) a precise
+length-compressible CoT tuning method, and (2) a progressive chain length
+compression approach. Our experiments show that CoT-Valve successfully enables
+controllability and compressibility of the chain and shows better performance
+than the prompt-based control. We applied this method to QwQ-32B-Preview,
+reducing reasoning chains on GSM8K from 741 to 225 tokens with a minor
+performance drop (95.07% to 94.92%) and on AIME from 6827 to 4629 tokens, with
+only one additional incorrect answer.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08581v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09601v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>COAST: Intelligent Time-Adaptive Neural Operators</h3>
-                    <p><strong>Authors:</strong> Zhikai Wu, Shiyang Zhang, Sizhuang He, Sifan Wang, Min Zhu, Anran Jiao, Lu Lu, David van Dijk</p>
-                    <p>  We introduce Causal Operator with Adaptive Solver Transformer (COAST), a
-novel neural operator learning method that leverages a causal language model
-(CLM) framework to dynamically adapt time steps. Our method predicts both the
-evolution of a system and its optimal time step, intelligently balancing
-computational efficiency and accuracy. We find that COAST generates variable
-step sizes that correlate with the underlying system intrinsicities, both
-within and across dynamical systems. Within a single trajectory, smaller steps
-are taken in regions of high complexity, while larger steps are employed in
-simpler regions. Across different systems, more complex dynamics receive more
-granular time steps. Benchmarked on diverse systems with varied dynamics, COAST
-consistently outperforms state-of-the-art methods, achieving superior
-performance in both efficiency and accuracy. This work underscores the
-potential of CLM-based intelligent adaptive solvers for scalable operator
-learning of dynamical systems.
+                    <h3>A unique coupling of the massive spin-2 field to supergravity</h3>
+                    <p><strong>Authors:</strong> Guillaume Bossard, Gabriele Casagrande, Emilian Dudas, Adrien Loty</p>
+                    <p>  We show that the coupling of a massive spin-2 field to undeformed N=1
+supergravity in four dimensions is unique, leading to a specific non-minimal
+coupling to the Riemann tensor. The massive spin-2 coupling reproduces the one
+of an oscillator mode in open string theory, while the massive spin-1 coupling
+includes a higher-derivative term that is expected to violate causality in the
+background of a gravitational shock wave. We argue that the resolution of
+causality and the unitarity bound in the Regge limit require the introduction
+of infinitely many higher-spin fields similar to the Regge trajectories in
+string theory, therefore providing an argument in favour of the string lamppost
+principle with minimal supersymmetry in four dimensions. To obtain this result,
+we construct the general stress-energy tensor multiplet for the massive spin-2
+multiplet with N=1 supersymmetry.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08574v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09599v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Brain Latent Progression: Individual-based Spatiotemporal Disease
-  Progression on 3D Brain MRIs via Latent Diffusion</h3>
-                    <p><strong>Authors:</strong> Lemuel Puglisi, Daniel C. Alexander, Daniele Ravì</p>
-                    <p>  The growing availability of longitudinal Magnetic Resonance Imaging (MRI)
-datasets has facilitated Artificial Intelligence (AI)-driven modeling of
-disease progression, making it possible to predict future medical scans for
-individual patients. However, despite significant advancements in AI, current
-methods continue to face challenges including achieving patient-specific
-individualization, ensuring spatiotemporal consistency, efficiently utilizing
-longitudinal data, and managing the substantial memory demands of 3D scans. To
-address these challenges, we propose Brain Latent Progression (BrLP), a novel
-spatiotemporal model designed to predict individual-level disease progression
-in 3D brain MRIs. The key contributions in BrLP are fourfold: (i) it operates
-in a small latent space, mitigating the computational challenges posed by
-high-dimensional imaging data; (ii) it explicitly integrates subject metadata
-to enhance the individualization of predictions; (iii) it incorporates prior
-knowledge of disease dynamics through an auxiliary model, facilitating the
-integration of longitudinal data; and (iv) it introduces the Latent Average
-Stabilization (LAS) algorithm, which (a) enforces spatiotemporal consistency in
-the predicted progression at inference time and (b) allows us to derive a
-measure of the uncertainty for the prediction. We train and evaluate BrLP on
-11,730 T1-weighted (T1w) brain MRIs from 2,805 subjects and validate its
-generalizability on an external test set comprising 2,257 MRIs from 962
-subjects. Our experiments compare BrLP-generated MRI scans with real follow-up
-MRIs, demonstrating state-of-the-art accuracy compared to existing methods. The
-code is publicly available at: https://github.com/LemuelPuglisi/BrLP.
+                    <h3>Do LLMs Recognize Your Preferences? Evaluating Personalized Preference
+  Following in LLMs</h3>
+                    <p><strong>Authors:</strong> Siyan Zhao, Mingyi Hong, Yang Liu, Devamanyu Hazarika, Kaixiang Lin</p>
+                    <p>  Large Language Models (LLMs) are increasingly used as chatbots, yet their
+ability to personalize responses to user preferences remains limited. We
+introduce PrefEval, a benchmark for evaluating LLMs' ability to infer, memorize
+and adhere to user preferences in a long-context conversational setting.
+PrefEval comprises 3,000 manually curated user preference and query pairs
+spanning 20 topics. PrefEval contains user personalization or preference
+information in both explicit and implicit forms, and evaluates LLM performance
+using a generation and a classification task. With PrefEval, we evaluated the
+aforementioned preference following capabilities of 10 open-source and
+proprietary LLMs in multi-session conversations with varying context lengths up
+to 100k tokens. We benchmark with various prompting, iterative feedback, and
+retrieval-augmented generation methods. Our benchmarking effort reveals that
+state-of-the-art LLMs face significant challenges in proactively following
+users' preferences during conversations. In particular, in zero-shot settings,
+preference following accuracy falls below 10% at merely 10 turns (~3k tokens)
+across most evaluated models. Even with advanced prompting and retrieval
+methods, preference following still deteriorates in long-context conversations.
+Furthermore, we show that fine-tuning on PrefEval significantly improves
+performance. We believe PrefEval serves as a valuable resource for measuring,
+understanding, and enhancing LLMs' preference following abilities, paving the
+way for personalized conversational agents. Our code and dataset are available
+at https://prefeval.github.io/.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08560v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09597v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>LLMs can implicitly learn from mistakes in-context</h3>
-                    <p><strong>Authors:</strong> Lisa Alazraki, Maximilian Mozes, Jon Ander Campos, Yi Chern Tan, Marek Rei, Max Bartolo</p>
-                    <p>  Learning from mistakes is a fundamental feature of human intelligence.
-Previous work has shown that Large Language Models (LLMs) can also learn from
-incorrect answers when provided with a comprehensive rationale detailing why an
-answer is wrong or how to correct it. In this work, we examine whether LLMs can
-learn from mistakes in mathematical reasoning tasks when these explanations are
-not provided. We investigate if LLMs are able to implicitly infer such
-rationales simply from observing both incorrect and correct answers.
-Surprisingly, we find that LLMs perform better, on average, when rationales are
-eliminated from the context and incorrect answers are simply shown alongside
-correct ones. This approach also substantially outperforms chain-of-thought
-prompting in our evaluations. We show that these results are consistent across
-LLMs of different sizes and varying reasoning abilities. Further, we carry out
-an in-depth analysis, and show that prompting with both wrong and correct
-answers leads to greater performance and better generalisation than introducing
-additional, more diverse question-answer pairs into the context. Finally, we
-show that new rationales generated by models that have only observed incorrect
-and correct answers are scored equally as highly by humans as those produced
-with the aid of exemplar rationales. Our results demonstrate that LLMs are
-indeed capable of in-context implicit learning.
+                    <h3>Censor Dependent Variational Inference</h3>
+                    <p><strong>Authors:</strong> Chuanhui Liu, Xiao Wang</p>
+                    <p>  This paper provides a comprehensive analysis of variational inference in
+latent variable models for survival analysis, emphasizing the distinctive
+challenges associated with applying variational methods to survival data. We
+identify a critical weakness in the existing methodology, demonstrating how a
+poorly designed variational distribution may hinder the objective of survival
+analysis tasks--modeling time-to-event distributions. We prove that the optimal
+variational distribution, which perfectly bounds the log-likelihood, may depend
+on the censoring mechanism. To address this issue, we propose censor-dependent
+variational inference (CDVI), tailored for latent variable models in survival
+analysis. More practically, we introduce CD-CVAE, a V-structure Variational
+Autoencoder (VAE) designed for the scalable implementation of CDVI. Further
+discussion extends some existing theories and training techniques to survival
+analysis. Extensive experiments validate our analysis and demonstrate
+significant improvements in the estimation of individual survival
+distributions.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08550v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09591v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>Anytime-valid FDR control with the stopped e-BH procedure</h3>
-                    <p><strong>Authors:</strong> Hongjian Wang, Sanjit Dandapanthula, Aaditya Ramdas</p>
-                    <p>  The recent e-Benjamini-Hochberg (e-BH) procedure for multiple hypothesis
-testing is known to control the false discovery rate (FDR) under arbitrary
-dependence between the input e-values. This paper points out an important
-subtlety when applying the e-BH procedure with e-processes, which are
-sequential generalizations of e-values (where the data are observed
-sequentially). Since adaptively stopped e-processes are e-values, the e-BH
-procedure can be repeatedly applied at every time step, and one can
-continuously monitor the e-processes and the rejection sets obtained. One would
-hope that the "stopped e-BH procedure" (se-BH) has an FDR guarantee for the
-rejection set obtained at any stopping time. However, while this is true if the
-data in different streams are independent, it is not true in full generality,
-because each stopped e-process is an e-value only for stopping times in its own
-local filtration, but the se-BH procedure employs a stopping time with respect
-to a global filtration. This can cause information to leak across time,
-allowing one stream to know its future by knowing past data of another stream.
-This paper formulates a simple causal condition under which local e-processes
-are also global e-processes and thus the se-BH procedure does indeed control
-the FDR. The condition excludes unobserved confounding from the past and is met
-under most reasonable scenarios including genomics.
+                    <h3>Star-crossed Clusters: Asteroseismic Ages for Individual Stars are in
+  Tension with the Ages of their Host Clusters</h3>
+                    <p><strong>Authors:</strong> Jamie Tayar, Meridith Joyce</p>
+                    <p>  A meta-analysis of seismic ages determined for individual stars in the
+well-studied open and globular clusters NGC 6819, NGC 6791, M67, M4, M19, M80,
+and M9 reveals both high variance across measurements and significant
+discrepancy with independent, isochrone-based age determinations for the
+clusters in which these stars reside. The scatter among asteroseismic ages for
+individual stars in any one of these clusters far surpasses both the absolute
+age uncertainty computed for reference cluster M92 (5.4\%) and the
+model-to-model systematic uncertainties in isochrones (roughly 10\%). This
+suggests that either binary processes are significantly altering the masses of
+stars in these clusters, or some additional corrections, perhaps as a function
+of mass, metallicity, or surface gravity, are required to bring the
+asteroseismic age scale into concordance with ages inferred from isochrone or
+similar model fitting.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08539v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09582v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
                 <li>
-                    <h3>BCDDM: Branch-Corrected Denoising Diffusion Model for Black Hole Image
-  Generation</h3>
-                    <p><strong>Authors:</strong> Ao liu, Zelin Zhang, Songbai Chen, Cuihong Wen</p>
-                    <p>  The properties of black holes and accretion flows can be inferred by fitting
-Event Horizon Telescope (EHT) data to simulated images generated through
-general relativistic ray tracing (GRRT). However, due to the computationally
-intensive nature of GRRT, the efficiency of generating specific radiation flux
-images needs to be improved. This paper introduces the Branch Correction
-Denoising Diffusion Model (BCDDM), which uses a branch correction mechanism and
-a weighted mixed loss function to improve the accuracy of generated black hole
-images based on seven physical parameters of the radiatively inefficient
-accretion flow (RIAF) model. Our experiments show a strong correlation between
-the generated images and their physical parameters. By enhancing the GRRT
-dataset with BCDDM-generated images and using ResNet50 for parameter
-regression, we achieve significant improvements in parameter prediction
-performance. This approach reduces computational costs and provides a faster,
-more efficient method for dataset expansion, parameter estimation, and model
-fitting.
+                    <h3>MorphNLI: A Stepwise Approach to Natural Language Inference Using Text
+  Morphing</h3>
+                    <p><strong>Authors:</strong> Vlad Andrei Negru, Robert Vacareanu, Camelia Lemnaru, Mihai Surdeanu, Rodica Potolea</p>
+                    <p>  We introduce MorphNLI, a modular step-by-step approach to natural language
+inference (NLI). When classifying the premise-hypothesis pairs into
+{entailment, contradiction, neutral}, we use a language model to generate the
+necessary edits to incrementally transform (i.e., morph) the premise into the
+hypothesis. Then, using an off-the-shelf NLI model we track how the entailment
+progresses with these atomic changes, aggregating these intermediate labels
+into a final output. We demonstrate the advantages of our proposed method
+particularly in realistic cross-domain settings, where our method always
+outperforms strong baselines with improvements up to 12.6% (relative). Further,
+our proposed approach is explainable as the atomic edits can be used to
+understand the overall NLI label.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.08528v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/12/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.09567v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/13/2025</p>
                 </li>
             </ul>
         </section>
