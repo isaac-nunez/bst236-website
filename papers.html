@@ -81,239 +81,273 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Embed Any NeRF: Graph Meta-Networks for Neural Tasks on Arbitrary NeRF
-  Architectures</h3>
-                    <p><strong>Authors:</strong> Francesco Ballerini, Pierluigi Zama Ramirez, Samuele Salti, Luigi Di Stefano</p>
-                    <p>  Neural Radiance Fields (NeRFs) have emerged as a groundbreaking paradigm for
-representing 3D objects and scenes by encoding shape and appearance information
-into the weights of a neural network. Recent works have shown how such weights
-can be used as input to frameworks processing them to solve deep learning
-tasks. Yet, these frameworks can only process NeRFs with a specific, predefined
-architecture. In this paper, we present the first framework that can ingest
-NeRFs with multiple architectures and perform inference on architectures unseen
-at training time. We achieve this goal by training a Graph Meta-Network in a
-representation learning framework. Moreover, we show how a contrastive
-objective is conducive to obtaining an architecture-agnostic latent space. In
-experiments on both MLP-based and tri-planar NeRFs, our approach demonstrates
-robust performance in classification and retrieval tasks that either matches or
-exceeds that of existing frameworks constrained to single architectures, thus
-providing the first architecture-agnostic method to perform tasks on NeRFs by
-processing their weights.
+                    <h3>Text-guided Sparse Voxel Pruning for Efficient 3D Visual Grounding</h3>
+                    <p><strong>Authors:</strong> Wenxuan Guo, Xiuwei Xu, Ziwei Wang, Jianjiang Feng, Jie Zhou, Jiwen Lu</p>
+                    <p>  In this paper, we propose an efficient multi-level convolution architecture
+for 3D visual grounding. Conventional methods are difficult to meet the
+requirements of real-time inference due to the two-stage or point-based
+architecture. Inspired by the success of multi-level fully sparse convolutional
+architecture in 3D object detection, we aim to build a new 3D visual grounding
+framework following this technical route. However, as in 3D visual grounding
+task the 3D scene representation should be deeply interacted with text
+features, sparse convolution-based architecture is inefficient for this
+interaction due to the large amount of voxel features. To this end, we propose
+text-guided pruning (TGP) and completion-based addition (CBA) to deeply fuse 3D
+scene representation and text features in an efficient way by gradual region
+pruning and target completion. Specifically, TGP iteratively sparsifies the 3D
+scene representation and thus efficiently interacts the voxel features with
+text features by cross-attention. To mitigate the affect of pruning on delicate
+geometric information, CBA adaptively fixes the over-pruned region by voxel
+completion with negligible computational overhead. Compared with previous
+single-stage methods, our method achieves top inference speed and surpasses
+previous fastest method by 100\% FPS. Our method also achieves state-of-the-art
+accuracy even compared with two-stage methods, with $+1.13$ lead of Acc@0.5 on
+ScanRefer, and $+2.6$ and $+3.2$ leads on NR3D and SR3D respectively. The code
+is available at
+\href{https://github.com/GWxuan/TSP3D}{https://github.com/GWxuan/TSP3D}.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09623v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10392v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>LIFe-GoM: Generalizable Human Rendering with Learned Iterative Feedback
-  Over Multi-Resolution Gaussians-on-Mesh</h3>
-                    <p><strong>Authors:</strong> Jing Wen, Alexander G. Schwing, Shenlong Wang</p>
-                    <p>  Generalizable rendering of an animatable human avatar from sparse inputs
-relies on data priors and inductive biases extracted from training on large
-data to avoid scene-specific optimization and to enable fast reconstruction.
-This raises two main challenges: First, unlike iterative gradient-based
-adjustment in scene-specific optimization, generalizable methods must
-reconstruct the human shape representation in a single pass at inference time.
-Second, rendering is preferably computationally efficient yet of high
-resolution. To address both challenges we augment the recently proposed dual
-shape representation, which combines the benefits of a mesh and Gaussian
-points, in two ways. To improve reconstruction, we propose an iterative
-feedback update framework, which successively improves the canonical human
-shape representation during reconstruction. To achieve computationally
-efficient yet high-resolution rendering, we study a coupled-multi-resolution
-Gaussians-on-Mesh representation. We evaluate the proposed approach on the
-challenging THuman2.0, XHuman and AIST++ data. Our approach reconstructs an
-animatable representation from sparse inputs in less than 1s, renders views
-with 95.1FPS at $1024 \times 1024$, and achieves PSNR/LPIPS*/FID of
-24.65/110.82/51.27 on THuman2.0, outperforming the state-of-the-art in
-rendering quality.
+                    <h3>Representation and Interpretation in Artificial and Natural Computing</h3>
+                    <p><strong>Authors:</strong> Luis A. Pineda</p>
+                    <p>  Artificial computing machinery transforms representations through an
+objective process, to be interpreted subjectively by humans, so the machine and
+the interpreter are different entities, but in the putative natural computing
+both processes are performed by the same agent. The method or process that
+transforms a representation is called here \emph{the mode of computing}. The
+mode used by digital computers is the algorithmic one, but there are others,
+such as quantum computers and diverse forms of non-conventional computing, and
+there is an open-ended set of representational formats and modes that could be
+used in artificial and natural computing. A mode based on a notion of computing
+different from Turing's may perform feats beyond what the Turing Machine does
+but the modes would not be of the same kind and could not be compared. For a
+mode of computing to be more powerful than the algorithmic one, it ought to
+compute functions lacking an effective algorithm, and Church Thesis would not
+hold. Here, a thought experiment including a computational demon using a
+hypothetical mode for such an effect is presented. If there is natural
+computing, there is a mode of natural computing whose properties may be causal
+to the phenomenological experience. Discovering it would come with solving the
+hard problem of consciousness; but if it turns out that such a mode does not
+exist, there is no such thing as natural computing, and the mind is not a
+computational process.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09617v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10383v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>Variational Rectified Flow Matching</h3>
-                    <p><strong>Authors:</strong> Pengsheng Guo, Alexander G. Schwing</p>
-                    <p>  We study Variational Rectified Flow Matching, a framework that enhances
-classic rectified flow matching by modeling multi-modal velocity vector-fields.
-At inference time, classic rectified flow matching 'moves' samples from a
-source distribution to the target distribution by solving an ordinary
-differential equation via integration along a velocity vector-field. At
-training time, the velocity vector-field is learnt by linearly interpolating
-between coupled samples one drawn from the source and one drawn from the target
-distribution randomly. This leads to ''ground-truth'' velocity vector-fields
-that point in different directions at the same location, i.e., the velocity
-vector-fields are multi-modal/ambiguous. However, since training uses a
-standard mean-squared-error loss, the learnt velocity vector-field averages
-''ground-truth'' directions and isn't multi-modal. In contrast, variational
-rectified flow matching learns and samples from multi-modal flow directions. We
-show on synthetic data, MNIST, CIFAR-10, and ImageNet that variational
-rectified flow matching leads to compelling results.
+                    <h3>Scalar weak gravity bound from full unitarity</h3>
+                    <p><strong>Authors:</strong> Anna Tokareva, Yongjun Xu</p>
+                    <p>  Weak gravity conjecture can be formulated as a statement that gravity must be
+the weakest force, compared to the other interactions in low energy effective
+field theory (EFT). Several arguments in favor of this statement were presented
+from the side of string theory and black hole physics. However, it is still an
+open question whether the statement of weak gravity can be proven based on more
+general assumptions of causality, unitarity, and locality of the fundamental
+theory. These consistency requirements imply the dispersion relations for the
+scattering amplitudes which allow to bound the EFT coefficients. The main
+difficulty for obtaining these constraints in the presence of gravity is
+related to the graviton pole which makes the required dispersion relations
+divergent in the forward limit. In this work, we present a new way of deriving
+the bound on the ratio between the EFT cutoff scale and Planck mass from
+confronting the IR divergences from graviton pole and one-loop running of the
+EFT Wilson coefficient in front of the dimension-12 operator. Our method also
+allows the incorporation of full unitarity of partial wave expansion of the UV
+theory. We examine the EFT of a single shift-symmetric scalar in four
+dimensions and find that the maximal value of the cutoff scale of the EFT
+coupled to gravity must be lower than about $O(10)$ Planck mass.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09616v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10375v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>SelfCite: Self-Supervised Alignment for Context Attribution in Large
-  Language Models</h3>
-                    <p><strong>Authors:</strong> Yung-Sung Chuang, Benjamin Cohen-Wang, Shannon Zejiang Shen, Zhaofeng Wu, Hu Xu, Xi Victoria Lin, James Glass, Shang-Wen Li, Wen-tau Yih</p>
-                    <p>  We introduce SelfCite, a novel self-supervised approach that aligns LLMs to
-generate high-quality, fine-grained, sentence-level citations for the
-statements in their generated responses. Instead of only relying on costly and
-labor-intensive annotations, SelfCite leverages a reward signal provided by the
-LLM itself through context ablation: If a citation is necessary, removing the
-cited text from the context should prevent the same response; if sufficient,
-retaining the cited text alone should preserve the same response. This reward
-can guide the inference-time best-of-N sampling strategy to improve citation
-quality significantly, as well as be used in preference optimization to
-directly fine-tune the models for generating better citations. The
-effectiveness of SelfCite is demonstrated by increasing citation F1 up to 5.3
-points on the LongBench-Cite benchmark across five long-form question answering
-tasks.
+                    <h3>Agentic Verification for Ambiguous Query Disambiguation</h3>
+                    <p><strong>Authors:</strong> Youngwon Lee, Seung-won Hwang, Ruofan Wu, Feng Yan, Danmei Xu, Moutasem Akkad, Zhewei Yao, Yuxiong He</p>
+                    <p>  In this work, we tackle the challenge of disambiguating queries in
+retrieval-augmented generation (RAG) to diverse yet answerable interpretations.
+State-of-the-arts follow a Diversify-then-Verify (DtV) pipeline, where diverse
+interpretations are generated by an LLM, later used as search queries to
+retrieve supporting passages. Such a process may introduce noise in either
+interpretations or retrieval, particularly in enterprise settings, where LLMs
+-- trained on static data -- may struggle with domain-specific disambiguations.
+Thus, a post-hoc verification phase is introduced to prune noises. Our
+distinction is to unify diversification with verification by incorporating
+feedback from retriever and generator early on. This joint approach improves
+both efficiency and robustness by reducing reliance on multiple retrieval and
+inference steps, which are susceptible to cascading errors. We validate the
+efficiency and effectiveness of our method, Verified-Diversification with
+Consolidation (VERDICT), on the widely adopted ASQA benchmark to achieve
+diverse yet verifiable interpretations. Empirical results show that VERDICT
+improves grounding-aware F1 score by an average of 23% over the strongest
+baseline across different backbone LLMs.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09604v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10352v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>CoT-Valve: Length-Compressible Chain-of-Thought Tuning</h3>
-                    <p><strong>Authors:</strong> Xinyin Ma, Guangnian Wan, Runpeng Yu, Gongfan Fang, Xinchao Wang</p>
-                    <p>  Chain-of-Thought significantly enhances a model's reasoning capability, but
-it also comes with a considerable increase in inference costs due to long
-chains. With the observation that the reasoning path can be easily compressed
-under easy tasks but struggle on hard tasks, we explore the feasibility of
-elastically controlling the length of reasoning paths with only one model,
-thereby reducing the inference overhead of reasoning models dynamically based
-on task difficulty. We introduce a new tuning and inference strategy named
-CoT-Valve, designed to allow models to generate reasoning chains of varying
-lengths. To achieve this, we propose to identify a direction in the parameter
-space that, when manipulated, can effectively control the length of generated
-CoT. Moreover, we show that this property is valuable for compressing the
-reasoning chain. We construct datasets with chains from long to short for the
-same questions and explore two enhanced strategies for CoT-Valve: (1) a precise
-length-compressible CoT tuning method, and (2) a progressive chain length
-compression approach. Our experiments show that CoT-Valve successfully enables
-controllability and compressibility of the chain and shows better performance
-than the prompt-based control. We applied this method to QwQ-32B-Preview,
-reducing reasoning chains on GSM8K from 741 to 225 tokens with a minor
-performance drop (95.07% to 94.92%) and on AIME from 6827 to 4629 tokens, with
-only one additional incorrect answer.
+                    <h3>STAR: Spectral Truncation and Rescale for Model Merging</h3>
+                    <p><strong>Authors:</strong> Yu-Ang Lee, Ching-Yun Ko, Tejaswini Pedapati, I-Hsin Chung, Mi-Yen Yeh, Pin-Yu Chen</p>
+                    <p>  Model merging is an efficient way of obtaining a multi-task model from
+several pretrained models without further fine-tuning, and it has gained
+attention in various domains, including natural language processing (NLP).
+Despite the efficiency, a key challenge in model merging is the seemingly
+inevitable decrease in task performance as the number of models increases. In
+this paper, we propose $\mathbf{S}$pectral $\mathbf{T}$runcation $\mathbf{A}$nd
+$\mathbf{R}$escale (STAR) that aims at mitigating ``merging conflicts'' by
+truncating small components in the respective spectral spaces, which is
+followed by an automatic parameter rescaling scheme to retain the nuclear norm
+of the original matrix. STAR requires no additional inference on original
+training data and is robust to hyperparamater choice. We demonstrate the
+effectiveness of STAR through extensive model merging cases on diverse NLP
+tasks. Specifically, STAR works robustly across varying model sizes, and can
+outperform baselines by 4.2$\%$ when merging 12 models on Flan-T5. Our code is
+publicly available at https://github.com/IBM/STAR.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09601v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10339v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>A unique coupling of the massive spin-2 field to supergravity</h3>
-                    <p><strong>Authors:</strong> Guillaume Bossard, Gabriele Casagrande, Emilian Dudas, Adrien Loty</p>
-                    <p>  We show that the coupling of a massive spin-2 field to undeformed N=1
-supergravity in four dimensions is unique, leading to a specific non-minimal
-coupling to the Riemann tensor. The massive spin-2 coupling reproduces the one
-of an oscillator mode in open string theory, while the massive spin-1 coupling
-includes a higher-derivative term that is expected to violate causality in the
-background of a gravitational shock wave. We argue that the resolution of
-causality and the unitarity bound in the Regge limit require the introduction
-of infinitely many higher-spin fields similar to the Regge trajectories in
-string theory, therefore providing an argument in favour of the string lamppost
-principle with minimal supersymmetry in four dimensions. To obtain this result,
-we construct the general stress-energy tensor multiplet for the massive spin-2
-multiplet with N=1 supersymmetry.
+                    <h3>Many-body theory calculations of positron binding to parabenzoquinone</h3>
+                    <p><strong>Authors:</strong> S. K. Gregg, J. Hofierka, B. Cunningham, D. G. Green</p>
+                    <p>  Positron binding in parabenzoquinone is studied using \textit{ab initio}
+many-body theory. The effects of electron-positron correlations including
+polarization, virtual positronium formation and positron-hole repulsion, as
+well as those of $\pi$ bonds, aromaticity, and lone electron pairs, are
+considered. The binding energy is calculated as 60$\pm$16 meV, considerably
+larger than the 0.0925 meV value inferred from recent scattering calculations
+of [G. Moreira and M. Bettega, {\emph{Eur.~Phys.~J.~D}} {\bf 78} (2024)], but
+substantially smaller than we find in benzene (148$\pm$26 meV). The positron
+contact density (lifetime) is calculated as 8.0$\times10^{-3}$ a.u. (2.48 ns),
+vs.~1.61$\times 10^{-2}$ a.u. (0.81 ns) in benzene. The decrease (increase) in
+binding (annihilation rate) in parabenzoquinone compared to benzene is ascribed
+to the loss of aromaticity: the electron density on the positive oxygen nuclei
+being relatively harder for the positron to probe compared to the aromatic
+rings in benzene.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09599v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10327v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>Do LLMs Recognize Your Preferences? Evaluating Personalized Preference
-  Following in LLMs</h3>
-                    <p><strong>Authors:</strong> Siyan Zhao, Mingyi Hong, Yang Liu, Devamanyu Hazarika, Kaixiang Lin</p>
-                    <p>  Large Language Models (LLMs) are increasingly used as chatbots, yet their
-ability to personalize responses to user preferences remains limited. We
-introduce PrefEval, a benchmark for evaluating LLMs' ability to infer, memorize
-and adhere to user preferences in a long-context conversational setting.
-PrefEval comprises 3,000 manually curated user preference and query pairs
-spanning 20 topics. PrefEval contains user personalization or preference
-information in both explicit and implicit forms, and evaluates LLM performance
-using a generation and a classification task. With PrefEval, we evaluated the
-aforementioned preference following capabilities of 10 open-source and
-proprietary LLMs in multi-session conversations with varying context lengths up
-to 100k tokens. We benchmark with various prompting, iterative feedback, and
-retrieval-augmented generation methods. Our benchmarking effort reveals that
-state-of-the-art LLMs face significant challenges in proactively following
-users' preferences during conversations. In particular, in zero-shot settings,
-preference following accuracy falls below 10% at merely 10 turns (~3k tokens)
-across most evaluated models. Even with advanced prompting and retrieval
-methods, preference following still deteriorates in long-context conversations.
-Furthermore, we show that fine-tuning on PrefEval significantly improves
-performance. We believe PrefEval serves as a valuable resource for measuring,
-understanding, and enhancing LLMs' preference following abilities, paving the
-way for personalized conversational agents. Our code and dataset are available
-at https://prefeval.github.io/.
+                    <h3>A Mechanistic Framework for Collider Detection in Observational Data</h3>
+                    <p><strong>Authors:</strong> Soumik Purkayastha, Peter X. -K. Song</p>
+                    <p>  Understanding directionality is crucial for identifying causal structures
+from observational data. A key challenge lies in detecting collider structures,
+where a $V$--structure is formed between a child node $Z$ receiving directed
+edges from parents $X$ and $Y$, denoted by $X \rightarrow Z \leftarrow Y$.
+Traditional causal discovery approaches, such as constraint-based and
+score-based structure learning algorithms, do not provide statistical inference
+on estimated pathways and are often sensitive to latent confounding. To
+overcome these issues, we introduce methodology to quantify directionality in
+collider structures using a pair of conditional asymmetry coefficients to
+simultaneously examine validity of the pathways $Y \rightarrow Z$ and $X
+\rightarrow Z$ in the collider structure. These coefficients are based on
+Shannon's differential entropy. Leveraging kernel-based conditional density
+estimation and a nonparametric smoothing technique, we utilise our proposed
+method to estimate collider structures and provide uncertainty quantification.
+  Simulation studies demonstrate that our method outperforms existing structure
+learning algorithms in accurately identifying collider structures. We further
+apply our approach to investigate the role of blood pressure as a collider in
+epigenetic DNA methylation, uncovering novel insights into the genetic
+regulation of blood pressure. This framework represents a significant
+advancement in causal structure learning, offering a robust, nonparametric
+method for collider detection with practical applications in biostatistics and
+epidemiology.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09597v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10317v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>Censor Dependent Variational Inference</h3>
-                    <p><strong>Authors:</strong> Chuanhui Liu, Xiao Wang</p>
-                    <p>  This paper provides a comprehensive analysis of variational inference in
-latent variable models for survival analysis, emphasizing the distinctive
-challenges associated with applying variational methods to survival data. We
-identify a critical weakness in the existing methodology, demonstrating how a
-poorly designed variational distribution may hinder the objective of survival
-analysis tasks--modeling time-to-event distributions. We prove that the optimal
-variational distribution, which perfectly bounds the log-likelihood, may depend
-on the censoring mechanism. To address this issue, we propose censor-dependent
-variational inference (CDVI), tailored for latent variable models in survival
-analysis. More practically, we introduce CD-CVAE, a V-structure Variational
-Autoencoder (VAE) designed for the scalable implementation of CDVI. Further
-discussion extends some existing theories and training techniques to survival
-analysis. Extensive experiments validate our analysis and demonstrate
-significant improvements in the estimation of individual survival
-distributions.
+                    <h3>DeltaProduct: Increasing the Expressivity of DeltaNet Through Products
+  of Householders</h3>
+                    <p><strong>Authors:</strong> Julien Siems, Timur Carstensen, Arber Zela, Frank Hutter, Massimiliano Pontil, Riccardo Grazzi</p>
+                    <p>  Linear Recurrent Neural Networks (linear RNNs) have emerged as competitive
+alternatives to Transformers for sequence modeling, offering efficient training
+and linear-time inference. However, existing architectures face a fundamental
+trade-off between expressivity and efficiency, dictated by the structure of
+their state-transition matrices. While diagonal matrices used in architectures
+like Mamba, GLA, or mLSTM yield fast runtime, they suffer from severely limited
+expressivity. To address this, recent architectures such as (Gated) DeltaNet
+and RWKVv7 adopted a diagonal plus rank-1 structure, allowing simultaneous
+token-channel mixing, which overcomes some expressivity limitations with only a
+slight decrease in training efficiency. Building on the interpretation of
+DeltaNet's recurrence as performing one step of online gradient descent per
+token on an associative recall loss, we introduce DeltaProduct, which instead
+takes multiple ($n_h$) steps per token. This naturally leads to diagonal plus
+rank-$n_h$ state-transition matrices, formed as products of $n_h$ generalized
+Householder transformations, providing a tunable mechanism to balance
+expressivity and efficiency and a stable recurrence. Through extensive
+experiments, we demonstrate that DeltaProduct achieves superior state-tracking
+and language modeling capabilities while exhibiting significantly improved
+length extrapolation compared to DeltaNet. Additionally, we also strengthen the
+theoretical foundation of DeltaNet's expressivity by proving that it can solve
+dihedral group word problems in just two layers.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09591v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10297v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>Star-crossed Clusters: Asteroseismic Ages for Individual Stars are in
-  Tension with the Ages of their Host Clusters</h3>
-                    <p><strong>Authors:</strong> Jamie Tayar, Meridith Joyce</p>
-                    <p>  A meta-analysis of seismic ages determined for individual stars in the
-well-studied open and globular clusters NGC 6819, NGC 6791, M67, M4, M19, M80,
-and M9 reveals both high variance across measurements and significant
-discrepancy with independent, isochrone-based age determinations for the
-clusters in which these stars reside. The scatter among asteroseismic ages for
-individual stars in any one of these clusters far surpasses both the absolute
-age uncertainty computed for reference cluster M92 (5.4\%) and the
-model-to-model systematic uncertainties in isochrones (roughly 10\%). This
-suggests that either binary processes are significantly altering the masses of
-stars in these clusters, or some additional corrections, perhaps as a function
-of mass, metallicity, or surface gravity, are required to bring the
-asteroseismic age scale into concordance with ages inferred from isochrone or
-similar model fitting.
+                    <h3>A Latent Causal Inference Framework for Ordinal Variables</h3>
+                    <p><strong>Authors:</strong> Martina Scauda, Jack Kuipers, Giusi Moffa</p>
+                    <p>  Ordinal variables, such as on the Likert scale, are common in applied
+research. Yet, existing methods for causal inference tend to target nominal or
+continuous data. When applied to ordinal data, this fails to account for the
+inherent ordering or imposes well-defined relative magnitudes. Hence, there is
+a need for specialised methods to compute interventional effects between
+ordinal variables while accounting for their ordinality. One potential
+framework is to presume a latent Gaussian Directed Acyclic Graph (DAG) model:
+that the ordinal variables originate from marginally discretizing a set of
+Gaussian variables whose latent covariance matrix is constrained to satisfy the
+conditional independencies inherent in a DAG. Conditioned on a given latent
+covariance matrix and discretisation thresholds, we derive a closed-form
+function for ordinal causal effects in terms of interventional distributions in
+the latent space. Our causal estimation combines naturally with algorithms to
+learn the latent DAG and its parameters, like the Ordinal Structural EM
+algorithm. Simulations demonstrate the applicability of the proposed approach
+in estimating ordinal causal effects both for known and unknown structures of
+the latent graph. As an illustration of a real-world use case, the method is
+applied to survey data of 408 patients from a study on the functional
+relationships between symptoms of obsessive-compulsive disorder and depression.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09582v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10276v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
                 <li>
-                    <h3>MorphNLI: A Stepwise Approach to Natural Language Inference Using Text
-  Morphing</h3>
-                    <p><strong>Authors:</strong> Vlad Andrei Negru, Robert Vacareanu, Camelia Lemnaru, Mihai Surdeanu, Rodica Potolea</p>
-                    <p>  We introduce MorphNLI, a modular step-by-step approach to natural language
-inference (NLI). When classifying the premise-hypothesis pairs into
-{entailment, contradiction, neutral}, we use a language model to generate the
-necessary edits to incrementally transform (i.e., morph) the premise into the
-hypothesis. Then, using an off-the-shelf NLI model we track how the entailment
-progresses with these atomic changes, aggregating these intermediate labels
-into a final output. We demonstrate the advantages of our proposed method
-particularly in realistic cross-domain settings, where our method always
-outperforms strong baselines with improvements up to 12.6% (relative). Further,
-our proposed approach is explainable as the atomic edits can be used to
-understand the overall NLI label.
+                    <h3>An overview of what current data can (and cannot yet) say about evolving
+  dark energy</h3>
+                    <p><strong>Authors:</strong> William Giarè, Tariq Mahassen, Eleonora Di Valentino, Supriya Pan</p>
+                    <p>  Recent measurements of Baryon Acoustic Oscillations (BAO) and distance moduli
+from Type Ia supernovae suggest a preference for Dynamical Dark Energy (DDE)
+scenarios characterized by a time-varying equation of state (EoS). This focused
+review assesses its robustness across independent measurements and surveys.
+Using the Chevallier-Polarski-Linder (CPL) parameterization to describe the
+evolution of the DE EoS, we analyze over 35 dataset combinations, incorporating
+Planck Cosmic Microwave Background (CMB) anisotropies, three independent Type
+Ia supernova (SN) catalogs (PantheonPlus, Union3, DESY5), BAO measurements from
+DESI and SDSS, and expansion rate measurements $H(z)$ inferred from the
+relative ages of massive, passively evolving galaxies at early cosmic times
+known as Cosmic Chronometers (CC). This review has two main objectives: first,
+to evaluate the statistical significance of the DDE preference across different
+dataset combinations, which incorporate varying sources of information.
+Specifically, we consider cases where only low-redshift probes are used in
+different combinations, others where individual low-redshift probes are
+analyzed together with CMB data, and finally, scenarios where high- and
+low-redshift probes are included in all possible independent combinations.
+Second, we provide a reader-friendly synthesis of what the latest cosmological
+and astrophysical probes can (and cannot yet) reveal about DDE. Overall, our
+findings highlight that combinations that \textit{simultaneously} include
+PantheonPlus SN and SDSS BAO significantly weaken the preference for DDE.
+However, intriguing hints supporting DDE emerge in combinations that do not
+include DESI-BAO measurements: SDSS-BAO combined with SN from Union3 and DESY5
+(with and without CMB) support the preference for DDE.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.09567v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.10264v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/14/2025</p>
                 </li>
             </ul>
         </section>
