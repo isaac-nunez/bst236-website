@@ -84,264 +84,232 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>RAD: Training an End-to-End Driving Policy via Large-Scale 3DGS-based
-  Reinforcement Learning</h3>
-                    <p><strong>Authors:</strong> Hao Gao, Shaoyu Chen, Bo Jiang, Bencheng Liao, Yiang Shi, Xiaoyang Guo, Yuechuan Pu, Haoran Yin, Xiangyu Li, Xinbang Zhang, Ying Zhang, Wenyu Liu, Qian Zhang, Xinggang Wang</p>
-                    <p>  Existing end-to-end autonomous driving (AD) algorithms typically follow the
-Imitation Learning (IL) paradigm, which faces challenges such as causal
-confusion and the open-loop gap. In this work, we establish a 3DGS-based
-closed-loop Reinforcement Learning (RL) training paradigm. By leveraging 3DGS
-techniques, we construct a photorealistic digital replica of the real physical
-world, enabling the AD policy to extensively explore the state space and learn
-to handle out-of-distribution scenarios through large-scale trial and error. To
-enhance safety, we design specialized rewards that guide the policy to
-effectively respond to safety-critical events and understand real-world causal
-relationships. For better alignment with human driving behavior, IL is
-incorporated into RL training as a regularization term. We introduce a
-closed-loop evaluation benchmark consisting of diverse, previously unseen 3DGS
-environments. Compared to IL-based methods, RAD achieves stronger performance
-in most closed-loop metrics, especially 3x lower collision rate. Abundant
-closed-loop results are presented at https://hgao-cv.github.io/RAD.
+                    <h3>Is That Your Final Answer? Test-Time Scaling Improves Selective Question
+  Answering</h3>
+                    <p><strong>Authors:</strong> William Jurayj, Jeffrey Cheng, Benjamin Van Durme</p>
+                    <p>  Scaling the test-time compute of large language models has demonstrated
+impressive performance on reasoning benchmarks. However, existing evaluations
+of test-time scaling make the strong assumption that a reasoning system should
+always give an answer to any question provided. This overlooks concerns about
+whether a model is confident in its answer, and whether it is appropriate to
+always provide a response. To address these concerns, we extract confidence
+scores during reasoning for thresholding model responses. We find that
+increasing compute budget at inference time not only helps models answer more
+questions correctly, but also increases confidence in correct responses. We
+then extend the current paradigm of zero-risk responses during evaluation by
+considering settings with non-zero levels of response risk, and suggest a
+recipe for reporting evaluations under these settings.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13144v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13962v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>RHINO: Learning Real-Time Humanoid-Human-Object Interaction from Human
-  Demonstrations</h3>
-                    <p><strong>Authors:</strong> Jingxiao Chen, Xinyao Li, Jiahang Cao, Zhengbang Zhu, Wentao Dong, Minghuan Liu, Ying Wen, Yong Yu, Liqing Zhang, Weinan Zhang</p>
-                    <p>  Humanoid robots have shown success in locomotion and manipulation. Despite
-these basic abilities, humanoids are still required to quickly understand human
-instructions and react based on human interaction signals to become valuable
-assistants in human daily life. Unfortunately, most existing works only focus
-on multi-stage interactions, treating each task separately, and neglecting
-real-time feedback. In this work, we aim to empower humanoid robots with
-real-time reaction abilities to achieve various tasks, allowing human to
-interrupt robots at any time, and making robots respond to humans immediately.
-To support such abilities, we propose a general humanoid-human-object
-interaction framework, named RHINO, i.e., Real-time Humanoid-human Interaction
-and Object manipulation. RHINO provides a unified view of reactive motion,
-instruction-based manipulation, and safety concerns, over multiple human signal
-modalities, such as languages, images, and motions. RHINO is a hierarchical
-learning framework, enabling humanoids to learn reaction skills from
-human-human-object demonstrations and teleoperation data. In particular, it
-decouples the interaction process into two levels: 1) a high-level planner
-inferring human intentions from real-time human behaviors; and 2) a low-level
-controller achieving reactive motion behaviors and object manipulation skills
-based on the predicted intentions. We evaluate the proposed framework on a real
-humanoid robot and demonstrate its effectiveness, flexibility, and safety in
-various scenarios.
+                    <h3>RAG-Gym: Optimizing Reasoning and Search Agents with Process Supervision</h3>
+                    <p><strong>Authors:</strong> Guangzhi Xiong, Qiao Jin, Xiao Wang, Yin Fang, Haolin Liu, Yifan Yang, Fangyuan Chen, Zhixing Song, Dengyu Wang, Minjia Zhang, Zhiyong Lu, Aidong Zhang</p>
+                    <p>  Retrieval-augmented generation (RAG) has shown great potential for
+knowledge-intensive tasks, but its traditional architectures rely on static
+retrieval, limiting their effectiveness for complex questions that require
+sequential information-seeking. While agentic reasoning and search offer a more
+adaptive approach, most existing methods depend heavily on prompt engineering.
+In this work, we introduce RAG-Gym, a unified optimization framework that
+enhances information-seeking agents through fine-grained process supervision at
+each search step. We also propose ReSearch, a novel agent architecture that
+synergizes answer reasoning and search query generation within the RAG-Gym
+framework. Experiments on four challenging datasets show that RAG-Gym improves
+performance by up to 25.6\% across various agent architectures, with ReSearch
+consistently outperforming existing baselines. Further analysis highlights the
+effectiveness of advanced LLMs as process reward judges and the transferability
+of trained reward models as verifiers for different LLMs. Additionally, we
+examine the scaling properties of training and inference in agentic RAG. The
+project homepage is available at https://rag-gym.github.io/.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13134v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13957v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>AV-Flow: Transforming Text to Audio-Visual Human-like Interactions</h3>
-                    <p><strong>Authors:</strong> Aggelina Chatziagapi, Louis-Philippe Morency, Hongyu Gong, Michael Zollhoefer, Dimitris Samaras, Alexander Richard</p>
-                    <p>  We introduce AV-Flow, an audio-visual generative model that animates
-photo-realistic 4D talking avatars given only text input. In contrast to prior
-work that assumes an existing speech signal, we synthesize speech and vision
-jointly. We demonstrate human-like speech synthesis, synchronized lip motion,
-lively facial expressions and head pose; all generated from just text
-characters. The core premise of our approach lies in the architecture of our
-two parallel diffusion transformers. Intermediate highway connections ensure
-communication between the audio and visual modalities, and thus, synchronized
-speech intonation and facial dynamics (e.g., eyebrow motion). Our model is
-trained with flow matching, leading to expressive results and fast inference.
-In case of dyadic conversations, AV-Flow produces an always-on avatar, that
-actively listens and reacts to the audio-visual input of a user. Through
-extensive experiments, we show that our method outperforms prior work,
-synthesizing natural-looking 4D talking avatars. Project page:
-https://aggelinacha.github.io/AV-Flow/
+                    <h3>Neurosymbolic artificial intelligence via large language models and
+  coherence-driven inference</h3>
+                    <p><strong>Authors:</strong> Steve Huntsman, Jewell Thomas</p>
+                    <p>  We devise an algorithm to generate sets of propositions that objectively
+instantiate graphs that support coherence-driven inference. We then benchmark
+the ability of large language models (LLMs) to reconstruct coherence graphs
+from (a straightforward transformation of) propositions expressed in natural
+language, with promising results from a single prompt to models optimized for
+reasoning. Combining coherence-driven inference with consistency evaluations by
+neural models may advance the state of the art in machine cognition.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13133v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13953v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>Learning to Defer for Causal Discovery with Imperfect Experts</h3>
-                    <p><strong>Authors:</strong> Oscar Clivio, Divyat Mahajan, Perouz Taslakian, Sara Magliacane, Ioannis Mitliagkas, Valentina Zantedeschi, Alexandre Drouin</p>
-                    <p>  Integrating expert knowledge, e.g. from large language models, into causal
-discovery algorithms can be challenging when the knowledge is not guaranteed to
-be correct. Expert recommendations may contradict data-driven results, and
-their reliability can vary significantly depending on the domain or specific
-query. Existing methods based on soft constraints or inconsistencies in
-predicted causal relationships fail to account for these variations in
-expertise. To remedy this, we propose L2D-CD, a method for gauging the
-correctness of expert recommendations and optimally combining them with
-data-driven causal discovery results. By adapting learning-to-defer (L2D)
-algorithms for pairwise causal discovery (CD), we learn a deferral function
-that selects whether to rely on classical causal discovery methods using
-numerical data or expert recommendations based on textual meta-data. We
-evaluate L2D-CD on the canonical T\"ubingen pairs dataset and demonstrate its
-superior performance compared to both the causal discovery method and the
-expert used in isolation. Moreover, our approach identifies domains where the
-expert's performance is strong or weak. Finally, we outline a strategy for
-generalizing this approach to causal discovery on graphs with more than two
-variables, paving the way for further research in this area.
+                    <h3>Asteroseismology with TESS: Emergence of Dipole Mode Suppression From
+  Subgiants?</h3>
+                    <p><strong>Authors:</strong> Shurui Lin, Tanda Li, Shude Mao, Jim Fuller</p>
+                    <p>  Dipole mode suppression is an observed behavior of solar-like oscillations in
+evolved stars. This study aims to search for depressed dipole modes in giant
+stars using data from the Transiting Exoplanet Survey Satellite (TESS) and
+investigate when the suppression starts to emerge. We study a sample of 8,651
+TESS-evolved stars and find 179 stars with significant dipole mode depression
+by comparing the oscillation amplitudes of radial and dipole modes. Notably, 11
+of them are located near the base of the red-giant branch, indicating that mode
+suppression appears earlier than the point inferred in previous studies with
+the Kepler data. These findings provide new evidence for the dipole mode
+suppression in giant stars, particularly in subgiants.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13132v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/abs/2502.13950v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>SongGen: A Single Stage Auto-regressive Transformer for Text-to-Song
-  Generation</h3>
-                    <p><strong>Authors:</strong> Zihan Liu, Shuangrui Ding, Zhixiong Zhang, Xiaoyi Dong, Pan Zhang, Yuhang Zang, Yuhang Cao, Dahua Lin, Jiaqi Wang</p>
-                    <p>  Text-to-song generation, the task of creating vocals and accompaniment from
-textual inputs, poses significant challenges due to domain complexity and data
-scarcity. Existing approaches often employ multi-stage generation procedures,
-resulting in cumbersome training and inference pipelines. In this paper, we
-propose SongGen, a fully open-source, single-stage auto-regressive transformer
-designed for controllable song generation. The proposed model facilitates
-fine-grained control over diverse musical attributes, including lyrics and
-textual descriptions of instrumentation, genre, mood, and timbre, while also
-offering an optional three-second reference clip for voice cloning. Within a
-unified auto-regressive framework, SongGen supports two output modes: mixed
-mode, which generates a mixture of vocals and accompaniment directly, and
-dual-track mode, which synthesizes them separately for greater flexibility in
-downstream applications. We explore diverse token pattern strategies for each
-mode, leading to notable improvements and valuable insights. Furthermore, we
-design an automated data preprocessing pipeline with effective quality control.
-To foster community engagement and future research, we will release our model
-weights, training code, annotated data, and preprocessing pipeline. The
-generated samples are showcased on our project page at
-https://liuzh-19.github.io/SongGen/ , and the code will be available at
-https://github.com/LiuZH-19/SongGen .
+                    <h3>Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety
+  Mechanisms Tend to Be Anchored in The Template Region</h3>
+                    <p><strong>Authors:</strong> Chak Tou Leong, Qingyu Yin, Jian Wang, Wenjie Li</p>
+                    <p>  The safety alignment of large language models (LLMs) remains vulnerable, as
+their initial behavior can be easily jailbroken by even relatively simple
+attacks. Since infilling a fixed template between the input instruction and
+initial model output is a common practice for existing LLMs, we hypothesize
+that this template is a key factor behind their vulnerabilities: LLMs'
+safety-related decision-making overly relies on the aggregated information from
+the template region, which largely influences these models' safety behavior. We
+refer to this issue as template-anchored safety alignment. In this paper, we
+conduct extensive experiments and verify that template-anchored safety
+alignment is widespread across various aligned LLMs. Our mechanistic analyses
+demonstrate how it leads to models' susceptibility when encountering
+inference-time jailbreak attacks. Furthermore, we show that detaching safety
+mechanisms from the template region is promising in mitigating vulnerabilities
+to jailbreak attacks. We encourage future research to develop more robust
+safety alignment techniques that reduce reliance on the template region.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13128v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13946v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>Facilitating Long Context Understanding via Supervised Chain-of-Thought
-  Reasoning</h3>
-                    <p><strong>Authors:</strong> Jingyang Lin, Andy Wong, Tian Xia, Shenghua He, Hui Wei, Mei Han, Jiebo Luo</p>
-                    <p>  Recent advances in Large Language Models (LLMs) have enabled them to process
-increasingly longer sequences, ranging from 2K to 2M tokens and even beyond.
-However, simply extending the input sequence length does not necessarily lead
-to effective long-context understanding. In this study, we integrate
-Chain-of-Thought (CoT) reasoning into LLMs in a supervised manner to facilitate
-effective long-context understanding. To achieve this, we introduce
-LongFinanceQA, a synthetic dataset in the financial domain designed to improve
-long-context reasoning. Unlike existing long-context synthetic data,
-LongFinanceQA includes intermediate CoT reasoning before the final conclusion,
-which encourages LLMs to perform explicit reasoning, improving accuracy and
-interpretability in long-context understanding. To generate synthetic CoT
-reasoning, we propose Property-driven Agentic Inference (PAI), an agentic
-framework that simulates human-like reasoning steps, including property
-extraction, retrieval, and summarization. We evaluate PAI's reasoning
-capabilities by assessing GPT-4o-mini w/ PAI on the Loong benchmark,
-outperforming standard GPT-4o-mini by 20.0%. Furthermore, we fine-tune
-LLaMA-3.1-8B-Instruct on LongFinanceQA, achieving a 24.6% gain on Loong's
-financial subset.
+                    <h3>PINN ME: A Physics-Informed Neural Network Framework for Accurate
+  Milne-Eddington Inversions of Solar Magnetic Fields</h3>
+                    <p><strong>Authors:</strong> Robert Jarolim, Momchil E. Molnar, Benoit Tremblay, Rebecca Centeno, Matthias Rempel</p>
+                    <p>  Spectropolarimetric inversions of solar observations are fundamental for the
+estimation of the magnetic field in the solar atmosphere. However, instrumental
+noise, computational requirements, and varying levels of physical realism make
+it challenging to derive reliable solar magnetic field estimates. In this
+study, we present a novel approach for spectropolarimetric inversions based on
+Physics Informed Neural Networks (PINNs) to infer the photospheric magnetic
+field under the Milne-Eddington approximation (PINN ME). Our model acts as a
+representation of the parameter space, mapping input coordinates (t, x, y) to
+the respective spectropolarimetric parameters, which are used to synthesize the
+corresponding stokes profiles. By iteratively sampling coordinate points,
+synthesizing profiles, and minimizing the deviation from the observed stokes
+profiles, our method can find the set of Milne-Eddington parameters that best
+fit the observations. In addition, we directly include the
+point-spread-function to account for instrumental effects. We use a predefined
+parameter space as well as synthetic profiles from a radiative MHD simulation
+to evaluate the performance of our method and to estimate the impact of
+instrumental noise. Our results demonstrate that PINN ME achieves an intrinsic
+spatio-temporal coupling, which can largely mitigate observational noise and
+provides a memory-efficient inversion even for extended fields-of-view.
+Finally, we apply our method to observations and show that our method provides
+a high spatial coherence and can resolve small-scale features both in strong-
+and weak-field regions.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13127v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13924v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>Benchmarking MedMNIST dataset on real quantum hardware</h3>
-                    <p><strong>Authors:</strong> Gurinder Singh, Hongni Jin, Kenneth M. Merz Jr</p>
-                    <p>  Quantum machine learning (QML) has emerged as a promising domain to leverage
-the computational capabilities of quantum systems to solve complex
-classification tasks. In this work, we present first comprehensive QML study by
-benchmarking the MedMNIST-a diverse collection of medical imaging datasets on a
-127-qubit real IBM quantum hardware, to evaluate the feasibility and
-performance of quantum models (without any classical neural networks) in
-practical applications. This study explore recent advancements in quantum
-computing such as device-aware quantum circuits, error suppression and
-mitigation for medical image classification. Our methodology comprised of three
-stages: preprocessing, generation of noise-resilient and hardware-efficient
-quantum circuits, optimizing/training of quantum circuits on classical
-hardware, and inference on real IBM quantum hardware. Firstly, we process all
-input images in the preprocessing stage to reduce the spatial dimension due to
-the quantum hardware limitations. We generate hardware-efficient quantum
-circuits using backend properties expressible to learn complex patterns for
-medical image classification. After classical optimization of QML models, we
-perform the inference on real quantum hardware. We also incorporates advanced
-error suppression and mitigation techniques in our QML workflow including
-dynamical decoupling (DD), gate twirling, and matrix-free measurement
-mitigation (M3) to mitigate the effects of noise and improve classification
-performance. The experimental results showcase the potential of quantum
-computing for medical imaging and establishes a benchmark for future
-advancements in QML applied to healthcare.
+                    <h3>TESS 2: A Large-Scale Generalist Diffusion Language Model</h3>
+                    <p><strong>Authors:</strong> Jaesung Tae, Hamish Ivison, Sachin Kumar, Arman Cohan</p>
+                    <p>  We introduce TESS 2, a general instruction-following diffusion language model
+that outperforms contemporary instruction-tuned diffusion models, as well as
+matches and sometimes exceeds strong autoregressive (AR) models. We train TESS
+2 by first adapting a strong AR model via continued pretraining with the usual
+cross-entropy as diffusion loss, and then performing further instruction
+tuning. We find that adaptation training as well as the choice of the base
+model is crucial for training good instruction-following diffusion models. We
+further propose reward guidance, a novel and modular inference-time guidance
+procedure to align model outputs without needing to train the underlying model.
+Finally, we show that TESS 2 further improves with increased inference-time
+compute, highlighting the utility of diffusion LMs in having fine-grained
+controllability over the amount of compute used at inference time. Code and
+models are available at https://github.com/hamishivi/tess-2.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13056v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13917v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>LAMD: Context-driven Android Malware Detection and Classification with
-  LLMs</h3>
-                    <p><strong>Authors:</strong> Xingzhi Qian, Xinran Zheng, Yiling He, Shuo Yang, Lorenzo Cavallaro</p>
-                    <p>  The rapid growth of mobile applications has escalated Android malware
-threats. Although there are numerous detection methods, they often struggle
-with evolving attacks, dataset biases, and limited explainability. Large
-Language Models (LLMs) offer a promising alternative with their zero-shot
-inference and reasoning capabilities. However, applying LLMs to Android malware
-detection presents two key challenges: (1)the extensive support code in Android
-applications, often spanning thousands of classes, exceeds LLMs' context limits
-and obscures malicious behavior within benign functionality; (2)the structural
-complexity and interdependencies of Android applications surpass LLMs'
-sequence-based reasoning, fragmenting code analysis and hindering malicious
-intent inference. To address these challenges, we propose LAMD, a practical
-context-driven framework to enable LLM-based Android malware detection. LAMD
-integrates key context extraction to isolate security-critical code regions and
-construct program structures, then applies tier-wise code reasoning to analyze
-application behavior progressively, from low-level instructions to high-level
-semantics, providing final prediction and explanation. A well-designed factual
-consistency verification mechanism is equipped to mitigate LLM hallucinations
-from the first tier. Evaluation in real-world settings demonstrates LAMD's
-effectiveness over conventional detectors, establishing a feasible basis for
-LLM-driven malware analysis in dynamic threat landscapes.
+                    <h3>How Do LLMs Perform Two-Hop Reasoning in Context?</h3>
+                    <p><strong>Authors:</strong> Tianyu Guo, Hanlin Zhu, Ruiqi Zhang, Jiantao Jiao, Song Mei, Michael I. Jordan, Stuart Russell</p>
+                    <p>  "Socrates is human. All humans are mortal. Therefore, Socrates is mortal."
+This classical example demonstrates two-hop reasoning, where a conclusion
+logically follows from two connected premises. While transformer-based Large
+Language Models (LLMs) can make two-hop reasoning, they tend to collapse to
+random guessing when faced with distracting premises. To understand the
+underlying mechanism, we train a three-layer transformer on synthetic two-hop
+reasoning tasks. The training dynamics show two stages: a slow learning phase,
+where the 3-layer transformer performs random guessing like LLMs, followed by
+an abrupt phase transitions, where the 3-layer transformer suddenly reaches
+$100%$ accuracy. Through reverse engineering, we explain the inner mechanisms
+for how models learn to randomly guess between distractions initially, and how
+they learn to ignore distractions eventually. We further propose a
+three-parameter model that supports the causal claims for the mechanisms to the
+training dynamics of the transformer. Finally, experiments on LLMs suggest that
+the discovered mechanisms generalize across scales. Our methodologies provide
+new perspectives for scientific understandings of LLMs and our findings provide
+new insights into how reasoning emerges during training.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13055v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13913v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>QZO: A Catalog of 5 Million Quasars from the Zwicky Transient Facility</h3>
-                    <p><strong>Authors:</strong> S. J. Nakoneczny, M. J. Graham, D. Stern, G. Helou, S. G. Djorgovski, E. C. Bellm, T. X. Chen, R. Dekany, A. Drake, A. A. Mahabal, T. A. Prince, R. Riddle, B. Rusholme, N. Sravan</p>
-                    <p>  Machine learning methods are well established in the classification of
-quasars (QSOs). However, the advent of light curve observations adds a great
-amount of complexity to the problem. Our goal is to use the Zwicky Transient
-Facility (ZTF) to create a catalog of QSOs. We process the ZTF DR20 light
-curves with a transformer artificial neural network and combine the Pan-STARRS
-(PS), AllWISE, and Gaia surveys with extreme gradient boosting. Using ZTF
-g-band data with at least 100 observational epochs per light curve, we obtain
-97% F1 score for QSOs. We find that with 3 day median cadence, a survey time
-span of at least 900 days is required to achieve 90% QSO F1 score. However, one
-can obtain the same score with a survey time span of 1800 days and the median
-cadence prolonged to 12 days. We find that ZTF classification is superior to
-the PS static bands, and on par with WISE and Gaia measurements. Additionally,
-we find that the light curves provide the most important features for QSO
-classification in the ZTF dataset. We robustly classify objects fainter than
-the $5\sigma$ SNR limit at $g=20.8$ by requiring $g < \mathrm{n_{obs}} / 80 +
-20.375$. For this sample, we run inference with added WISE observations, and
-find 4,849,574 objects classified as QSOs. For 33% of QZO objects, with
-available WISE data, we publish redshifts with estimated error $\Delta z/(1 +
-z) = 0.14$.
+                    <h3>Lost in Sequence: Do Large Language Models Understand Sequential
+  Recommendation?</h3>
+                    <p><strong>Authors:</strong> Sein Kim, Hongseok Kang, Kibum Kim, Jiwan Kim, Donghyun Kim, Minchul Yang, Kwangjin Oh, Julian McAuley, Chanyoung Park</p>
+                    <p>  Large Language Models (LLMs) have recently emerged as promising tools for
+recommendation thanks to their advanced textual understanding ability and
+context-awareness. Despite the current practice of training and evaluating
+LLM-based recommendation (LLM4Rec) models under a sequential recommendation
+scenario, we found that whether these models understand the sequential
+information inherent in users' item interaction sequences has been largely
+overlooked. In this paper, we first demonstrate through a series of experiments
+that existing LLM4Rec models do not fully capture sequential information both
+during training and inference. Then, we propose a simple yet effective
+LLM-based sequential recommender, called LLM-SRec, a method that enhances the
+integration of sequential information into LLMs by distilling the user
+representations extracted from a pre-trained CF-SRec model into LLMs. Our
+extensive experiments show that LLM-SRec enhances LLMs' ability to understand
+users' item interaction sequences, ultimately leading to improved
+recommendation performance. Furthermore, unlike existing LLM4Rec models that
+require fine-tuning of LLMs, LLM-SRec achieves state-of-the-art performance by
+training only a few lightweight MLPs, highlighting its practicality in
+real-world applications. Our code is available at
+https://github.com/Sein-Kim/LLM-SRec.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13054v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13909v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
                 <li>
-                    <h3>Development of systematic uncertainty-aware neural network trainings for
-  binned-likelihood analyses at the LHC</h3>
-                    <p><strong>Authors:</strong>  CMS Collaboration</p>
-                    <p>  We propose a neural network training method capable of accounting for the
-effects of systematic variations of the data model in the training process and
-describe its extension towards neural network multiclass classification. The
-procedure is evaluated on the realistic case of the measurement of Higgs boson
-production via gluon fusion and vector boson fusion in the $\tau\tau$ decay
-channel at the CMS experiment. The neural network output functions are used to
-infer the signal strengths for inclusive production of Higgs bosons as well as
-for their production via gluon fusion and vector boson fusion. We observe
-improvements of 12 and 16% in the uncertainty in the signal strengths for gluon
-and vector-boson fusion, respectively, compared with a conventional neural
-network training based on cross-entropy.
+                    <h3>Partially Observable Gaussian Process Network and Doubly Stochastic
+  Variational Inference</h3>
+                    <p><strong>Authors:</strong> Saksham Kiroriwal, Julius Pfrommer, Jürgen Beyerer</p>
+                    <p>  To reduce the curse of dimensionality for Gaussian processes (GP), they can
+be decomposed into a Gaussian Process Network (GPN) of coupled subprocesses
+with lower dimensionality. In some cases, intermediate observations are
+available within the GPN. However, intermediate observations are often
+indirect, noisy, and incomplete in most real-world systems. This work
+introduces the Partially Observable Gaussian Process Network (POGPN) to model
+real-world process networks. We model a joint distribution of latent functions
+of subprocesses and make inferences using observations from all subprocesses.
+POGPN incorporates observation lenses (observation likelihoods) into the
+well-established inference method of deep Gaussian processes. We also introduce
+two training methods for POPGN to make inferences on the whole network using
+node observations. The application to benchmark problems demonstrates how
+incorporating partial observations during training and inference can improve
+the predictive performance of the overall network, offering a promising outlook
+for its practical application.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13047v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.13905v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/19/2025</p>
                 </li>
             </ul>
         </section>
