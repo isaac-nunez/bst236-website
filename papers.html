@@ -85,231 +85,265 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Is That Your Final Answer? Test-Time Scaling Improves Selective Question
-  Answering</h3>
-                    <p><strong>Authors:</strong> William Jurayj, Jeffrey Cheng, Benjamin Van Durme</p>
-                    <p>  Scaling the test-time compute of large language models has demonstrated
-impressive performance on reasoning benchmarks. However, existing evaluations
-of test-time scaling make the strong assumption that a reasoning system should
-always give an answer to any question provided. This overlooks concerns about
-whether a model is confident in its answer, and whether it is appropriate to
-always provide a response. To address these concerns, we extract confidence
-scores during reasoning for thresholding model responses. We find that
-increasing compute budget at inference time not only helps models answer more
-questions correctly, but also increases confidence in correct responses. We
-then extend the current paradigm of zero-risk responses during evaluation by
-considering settings with non-zero levels of response risk, and suggest a
-recipe for reporting evaluations under these settings.
+                    <h3>Fast Generation of Weak Lensing Maps in Modified Gravity with COLA</h3>
+                    <p><strong>Authors:</strong> Sophie Hoyland, Hans A. Winther, Daniela Saadeh, Kazuya Koyama, Albert Izard</p>
+                    <p>  Accurate predictions of weak lensing observables are essential for
+understanding the large-scale structure of the Universe and probing the nature
+of gravity. In this work, we present a lightcone implementation to generate
+maps of the weak lensing convergence field using the COmoving Lagrangian
+Acceleration (COLA) method. The lightcone is constructed in spherical shells
+from the source to the observer following an onion representation of the
+Universe.
+  We validate the COLA-generated convergence maps in General Relativity by
+comparing five statistics to those of maps obtained with the high-resolution
+$N$-body simulations presented in Takahashi $et\ al.$ (2017): the power
+spectrum, bispectrum, probability distribution function, peak counts and
+Minkowski functionals. The convergence power spectrum is accurate to within
+$5\%$ up to $\ell\sim500$ and to within $10\%$ up to $\ell\sim750$, confirming
+the accuracy of this method on both linear and non-linear scales. For the
+probability distribution function, peak counts and Minkowski functionals, we
+determine the map pixel resolution required for COLA to capture the statistical
+features of the $N$-body convergence maps.
+  Our validation tests provide a baseline for the convergence map
+specifications at which we can trust COLA for each statistic considered. Using
+these map specifications, we extend our analyses to two representative theories
+of Modified Gravity, and demonstrate their imprints on the five convergence
+statistics considered. This work represents a step towards precise weak lensing
+predictions under both General Relativity and Modified Gravity with reduced
+computational cost, providing a robust framework to explore the nature of
+gravity using field-level inference.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13962v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14851v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>RAG-Gym: Optimizing Reasoning and Search Agents with Process Supervision</h3>
-                    <p><strong>Authors:</strong> Guangzhi Xiong, Qiao Jin, Xiao Wang, Yin Fang, Haolin Liu, Yifan Yang, Fangyuan Chen, Zhixing Song, Dengyu Wang, Minjia Zhang, Zhiyong Lu, Aidong Zhang</p>
-                    <p>  Retrieval-augmented generation (RAG) has shown great potential for
-knowledge-intensive tasks, but its traditional architectures rely on static
-retrieval, limiting their effectiveness for complex questions that require
-sequential information-seeking. While agentic reasoning and search offer a more
-adaptive approach, most existing methods depend heavily on prompt engineering.
-In this work, we introduce RAG-Gym, a unified optimization framework that
-enhances information-seeking agents through fine-grained process supervision at
-each search step. We also propose ReSearch, a novel agent architecture that
-synergizes answer reasoning and search query generation within the RAG-Gym
-framework. Experiments on four challenging datasets show that RAG-Gym improves
-performance by up to 25.6\% across various agent architectures, with ReSearch
-consistently outperforming existing baselines. Further analysis highlights the
-effectiveness of advanced LLMs as process reward judges and the transferability
-of trained reward models as verifiers for different LLMs. Additionally, we
-examine the scaling properties of training and inference in agentic RAG. The
-project homepage is available at https://rag-gym.github.io/.
+                    <h3>Towards Economical Inference: Enabling DeepSeek's Multi-Head Latent
+  Attention in Any Transformer-based LLMs</h3>
+                    <p><strong>Authors:</strong> Tao Ji, Bin Guo, Yuanbin Wu, Qipeng Guo, Lixing Shen, Zhan Chen, Xipeng Qiu, Qi Zhang, Tao Gui</p>
+                    <p>  Multi-head Latent Attention (MLA) is an innovative architecture proposed by
+DeepSeek, designed to ensure efficient and economical inference by
+significantly compressing the Key-Value (KV) cache into a latent vector.
+Compared to MLA, standard LLMs employing Multi-Head Attention (MHA) and its
+variants such as Grouped-Query Attention (GQA) exhibit significant cost
+disadvantages. Enabling well-trained LLMs (e.g., Llama) to rapidly adapt to MLA
+without pre-training from scratch is both meaningful and challenging. This
+paper proposes the first data-efficient fine-tuning method for transitioning
+from MHA to MLA (MHA2MLA), which includes two key components: for partial-RoPE,
+we remove RoPE from dimensions of queries and keys that contribute less to the
+attention scores, for low-rank approximation, we introduce joint SVD
+approximations based on the pre-trained parameters of keys and values. These
+carefully designed strategies enable MHA2MLA to recover performance using only
+a small fraction (0.3% to 0.6%) of the data, significantly reducing inference
+costs while seamlessly integrating with compression techniques such as KV cache
+quantization. For example, the KV cache size of Llama2-7B is reduced by 92.19%,
+with only a 0.5% drop in LongBench performance.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13957v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14837v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>Neurosymbolic artificial intelligence via large language models and
-  coherence-driven inference</h3>
-                    <p><strong>Authors:</strong> Steve Huntsman, Jewell Thomas</p>
-                    <p>  We devise an algorithm to generate sets of propositions that objectively
-instantiate graphs that support coherence-driven inference. We then benchmark
-the ability of large language models (LLMs) to reconstruct coherence graphs
-from (a straightforward transformation of) propositions expressed in natural
-language, with promising results from a single prompt to models optimized for
-reasoning. Combining coherence-driven inference with consistency evaluations by
-neural models may advance the state of the art in machine cognition.
+                    <h3>Fundamental Limitations in Defending LLM Finetuning APIs</h3>
+                    <p><strong>Authors:</strong> Xander Davies, Eric Winsor, Tomek Korbak, Alexandra Souly, Robert Kirk, Christian Schroeder de Witt, Yarin Gal</p>
+                    <p>  LLM developers have imposed technical interventions to prevent fine-tuning
+misuse attacks, attacks where adversaries evade safeguards by fine-tuning the
+model using a public API. Previous work has established several successful
+attacks against specific fine-tuning API defences. In this work, we show that
+defences of fine-tuning APIs that seek to detect individual harmful training or
+inference samples ('pointwise' detection) are fundamentally limited in their
+ability to prevent fine-tuning attacks. We construct 'pointwise-undetectable'
+attacks that repurpose entropy in benign model outputs (e.g. semantic or
+syntactic variations) to covertly transmit dangerous knowledge. Our attacks are
+composed solely of unsuspicious benign samples that can be collected from the
+model before fine-tuning, meaning training and inference samples are all
+individually benign and low-perplexity. We test our attacks against the OpenAI
+fine-tuning API, finding they succeed in eliciting answers to harmful
+multiple-choice questions, and that they evade an enhanced monitoring system we
+design that successfully detects other fine-tuning attacks. We encourage the
+community to develop defences that tackle the fundamental limitations we
+uncover in pointwise fine-tuning API defences.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13953v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14828v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>Asteroseismology with TESS: Emergence of Dipole Mode Suppression From
-  Subgiants?</h3>
-                    <p><strong>Authors:</strong> Shurui Lin, Tanda Li, Shude Mao, Jim Fuller</p>
-                    <p>  Dipole mode suppression is an observed behavior of solar-like oscillations in
-evolved stars. This study aims to search for depressed dipole modes in giant
-stars using data from the Transiting Exoplanet Survey Satellite (TESS) and
-investigate when the suppression starts to emerge. We study a sample of 8,651
-TESS-evolved stars and find 179 stars with significant dipole mode depression
-by comparing the oscillation amplitudes of radial and dipole modes. Notably, 11
-of them are located near the base of the red-giant branch, indicating that mode
-suppression appears earlier than the point inferred in previous studies with
-the Kepler data. These findings provide new evidence for the dipole mode
-suppression in giant stars, particularly in subgiants.
+                    <h3>Dynamic Low-Rank Sparse Adaptation for Large Language Models</h3>
+                    <p><strong>Authors:</strong> Weizhong Huang, Yuxin Zhang, Xiawu Zheng, Yang Liu, Jing Lin, Yiwu Yao, Rongrong Ji</p>
+                    <p>  Despite the efficacy of network sparsity in alleviating the deployment strain
+of Large Language Models (LLMs), it endures significant performance
+degradation. Applying Low-Rank Adaptation (LoRA) to fine-tune the sparse LLMs
+offers an intuitive approach to counter this predicament, while it holds
+shortcomings include: 1) The inability to integrate LoRA weights into sparse
+LLMs post-training, and 2) Insufficient performance recovery at high sparsity
+ratios. In this paper, we introduce dynamic Low-rank Sparse Adaptation (LoSA),
+a novel method that seamlessly integrates low-rank adaptation into LLM sparsity
+within a unified framework, thereby enhancing the performance of sparse LLMs
+without increasing the inference latency. In particular, LoSA dynamically
+sparsifies the LoRA outcomes based on the corresponding sparse weights during
+fine-tuning, thus guaranteeing that the LoRA module can be integrated into the
+sparse LLMs post-training. Besides, LoSA leverages Representation Mutual
+Information (RMI) as an indicator to determine the importance of layers,
+thereby efficiently determining the layer-wise sparsity rates during
+fine-tuning. Predicated on this, LoSA adjusts the rank of the LoRA module based
+on the variability in layer-wise reconstruction errors, allocating an
+appropriate fine-tuning for each layer to reduce the output discrepancies
+between dense and sparse LLMs. Extensive experiments tell that LoSA can
+efficiently boost the efficacy of sparse LLMs within a few hours, without
+introducing any additional inferential burden. For example, LoSA reduced the
+perplexity of sparse LLaMA-2-7B by 68.73 and increased zero-shot accuracy by
+16.32$\%$, achieving a 2.60$\times$ speedup on CPU and 2.23$\times$ speedup on
+GPU, requiring only 45 minutes of fine-tuning on a single NVIDIA A100 80GB GPU.
+Code is available at https://github.com/wzhuang-xmu/LoSA.
 </p>
-                    <p><a href="http://arxiv.org/abs/2502.13950v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14816v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety
-  Mechanisms Tend to Be Anchored in The Template Region</h3>
-                    <p><strong>Authors:</strong> Chak Tou Leong, Qingyu Yin, Jian Wang, Wenjie Li</p>
-                    <p>  The safety alignment of large language models (LLMs) remains vulnerable, as
-their initial behavior can be easily jailbroken by even relatively simple
-attacks. Since infilling a fixed template between the input instruction and
-initial model output is a common practice for existing LLMs, we hypothesize
-that this template is a key factor behind their vulnerabilities: LLMs'
-safety-related decision-making overly relies on the aggregated information from
-the template region, which largely influences these models' safety behavior. We
-refer to this issue as template-anchored safety alignment. In this paper, we
-conduct extensive experiments and verify that template-anchored safety
-alignment is widespread across various aligned LLMs. Our mechanistic analyses
-demonstrate how it leads to models' susceptibility when encountering
-inference-time jailbreak attacks. Furthermore, we show that detaching safety
-mechanisms from the template region is promising in mitigating vulnerabilities
-to jailbreak attacks. We encourage future research to develop more robust
-safety alignment techniques that reduce reliance on the template region.
+                    <h3>Ray-Tracing for Conditionally Activated Neural Networks</h3>
+                    <p><strong>Authors:</strong> Claudio Gallicchio, Giuseppe Nuti</p>
+                    <p>  In this paper, we introduce a novel architecture for conditionally activated
+neural networks combining a hierarchical construction of multiple Mixture of
+Experts (MoEs) layers with a sampling mechanism that progressively converges to
+an optimized configuration of expert activation. This methodology enables the
+dynamic unfolding of the network's architecture, facilitating efficient
+path-specific training. Experimental results demonstrate that this approach
+achieves competitive accuracy compared to conventional baselines while
+significantly reducing the parameter count required for inference. Notably,
+this parameter reduction correlates with the complexity of the input patterns,
+a property naturally emerging from the network's operational dynamics without
+necessitating explicit auxiliary penalty functions.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13946v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14788v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>PINN ME: A Physics-Informed Neural Network Framework for Accurate
-  Milne-Eddington Inversions of Solar Magnetic Fields</h3>
-                    <p><strong>Authors:</strong> Robert Jarolim, Momchil E. Molnar, Benoit Tremblay, Rebecca Centeno, Matthias Rempel</p>
-                    <p>  Spectropolarimetric inversions of solar observations are fundamental for the
-estimation of the magnetic field in the solar atmosphere. However, instrumental
-noise, computational requirements, and varying levels of physical realism make
-it challenging to derive reliable solar magnetic field estimates. In this
-study, we present a novel approach for spectropolarimetric inversions based on
-Physics Informed Neural Networks (PINNs) to infer the photospheric magnetic
-field under the Milne-Eddington approximation (PINN ME). Our model acts as a
-representation of the parameter space, mapping input coordinates (t, x, y) to
-the respective spectropolarimetric parameters, which are used to synthesize the
-corresponding stokes profiles. By iteratively sampling coordinate points,
-synthesizing profiles, and minimizing the deviation from the observed stokes
-profiles, our method can find the set of Milne-Eddington parameters that best
-fit the observations. In addition, we directly include the
-point-spread-function to account for instrumental effects. We use a predefined
-parameter space as well as synthetic profiles from a radiative MHD simulation
-to evaluate the performance of our method and to estimate the impact of
-instrumental noise. Our results demonstrate that PINN ME achieves an intrinsic
-spatio-temporal coupling, which can largely mitigate observational noise and
-provides a memory-efficient inversion even for extended fields-of-view.
-Finally, we apply our method to observations and show that our method provides
-a high spatial coherence and can resolve small-scale features both in strong-
-and weak-field regions.
+                    <h3>SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic
+  Understanding, Localization, and Dense Features</h3>
+                    <p><strong>Authors:</strong> Michael Tschannen, Alexey Gritsenko, Xiao Wang, Muhammad Ferjad Naeem, Ibrahim Alabdulmohsin, Nikhil Parthasarathy, Talfan Evans, Lucas Beyer, Ye Xia, Basil Mustafa, Olivier Hénaff, Jeremiah Harmsen, Andreas Steiner, Xiaohua Zhai</p>
+                    <p>  We introduce SigLIP 2, a family of new multilingual vision-language encoders
+that build on the success of the original SigLIP. In this second iteration, we
+extend the original image-text training objective with several prior,
+independently developed techniques into a unified recipe -- this includes
+captioning-based pretraining, self-supervised losses (self-distillation, masked
+prediction) and online data curation. With these changes, SigLIP 2 models
+outperform their SigLIP counterparts at all model scales in core capabilities,
+including zero-shot classification, image-text retrieval, and transfer
+performance when extracting visual representations for Vision-Language Models
+(VLMs). Furthermore, the new training recipe leads to significant improvements
+on localization and dense prediction tasks. We also train variants which
+support multiple resolutions and preserve the input's native aspect ratio.
+Finally, we train on a more diverse data-mixture that includes de-biasing
+techniques, leading to much better multilingual understanding and improved
+fairness. To allow users to trade off inference cost with performance, we
+release model checkpoints at four sizes: ViT-B (86M), L (303M), So400m (400M),
+and g (1B).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13924v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14786v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>TESS 2: A Large-Scale Generalist Diffusion Language Model</h3>
-                    <p><strong>Authors:</strong> Jaesung Tae, Hamish Ivison, Sachin Kumar, Arman Cohan</p>
-                    <p>  We introduce TESS 2, a general instruction-following diffusion language model
-that outperforms contemporary instruction-tuned diffusion models, as well as
-matches and sometimes exceeds strong autoregressive (AR) models. We train TESS
-2 by first adapting a strong AR model via continued pretraining with the usual
-cross-entropy as diffusion loss, and then performing further instruction
-tuning. We find that adaptation training as well as the choice of the base
-model is crucial for training good instruction-following diffusion models. We
-further propose reward guidance, a novel and modular inference-time guidance
-procedure to align model outputs without needing to train the underlying model.
-Finally, we show that TESS 2 further improves with increased inference-time
-compute, highlighting the utility of diffusion LMs in having fine-grained
-controllability over the amount of compute used at inference time. Code and
-models are available at https://github.com/hamishivi/tess-2.
+                    <h3>Efficient Multivariate Robust Mean Estimation Under Mean-Shift
+  Contamination</h3>
+                    <p><strong>Authors:</strong> Ilias Diakonikolas, Giannis Iakovidis, Daniel M. Kane, Thanasis Pittas</p>
+                    <p>  We study the algorithmic problem of robust mean estimation of an identity
+covariance Gaussian in the presence of mean-shift contamination. In this
+contamination model, we are given a set of points in $\mathbb{R}^d$ generated
+i.i.d. via the following process. For a parameter $\alpha<1/2$, the $i$-th
+sample $x_i$ is obtained as follows: with probability $1-\alpha$, $x_i$ is
+drawn from $\mathcal{N}(\mu, I)$, where $\mu \in \mathbb{R}^d$ is the target
+mean; and with probability $\alpha$, $x_i$ is drawn from $\mathcal{N}(z_i, I)$,
+where $z_i$ is unknown and potentially arbitrary. Prior work characterized the
+information-theoretic limits of this task. Specifically, it was shown that, in
+contrast to Huber contamination, in the presence of mean-shift contamination
+consistent estimation is possible. On the other hand, all known robust
+estimators in the mean-shift model have running times exponential in the
+dimension. Here we give the first computationally efficient algorithm for
+high-dimensional robust mean estimation with mean-shift contamination that can
+tolerate a constant fraction of outliers. In particular, our algorithm has
+near-optimal sample complexity, runs in sample-polynomial time, and
+approximates the target mean to any desired accuracy. Conceptually, our result
+contributes to a growing body of work that studies inference with respect to
+natural noise models lying in between fully adversarial and random settings.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13917v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14772v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>How Do LLMs Perform Two-Hop Reasoning in Context?</h3>
-                    <p><strong>Authors:</strong> Tianyu Guo, Hanlin Zhu, Ruiqi Zhang, Jiantao Jiao, Song Mei, Michael I. Jordan, Stuart Russell</p>
-                    <p>  "Socrates is human. All humans are mortal. Therefore, Socrates is mortal."
-This classical example demonstrates two-hop reasoning, where a conclusion
-logically follows from two connected premises. While transformer-based Large
-Language Models (LLMs) can make two-hop reasoning, they tend to collapse to
-random guessing when faced with distracting premises. To understand the
-underlying mechanism, we train a three-layer transformer on synthetic two-hop
-reasoning tasks. The training dynamics show two stages: a slow learning phase,
-where the 3-layer transformer performs random guessing like LLMs, followed by
-an abrupt phase transitions, where the 3-layer transformer suddenly reaches
-$100%$ accuracy. Through reverse engineering, we explain the inner mechanisms
-for how models learn to randomly guess between distractions initially, and how
-they learn to ignore distractions eventually. We further propose a
-three-parameter model that supports the causal claims for the mechanisms to the
-training dynamics of the transformer. Finally, experiments on LLMs suggest that
-the discovered mechanisms generalize across scales. Our methodologies provide
-new perspectives for scientific understandings of LLMs and our findings provide
-new insights into how reasoning emerges during training.
+                    <h3>Step-by-Step Fact Verification System for Medical Claims with
+  Explainable Reasoning</h3>
+                    <p><strong>Authors:</strong> Juraj Vladika, Ivana Hacajová, Florian Matthes</p>
+                    <p>  Fact verification (FV) aims to assess the veracity of a claim based on
+relevant evidence. The traditional approach for automated FV includes a
+three-part pipeline relying on short evidence snippets and encoder-only
+inference models. More recent approaches leverage the multi-turn nature of LLMs
+to address FV as a step-by-step problem where questions inquiring additional
+context are generated and answered until there is enough information to make a
+decision. This iterative method makes the verification process rational and
+explainable. While these methods have been tested for encyclopedic claims,
+exploration on domain-specific and realistic claims is missing. In this work,
+we apply an iterative FV system on three medical fact-checking datasets and
+evaluate it with multiple settings, including different LLMs, external web
+search, and structured reasoning using logic predicates. We demonstrate
+improvements in the final performance over traditional approaches and the high
+potential of step-by-step FV systems for domain-specific claims.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13913v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14765v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>Lost in Sequence: Do Large Language Models Understand Sequential
-  Recommendation?</h3>
-                    <p><strong>Authors:</strong> Sein Kim, Hongseok Kang, Kibum Kim, Jiwan Kim, Donghyun Kim, Minchul Yang, Kwangjin Oh, Julian McAuley, Chanyoung Park</p>
-                    <p>  Large Language Models (LLMs) have recently emerged as promising tools for
-recommendation thanks to their advanced textual understanding ability and
-context-awareness. Despite the current practice of training and evaluating
-LLM-based recommendation (LLM4Rec) models under a sequential recommendation
-scenario, we found that whether these models understand the sequential
-information inherent in users' item interaction sequences has been largely
-overlooked. In this paper, we first demonstrate through a series of experiments
-that existing LLM4Rec models do not fully capture sequential information both
-during training and inference. Then, we propose a simple yet effective
-LLM-based sequential recommender, called LLM-SRec, a method that enhances the
-integration of sequential information into LLMs by distilling the user
-representations extracted from a pre-trained CF-SRec model into LLMs. Our
-extensive experiments show that LLM-SRec enhances LLMs' ability to understand
-users' item interaction sequences, ultimately leading to improved
-recommendation performance. Furthermore, unlike existing LLM4Rec models that
-require fine-tuning of LLMs, LLM-SRec achieves state-of-the-art performance by
-training only a few lightweight MLPs, highlighting its practicality in
-real-world applications. Our code is available at
-https://github.com/Sein-Kim/LLM-SRec.
+                    <h3>Sculpting [CLS] Features for Pre-Trained Model-Based Class-Incremental
+  Learning</h3>
+                    <p><strong>Authors:</strong> Murat Onur Yildirim, Elif Ceren Gok Yildirim, Joaquin Vanschoren</p>
+                    <p>  Class-incremental learning requires models to continually acquire knowledge
+of new classes without forgetting old ones. Although pre-trained models have
+demonstrated strong performance in class-incremental learning, they remain
+susceptible to catastrophic forgetting when learning new concepts. Excessive
+plasticity in the models breaks generalizability and causes forgetting, while
+strong stability results in insufficient adaptation to new classes. This
+necessitates effective adaptation with minimal modifications to preserve the
+general knowledge of pre-trained models. To address this challenge, we first
+introduce a new parameter-efficient fine-tuning module 'Learn and Calibrate',
+or LuCA, designed to acquire knowledge through an adapter-calibrator couple,
+enabling effective adaptation with well-refined feature representations.
+Second, for each learning session, we deploy a sparse LuCA module on top of the
+last token just before the classifier, which we refer to as 'Token-level Sparse
+Calibration and Adaptation', or TOSCA. This strategic design improves the
+orthogonality between the modules and significantly reduces both training and
+inference complexity. By leaving the generalization capabilities of the
+pre-trained models intact and adapting exclusively via the last token, our
+approach achieves a harmonious balance between stability and plasticity.
+Extensive experiments demonstrate TOSCA's state-of-the-art performance while
+introducing ~8 times fewer parameters compared to prior methods.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13909v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14762v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
                 <li>
-                    <h3>Partially Observable Gaussian Process Network and Doubly Stochastic
-  Variational Inference</h3>
-                    <p><strong>Authors:</strong> Saksham Kiroriwal, Julius Pfrommer, Jürgen Beyerer</p>
-                    <p>  To reduce the curse of dimensionality for Gaussian processes (GP), they can
-be decomposed into a Gaussian Process Network (GPN) of coupled subprocesses
-with lower dimensionality. In some cases, intermediate observations are
-available within the GPN. However, intermediate observations are often
-indirect, noisy, and incomplete in most real-world systems. This work
-introduces the Partially Observable Gaussian Process Network (POGPN) to model
-real-world process networks. We model a joint distribution of latent functions
-of subprocesses and make inferences using observations from all subprocesses.
-POGPN incorporates observation lenses (observation likelihoods) into the
-well-established inference method of deep Gaussian processes. We also introduce
-two training methods for POPGN to make inferences on the whole network using
-node observations. The application to benchmark problems demonstrates how
-incorporating partial observations during training and inference can improve
-the predictive performance of the overall network, offering a promising outlook
-for its practical application.
+                    <h3>Multi-Objective Causal Bayesian Optimization</h3>
+                    <p><strong>Authors:</strong> Shriya Bhatija, Paul-David Zuercher, Jakob Thumm, Thomas Bohné</p>
+                    <p>  In decision-making problems, the outcome of an intervention often depends on
+the causal relationships between system components and is highly costly to
+evaluate. In such settings, causal Bayesian optimization (CBO) can exploit the
+causal relationships between the system variables and sequentially perform
+interventions to approach the optimum with minimal data. Extending CBO to the
+multi-outcome setting, we propose Multi-Objective Causal Bayesian Optimization
+(MO-CBO), a paradigm for identifying Pareto-optimal interventions within a
+known multi-target causal graph. We first derive a graphical characterization
+for potentially optimal sets of variables to intervene upon. Showing that any
+MO-CBO problem can be decomposed into several traditional multi-objective
+optimization tasks, we then introduce an algorithm that sequentially balances
+exploration across these tasks using relative hypervolume improvement. The
+proposed method will be validated on both synthetic and real-world causal
+graphs, demonstrating its superiority over traditional (non-causal)
+multi-objective Bayesian optimization in settings where causal information is
+available.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.13905v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.14755v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/20/2025</p>
                 </li>
             </ul>
         </section>
