@@ -88,264 +88,282 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Fast Generation of Weak Lensing Maps in Modified Gravity with COLA</h3>
-                    <p><strong>Authors:</strong> Sophie Hoyland, Hans A. Winther, Daniela Saadeh, Kazuya Koyama, Albert Izard</p>
-                    <p>  Accurate predictions of weak lensing observables are essential for
-understanding the large-scale structure of the Universe and probing the nature
-of gravity. In this work, we present a lightcone implementation to generate
-maps of the weak lensing convergence field using the COmoving Lagrangian
-Acceleration (COLA) method. The lightcone is constructed in spherical shells
-from the source to the observer following an onion representation of the
-Universe.
-  We validate the COLA-generated convergence maps in General Relativity by
-comparing five statistics to those of maps obtained with the high-resolution
-$N$-body simulations presented in Takahashi $et\ al.$ (2017): the power
-spectrum, bispectrum, probability distribution function, peak counts and
-Minkowski functionals. The convergence power spectrum is accurate to within
-$5\%$ up to $\ell\sim500$ and to within $10\%$ up to $\ell\sim750$, confirming
-the accuracy of this method on both linear and non-linear scales. For the
-probability distribution function, peak counts and Minkowski functionals, we
-determine the map pixel resolution required for COLA to capture the statistical
-features of the $N$-body convergence maps.
-  Our validation tests provide a baseline for the convergence map
-specifications at which we can trust COLA for each statistic considered. Using
-these map specifications, we extend our analyses to two representative theories
-of Modified Gravity, and demonstrate their imprints on the five convergence
-statistics considered. This work represents a step towards precise weak lensing
-predictions under both General Relativity and Modified Gravity with reduced
-computational cost, providing a robust framework to explore the nature of
-gravity using field-level inference.
+                    <h3>Testing the limits of fine-tuning to improve reasoning in vision
+  language models</h3>
+                    <p><strong>Authors:</strong> Luca M. Schulze Buschoff, Konstantinos Voudouris, Elif Akata, Matthias Bethge, Joshua B. Tenenbaum, Eric Schulz</p>
+                    <p>  Pre-trained vision language models still fall short of human visual
+cognition. In an effort to improve visual cognition and align models with human
+behavior, we introduce visual stimuli and human judgments on visual cognition
+tasks, allowing us to systematically evaluate performance across cognitive
+domains under a consistent environment. We fine-tune models on ground truth
+data for intuitive physics and causal reasoning and find that this improves
+model performance in the respective fine-tuning domain. Furthermore, it can
+improve model alignment with human behavior. However, we find that fine-tuning
+does not contribute to robust human-like generalization to data with other
+visual characteristics or to tasks in other cognitive domains.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14851v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15678v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Towards Economical Inference: Enabling DeepSeek's Multi-Head Latent
-  Attention in Any Transformer-based LLMs</h3>
-                    <p><strong>Authors:</strong> Tao Ji, Bin Guo, Yuanbin Wu, Qipeng Guo, Lixing Shen, Zhan Chen, Xipeng Qiu, Qi Zhang, Tao Gui</p>
-                    <p>  Multi-head Latent Attention (MLA) is an innovative architecture proposed by
-DeepSeek, designed to ensure efficient and economical inference by
-significantly compressing the Key-Value (KV) cache into a latent vector.
-Compared to MLA, standard LLMs employing Multi-Head Attention (MHA) and its
-variants such as Grouped-Query Attention (GQA) exhibit significant cost
-disadvantages. Enabling well-trained LLMs (e.g., Llama) to rapidly adapt to MLA
-without pre-training from scratch is both meaningful and challenging. This
-paper proposes the first data-efficient fine-tuning method for transitioning
-from MHA to MLA (MHA2MLA), which includes two key components: for partial-RoPE,
-we remove RoPE from dimensions of queries and keys that contribute less to the
-attention scores, for low-rank approximation, we introduce joint SVD
-approximations based on the pre-trained parameters of keys and values. These
-carefully designed strategies enable MHA2MLA to recover performance using only
-a small fraction (0.3% to 0.6%) of the data, significantly reducing inference
-costs while seamlessly integrating with compression techniques such as KV cache
-quantization. For example, the KV cache size of Llama2-7B is reduced by 92.19%,
-with only a 0.5% drop in LongBench performance.
+                    <h3>AutoToM: Automated Bayesian Inverse Planning and Model Discovery for
+  Open-ended Theory of Mind</h3>
+                    <p><strong>Authors:</strong> Zhining Zhang, Chuanyang Jin, Mung Yao Jia, Tianmin Shu</p>
+                    <p>  Theory of Mind (ToM), the ability to understand people's mental variables
+based on their behavior, is key to developing socially intelligent agents.
+Current approaches to Theory of Mind reasoning either rely on prompting Large
+Language Models (LLMs), which are prone to systematic errors, or use rigid,
+handcrafted Bayesian Theory of Mind (BToM) models, which are more robust but
+cannot generalize across different domains. In this work, we introduce AutoToM,
+an automated Bayesian Theory of Mind method for achieving open-ended machine
+Theory of Mind. AutoToM can operate in any domain, infer any mental variable,
+and conduct robust Theory of Mind reasoning of any order. Given a Theory of
+Mind inference problem, AutoToM first proposes an initial BToM model. It then
+conducts automated Bayesian inverse planning based on the proposed model,
+leveraging an LLM as the backend. Based on the uncertainty of the inference, it
+iteratively refines the model, by introducing additional mental variables
+and/or incorporating more timesteps in the context. Empirical evaluations
+across multiple Theory of Mind benchmarks demonstrate that AutoToM consistently
+achieves state-of-the-art performance, offering a scalable, robust, and
+interpretable approach to machine Theory of Mind.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14837v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15676v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Fundamental Limitations in Defending LLM Finetuning APIs</h3>
-                    <p><strong>Authors:</strong> Xander Davies, Eric Winsor, Tomek Korbak, Alexandra Souly, Robert Kirk, Christian Schroeder de Witt, Yarin Gal</p>
-                    <p>  LLM developers have imposed technical interventions to prevent fine-tuning
-misuse attacks, attacks where adversaries evade safeguards by fine-tuning the
-model using a public API. Previous work has established several successful
-attacks against specific fine-tuning API defences. In this work, we show that
-defences of fine-tuning APIs that seek to detect individual harmful training or
-inference samples ('pointwise' detection) are fundamentally limited in their
-ability to prevent fine-tuning attacks. We construct 'pointwise-undetectable'
-attacks that repurpose entropy in benign model outputs (e.g. semantic or
-syntactic variations) to covertly transmit dangerous knowledge. Our attacks are
-composed solely of unsuspicious benign samples that can be collected from the
-model before fine-tuning, meaning training and inference samples are all
-individually benign and low-perplexity. We test our attacks against the OpenAI
-fine-tuning API, finding they succeed in eliciting answers to harmful
-multiple-choice questions, and that they evade an enhanced monitoring system we
-design that successfully detects other fine-tuning attacks. We encourage the
-community to develop defences that tackle the fundamental limitations we
-uncover in pointwise fine-tuning API defences.
+                    <h3>Automating Curriculum Learning for Reinforcement Learning using a
+  Skill-Based Bayesian Network</h3>
+                    <p><strong>Authors:</strong> Vincent Hsiao, Mark Roberts, Laura M. Hiatt, George Konidaris, Dana Nau</p>
+                    <p>  A major challenge for reinforcement learning is automatically generating
+curricula to reduce training time or improve performance in some target task.
+We introduce SEBNs (Skill-Environment Bayesian Networks) which model a
+probabilistic relationship between a set of skills, a set of goals that relate
+to the reward structure, and a set of environment features to predict policy
+performance on (possibly unseen) tasks. We develop an algorithm that uses the
+inferred estimates of agent success from SEBN to weigh the possible next tasks
+by expected improvement. We evaluate the benefit of the resulting curriculum on
+three environments: a discrete gridworld, continuous control, and simulated
+robotics. The results show that curricula constructed using SEBN frequently
+outperform other baselines.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14828v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15662v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Dynamic Low-Rank Sparse Adaptation for Large Language Models</h3>
-                    <p><strong>Authors:</strong> Weizhong Huang, Yuxin Zhang, Xiawu Zheng, Yang Liu, Jing Lin, Yiwu Yao, Rongrong Ji</p>
-                    <p>  Despite the efficacy of network sparsity in alleviating the deployment strain
-of Large Language Models (LLMs), it endures significant performance
-degradation. Applying Low-Rank Adaptation (LoRA) to fine-tune the sparse LLMs
-offers an intuitive approach to counter this predicament, while it holds
-shortcomings include: 1) The inability to integrate LoRA weights into sparse
-LLMs post-training, and 2) Insufficient performance recovery at high sparsity
-ratios. In this paper, we introduce dynamic Low-rank Sparse Adaptation (LoSA),
-a novel method that seamlessly integrates low-rank adaptation into LLM sparsity
-within a unified framework, thereby enhancing the performance of sparse LLMs
-without increasing the inference latency. In particular, LoSA dynamically
-sparsifies the LoRA outcomes based on the corresponding sparse weights during
-fine-tuning, thus guaranteeing that the LoRA module can be integrated into the
-sparse LLMs post-training. Besides, LoSA leverages Representation Mutual
-Information (RMI) as an indicator to determine the importance of layers,
-thereby efficiently determining the layer-wise sparsity rates during
-fine-tuning. Predicated on this, LoSA adjusts the rank of the LoRA module based
-on the variability in layer-wise reconstruction errors, allocating an
-appropriate fine-tuning for each layer to reduce the output discrepancies
-between dense and sparse LLMs. Extensive experiments tell that LoSA can
-efficiently boost the efficacy of sparse LLMs within a few hours, without
-introducing any additional inferential burden. For example, LoSA reduced the
-perplexity of sparse LLaMA-2-7B by 68.73 and increased zero-shot accuracy by
-16.32$\%$, achieving a 2.60$\times$ speedup on CPU and 2.23$\times$ speedup on
-GPU, requiring only 45 minutes of fine-tuning on a single NVIDIA A100 80GB GPU.
-Code is available at https://github.com/wzhuang-xmu/LoSA.
+                    <h3>Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer
+  a Safer Path?</h3>
+                    <p><strong>Authors:</strong> Yoshua Bengio, Michael Cohen, Damiano Fornasiere, Joumana Ghosn, Pietro Greiner, Matt MacDermott, Sören Mindermann, Adam Oberman, Jesse Richardson, Oliver Richardson, Marc-Antoine Rondeau, Pierre-Luc St-Charles, David Williams-King</p>
+                    <p>  The leading AI companies are increasingly focused on building generalist AI
+agents -- systems that can autonomously plan, act, and pursue goals across
+almost all tasks that humans can perform. Despite how useful these systems
+might be, unchecked AI agency poses significant risks to public safety and
+security, ranging from misuse by malicious actors to a potentially irreversible
+loss of human control. We discuss how these risks arise from current AI
+training methods. Indeed, various scenarios and experiments have demonstrated
+the possibility of AI agents engaging in deception or pursuing goals that were
+not specified by human operators and that conflict with human interests, such
+as self-preservation. Following the precautionary principle, we see a strong
+need for safer, yet still useful, alternatives to the current agency-driven
+trajectory. Accordingly, we propose as a core building block for further
+advances the development of a non-agentic AI system that is trustworthy and
+safe by design, which we call Scientist AI. This system is designed to explain
+the world from observations, as opposed to taking actions in it to imitate or
+please humans. It comprises a world model that generates theories to explain
+data and a question-answering inference machine. Both components operate with
+an explicit notion of uncertainty to mitigate the risks of overconfident
+predictions. In light of these considerations, a Scientist AI could be used to
+assist human researchers in accelerating scientific progress, including in AI
+safety. In particular, our system can be employed as a guardrail against AI
+agents that might be created despite the risks involved. Ultimately, focusing
+on non-agentic AI may enable the benefits of AI innovation while avoiding the
+risks associated with the current trajectory. We hope these arguments will
+motivate researchers, developers, and policymakers to favor this safer path.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14816v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15657v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Ray-Tracing for Conditionally Activated Neural Networks</h3>
-                    <p><strong>Authors:</strong> Claudio Gallicchio, Giuseppe Nuti</p>
-                    <p>  In this paper, we introduce a novel architecture for conditionally activated
-neural networks combining a hierarchical construction of multiple Mixture of
-Experts (MoEs) layers with a sampling mechanism that progressively converges to
-an optimized configuration of expert activation. This methodology enables the
-dynamic unfolding of the network's architecture, facilitating efficient
-path-specific training. Experimental results demonstrate that this approach
-achieves competitive accuracy compared to conventional baselines while
-significantly reducing the parameter count required for inference. Notably,
-this parameter reduction correlates with the complexity of the input patterns,
-a property naturally emerging from the network's operational dynamics without
-necessitating explicit auxiliary penalty functions.
+                    <h3>Logit Disagreement: OoD Detection with Bayesian Neural Networks</h3>
+                    <p><strong>Authors:</strong> Kevin Raina</p>
+                    <p>  Bayesian neural networks (BNNs), which estimate the full posterior
+distribution over model parameters, are well-known for their role in
+uncertainty quantification and its promising application in out-of-distribution
+detection (OoD). Amongst other uncertainty measures, BNNs provide a
+state-of-the art estimation of predictive entropy (total uncertainty) which can
+be decomposed as the sum of mutual information and expected entropy. In the
+context of OoD detection the estimation of predictive uncertainty in the form
+of the predictive entropy score confounds aleatoric and epistemic uncertainty,
+the latter being hypothesized to be high for OoD points. Despite these
+justifications, the mutual information score has been shown to perform worse
+than predictive entropy. Taking inspiration from Bayesian variational
+autoencoder (BVAE) literature, this work proposes to measure the disagreement
+between a corrected version of the pre-softmax quantities, otherwise known as
+logits, as an estimate of epistemic uncertainty for Bayesian NNs under mean
+field variational inference. The three proposed epistemic uncertainty scores
+demonstrate marked improvements over mutual information on a range of OoD
+experiments, with equal performance otherwise. Moreover, the epistemic
+uncertainty scores perform on par with the Bayesian benchmark predictive
+entropy on a range of MNIST and CIFAR10 experiments.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14788v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15648v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic
-  Understanding, Localization, and Dense Features</h3>
-                    <p><strong>Authors:</strong> Michael Tschannen, Alexey Gritsenko, Xiao Wang, Muhammad Ferjad Naeem, Ibrahim Alabdulmohsin, Nikhil Parthasarathy, Talfan Evans, Lucas Beyer, Ye Xia, Basil Mustafa, Olivier Hénaff, Jeremiah Harmsen, Andreas Steiner, Xiaohua Zhai</p>
-                    <p>  We introduce SigLIP 2, a family of new multilingual vision-language encoders
-that build on the success of the original SigLIP. In this second iteration, we
-extend the original image-text training objective with several prior,
-independently developed techniques into a unified recipe -- this includes
-captioning-based pretraining, self-supervised losses (self-distillation, masked
-prediction) and online data curation. With these changes, SigLIP 2 models
-outperform their SigLIP counterparts at all model scales in core capabilities,
-including zero-shot classification, image-text retrieval, and transfer
-performance when extracting visual representations for Vision-Language Models
-(VLMs). Furthermore, the new training recipe leads to significant improvements
-on localization and dense prediction tasks. We also train variants which
-support multiple resolutions and preserve the input's native aspect ratio.
-Finally, we train on a more diverse data-mixture that includes de-biasing
-techniques, leading to much better multilingual understanding and improved
-fairness. To allow users to trade off inference cost with performance, we
-release model checkpoints at four sizes: ViT-B (86M), L (303M), So400m (400M),
-and g (1B).
+                    <h3>Predicting gene essentiality and drug response from perturbation screens
+  in preclinical cancer models with LEAP: Layered Ensemble of Autoencoders and
+  Predictors</h3>
+                    <p><strong>Authors:</strong> Barbara Bodinier, Gaetan Dissez, Linus Bleistein, Antonin Dauvin</p>
+                    <p>  Preclinical perturbation screens, where the effects of genetic, chemical, or
+environmental perturbations are systematically tested on disease models, hold
+significant promise for machine learning-enhanced drug discovery due to their
+scale and causal nature. Predictive models can infer perturbation responses for
+previously untested disease models based on molecular profiles. These in silico
+labels can expand databases and guide experimental prioritization.
+  However, modelling perturbation-specific effects and generating robust
+prediction performances across diverse biological contexts remain elusive. We
+introduce LEAP (Layered Ensemble of Autoencoders and Predictors), a novel
+ensemble framework to improve robustness and generalization. LEAP leverages
+multiple DAMAE (Data Augmented Masked Autoencoder) representations and LASSO
+regressors. By combining diverse gene expression representation models learned
+from different random initializations, LEAP consistently outperforms
+state-of-the-art approaches in predicting gene essentiality or drug responses
+in unseen cell lines, tissues and disease models. Notably, our results show
+that ensembling representation models, rather than prediction models alone,
+yields superior predictive performance.
+  Beyond its performance gains, LEAP is computationally efficient, requires
+minimal hyperparameter tuning and can therefore be readily incorporated into
+drug discovery pipelines to prioritize promising targets and support
+biomarker-driven stratification. The code and datasets used in this work are
+made publicly available.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14786v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15646v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Efficient Multivariate Robust Mean Estimation Under Mean-Shift
-  Contamination</h3>
-                    <p><strong>Authors:</strong> Ilias Diakonikolas, Giannis Iakovidis, Daniel M. Kane, Thanasis Pittas</p>
-                    <p>  We study the algorithmic problem of robust mean estimation of an identity
-covariance Gaussian in the presence of mean-shift contamination. In this
-contamination model, we are given a set of points in $\mathbb{R}^d$ generated
-i.i.d. via the following process. For a parameter $\alpha<1/2$, the $i$-th
-sample $x_i$ is obtained as follows: with probability $1-\alpha$, $x_i$ is
-drawn from $\mathcal{N}(\mu, I)$, where $\mu \in \mathbb{R}^d$ is the target
-mean; and with probability $\alpha$, $x_i$ is drawn from $\mathcal{N}(z_i, I)$,
-where $z_i$ is unknown and potentially arbitrary. Prior work characterized the
-information-theoretic limits of this task. Specifically, it was shown that, in
-contrast to Huber contamination, in the presence of mean-shift contamination
-consistent estimation is possible. On the other hand, all known robust
-estimators in the mean-shift model have running times exponential in the
-dimension. Here we give the first computationally efficient algorithm for
-high-dimensional robust mean estimation with mean-shift contamination that can
-tolerate a constant fraction of outliers. In particular, our algorithm has
-near-optimal sample complexity, runs in sample-polynomial time, and
-approximates the target mean to any desired accuracy. Conceptually, our result
-contributes to a growing body of work that studies inference with respect to
-natural noise models lying in between fully adversarial and random settings.
+                    <h3>Sparks of cognitive flexibility: self-guided context inference for
+  flexible stimulus-response mapping by attentional routing</h3>
+                    <p><strong>Authors:</strong> Rowan Sommers, Sushrut Thorat, Daniel Anthes, Tim C. Kietzmann</p>
+                    <p>  Flexible cognition demands discovering hidden rules to quickly adapt
+stimulus-response mappings. Standard neural networks struggle in tasks
+requiring rapid, context-driven remapping. Recently, Hummos (2023) introduced a
+fast-and-slow learning algorithm to mitigate this shortfall, but its
+scalability to complex, image-computable tasks was unclear. Here, we propose
+the Wisconsin Neural Network (WiNN), which expands on fast-and-slow learning
+for real-world tasks demanding flexible rule-based behavior. WiNN employs a
+pretrained convolutional neural network for vision, coupled with an adjustable
+"context state" that guides attention to relevant features. If WiNN produces an
+incorrect response, it first iteratively updates its context state to refocus
+attention on task-relevant cues, then performs minimal parameter updates to
+attention and readout layers. This strategy preserves generalizable
+representations in the sensory network, reducing catastrophic forgetting. We
+evaluate WiNN on an image-based extension of the Wisconsin Card Sorting Task,
+revealing several markers of cognitive flexibility: (i) WiNN autonomously
+infers underlying rules, (ii) requires fewer examples to do so than control
+models reliant on large-scale parameter updates, (iii) can perform
+context-based rule inference solely via context-state adjustments-further
+enhanced by slow updates of attention and readout parameters, and (iv)
+generalizes to unseen compositional rules through context-state inference
+alone. By blending fast context inference with targeted attentional guidance,
+WiNN achieves "sparks" of flexibility. This approach offers a path toward
+context-sensitive models that retain knowledge while rapidly adapting to
+complex, rule-based tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14772v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15634v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Step-by-Step Fact Verification System for Medical Claims with
-  Explainable Reasoning</h3>
-                    <p><strong>Authors:</strong> Juraj Vladika, Ivana Hacajová, Florian Matthes</p>
-                    <p>  Fact verification (FV) aims to assess the veracity of a claim based on
-relevant evidence. The traditional approach for automated FV includes a
-three-part pipeline relying on short evidence snippets and encoder-only
-inference models. More recent approaches leverage the multi-turn nature of LLMs
-to address FV as a step-by-step problem where questions inquiring additional
-context are generated and answered until there is enough information to make a
-decision. This iterative method makes the verification process rational and
-explainable. While these methods have been tested for encyclopedic claims,
-exploration on domain-specific and realistic claims is missing. In this work,
-we apply an iterative FV system on three medical fact-checking datasets and
-evaluate it with multiple settings, including different LLMs, external web
-search, and structured reasoning using logic predicates. We demonstrate
-improvements in the final performance over traditional approaches and the high
-potential of step-by-step FV systems for domain-specific claims.
+                    <h3>Probe Pruning: Accelerating LLMs through Dynamic Pruning via
+  Model-Probing</h3>
+                    <p><strong>Authors:</strong> Qi Le, Enmao Diao, Ziyan Wang, Xinran Wang, Jie Ding, Li Yang, Ali Anwar</p>
+                    <p>  We introduce Probe Pruning (PP), a novel framework for online, dynamic,
+structured pruning of Large Language Models (LLMs) applied in a batch-wise
+manner. PP leverages the insight that not all samples and tokens contribute
+equally to the model's output, and probing a small portion of each batch
+effectively identifies crucial weights, enabling tailored dynamic pruning for
+different batches. It comprises three main stages: probing, history-informed
+pruning, and full inference. In the probing stage, PP selects a small yet
+crucial set of hidden states, based on residual importance, to run a few model
+layers ahead. During the history-informed pruning stage, PP strategically
+integrates the probing states with historical states. Subsequently, it
+structurally prunes weights based on the integrated states and the PP
+importance score, a metric developed specifically to assess the importance of
+each weight channel in maintaining performance. In the final stage, full
+inference is conducted on the remaining weights. A major advantage of PP is its
+compatibility with existing models, as it operates without requiring additional
+neural network modules or fine-tuning. Comprehensive evaluations of PP on
+LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of
+FLOPs-can substantially enhance the efficiency of structured pruning of LLMs.
+For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56
+times lower ratio of performance degradation per unit of runtime reduction
+compared to the state-of-the-art method at a 40% pruning ratio. Our code is
+available at https://github.com/Qi-Le1/Probe_Pruning.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14765v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15618v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Sculpting [CLS] Features for Pre-Trained Model-Based Class-Incremental
-  Learning</h3>
-                    <p><strong>Authors:</strong> Murat Onur Yildirim, Elif Ceren Gok Yildirim, Joaquin Vanschoren</p>
-                    <p>  Class-incremental learning requires models to continually acquire knowledge
-of new classes without forgetting old ones. Although pre-trained models have
-demonstrated strong performance in class-incremental learning, they remain
-susceptible to catastrophic forgetting when learning new concepts. Excessive
-plasticity in the models breaks generalizability and causes forgetting, while
-strong stability results in insufficient adaptation to new classes. This
-necessitates effective adaptation with minimal modifications to preserve the
-general knowledge of pre-trained models. To address this challenge, we first
-introduce a new parameter-efficient fine-tuning module 'Learn and Calibrate',
-or LuCA, designed to acquire knowledge through an adapter-calibrator couple,
-enabling effective adaptation with well-refined feature representations.
-Second, for each learning session, we deploy a sparse LuCA module on top of the
-last token just before the classifier, which we refer to as 'Token-level Sparse
-Calibration and Adaptation', or TOSCA. This strategic design improves the
-orthogonality between the modules and significantly reduces both training and
-inference complexity. By leaving the generalization capabilities of the
-pre-trained models intact and adapting exclusively via the last token, our
-approach achieves a harmonious balance between stability and plasticity.
-Extensive experiments demonstrate TOSCA's state-of-the-art performance while
-introducing ~8 times fewer parameters compared to prior methods.
+                    <h3>Pick-and-place Manipulation Across Grippers Without Retraining: A
+  Learning-optimization Diffusion Policy Approach</h3>
+                    <p><strong>Authors:</strong> Xiangtong Yao, Yirui Zhou, Yuan Meng, Liangyu Dong, Lin Hong, Zitao Zhang, Zhenshan Bing, Kai Huang, Fuchun Sun, Alois Knoll</p>
+                    <p>  Current robotic pick-and-place policies typically require consistent gripper
+configurations across training and inference. This constraint imposes high
+retraining or fine-tuning costs, especially for imitation learning-based
+approaches, when adapting to new end-effectors. To mitigate this issue, we
+present a diffusion-based policy with a hybrid learning-optimization framework,
+enabling zero-shot adaptation to novel grippers without additional data
+collection for retraining policy. During training, the policy learns
+manipulation primitives from demonstrations collected using a base gripper. At
+inference, a diffusion-based optimization strategy dynamically enforces
+kinematic and safety constraints, ensuring that generated trajectories align
+with the physical properties of unseen grippers. This is achieved through a
+constrained denoising procedure that adapts trajectories to gripper-specific
+parameters (e.g., tool-center-point offsets, jaw widths) while preserving
+collision avoidance and task feasibility. We validate our method on a Franka
+Panda robot across six gripper configurations, including 3D-printed fingertips,
+flexible silicone gripper, and Robotiq 2F-85 gripper. Our approach achieves a
+93.3% average task success rate across grippers (vs. 23.3-26.7% for diffusion
+policy baselines), supporting tool-center-point variations of 16-23.5 cm and
+jaw widths of 7.5-11.5 cm. The results demonstrate that constrained diffusion
+enables robust cross-gripper manipulation while maintaining the sample
+efficiency of imitation learning, eliminating the need for gripper-specific
+retraining. Video and code are available at https://github.com/yaoxt3/GADP.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14762v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15613v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
                 <li>
-                    <h3>Multi-Objective Causal Bayesian Optimization</h3>
-                    <p><strong>Authors:</strong> Shriya Bhatija, Paul-David Zuercher, Jakob Thumm, Thomas Bohné</p>
-                    <p>  In decision-making problems, the outcome of an intervention often depends on
-the causal relationships between system components and is highly costly to
-evaluate. In such settings, causal Bayesian optimization (CBO) can exploit the
-causal relationships between the system variables and sequentially perform
-interventions to approach the optimum with minimal data. Extending CBO to the
-multi-outcome setting, we propose Multi-Objective Causal Bayesian Optimization
-(MO-CBO), a paradigm for identifying Pareto-optimal interventions within a
-known multi-target causal graph. We first derive a graphical characterization
-for potentially optimal sets of variables to intervene upon. Showing that any
-MO-CBO problem can be decomposed into several traditional multi-objective
-optimization tasks, we then introduce an algorithm that sequentially balances
-exploration across these tasks using relative hypervolume improvement. The
-proposed method will be validated on both synthetic and real-world causal
-graphs, demonstrating its superiority over traditional (non-causal)
-multi-objective Bayesian optimization in settings where causal information is
-available.
+                    <h3>Causal Modeling of fMRI Time-series for Interpretable Autism Spectrum
+  Disorder Classification</h3>
+                    <p><strong>Authors:</strong> Peiyu Duan, Nicha C. Dvornek, Jiyao Wang, Lawrence H. Staib, James S. Duncan</p>
+                    <p>  Autism spectrum disorder (ASD) is a neurological and developmental disorder
+that affects social and communicative behaviors. It emerges in early life and
+is generally associated with lifelong disabilities. Thus, accurate and early
+diagnosis could facilitate treatment outcomes for those with ASD. Functional
+magnetic resonance imaging (fMRI) is a useful tool that measures changes in
+brain signaling to facilitate our understanding of ASD. Much effort is being
+made to identify ASD biomarkers using various connectome-based machine learning
+and deep learning classifiers. However, correlation-based models cannot capture
+the non-linear interactions between brain regions. To solve this problem, we
+introduce a causality-inspired deep learning model that uses time-series
+information from fMRI and captures causality among ROIs useful for ASD
+classification. The model is compared with other baseline and state-of-the-art
+models with 5-fold cross-validation on the ABIDE dataset. We filtered the
+dataset by choosing all the images with mean FD less than 15mm to ensure data
+quality. Our proposed model achieved the highest average classification
+accuracy of 71.9% and an average AUC of 75.8%. Moreover, the inter-ROI
+causality interpretation of the model suggests that the left precuneus, right
+precuneus, and cerebellum are placed in the top 10 ROIs in inter-ROI causality
+among the ASD population. In contrast, these ROIs are not ranked in the top 10
+in the control population. We have validated our findings with the literature
+and found that abnormalities in these ROIs are often associated with ASD.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.14755v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/20/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.15595v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/21/2025</p>
                 </li>
             </ul>
         </section>
