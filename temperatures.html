@@ -28,36 +28,44 @@
 		<p>This is no longer my sole work, but that of team PICE.</p>
 		<p>Please consider the extremest temperatures shown here before choosing where to vacation.</p>
 	</section>
+        
+        <div class="temperature-selector">
+            <label for="tableSelect">Select Temperature Category:</label>
+            <select id="tableSelect">
+                <option value="">Select a category...</option>
+                <option value="lowest-min">Lowest Minimum Temperatures</option>
+                <option value="lowest-mean">Lowest Mean Temperatures</option>
+                <option value="lowest-max">Lowest Maximum Temperatures</option>
+                <option value="highest-min">Highest Minimum Temperatures</option>
+                <option value="highest-mean">Highest Mean Temperatures</option>
+                <option value="highest-max">Highest Maximum Temperatures</option>
+            </select>
+        </div>
+
         <div class="temperature-tables">
-            <div class="left-tables">
-                <h2>Lowest Temperatures</h2>
-                <div class="table-container">
-                    <h3>Minimum Temperatures</h3>
-                    <table id="lowestMinTable"></table>
-                </div>
-                <div class="table-container">
-                    <h3>Mean Temperatures</h3>
-                    <table id="lowestMeanTable"></table>
-                </div>
-                <div class="table-container">
-                    <h3>Maximum Temperatures</h3>
-                    <table id="lowestMaxTable"></table>
-                </div>
+            <div class="table-container" style="display: none;" id="lowest-min">
+                <h2>Lowest Minimum Temperatures</h2>
+                <table id="lowestMinTable"></table>
             </div>
-            <div class="right-tables">
-                <h2>Highest Temperatures</h2>
-                <div class="table-container">
-                    <h3>Minimum Temperatures</h3>
-                    <table id="highestMinTable"></table>
-                </div>
-                <div class="table-container">
-                    <h3>Mean Temperatures</h3>
-                    <table id="highestMeanTable"></table>
-                </div>
-                <div class="table-container">
-                    <h3>Maximum Temperatures</h3>
-                    <table id="highestMaxTable"></table>
-                </div>
+            <div class="table-container" style="display: none;" id="lowest-mean">
+                <h2>Lowest Mean Temperatures</h2>
+                <table id="lowestMeanTable"></table>
+            </div>
+            <div class="table-container" style="display: none;" id="lowest-max">
+                <h2>Lowest Maximum Temperatures</h2>
+                <table id="lowestMaxTable"></table>
+            </div>
+            <div class="table-container" style="display: none;" id="highest-min">
+                <h2>Highest Minimum Temperatures</h2>
+                <table id="highestMinTable"></table>
+            </div>
+            <div class="table-container" style="display: none;" id="highest-mean">
+                <h2>Highest Mean Temperatures</h2>
+                <table id="highestMeanTable"></table>
+            </div>
+            <div class="table-container" style="display: none;" id="highest-max">
+                <h2>Highest Maximum Temperatures</h2>
+                <table id="highestMaxTable"></table>
             </div>
         </div>
     </main>

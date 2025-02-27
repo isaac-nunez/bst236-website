@@ -100,11 +100,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Populate all tables
-    populateTable('lowestMinTable', temperatureData['Lowest Minimum']);
-    populateTable('lowestMeanTable', temperatureData['Lowest Mean']);
-    populateTable('lowestMaxTable', temperatureData['Lowest Maximum']);
-    populateTable('highestMinTable', temperatureData['Highest Minimum']);
-    populateTable('highestMeanTable', temperatureData['Highest Mean']);
-    populateTable('highestMaxTable', temperatureData['Highest Maximum']);
+    // Add event listener for dropdown
+    document.getElementById('tableSelect').addEventListener('change', function(e) {
+        // Hide all tables
+        document.querySelectorAll('.table-container').forEach(container => {
+            container.style.display = 'none';
+        });
+
+        // Show selected table
+        const selectedValue = e.target.value;
+        if (selectedValue) {
+            document.getElementById(selectedValue).style.display = 'block';
+            
+            // Populate table if it hasn't been populated yet
+            switch(selectedValue) {
+                case 'lowest-min':
+                    populateTable('lowestMinTable', temperatureData['Lowest Minimum']);
+                    break;
+                case 'lowest-mean':
+                    populateTable('lowestMeanTable', temperatureData['Lowest Mean']);
+                    break;
+                case 'lowest-max':
+                    populateTable('lowestMaxTable', temperatureData['Lowest Maximum']);
+                    break;
+                case 'highest-min':
+                    populateTable('highestMinTable', temperatureData['Highest Minimum']);
+                    break;
+                case 'highest-mean':
+                    populateTable('highestMeanTable', temperatureData['Highest Mean']);
+                    break;
+                case 'highest-max':
+                    populateTable('highestMaxTable', temperatureData['Highest Maximum']);
+                    break;
+            }
+        }
+    });
 });

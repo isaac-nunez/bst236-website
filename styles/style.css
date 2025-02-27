@@ -158,7 +158,8 @@ canvas {
     gap: 40px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .left-tables, .right-tables {
@@ -190,6 +191,8 @@ canvas {
 .table-container {
     margin-bottom: 30px;
     overflow-x: auto;
+    margin: 20px auto;
+    width: 100%;
 }
 
 table {
@@ -232,4 +235,27 @@ h2 {
 h3 {
     color: white;
     margin: 15px 0;
+}
+
+.temperature-selector {
+    margin: 20px;
+    text-align: center;
+}
+
+.temperature-selector label {
+    color: white;
+    margin-right: 10px;
+}
+
+.temperature-selector select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+}
+
+.temperature-selector select:hover {
+    background-color: #444;
 }
