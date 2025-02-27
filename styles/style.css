@@ -152,21 +152,49 @@ canvas {
 
 .temperature-tables {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .left-tables, .right-tables {
     flex: 1;
+    min-width: 45%;
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .temperature-tables {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-tables, .right-tables {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Ensure tables don't overflow their containers */
 .table-container {
     margin-bottom: 30px;
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
+    min-width: 300px;
     border-collapse: collapse;
     margin-top: 10px;
     background-color: white;
