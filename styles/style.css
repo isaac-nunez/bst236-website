@@ -149,3 +149,59 @@ canvas {
     color: white;
     border-radius: 0 0 10px 10px;
 }
+
+.temperature-tables {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px;
+}
+
+.left-tables, .right-tables {
+    flex: 1;
+}
+
+.table-container {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #000000; /* Add this line for black text */
+}
+
+th {
+    background-color: #333;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+h3 {
+    color: white;
+    margin: 15px 0;
+}

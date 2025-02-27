@@ -1,0 +1,61 @@
+"Category","Rank","Station","Temperature"
+"Lowest Minimum",1,"Gjoa Haven",-64
+"Lowest Minimum",2,"Dikson",-61.1
+"Lowest Minimum",3,"Iqaluit",-58
+"Lowest Minimum",4,"Yakutsk",-57.2
+"Lowest Minimum",5,"Anadyr",-54.3
+"Lowest Minimum",6,"Yellowknife",-53
+"Lowest Minimum",7,"Ulaanbaatar",-52.9
+"Lowest Minimum",8,"Nuuk",-51.3
+"Lowest Minimum",9,"Fairbanks",-50.9
+"Lowest Minimum",10,"Novosibirsk",-50.7
+"Lowest Mean",1,"Gjoa Haven",-14.4
+"Lowest Mean",2,"Dikson",-11.1
+"Lowest Mean",3,"Iqaluit",-9.3
+"Lowest Mean",4,"Yakutsk",-8.8
+"Lowest Mean",5,"Anadyr",-6.9
+"Lowest Mean",6,"Yellowknife",-4.3
+"Lowest Mean",7,"Fairbanks",-2.3
+"Lowest Mean",8,"Nuuk",-1.4
+"Lowest Mean",9,"Ulaanbaatar",-0.4
+"Lowest Mean",10,"Whitehorse",-0.1
+"Lowest Maximum",1,"Gjoa Haven",36.5
+"Lowest Maximum",2,"Dikson",37.1
+"Lowest Maximum",3,"Iqaluit",37.7
+"Lowest Maximum",4,"Yakutsk",40
+"Lowest Maximum",5,"Anadyr",43.1
+"Lowest Maximum",6,"Nuuk",46.5
+"Lowest Maximum",7,"Yellowknife",47.4
+"Lowest Maximum",8,"Murmansk",48
+"Lowest Maximum",9,"Anchorage",49.8
+"Lowest Maximum",10,"Tromsø",49.9
+"Highest Minimum",1,"Lodwar",-18.4
+"Highest Minimum",2,"Juba",-19.3
+"Highest Minimum",3,"Hat Yai",-19.6
+"Highest Minimum",4,"Niamey",-19.6
+"Highest Minimum",5,"Bangkok",-19.9
+"Highest Minimum",6,"Managua",-20
+"Highest Minimum",7,"Ouagadougou",-20
+"Highest Minimum",8,"Port Sudan",-20
+"Highest Minimum",9,"Reggane",-20
+"Highest Minimum",10,"Yangon",-20
+"Highest Mean",1,"Assab",30.5
+"Highest Mean",2,"Bosaso",30
+"Highest Mean",3,"Djibouti",29.9
+"Highest Mean",4,"Khartoum",29.9
+"Highest Mean",5,"Abéché",29.4
+"Highest Mean",6,"Garissa",29.3
+"Highest Mean",7,"Lodwar",29.3
+"Highest Mean",8,"Niamey",29.3
+"Highest Mean",9,"Aden",29.1
+"Highest Mean",10,"Bangkok",28.6
+"Highest Maximum",1,"Makassar",85.6
+"Highest Maximum",2,"Wau",84.4
+"Highest Maximum",3,"Lodwar",83.7
+"Highest Maximum",4,"Panama City",82.5
+"Highest Maximum",5,"Bangkok",82.3
+"Highest Maximum",6,"Abéché",82.2
+"Highest Maximum",7,"Makurdi",82.2
+"Highest Maximum",8,"Dubai",82
+"Highest Maximum",9,"Reggane",81.7
+"Highest Maximum",10,"Sokoto",81.6
