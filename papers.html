@@ -92,235 +92,255 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Scalable Equilibrium Sampling with Sequential Boltzmann Generators</h3>
-                    <p><strong>Authors:</strong> Charlie B. Tan, Avishek Joey Bose, Chen Lin, Leon Klein, Michael M. Bronstein, Alexander Tong</p>
-                    <p>  Scalable sampling of molecular states in thermodynamic equilibrium is a
-long-standing challenge in statistical physics. Boltzmann generators tackle
-this problem by pairing powerful normalizing flows with importance sampling to
-obtain statistically independent samples under the target distribution. In this
-paper, we extend the Boltzmann generator framework and introduce Sequential
-Boltzmann generators (SBG) with two key improvements. The first is a highly
-efficient non-equivariant Transformer-based normalizing flow operating directly
-on all-atom Cartesian coordinates. In contrast to equivariant continuous flows
-of prior methods, we leverage exactly invertible non-equivariant architectures
-which are highly efficient both during sample generation and likelihood
-computation. As a result, this unlocks more sophisticated inference strategies
-beyond standard importance sampling. More precisely, as a second key
-improvement we perform inference-time scaling of flow samples using annealed
-Langevin dynamics which transports samples toward the target distribution
-leading to lower variance (annealed) importance weights which enable higher
-fidelity resampling with sequential Monte Carlo. SBG achieves state-of-the-art
-performance w.r.t. all metrics on molecular systems, demonstrating the first
-equilibrium sampling in Cartesian coordinates of tri, tetra, and hexapeptides
-that were so far intractable for prior Boltzmann generators.
+                    <h3>Verde: Verification via Refereed Delegation for Machine Learning
+  Programs</h3>
+                    <p><strong>Authors:</strong> Arasu Arun, Adam St. Arnaud, Alexey Titov, Brian Wilcox, Viktor Kolobaric, Marc Brinkmann, Oguzhan Ersoy, Ben Fielding, Joseph Bonneau</p>
+                    <p>  Machine learning programs, such as those performing inference, fine-tuning,
+and training of LLMs, are commonly delegated to untrusted compute providers. To
+provide correctness guarantees for the client, we propose adapting the
+cryptographic notion of refereed delegation to the machine learning setting.
+This approach enables a computationally limited client to delegate a program to
+multiple untrusted compute providers, with a guarantee of obtaining the correct
+result if at least one of them is honest. Refereed delegation of ML programs
+poses two technical hurdles: (1) an arbitration protocol to resolve disputes
+when compute providers disagree on the output, and (2) the ability to bitwise
+reproduce ML programs across different hardware setups, For (1), we design
+Verde, a dispute arbitration protocol that efficiently handles the large scale
+and graph-based computational model of modern ML programs. For (2), we build
+RepOps (Reproducible Operators), a library that eliminates hardware
+"non-determinism" by controlling the order of floating point operations
+performed on all hardware. Our implementation shows that refereed delegation
+achieves both strong guarantees for clients and practical overheads for compute
+providers.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18462v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19405v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense
-  Retrievers</h3>
-                    <p><strong>Authors:</strong> Xueguang Ma, Xi Victoria Lin, Barlas Oguz, Jimmy Lin, Wen-tau Yih, Xilun Chen</p>
-                    <p>  Large language models (LLMs) have demonstrated strong effectiveness and
-robustness while fine-tuned as dense retrievers. However, their large parameter
-size brings significant inference time computational challenges, including high
-encoding costs for large-scale corpora and increased query latency, limiting
-their practical deployment. While smaller retrievers offer better efficiency,
-they often fail to generalize effectively with limited supervised fine-tuning
-data. In this work, we introduce DRAMA, a training framework that leverages
-LLMs to train smaller generalizable dense retrievers. In particular, we adopt
-pruned LLMs as the backbone and train on diverse LLM-augmented data in a
-single-stage contrastive learning setup. Experiments show that DRAMA offers
-better multilingual and long-context capabilities than traditional
-encoder-based retrievers, and achieves strong performance across multiple tasks
-and languages. These highlight the potential of connecting the training of
-smaller retrievers with the growing advancements in LLMs, bridging the gap
-between efficiency and generalization.
+                    <h3>DROID: Discrete-Time Simulation for Ring-Oscillator-Based Ising Design</h3>
+                    <p><strong>Authors:</strong> Abhimanyu Kumar, Ramprasath S., Chris H. Kim, Ulya R. Karpuzcu, Sachin S. Sapatnekar</p>
+                    <p>  Many combinatorial problems can be mapped to Ising machines, i.e., networks
+of coupled oscillators that settle to a minimum-energy ground state, from which
+the problem solution is inferred. This work proposes DROID, a novel
+event-driven method for simulating the evolution of a CMOS Ising machine to its
+ground state. The approach is accurate under general delay-phase relations that
+include the effects of the transistor nonlinearities and is computationally
+efficient. On a realistic-size all-to-all coupled ring oscillator array, DROID
+is nearly four orders of magnitude faster than a traditional HSPICE simulation
+in predicting the evolution of a coupled oscillator system and is demonstrated
+to attain a similar distribution of solutions as the hardware.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18460v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19399v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>Supervised Reward Inference</h3>
-                    <p><strong>Authors:</strong> Will Schwarzer, Jordan Schneider, Philip S. Thomas, Scott Niekum</p>
-                    <p>  Existing approaches to reward inference from behavior typically assume that
-humans provide demonstrations according to specific models of behavior.
-However, humans often indicate their goals through a wide range of behaviors,
-from actions that are suboptimal due to poor planning or execution to behaviors
-which are intended to communicate goals rather than achieve them. We propose
-that supervised learning offers a unified framework to infer reward functions
-from any class of behavior, and show that such an approach is asymptotically
-Bayes-optimal under mild assumptions. Experiments on simulated robotic
-manipulation tasks show that our method can efficiently infer rewards from a
-wide variety of arbitrarily suboptimal demonstrations.
+                    <h3>Towards a robust approach to infer causality in molecular systems
+  satisfying detailed balance</h3>
+                    <p><strong>Authors:</strong> Vittorio Del Tatto, Debarshi Banerjee, Ali Hassanali, Alessandro Laio</p>
+                    <p>  The ability to distinguish between correlation and causation of variables in
+molecular systems remains an interesting and open area of investigation. In
+this work, we probe causality in a molecular system using two independent
+computational methods that infer the causal direction through the language of
+information transfer. Specifically, we demonstrate that a molecular dynamics
+simulation involving a single Tryptophan in liquid water displays asymmetric
+information transfer between specific collective variables, such as solute and
+solvent coordinates. Analyzing a discrete Markov-state and Langevin dynamics on
+a 2D free energy surface, we show that the same kind of asymmetries can emerge
+even in extremely simple systems, undergoing equilibrium and time-reversible
+dynamics. We use these model systems to rationalize the unidirectional
+information transfer in the molecular system in terms of asymmetries in the
+underlying free energy landscape and/or relaxation dynamics of the relevant
+coordinates. Finally, we propose a computational experiment that allows one to
+decide if an asymmetric information transfer between two variables corresponds
+to a genuine causal link.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18447v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19384v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>olmOCR: Unlocking Trillions of Tokens in PDFs with Vision Language
-  Models</h3>
-                    <p><strong>Authors:</strong> Jake Poznanski, Jon Borchardt, Jason Dunkelberger, Regan Huff, Daniel Lin, Aman Rangapur, Christopher Wilhelm, Kyle Lo, Luca Soldaini</p>
-                    <p>  PDF documents have the potential to provide trillions of novel, high-quality
-tokens for training language models. However, these documents come in a
-diversity of types with differing formats and visual layouts that pose a
-challenge when attempting to extract and faithfully represent the underlying
-content for language model use. We present olmOCR, an open-source Python
-toolkit for processing PDFs into clean, linearized plain text in natural
-reading order while preserving structured content like sections, tables, lists,
-equations, and more. Our toolkit runs a fine-tuned 7B vision language model
-(VLM) trained on a sample of 260,000 pages from over 100,000 crawled PDFs with
-diverse properties, including graphics, handwritten text and poor quality
-scans. olmOCR is optimized for large-scale batch processing, able to scale
-flexibly to different hardware setups and convert a million PDF pages for only
-$190 USD. We release all components of olmOCR including VLM weights, data and
-training code, as well as inference code built on serving frameworks including
-vLLM and SGLang.
+                    <h3>An emulation-based model for the projected correlation function</h3>
+                    <p><strong>Authors:</strong> Vetle A. Vikenes, Cheng-Zong Ruan, David F. Mota</p>
+                    <p>  Data from the ongoing \textit{Euclid} survey will map out billions of
+galaxies in the Universe, covering more than a third of the sky. This data will
+provide a wealth of information about the large-scale structure (LSS) of the
+Universe and will have a significant impact on cosmology in the coming years.
+In this paper, we introduce an emulator-based halo model approach to forward
+model the relationship between cosmological parameters and the projected
+galaxy-galaxy two-point correlation function (2PCF). Utilizing the large
+\textsc{AbacusSummit} simulation suite, we emulate the 2PCF by generating
+mock-galaxy catalogues within the Halo Occupation Distribution (HOD) framework.
+Our emulator is designed to predict the 2PCF over scales $0.1 \leq r /
+(h^{-1}\text{Mpc}) \leq 105$, from which we derive the projected correlation
+function, independent of redshift space distortions. We demonstrate that the
+emulator accurately predicts the projected correlation function over scales
+$0.5 \leq r_\perp/(h^{-1}\text{Mpc}) \leq 40$, given a set of cosmological and
+HOD parameters. This model is then employed in a parameter inference analysis,
+showcasing its ability to constrain cosmological parameters. Our findings
+indicate that while the projected correlation function places weak constraints
+on several cosmological parameters due to its intrinsic lack of information,
+additional clustering statistics are necessary to better probe the underlying
+cosmology. Despite the simplified covariance matrix used in the likelihood
+model, the posterior distributions of several cosmological parameters remain
+broad, underscoring the need for a more comprehensive approach.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18443v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19353v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>ToMCAT: Theory-of-Mind for Cooperative Agents in Teams via Multiagent
-  Diffusion Policies</h3>
-                    <p><strong>Authors:</strong> Pedro Sequeira, Vidyasagar Sadhu, Melinda Gervasio</p>
-                    <p>  In this paper we present ToMCAT (Theory-of-Mind for Cooperative Agents in
-Teams), a new framework for generating ToM-conditioned trajectories. It
-combines a meta-learning mechanism, that performs ToM reasoning over teammates'
-underlying goals and future behavior, with a multiagent denoising-diffusion
-model, that generates plans for an agent and its teammates conditioned on both
-the agent's goals and its teammates' characteristics, as computed via ToM. We
-implemented an online planning system that dynamically samples new trajectories
-(replans) from the diffusion model whenever it detects a divergence between a
-previously generated plan and the current state of the world. We conducted
-several experiments using ToMCAT in a simulated cooking domain. Our results
-highlight the importance of the dynamic replanning mechanism in reducing the
-usage of resources without sacrificing team performance. We also show that
-recent observations about the world and teammates' behavior collected by an
-agent over the course of an episode combined with ToM inferences are crucial to
-generate team-aware plans for dynamic adaptation to teammates, especially when
-no prior information is provided about them.
+                    <h3>Agentic Reward Modeling: Integrating Human Preferences with Verifiable
+  Correctness Signals for Reliable Reward Systems</h3>
+                    <p><strong>Authors:</strong> Hao Peng, Yunjia Qi, Xiaozhi Wang, Zijun Yao, Bin Xu, Lei Hou, Juanzi Li</p>
+                    <p>  Reward models (RMs) are crucial for the training and inference-time scaling
+up of large language models (LLMs). However, existing reward models primarily
+focus on human preferences, neglecting verifiable correctness signals which
+have shown strong potential in training LLMs. In this paper, we propose agentic
+reward modeling, a reward system that combines reward models with verifiable
+correctness signals from different aspects to provide reliable rewards. We
+empirically implement a reward agent, named RewardAgent, that combines human
+preference rewards with two verifiable signals: factuality and instruction
+following, to provide more reliable rewards. We conduct comprehensive
+experiments on existing reward model benchmarks and inference time best-of-n
+searches on real-world downstream tasks. RewardAgent significantly outperforms
+vanilla reward models, demonstrating its effectiveness. We further construct
+training preference pairs using RewardAgent and train an LLM with the DPO
+objective, achieving superior performance on various NLP benchmarks compared to
+conventional reward models. Our codes are publicly released to facilitate
+further research (https://github.com/THU-KEG/Agentic-Reward-Modeling).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18438v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19328v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>Comparative Analysis of MDL-VAE vs. Standard VAE on 202 Years of
-  Gynecological Data</h3>
-                    <p><strong>Authors:</strong> Paula Santos</p>
-                    <p>  This study presents a comparative evaluation of a Variational Autoencoder
-(VAE) enhanced with Minimum Description Length (MDL) regularization against a
-Standard Autoencoder for reconstructing high-dimensional gynecological data.
-The MDL-VAE exhibits significantly lower reconstruction errors (MSE, MAE, RMSE)
-and more structured latent representations, driven by effective KL divergence
-regularization. Statistical analyses confirm these performance improvements are
-significant. Furthermore, the MDL-VAE shows consistent training and validation
-losses and achieves efficient inference times, underscoring its robustness and
-practical viability. Our findings suggest that incorporating MDL principles
-into VAE architectures can substantially improve data reconstruction and
-generalization, making it a promising approach for advanced applications in
-healthcare data modeling and analysis.
+                    <h3>Agent-centric Information Access</h3>
+                    <p><strong>Authors:</strong> Evangelos Kanoulas, Panagiotis Eustratiadis, Yongkang Li, Yougang Lyu, Vaishali Pal, Gabrielle Poerwawinata, Jingfen Qiao, Zihan Wang</p>
+                    <p>  As large language models (LLMs) become more specialized, we envision a future
+where millions of expert LLMs exist, each trained on proprietary data and
+excelling in specific domains. In such a system, answering a query requires
+selecting a small subset of relevant models, querying them efficiently, and
+synthesizing their responses. This paper introduces a framework for
+agent-centric information access, where LLMs function as knowledge agents that
+are dynamically ranked and queried based on their demonstrated expertise.
+Unlike traditional document retrieval, this approach requires inferring
+expertise on the fly, rather than relying on static metadata or predefined
+model descriptions. This shift introduces several challenges, including
+efficient expert selection, cost-effective querying, response aggregation
+across multiple models, and robustness against adversarial manipulation. To
+address these issues, we propose a scalable evaluation framework that leverages
+retrieval-augmented generation and clustering techniques to construct and
+assess thousands of specialized models, with the potential to scale toward
+millions.
 </p>
-                    <p><a href="http://arxiv.org/abs/2502.18412v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19298v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>Chemical abundance ratios for the bulge of M31</h3>
-                    <p><strong>Authors:</strong> F. La Barbera, A. Vazdekis, A. Pasquali</p>
-                    <p>  We present abundance ratio estimates of individual elements, namely C, N, Na,
-and the so-called alpha elements, Mg, O, Si, Ca, and Ti, for the bulge of M31.
-The analysis is based on long-slit, high-quality spectroscopy of the bulge,
-taken with the OSIRIS spectrograph at the Gran Telescopio CANARIAS (GTC).
-Abundance ratios, [X/Fe]s, are inferred by comparing radially binned spectra of
-M31 with different state-of-the-art stellar population models, averaging out
-results from various methods, namely full-spectral, full-index, and
-line-strength fitting, respectively. For the bulk of the bulge, we find that O,
-N, and Na are significantly enhanced compared to Fe, with abundances of about
-0.3dex, followed by C, Mg, and Si, with [X/Fe] about 0.2dex, and lastly, Ti and
-Ca, mostly tracking Fe ([X/Fe]<0.1dex), within the error bars. Performing the
-same analysis on SDSS stacked spectra of early-type galaxies with different
-velocity dispersion, we find that the abundance pattern of the M31 bulge is
-very similar to that of most massive galaxies, supporting a scenario where most
-of the bulge formed in a fast and intense episode of star-formation.
+                    <h3>Complex LLM Planning via Automated Heuristics Discovery</h3>
+                    <p><strong>Authors:</strong> Hongyi Ling, Shubham Parashar, Sambhav Khurana, Blake Olson, Anwesha Basu, Gaurangi Sinha, Zhengzhong Tu, James Caverlee, Shuiwang Ji</p>
+                    <p>  We consider enhancing large language models (LLMs) for complex planning
+tasks. While existing methods allow LLMs to explore intermediate steps to make
+plans, they either depend on unreliable self-verification or external verifiers
+to evaluate these steps, which demand significant data and computations. Here,
+we propose automated heuristics discovery (AutoHD), a novel approach that
+enables LLMs to explicitly generate heuristic functions to guide inference-time
+search, allowing accurate evaluation of intermediate states. These heuristic
+functions are further refined through a heuristic evolution process, improving
+their robustness and effectiveness. Our proposed method requires no additional
+model training or fine-tuning, and the explicit definition of heuristic
+functions generated by the LLMs provides interpretability and insights into the
+reasoning process. Extensive experiments across diverse benchmarks demonstrate
+significant gains over multiple baselines, including nearly twice the accuracy
+on some datasets, establishing our approach as a reliable and interpretable
+solution for complex planning tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18409v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19295v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>The Gradient of Algebraic Model Counting</h3>
-                    <p><strong>Authors:</strong> Jaron Maene, Luc De Raedt</p>
-                    <p>  Algebraic model counting unifies many inference tasks on logic formulas by
-exploiting semirings. Rather than focusing on inference, we consider learning,
-especially in statistical-relational and neurosymbolic AI, which combine
-logical, probabilistic and neural representations. Concretely, we show that the
-very same semiring perspective of algebraic model counting also applies to
-learning. This allows us to unify various learning algorithms by generalizing
-gradients and backpropagation to different semirings. Furthermore, we show how
-cancellation and ordering properties of a semiring can be exploited for more
-memory-efficient backpropagation. This allows us to obtain some interesting
-variations of state-of-the-art gradient-based optimisation methods for
-probabilistic logical models. We also discuss why algebraic model counting on
-tractable circuits does not lead to more efficient second-order optimization.
-Empirically, our algebraic backpropagation exhibits considerable speed-ups as
-compared to existing approaches.
+                    <h3>On the Importance of Text Preprocessing for Multimodal Representation
+  Learning and Pathology Report Generation</h3>
+                    <p><strong>Authors:</strong> Ruben T. Lucassen, Tijn van de Luijtgaarden, Sander P. J. Moonemans, Gerben E. Breimer, Willeke A. M. Blokx, Mitko Veta</p>
+                    <p>  Vision-language models in pathology enable multimodal case retrieval and
+automated report generation. Many of the models developed so far, however, have
+been trained on pathology reports that include information which cannot be
+inferred from paired whole slide images (e.g., patient history), potentially
+leading to hallucinated sentences in generated reports. To this end, we
+investigate how the selection of information from pathology reports for
+vision-language modeling affects the quality of the multimodal representations
+and generated reports. More concretely, we compare a model trained on full
+reports against a model trained on preprocessed reports that only include
+sentences describing the cell and tissue appearances based on the H&E-stained
+slides. For the experiments, we built upon the BLIP-2 framework and used a
+cutaneous melanocytic lesion dataset of 42,433 H&E-stained whole slide images
+and 19,636 corresponding pathology reports. Model performance was assessed
+using image-to-text and text-to-image retrieval, as well as qualitative
+evaluation of the generated reports by an expert pathologist. Our results
+demonstrate that text preprocessing prevents hallucination in report
+generation. Despite the improvement in the quality of the generated reports,
+training the vision-language model on full reports showed better cross-modal
+retrieval performance.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18406v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19285v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>Enhancing DNA Foundation Models to Address Masking Inefficiencies</h3>
-                    <p><strong>Authors:</strong> Monireh Safari, Pablo Millan Arias, Scott C. Lowe, Lila Kari, Angel X. Chang, Graham W. Taylor</p>
-                    <p>  Masked language modelling (MLM) as a pretraining objective has been widely
-adopted in genomic sequence modelling. While pretrained models can successfully
-serve as encoders for various downstream tasks, the distribution shift between
-pretraining and inference detrimentally impacts performance, as the pretraining
-task is to map [MASK] tokens to predictions, yet the [MASK] is absent during
-downstream applications. This means the encoder does not prioritize its
-encodings of non-[MASK] tokens, and expends parameters and compute on work only
-relevant to the MLM task, despite this being irrelevant at deployment time. In
-this work, we propose a modified encoder-decoder architecture based on the
-masked autoencoder framework, designed to address this inefficiency within a
-BERT-based transformer. We empirically show that the resulting mismatch is
-particularly detrimental in genomic pipelines where models are often used for
-feature extraction without fine-tuning. We evaluate our approach on the
-BIOSCAN-5M dataset, comprising over 2 million unique DNA barcodes. We achieve
-substantial performance gains in both closed-world and open-world
-classification tasks when compared against causal models and bidirectional
-architectures pretrained with MLM tasks.
+                    <h3>Drop-Upcycling: Training Sparse Mixture of Experts with Partial
+  Re-initialization</h3>
+                    <p><strong>Authors:</strong> Taishi Nakamura, Takuya Akiba, Kazuki Fujii, Yusuke Oda, Rio Yokota, Jun Suzuki</p>
+                    <p>  The Mixture of Experts (MoE) architecture reduces the training and inference
+cost significantly compared to a dense model of equivalent capacity. Upcycling
+is an approach that initializes and trains an MoE model using a pre-trained
+dense model. While upcycling leads to initial performance gains, the training
+progresses slower than when trained from scratch, leading to suboptimal
+performance in the long term. We propose Drop-Upcycling - a method that
+effectively addresses this problem. Drop-Upcycling combines two seemingly
+contradictory approaches: utilizing the knowledge of pre-trained dense models
+while statistically re-initializing some parts of the weights. This approach
+strategically promotes expert specialization, significantly enhancing the MoE
+model's efficiency in knowledge acquisition. Extensive large-scale experiments
+demonstrate that Drop-Upcycling significantly outperforms previous MoE
+construction methods in the long term, specifically when training on hundreds
+of billions of tokens or more. As a result, our MoE model with 5.9B active
+parameters achieves comparable performance to a 13B dense model in the same
+model family, while requiring approximately 1/4 of the training FLOPs. All
+experimental resources, including source code, training data, model checkpoints
+and logs, are publicly available to promote reproducibility and future research
+on MoE.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18405v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19261v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
                 <li>
-                    <h3>Kitsune: Enabling Dataflow Execution on GPUs</h3>
-                    <p><strong>Authors:</strong> Michael Davies, Neal Crago, Karthikeyan Sankaralingam, Stephen W. Keckler</p>
-                    <p>  State of art DL models are growing in size and complexity, with many modern
-models also increasing in heterogeneity of behavior. GPUs are still the
-dominant platform for DL applications, relying on a bulk-synchronous execution
-model which has many drawbacks and is ill-suited for the graph structure of DL
-applications. Many industry and academic works attempt to overcome these by
-employing vertical fusion but this approach still fails to realize three
-untapped opportunities: (1) the fact that many resources on the GPU are idle
-while only one operator executes due to temporal multiplexing of the SM; (2)
-lower energy from more intelligent on-chip data-movement which lends to higher
-performance in a power-provisioned environment. (3) inability to exploit hidden
-or reduction dimensions as a source of parallelism to ease pressure on batch
-size. This paper explores relatively uncharted territory, answering the
-following key question: Can modest adjustments to the current GPU architecture
-enable efficient dataflow execution, thereby circumventing the constraints of
-vertical fusion without necessitating a clean-slate architecture design. We
-develop Kitsune -- a set of primitives that enable dataflow execution on GPUs
-and an end-to-end compiler based on PyTorch Dynamo. Across 5 challenge
-applications, Kitsune can provide 1.3$\times$-2.3$\times$ and
-1.1$\times$-2.4$\times$ performance improvement as well as 41%-98% and 16%-42%
-off-chip traffic reduction for inference and training, respectively.
+                    <h3>U-Net 3+ for Anomalous Diffusion Analysis enhanced with Mixture
+  Estimates (U-AnD-ME) in particle-tracking data</h3>
+                    <p><strong>Authors:</strong> Solomon Asghar, Ran Ni, Giorgio Volpe</p>
+                    <p>  Biophysical processes within living systems rely on encounters and
+interactions between molecules in complex environments such as cells. They are
+often described by anomalous diffusion transport. Recent advances in
+single-molecule microscopy and particle-tracking techniques have yielded an
+abundance of data in the form of videos and trajectories that contain critical
+information about these biologically significant processes. However, standard
+approaches for characterizing anomalous diffusion from these measurements often
+struggle in cases of practical interest, e.g. due to short, noisy trajectories.
+Fully exploiting this data therefore requires the development of advanced
+analysis methods -- a core goal at the heart of the recent international
+Anomalous Diffusion Challenges. Here, we introduce a novel machine-learning
+framework, U-net 3+ for Anomalous Diffusion analysis enhanced with Mixture
+Estimates (U-AnD-ME), that applies a U-Net 3+ based neural network alongside
+Gaussian mixture models to enable highly accurate characterisation of
+single-particle tracking data. In the 2024 Anomalous Diffusion Challenge,
+U-AnD-ME outperformed all other participating methods for the analysis of
+two-dimensional anomalous diffusion trajectories at both single-trajectory and
+ensemble levels. Using a large dataset inspired by the Challenge, we further
+characterize the performance of U-AnD-ME in segmenting trajectories and
+inferring anomalous diffusion properties.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.18403v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/25/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.19253v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/26/2025</p>
                 </li>
             </ul>
         </section>
