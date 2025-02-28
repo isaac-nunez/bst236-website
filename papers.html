@@ -93,254 +93,296 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Verde: Verification via Refereed Delegation for Machine Learning
-  Programs</h3>
-                    <p><strong>Authors:</strong> Arasu Arun, Adam St. Arnaud, Alexey Titov, Brian Wilcox, Viktor Kolobaric, Marc Brinkmann, Oguzhan Ersoy, Ben Fielding, Joseph Bonneau</p>
-                    <p>  Machine learning programs, such as those performing inference, fine-tuning,
-and training of LLMs, are commonly delegated to untrusted compute providers. To
-provide correctness guarantees for the client, we propose adapting the
-cryptographic notion of refereed delegation to the machine learning setting.
-This approach enables a computationally limited client to delegate a program to
-multiple untrusted compute providers, with a guarantee of obtaining the correct
-result if at least one of them is honest. Refereed delegation of ML programs
-poses two technical hurdles: (1) an arbitration protocol to resolve disputes
-when compute providers disagree on the output, and (2) the ability to bitwise
-reproduce ML programs across different hardware setups, For (1), we design
-Verde, a dispute arbitration protocol that efficiently handles the large scale
-and graph-based computational model of modern ML programs. For (2), we build
-RepOps (Reproducible Operators), a library that eliminates hardware
-"non-determinism" by controlling the order of floating point operations
-performed on all hardware. Our implementation shows that refereed delegation
-achieves both strong guarantees for clients and practical overheads for compute
-providers.
+                    <h3>Beyond Next-Token: Next-X Prediction for Autoregressive Visual
+  Generation</h3>
+                    <p><strong>Authors:</strong> Sucheng Ren, Qihang Yu, Ju He, Xiaohui Shen, Alan Yuille, Liang-Chieh Chen</p>
+                    <p>  Autoregressive (AR) modeling, known for its next-token prediction paradigm,
+underpins state-of-the-art language and visual generative models.
+Traditionally, a ``token'' is treated as the smallest prediction unit, often a
+discrete symbol in language or a quantized patch in vision. However, the
+optimal token definition for 2D image structures remains an open question.
+Moreover, AR models suffer from exposure bias, where teacher forcing during
+training leads to error accumulation at inference. In this paper, we propose
+xAR, a generalized AR framework that extends the notion of a token to an entity
+X, which can represent an individual patch token, a cell (a $k\times k$
+grouping of neighboring patches), a subsample (a non-local grouping of distant
+patches), a scale (coarse-to-fine resolution), or even a whole image.
+Additionally, we reformulate discrete token classification as
+\textbf{continuous entity regression}, leveraging flow-matching methods at each
+AR step. This approach conditions training on noisy entities instead of ground
+truth tokens, leading to Noisy Context Learning, which effectively alleviates
+exposure bias. As a result, xAR offers two key advantages: (1) it enables
+flexible prediction units that capture different contextual granularity and
+spatial structures, and (2) it mitigates exposure bias by avoiding reliance on
+teacher forcing. On ImageNet-256 generation benchmark, our base model, xAR-B
+(172M), outperforms DiT-XL/SiT-XL (675M) while achieving 20$\times$ faster
+inference. Meanwhile, xAR-H sets a new state-of-the-art with an FID of 1.24,
+running 2.2$\times$ faster than the previous best-performing model without
+relying on vision foundation modules (\eg, DINOv2) or advanced guidance
+interval sampling.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19405v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20388v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>DROID: Discrete-Time Simulation for Ring-Oscillator-Based Ising Design</h3>
-                    <p><strong>Authors:</strong> Abhimanyu Kumar, Ramprasath S., Chris H. Kim, Ulya R. Karpuzcu, Sachin S. Sapatnekar</p>
-                    <p>  Many combinatorial problems can be mapped to Ising machines, i.e., networks
-of coupled oscillators that settle to a minimum-energy ground state, from which
-the problem solution is inferred. This work proposes DROID, a novel
-event-driven method for simulating the evolution of a CMOS Ising machine to its
-ground state. The approach is accurate under general delay-phase relations that
-include the effects of the transistor nonlinearities and is computationally
-efficient. On a realistic-size all-to-all coupled ring oscillator array, DROID
-is nearly four orders of magnitude faster than a traditional HSPICE simulation
-in predicting the evolution of a coupled oscillator system and is demonstrated
-to attain a similar distribution of solutions as the hardware.
+                    <h3>rSPDE: tools for statistical modeling using fractional SPDEs</h3>
+                    <p><strong>Authors:</strong> David Bolin, Alexandre B. Simas</p>
+                    <p>  The R software package rSPDE contains methods for approximating Gaussian
+random fields based on fractional-order stochastic partial differential
+equations (SPDEs). A common example of such fields are Whittle-Mat\'ern fields
+on bounded domains in $\mathbb{R}^d$, manifolds, or metric graphs. The package
+also implements various other models which are briefly introduced in this
+article. Besides the approximation methods, the package contains methods for
+simulation, prediction, and statistical inference for such models, as well as
+interfaces to INLA, inlabru and MetricGraph. With these interfaces,
+fractional-order SPDEs can be used as model components in general latent
+Gaussian models, for which full Bayesian inference can be performed, also for
+fractional models on metric graphs. This includes estimation of the smoothness
+parameter of the fields. This article describes the computational methods used
+in the package and summarizes the theoretical basis for these. The main
+functions of the package are introduced, and their usage is illustrated through
+various examples.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19399v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20385v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>Towards a robust approach to infer causality in molecular systems
-  satisfying detailed balance</h3>
-                    <p><strong>Authors:</strong> Vittorio Del Tatto, Debarshi Banerjee, Ali Hassanali, Alessandro Laio</p>
-                    <p>  The ability to distinguish between correlation and causation of variables in
-molecular systems remains an interesting and open area of investigation. In
-this work, we probe causality in a molecular system using two independent
-computational methods that infer the causal direction through the language of
-information transfer. Specifically, we demonstrate that a molecular dynamics
-simulation involving a single Tryptophan in liquid water displays asymmetric
-information transfer between specific collective variables, such as solute and
-solvent coordinates. Analyzing a discrete Markov-state and Langevin dynamics on
-a 2D free energy surface, we show that the same kind of asymmetries can emerge
-even in extremely simple systems, undergoing equilibrium and time-reversible
-dynamics. We use these model systems to rationalize the unidirectional
-information transfer in the molecular system in terms of asymmetries in the
-underlying free energy landscape and/or relaxation dynamics of the relevant
-coordinates. Finally, we propose a computational experiment that allows one to
-decide if an asymmetric information transfer between two variables corresponds
-to a genuine causal link.
+                    <h3>Bridging Legal Knowledge and AI: Retrieval-Augmented Generation with
+  Vector Stores, Knowledge Graphs, and Hierarchical Non-negative Matrix
+  Factorization</h3>
+                    <p><strong>Authors:</strong> Ryan C. Barron, Maksim E. Eren, Olga M. Serafimova, Cynthia Matuszek, Boian S. Alexandrov</p>
+                    <p>  Agentic Generative AI, powered by Large Language Models (LLMs) with
+Retrieval-Augmented Generation (RAG), Knowledge Graphs (KGs), and Vector Stores
+(VSs), represents a transformative technology applicable to specialized domains
+such as legal systems, research, recommender systems, cybersecurity, and global
+security, including proliferation research. This technology excels at inferring
+relationships within vast unstructured or semi-structured datasets. The legal
+domain here comprises complex data characterized by extensive, interrelated,
+and semi-structured knowledge systems with complex relations. It comprises
+constitutions, statutes, regulations, and case law. Extracting insights and
+navigating the intricate networks of legal documents and their relations is
+crucial for effective legal research. Here, we introduce a generative AI system
+that integrates RAG, VS, and KG, constructed via Non-Negative Matrix
+Factorization (NMF), to enhance legal information retrieval and AI reasoning
+and minimize hallucinations. In the legal system, these technologies empower AI
+agents to identify and analyze complex connections among cases, statutes, and
+legal precedents, uncovering hidden relationships and predicting legal
+trends-challenging tasks that are essential for ensuring justice and improving
+operational efficiency. Our system employs web scraping techniques to
+systematically collect legal texts, such as statutes, constitutional
+provisions, and case law, from publicly accessible platforms like Justia. It
+bridges the gap between traditional keyword-based searches and contextual
+understanding by leveraging advanced semantic representations, hierarchical
+relationships, and latent topic discovery. This framework supports legal
+document clustering, summarization, and cross-referencing, for scalable,
+interpretable, and accurate retrieval for semi-structured data while advancing
+computational law and AI.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19384v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20364v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>An emulation-based model for the projected correlation function</h3>
-                    <p><strong>Authors:</strong> Vetle A. Vikenes, Cheng-Zong Ruan, David F. Mota</p>
-                    <p>  Data from the ongoing \textit{Euclid} survey will map out billions of
-galaxies in the Universe, covering more than a third of the sky. This data will
-provide a wealth of information about the large-scale structure (LSS) of the
-Universe and will have a significant impact on cosmology in the coming years.
-In this paper, we introduce an emulator-based halo model approach to forward
-model the relationship between cosmological parameters and the projected
-galaxy-galaxy two-point correlation function (2PCF). Utilizing the large
-\textsc{AbacusSummit} simulation suite, we emulate the 2PCF by generating
-mock-galaxy catalogues within the Halo Occupation Distribution (HOD) framework.
-Our emulator is designed to predict the 2PCF over scales $0.1 \leq r /
-(h^{-1}\text{Mpc}) \leq 105$, from which we derive the projected correlation
-function, independent of redshift space distortions. We demonstrate that the
-emulator accurately predicts the projected correlation function over scales
-$0.5 \leq r_\perp/(h^{-1}\text{Mpc}) \leq 40$, given a set of cosmological and
-HOD parameters. This model is then employed in a parameter inference analysis,
-showcasing its ability to constrain cosmological parameters. Our findings
-indicate that while the projected correlation function places weak constraints
-on several cosmological parameters due to its intrinsic lack of information,
-additional clustering statistics are necessary to better probe the underlying
-cosmology. Despite the simplified covariance matrix used in the likelihood
-model, the posterior distributions of several cosmological parameters remain
-broad, underscoring the need for a more comprehensive approach.
+                    <h3>Sparse Auto-Encoder Interprets Linguistic Features in Large Language
+  Models</h3>
+                    <p><strong>Authors:</strong> Yi Jing, Zijun Yao, Lingxu Ran, Hongzhu Guo, Xiaozhi Wang, Lei Hou, Juanzi Li</p>
+                    <p>  Large language models (LLMs) excel in tasks that require complex linguistic
+abilities, such as reference disambiguation and metaphor
+recognition/generation. Although LLMs possess impressive capabilities, their
+internal mechanisms for processing and representing linguistic knowledge remain
+largely opaque. Previous work on linguistic mechanisms has been limited by
+coarse granularity, insufficient causal analysis, and a narrow focus. In this
+study, we present a systematic and comprehensive causal investigation using
+sparse auto-encoders (SAEs). We extract a wide range of linguistic features
+from six dimensions: phonetics, phonology, morphology, syntax, semantics, and
+pragmatics. We extract, evaluate, and intervene on these features by
+constructing minimal contrast datasets and counterfactual sentence datasets. We
+introduce two indices-Feature Representation Confidence (FRC) and Feature
+Intervention Confidence (FIC)-to measure the ability of linguistic features to
+capture and control linguistic phenomena. Our results reveal inherent
+representations of linguistic knowledge in LLMs and demonstrate the potential
+for controlling model outputs. This work provides strong evidence that LLMs
+possess genuine linguistic knowledge and lays the foundation for more
+interpretable and controllable language modeling in future research.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19353v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20344v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>Agentic Reward Modeling: Integrating Human Preferences with Verifiable
-  Correctness Signals for Reliable Reward Systems</h3>
-                    <p><strong>Authors:</strong> Hao Peng, Yunjia Qi, Xiaozhi Wang, Zijun Yao, Bin Xu, Lei Hou, Juanzi Li</p>
-                    <p>  Reward models (RMs) are crucial for the training and inference-time scaling
-up of large language models (LLMs). However, existing reward models primarily
-focus on human preferences, neglecting verifiable correctness signals which
-have shown strong potential in training LLMs. In this paper, we propose agentic
-reward modeling, a reward system that combines reward models with verifiable
-correctness signals from different aspects to provide reliable rewards. We
-empirically implement a reward agent, named RewardAgent, that combines human
-preference rewards with two verifiable signals: factuality and instruction
-following, to provide more reliable rewards. We conduct comprehensive
-experiments on existing reward model benchmarks and inference time best-of-n
-searches on real-world downstream tasks. RewardAgent significantly outperforms
-vanilla reward models, demonstrating its effectiveness. We further construct
-training preference pairs using RewardAgent and train an LLM with the DPO
-objective, achieving superior performance on various NLP benchmarks compared to
-conventional reward models. Our codes are publicly released to facilitate
-further research (https://github.com/THU-KEG/Agentic-Reward-Modeling).
+                    <h3>Thinking Slow, Fast: Scaling Inference Compute with Distilled Reasoners</h3>
+                    <p><strong>Authors:</strong> Daniele Paliotta, Junxiong Wang, Matteo Pagliardini, Kevin Y. Li, Aviv Bick, J. Zico Kolter, Albert Gu, François Fleuret, Tri Dao</p>
+                    <p>  Recent advancements have demonstrated that the performance of large language
+models (LLMs) can be significantly enhanced by scaling computational resources
+at test time. A common strategy involves generating multiple Chain-of-Thought
+(CoT) trajectories and aggregating their outputs through various selection
+mechanisms. This raises a fundamental question: can models with lower
+complexity leverage their superior generation throughput to outperform
+similarly sized Transformers for a fixed computational budget? To address this
+question and overcome the lack of strong subquadratic reasoners, we distill
+pure and hybrid Mamba models from pretrained Transformers. Trained on only 8
+billion tokens, our distilled models show strong performance and scaling on
+mathematical reasoning datasets while being much faster at inference for large
+batches and long sequences. Despite the zero-shot performance hit due to
+distillation, both pure and hybrid Mamba models can scale their coverage and
+accuracy performance past their Transformer teacher models under fixed time
+budgets, opening a new direction for scaling inference compute.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19328v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20339v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>Agent-centric Information Access</h3>
-                    <p><strong>Authors:</strong> Evangelos Kanoulas, Panagiotis Eustratiadis, Yongkang Li, Yougang Lyu, Vaishali Pal, Gabrielle Poerwawinata, Jingfen Qiao, Zihan Wang</p>
-                    <p>  As large language models (LLMs) become more specialized, we envision a future
-where millions of expert LLMs exist, each trained on proprietary data and
-excelling in specific domains. In such a system, answering a query requires
-selecting a small subset of relevant models, querying them efficiently, and
-synthesizing their responses. This paper introduces a framework for
-agent-centric information access, where LLMs function as knowledge agents that
-are dynamically ranked and queried based on their demonstrated expertise.
-Unlike traditional document retrieval, this approach requires inferring
-expertise on the fly, rather than relying on static metadata or predefined
-model descriptions. This shift introduces several challenges, including
-efficient expert selection, cost-effective querying, response aggregation
-across multiple models, and robustness against adversarial manipulation. To
-address these issues, we propose a scalable evaluation framework that leverages
-retrieval-augmented generation and clustering techniques to construct and
-assess thousands of specialized models, with the potential to scale toward
-millions.
+                    <h3>Long-Context Inference with Retrieval-Augmented Speculative Decoding</h3>
+                    <p><strong>Authors:</strong> Guanzheng Chen, Qilong Feng, Jinjie Ni, Xin Li, Michael Qizhe Shieh</p>
+                    <p>  The emergence of long-context large language models (LLMs) offers a promising
+alternative to traditional retrieval-augmented generation (RAG) for processing
+extensive documents. However, the computational overhead of long-context
+inference, particularly in managing key-value (KV) caches, presents significant
+efficiency challenges. While Speculative Decoding (SD) traditionally
+accelerates inference using smaller draft models, its effectiveness diminishes
+substantially in long-context scenarios due to memory-bound KV cache
+operations. We present Retrieval-Augmented Speculative Decoding (RAPID), which
+leverages RAG for both accelerating and enhancing generation quality in
+long-context inference. RAPID introduces the RAG drafter-a draft LLM operating
+on shortened retrieval contexts-to speculate on the generation of long-context
+target LLMs. Our approach enables a new paradigm where same-scale or even
+larger LLMs can serve as RAG drafters while maintaining computational
+efficiency. To fully leverage the potentially superior capabilities from
+stronger RAG drafters, we develop an inference-time knowledge transfer dynamic
+that enriches the target distribution by RAG. Extensive experiments on the
+LLaMA-3.1 and Qwen2.5 backbones demonstrate that RAPID effectively integrates
+the strengths of both approaches, achieving significant performance
+improvements (e.g., from 39.33 to 42.83 on InfiniteBench for LLaMA-3.1-8B) with
+more than 2x speedups. Our analyses reveal that RAPID achieves robust
+acceleration beyond 32K context length and demonstrates superior generation
+quality in real-world applications.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19298v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20330v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>Complex LLM Planning via Automated Heuristics Discovery</h3>
-                    <p><strong>Authors:</strong> Hongyi Ling, Shubham Parashar, Sambhav Khurana, Blake Olson, Anwesha Basu, Gaurangi Sinha, Zhengzhong Tu, James Caverlee, Shuiwang Ji</p>
-                    <p>  We consider enhancing large language models (LLMs) for complex planning
-tasks. While existing methods allow LLMs to explore intermediate steps to make
-plans, they either depend on unreliable self-verification or external verifiers
-to evaluate these steps, which demand significant data and computations. Here,
-we propose automated heuristics discovery (AutoHD), a novel approach that
-enables LLMs to explicitly generate heuristic functions to guide inference-time
-search, allowing accurate evaluation of intermediate states. These heuristic
-functions are further refined through a heuristic evolution process, improving
-their robustness and effectiveness. Our proposed method requires no additional
-model training or fine-tuning, and the explicit definition of heuristic
-functions generated by the LLMs provides interpretability and insights into the
-reasoning process. Extensive experiments across diverse benchmarks demonstrate
-significant gains over multiple baselines, including nearly twice the accuracy
-on some datasets, establishing our approach as a reliable and interpretable
-solution for complex planning tasks.
+                    <h3>ACCORD: Application Context-aware Cross-layer Optimization and Resource
+  Design for 5G/NextG Machine-centric Applications</h3>
+                    <p><strong>Authors:</strong> Azuka Chiejina, Subhramoy Mohanti, Vijay K. Shah</p>
+                    <p>  Recent advancements in AI and edge computing have accelerated the development
+of machine-centric applications (MCAs), such as smart surveillance systems. In
+these applications, video cameras and sensors offload inference tasks like
+license plate recognition and vehicle tracking to remote servers due to local
+computing and energy constraints. However, legacy network solutions, designed
+primarily for human-centric applications, struggle to reliably support these
+MCAs, which demand heterogeneous and fluctuating QoS (due to diverse
+application inference tasks), further challenged by dynamic wireless network
+conditions and limited spectrum resources. To tackle these challenges, we
+propose an Application Context-aware Cross-layer Optimization and Resource
+Design (ACCORD) framework. This innovative framework anticipates the evolving
+demands of MCAs in real time, quickly adapting to provide customized QoS and
+optimal performance, even for the most dynamic and unpredictable MCAs. This
+also leads to improved network resource management and spectrum utilization.
+ACCORD operates as a closed feedback-loop system between the application client
+and network and consists of two key components: (1) Building Application
+Context: It focuses on understanding the specific context of MCA requirements.
+Contextual factors include device capabilities, user behavior (e.g., mobility
+speed), and network channel conditions. (2) Cross-layer Network Parameter
+Configuration: Utilizing a DRL approach, this component leverages the
+contextual information to optimize network configuration parameters across
+various layers, including PHY, MAC, and RLC, as well as the application layer,
+to meet the desired QoS requirement in real-time. Extensive evaluation with the
+3GPP-compliant MATLAB 5G toolbox demonstrates the practicality and
+effectiveness of our proposed ACCORD framework.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19295v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20320v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>On the Importance of Text Preprocessing for Multimodal Representation
-  Learning and Pathology Report Generation</h3>
-                    <p><strong>Authors:</strong> Ruben T. Lucassen, Tijn van de Luijtgaarden, Sander P. J. Moonemans, Gerben E. Breimer, Willeke A. M. Blokx, Mitko Veta</p>
-                    <p>  Vision-language models in pathology enable multimodal case retrieval and
-automated report generation. Many of the models developed so far, however, have
-been trained on pathology reports that include information which cannot be
-inferred from paired whole slide images (e.g., patient history), potentially
-leading to hallucinated sentences in generated reports. To this end, we
-investigate how the selection of information from pathology reports for
-vision-language modeling affects the quality of the multimodal representations
-and generated reports. More concretely, we compare a model trained on full
-reports against a model trained on preprocessed reports that only include
-sentences describing the cell and tissue appearances based on the H&E-stained
-slides. For the experiments, we built upon the BLIP-2 framework and used a
-cutaneous melanocytic lesion dataset of 42,433 H&E-stained whole slide images
-and 19,636 corresponding pathology reports. Model performance was assessed
-using image-to-text and text-to-image retrieval, as well as qualitative
-evaluation of the generated reports by an expert pathologist. Our results
-demonstrate that text preprocessing prevents hallucination in report
-generation. Despite the improvement in the quality of the generated reports,
-training the vision-language model on full reports showed better cross-modal
-retrieval performance.
+                    <h3>FlexVAR: Flexible Visual Autoregressive Modeling without Residual
+  Prediction</h3>
+                    <p><strong>Authors:</strong> Siyu Jiao, Gengwei Zhang, Yinlong Qian, Jiancheng Huang, Yao Zhao, Humphrey Shi, Lin Ma, Yunchao Wei, Zequn Jie</p>
+                    <p>  This work challenges the residual prediction paradigm in visual
+autoregressive modeling and presents FlexVAR, a new Flexible Visual
+AutoRegressive image generation paradigm. FlexVAR facilitates autoregressive
+learning with ground-truth prediction, enabling each step to independently
+produce plausible images. This simple, intuitive approach swiftly learns visual
+distributions and makes the generation process more flexible and adaptable.
+Trained solely on low-resolution images ($\leq$ 256px), FlexVAR can: (1)
+Generate images of various resolutions and aspect ratios, even exceeding the
+resolution of the training images. (2) Support various image-to-image tasks,
+including image refinement, in/out-painting, and image expansion. (3) Adapt to
+various autoregressive steps, allowing for faster inference with fewer steps or
+enhancing image quality with more steps. Our 1.0B model outperforms its VAR
+counterpart on the ImageNet 256$\times$256 benchmark. Moreover, when zero-shot
+transfer the image generation process with 13 steps, the performance further
+improves to 2.08 FID, outperforming state-of-the-art autoregressive models
+AiM/VAR by 0.25/0.28 FID and popular diffusion models LDM/DiT by 1.52/0.19 FID,
+respectively. When transferring our 1.0B model to the ImageNet 512$\times$512
+benchmark in a zero-shot manner, FlexVAR achieves competitive results compared
+to the VAR 2.3B model, which is a fully supervised model trained at
+512$\times$512 resolution.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19285v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20313v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>Drop-Upcycling: Training Sparse Mixture of Experts with Partial
-  Re-initialization</h3>
-                    <p><strong>Authors:</strong> Taishi Nakamura, Takuya Akiba, Kazuki Fujii, Yusuke Oda, Rio Yokota, Jun Suzuki</p>
-                    <p>  The Mixture of Experts (MoE) architecture reduces the training and inference
-cost significantly compared to a dense model of equivalent capacity. Upcycling
-is an approach that initializes and trains an MoE model using a pre-trained
-dense model. While upcycling leads to initial performance gains, the training
-progresses slower than when trained from scratch, leading to suboptimal
-performance in the long term. We propose Drop-Upcycling - a method that
-effectively addresses this problem. Drop-Upcycling combines two seemingly
-contradictory approaches: utilizing the knowledge of pre-trained dense models
-while statistically re-initializing some parts of the weights. This approach
-strategically promotes expert specialization, significantly enhancing the MoE
-model's efficiency in knowledge acquisition. Extensive large-scale experiments
-demonstrate that Drop-Upcycling significantly outperforms previous MoE
-construction methods in the long term, specifically when training on hundreds
-of billions of tokens or more. As a result, our MoE model with 5.9B active
-parameters achieves comparable performance to a 13B dense model in the same
-model family, while requiring approximately 1/4 of the training FLOPs. All
-experimental resources, including source code, training data, model checkpoints
-and logs, are publicly available to promote reproducibility and future research
-on MoE.
+                    <h3>Inferring Black Hole Spin from Interferometric Measurements of the First
+  Photon Ring: A Geometric Approach</h3>
+                    <p><strong>Authors:</strong> Lennox S. Keeble, Alejandro Cárdenas-Avendaño, Daniel C. M. Palumbo</p>
+                    <p>  Accurately inferring black hole spin is crucial for understanding black hole
+dynamics and their astrophysical environments. In this work, we outline a
+geometric method for spin estimation by using the interferometric shape of the
+first photon ring ($n=1$) as an approximation to the critical curve, which,
+given an assumed value of the black hole inclination, is then mapped to a spin
+value. While future space-based missions will capture a wealth of data on the
+first photon ring--including the full angle-dependent diameter, angular
+brightness profile, and astrometric offset from the $n=0$ ring--our analysis is
+restricted to using only two angle-dependent diameters to compute its shape
+asymmetry and infer spin. Focusing on low inclinations and moderate-to-high
+spins, we test the method across various emission models, baselines, and noise
+sources, including a mock space-based observation. Although the size of the
+$n=1$ ring depends on the emission model, its interferometric shape remains a
+robust spin probe at low inclinations. We find that the inferred asymmetry of
+the $n=1$ image may be biased by the critical curve morphology, and it can be
+heavily skewed by the presence of noise, whether astrophysical or instrumental.
+In low-noise limits at low viewing inclination, significant contributions from
+the n=0 image at short baselines may lead to a downward bias in asymmetry
+estimates. While our method can estimate high spins in noise-free time-averaged
+images, increasing the noise and astrophysical variability degrades the
+resulting constraints, providing only lower bounds on the spin when applied to
+synthetic observed data. Remarkably, even using only the ring's asymmetry, we
+can establish lower bounds on the spin, underscoring the promise of photon
+ring-based spin inference in future space-based very long baseline
+interferometry (VLBI) missions, such as the proposed Black Hole Explorer
+(BHEX).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19261v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20312v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
                 <li>
-                    <h3>U-Net 3+ for Anomalous Diffusion Analysis enhanced with Mixture
-  Estimates (U-AnD-ME) in particle-tracking data</h3>
-                    <p><strong>Authors:</strong> Solomon Asghar, Ran Ni, Giorgio Volpe</p>
-                    <p>  Biophysical processes within living systems rely on encounters and
-interactions between molecules in complex environments such as cells. They are
-often described by anomalous diffusion transport. Recent advances in
-single-molecule microscopy and particle-tracking techniques have yielded an
-abundance of data in the form of videos and trajectories that contain critical
-information about these biologically significant processes. However, standard
-approaches for characterizing anomalous diffusion from these measurements often
-struggle in cases of practical interest, e.g. due to short, noisy trajectories.
-Fully exploiting this data therefore requires the development of advanced
-analysis methods -- a core goal at the heart of the recent international
-Anomalous Diffusion Challenges. Here, we introduce a novel machine-learning
-framework, U-net 3+ for Anomalous Diffusion analysis enhanced with Mixture
-Estimates (U-AnD-ME), that applies a U-Net 3+ based neural network alongside
-Gaussian mixture models to enable highly accurate characterisation of
-single-particle tracking data. In the 2024 Anomalous Diffusion Challenge,
-U-AnD-ME outperformed all other participating methods for the analysis of
-two-dimensional anomalous diffusion trajectories at both single-trajectory and
-ensemble levels. Using a large dataset inspired by the Challenge, we further
-characterize the performance of U-AnD-ME in segmenting trajectories and
-inferring anomalous diffusion properties.
+                    <h3>Mobius: Text to Seamless Looping Video Generation via Latent Shift</h3>
+                    <p><strong>Authors:</strong> Xiuli Bi, Jianfei Yuan, Bo Liu, Yong Zhang, Xiaodong Cun, Chi-Man Pun, Bin Xiao</p>
+                    <p>  We present Mobius, a novel method to generate seamlessly looping videos from
+text descriptions directly without any user annotations, thereby creating new
+visual materials for the multi-media presentation. Our method repurposes the
+pre-trained video latent diffusion model for generating looping videos from
+text prompts without any training. During inference, we first construct a
+latent cycle by connecting the starting and ending noise of the videos. Given
+that the temporal consistency can be maintained by the context of the video
+diffusion model, we perform multi-frame latent denoising by gradually shifting
+the first-frame latent to the end in each step. As a result, the denoising
+context varies in each step while maintaining consistency throughout the
+inference process. Moreover, the latent cycle in our method can be of any
+length. This extends our latent-shifting approach to generate seamless looping
+videos beyond the scope of the video diffusion model's context. Unlike previous
+cinemagraphs, the proposed method does not require an image as appearance,
+which will restrict the motions of the generated results. Instead, our method
+can produce more dynamic motion and better visual quality. We conduct multiple
+experiments and comparisons to verify the effectiveness of the proposed method,
+demonstrating its efficacy in different scenarios. All the code will be made
+available.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.19253v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/26/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.20307v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/27/2025</p>
                 </li>
             </ul>
         </section>
