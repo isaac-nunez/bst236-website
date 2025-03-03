@@ -96,295 +96,262 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Beyond Next-Token: Next-X Prediction for Autoregressive Visual
-  Generation</h3>
-                    <p><strong>Authors:</strong> Sucheng Ren, Qihang Yu, Ju He, Xiaohui Shen, Alan Yuille, Liang-Chieh Chen</p>
-                    <p>  Autoregressive (AR) modeling, known for its next-token prediction paradigm,
-underpins state-of-the-art language and visual generative models.
-Traditionally, a ``token'' is treated as the smallest prediction unit, often a
-discrete symbol in language or a quantized patch in vision. However, the
-optimal token definition for 2D image structures remains an open question.
-Moreover, AR models suffer from exposure bias, where teacher forcing during
-training leads to error accumulation at inference. In this paper, we propose
-xAR, a generalized AR framework that extends the notion of a token to an entity
-X, which can represent an individual patch token, a cell (a $k\times k$
-grouping of neighboring patches), a subsample (a non-local grouping of distant
-patches), a scale (coarse-to-fine resolution), or even a whole image.
-Additionally, we reformulate discrete token classification as
-\textbf{continuous entity regression}, leveraging flow-matching methods at each
-AR step. This approach conditions training on noisy entities instead of ground
-truth tokens, leading to Noisy Context Learning, which effectively alleviates
-exposure bias. As a result, xAR offers two key advantages: (1) it enables
-flexible prediction units that capture different contextual granularity and
-spatial structures, and (2) it mitigates exposure bias by avoiding reliance on
-teacher forcing. On ImageNet-256 generation benchmark, our base model, xAR-B
-(172M), outperforms DiT-XL/SiT-XL (675M) while achieving 20$\times$ faster
-inference. Meanwhile, xAR-H sets a new state-of-the-art with an FID of 1.24,
-running 2.2$\times$ faster than the previous best-performing model without
-relying on vision foundation modules (\eg, DINOv2) or advanced guidance
-interval sampling.
+                    <h3>LLM Post-Training: A Deep Dive into Reasoning Large Language Models</h3>
+                    <p><strong>Authors:</strong> Komal Kumar, Tajamul Ashraf, Omkar Thawakar, Rao Muhammad Anwer, Hisham Cholakkal, Mubarak Shah, Ming-Hsuan Yang, Phillip H. S. Torr, Salman Khan, Fahad Shahbaz Khan</p>
+                    <p>  Large Language Models (LLMs) have transformed the natural language processing
+landscape and brought to life diverse applications. Pretraining on vast
+web-scale data has laid the foundation for these models, yet the research
+community is now increasingly shifting focus toward post-training techniques to
+achieve further breakthroughs. While pretraining provides a broad linguistic
+foundation, post-training methods enable LLMs to refine their knowledge,
+improve reasoning, enhance factual accuracy, and align more effectively with
+user intents and ethical considerations. Fine-tuning, reinforcement learning,
+and test-time scaling have emerged as critical strategies for optimizing LLMs
+performance, ensuring robustness, and improving adaptability across various
+real-world tasks. This survey provides a systematic exploration of
+post-training methodologies, analyzing their role in refining LLMs beyond
+pretraining, addressing key challenges such as catastrophic forgetting, reward
+hacking, and inference-time trade-offs. We highlight emerging directions in
+model alignment, scalable adaptation, and inference-time reasoning, and outline
+future research directions. We also provide a public repository to continually
+track developments in this fast-evolving field:
+https://github.com/mbzuai-oryx/Awesome-LLM-Post-training.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20388v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21321v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>rSPDE: tools for statistical modeling using fractional SPDEs</h3>
-                    <p><strong>Authors:</strong> David Bolin, Alexandre B. Simas</p>
-                    <p>  The R software package rSPDE contains methods for approximating Gaussian
-random fields based on fractional-order stochastic partial differential
-equations (SPDEs). A common example of such fields are Whittle-Mat\'ern fields
-on bounded domains in $\mathbb{R}^d$, manifolds, or metric graphs. The package
-also implements various other models which are briefly introduced in this
-article. Besides the approximation methods, the package contains methods for
-simulation, prediction, and statistical inference for such models, as well as
-interfaces to INLA, inlabru and MetricGraph. With these interfaces,
-fractional-order SPDEs can be used as model components in general latent
-Gaussian models, for which full Bayesian inference can be performed, also for
-fractional models on metric graphs. This includes estimation of the smoothness
-parameter of the fields. This article describes the computational methods used
-in the package and summarizes the theoretical basis for these. The main
-functions of the package are introduced, and their usage is illustrated through
-various examples.
+                    <h3>Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With
+  Faithfulness Based on Causal Theory of Mind</h3>
+                    <p><strong>Authors:</strong> Dingyi Zhang, Deyu Zhou</p>
+                    <p>  Persuasive dialogue plays a pivotal role in human communication, influencing
+various domains. Recent persuasive dialogue datasets often fail to align with
+real-world interpersonal interactions, leading to unfaithful representations.
+For instance, unrealistic scenarios may arise, such as when the persuadee
+explicitly instructs the persuader on which persuasion strategies to employ,
+with each of the persuadee's questions corresponding to a specific strategy for
+the persuader to follow. This issue can be attributed to a violation of the
+"Double Blind" condition, where critical information is fully shared between
+participants. In actual human interactions, however, key information such as
+the mental state of the persuadee and the persuasion strategies of the
+persuader is not directly accessible. The persuader must infer the persuadee's
+mental state using Theory of Mind capabilities and construct arguments that
+align with the persuadee's motivations. To address this gap, we introduce
+ToMMA, a novel multi-agent framework for dialogue generation that is guided by
+causal Theory of Mind. This framework ensures that information remains
+undisclosed between agents, preserving "double-blind" conditions, while causal
+ToM directs the persuader's reasoning, enhancing alignment with human-like
+persuasion dynamics. Consequently, we present CToMPersu, a multi-domain,
+multi-turn persuasive dialogue dataset that tackles both double-blind and
+logical coherence issues, demonstrating superior performance across multiple
+metrics and achieving better alignment with real human dialogues. Our dataset
+and prompts are available at https://github.com/DingyiZhang/ToMMA-CToMPersu .
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20385v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21297v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Bridging Legal Knowledge and AI: Retrieval-Augmented Generation with
-  Vector Stores, Knowledge Graphs, and Hierarchical Non-negative Matrix
-  Factorization</h3>
-                    <p><strong>Authors:</strong> Ryan C. Barron, Maksim E. Eren, Olga M. Serafimova, Cynthia Matuszek, Boian S. Alexandrov</p>
-                    <p>  Agentic Generative AI, powered by Large Language Models (LLMs) with
-Retrieval-Augmented Generation (RAG), Knowledge Graphs (KGs), and Vector Stores
-(VSs), represents a transformative technology applicable to specialized domains
-such as legal systems, research, recommender systems, cybersecurity, and global
-security, including proliferation research. This technology excels at inferring
-relationships within vast unstructured or semi-structured datasets. The legal
-domain here comprises complex data characterized by extensive, interrelated,
-and semi-structured knowledge systems with complex relations. It comprises
-constitutions, statutes, regulations, and case law. Extracting insights and
-navigating the intricate networks of legal documents and their relations is
-crucial for effective legal research. Here, we introduce a generative AI system
-that integrates RAG, VS, and KG, constructed via Non-Negative Matrix
-Factorization (NMF), to enhance legal information retrieval and AI reasoning
-and minimize hallucinations. In the legal system, these technologies empower AI
-agents to identify and analyze complex connections among cases, statutes, and
-legal precedents, uncovering hidden relationships and predicting legal
-trends-challenging tasks that are essential for ensuring justice and improving
-operational efficiency. Our system employs web scraping techniques to
-systematically collect legal texts, such as statutes, constitutional
-provisions, and case law, from publicly accessible platforms like Justia. It
-bridges the gap between traditional keyword-based searches and contextual
-understanding by leveraging advanced semantic representations, hierarchical
-relationships, and latent topic discovery. This framework supports legal
-document clustering, summarization, and cross-referencing, for scalable,
-interpretable, and accurate retrieval for semi-structured data while advancing
-computational law and AI.
+                    <h3>Quantum arrival times in free fall</h3>
+                    <p><strong>Authors:</strong> Mathieu Beau, Timothey Szczepanski, Rafael Martellini, Lionel Martellini</p>
+                    <p>  The probability distribution of a time measurement $T_x$ at position $x$ can
+be inferred from the probability distribution of a position measurement $X_t$
+at time $t$ as given by the Born rule [Time-of-arrival distributions for
+continuous quantum systems and application to quantum backflow, Phys. Rev. A
+110, 052217 (2024)]. In an application to free-fall, this finding has been used
+to predict the existence of a mass-dependent positive relative shift with
+respect to the classical time-of-arrival in the long time-of-flight regime for
+dropped quantum particles [M. Beau and L. Martellini, Quantum delay in the time
+of arrival of free-falling atoms, Phys. Rev. A 109, 012216 (2024).]. The
+present paper extends these results in two important directions. We first show
+that for a Gaussian quantum particle of mass $m$ dropped in a uniform
+gravitational field $g$, the uncertainties about time and position measurements
+are related by the relation $ \Delta T_x \Delta X_t \geq \frac{\hbar}{2mg} . $
+This novel form of uncertainty relation suggests that choosing the initial
+state so as to obtain a lower uncertainty in the measured position leads to a
+higher uncertainty in the measured arrival time. Secondly, we examine the case
+of a free-falling particle starting from a non-Gaussian initial superposed
+state, for which we predict the presence of gravitationally induced
+interferences and oscillations in the mean time-of-arrival as a function of the
+detector's position that can be interpreted as the signature of a
+Zitterbewegung-like effect.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20364v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21295v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Sparse Auto-Encoder Interprets Linguistic Features in Large Language
-  Models</h3>
-                    <p><strong>Authors:</strong> Yi Jing, Zijun Yao, Lingxu Ran, Hongzhu Guo, Xiaozhi Wang, Lei Hou, Juanzi Li</p>
-                    <p>  Large language models (LLMs) excel in tasks that require complex linguistic
-abilities, such as reference disambiguation and metaphor
-recognition/generation. Although LLMs possess impressive capabilities, their
-internal mechanisms for processing and representing linguistic knowledge remain
-largely opaque. Previous work on linguistic mechanisms has been limited by
-coarse granularity, insufficient causal analysis, and a narrow focus. In this
-study, we present a systematic and comprehensive causal investigation using
-sparse auto-encoders (SAEs). We extract a wide range of linguistic features
-from six dimensions: phonetics, phonology, morphology, syntax, semantics, and
-pragmatics. We extract, evaluate, and intervene on these features by
-constructing minimal contrast datasets and counterfactual sentence datasets. We
-introduce two indices-Feature Representation Confidence (FRC) and Feature
-Intervention Confidence (FIC)-to measure the ability of linguistic features to
-capture and control linguistic phenomena. Our results reveal inherent
-representations of linguistic knowledge in LLMs and demonstrate the potential
-for controlling model outputs. This work provides strong evidence that LLMs
-possess genuine linguistic knowledge and lays the foundation for more
-interpretable and controllable language modeling in future research.
+                    <h3>Large Sample Inference with Dynamic Information Borrowing</h3>
+                    <p><strong>Authors:</strong> Sergey Tarima, Silvia Calderazzo, Mary Homan</p>
+                    <p>  Large sample behavior of dynamic information borrowing (DIB) estimators is
+investigated. Asymptotic properties of several DIB approaches (adaptive risk
+minimization, adaptive LASSO, Bayesian procedures with empirical power prior,
+fully Bayesian procedures, and a Bayes-frequentist compromise) are explored
+against shrinking to zero alternatives. As shown theoretically and with
+simulations, local asymptotic distributions of DIB estimators are often
+non-normal. A simple Gaussian setting with external information borrowing
+illustrates that none of the considered DIB methods outperforms others in terms
+of mean squared error (MSE): at different conflict values, the MSEs of DIBs are
+changing between the MSEs of the maximum likelihood estimators based on the
+current and pooled data. To uniquely determine an optimality criterion for DIB,
+a prior distribution on the conflict needs be either implicitly or explicitly
+determined using data independent considerations. Data independent assumptions
+on the conflict are also needed for DIB-based hypothesis testing. New families
+of DIB estimators parameterized by a sensitivity-to-conflict parameter S are
+suggested and their use is illustrated in an infant mortality example. The
+choice of S is determined in a data-independent manner by a cost-benefit
+compromise associated with the use of external data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20344v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21282v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Thinking Slow, Fast: Scaling Inference Compute with Distilled Reasoners</h3>
-                    <p><strong>Authors:</strong> Daniele Paliotta, Junxiong Wang, Matteo Pagliardini, Kevin Y. Li, Aviv Bick, J. Zico Kolter, Albert Gu, François Fleuret, Tri Dao</p>
-                    <p>  Recent advancements have demonstrated that the performance of large language
-models (LLMs) can be significantly enhanced by scaling computational resources
-at test time. A common strategy involves generating multiple Chain-of-Thought
-(CoT) trajectories and aggregating their outputs through various selection
-mechanisms. This raises a fundamental question: can models with lower
-complexity leverage their superior generation throughput to outperform
-similarly sized Transformers for a fixed computational budget? To address this
-question and overcome the lack of strong subquadratic reasoners, we distill
-pure and hybrid Mamba models from pretrained Transformers. Trained on only 8
-billion tokens, our distilled models show strong performance and scaling on
-mathematical reasoning datasets while being much faster at inference for large
-batches and long sequences. Despite the zero-shot performance hit due to
-distillation, both pure and hybrid Mamba models can scale their coverage and
-accuracy performance past their Transformer teacher models under fixed time
-budgets, opening a new direction for scaling inference compute.
+                    <h3>Token-level Ensembling of Models with Different Vocabularies</h3>
+                    <p><strong>Authors:</strong> Rachel Wicks, Kartik Ravisankar, Xinchen Yang, Philipp Koehn, Matt Post</p>
+                    <p>  Model ensembling is a technique to combine the predicted distributions of two
+or more models, often leading to improved robustness and performance. For
+ensembling in text generation, the next token's probability distribution is
+derived from a weighted sum of the distributions of each individual model. This
+requires the underlying models to share the same subword vocabulary, limiting
+the applicability of ensembling, since many open-sourced models have distinct
+vocabularies. In research settings, experimentation or upgrades to vocabularies
+may introduce multiple vocabulary sizes. This paper proposes an inference-time
+only algorithm that allows for ensembling models with different vocabularies,
+without the need to learn additional parameters or alter the underlying models.
+Instead, the algorithm ensures that tokens generated by the ensembled models
+\textit{agree} in their surface form. We apply this technique to combinations
+of traditional encoder-decoder models and decoder-only LLMs and evaluate on
+machine translation. In addition to expanding to model pairs that were
+previously incapable of token-level ensembling, our algorithm frequently
+improves translation performance over either model individually.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20339v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21265v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Long-Context Inference with Retrieval-Augmented Speculative Decoding</h3>
-                    <p><strong>Authors:</strong> Guanzheng Chen, Qilong Feng, Jinjie Ni, Xin Li, Michael Qizhe Shieh</p>
-                    <p>  The emergence of long-context large language models (LLMs) offers a promising
-alternative to traditional retrieval-augmented generation (RAG) for processing
-extensive documents. However, the computational overhead of long-context
-inference, particularly in managing key-value (KV) caches, presents significant
-efficiency challenges. While Speculative Decoding (SD) traditionally
-accelerates inference using smaller draft models, its effectiveness diminishes
-substantially in long-context scenarios due to memory-bound KV cache
-operations. We present Retrieval-Augmented Speculative Decoding (RAPID), which
-leverages RAG for both accelerating and enhancing generation quality in
-long-context inference. RAPID introduces the RAG drafter-a draft LLM operating
-on shortened retrieval contexts-to speculate on the generation of long-context
-target LLMs. Our approach enables a new paradigm where same-scale or even
-larger LLMs can serve as RAG drafters while maintaining computational
-efficiency. To fully leverage the potentially superior capabilities from
-stronger RAG drafters, we develop an inference-time knowledge transfer dynamic
-that enriches the target distribution by RAG. Extensive experiments on the
-LLaMA-3.1 and Qwen2.5 backbones demonstrate that RAPID effectively integrates
-the strengths of both approaches, achieving significant performance
-improvements (e.g., from 39.33 to 42.83 on InfiniteBench for LLaMA-3.1-8B) with
-more than 2x speedups. Our analyses reveal that RAPID achieves robust
-acceleration beyond 32K context length and demonstrates superior generation
-quality in real-world applications.
+                    <h3>Modeling Human Beliefs about AI Behavior for Scalable Oversight</h3>
+                    <p><strong>Authors:</strong> Leon Lang, Patrick Forré</p>
+                    <p>  Contemporary work in AI alignment often relies on human feedback to teach AI
+systems human preferences and values. Yet as AI systems grow more capable,
+human feedback becomes increasingly unreliable. This raises the problem of
+scalable oversight: How can we supervise AI systems that exceed human
+capabilities? In this work, we propose to model the human evaluator's beliefs
+about the AI system's behavior to better interpret the human's feedback. We
+formalize human belief models and theoretically analyze their role in inferring
+human values. We then characterize the remaining ambiguity in this inference
+and conditions for which the ambiguity disappears. To mitigate reliance on
+exact belief models, we then introduce the relaxation of human belief model
+covering. Finally, we propose using foundation models to construct covering
+belief models, providing a new potential approach to scalable oversight.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20330v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21262v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>ACCORD: Application Context-aware Cross-layer Optimization and Resource
-  Design for 5G/NextG Machine-centric Applications</h3>
-                    <p><strong>Authors:</strong> Azuka Chiejina, Subhramoy Mohanti, Vijay K. Shah</p>
-                    <p>  Recent advancements in AI and edge computing have accelerated the development
-of machine-centric applications (MCAs), such as smart surveillance systems. In
-these applications, video cameras and sensors offload inference tasks like
-license plate recognition and vehicle tracking to remote servers due to local
-computing and energy constraints. However, legacy network solutions, designed
-primarily for human-centric applications, struggle to reliably support these
-MCAs, which demand heterogeneous and fluctuating QoS (due to diverse
-application inference tasks), further challenged by dynamic wireless network
-conditions and limited spectrum resources. To tackle these challenges, we
-propose an Application Context-aware Cross-layer Optimization and Resource
-Design (ACCORD) framework. This innovative framework anticipates the evolving
-demands of MCAs in real time, quickly adapting to provide customized QoS and
-optimal performance, even for the most dynamic and unpredictable MCAs. This
-also leads to improved network resource management and spectrum utilization.
-ACCORD operates as a closed feedback-loop system between the application client
-and network and consists of two key components: (1) Building Application
-Context: It focuses on understanding the specific context of MCA requirements.
-Contextual factors include device capabilities, user behavior (e.g., mobility
-speed), and network channel conditions. (2) Cross-layer Network Parameter
-Configuration: Utilizing a DRL approach, this component leverages the
-contextual information to optimize network configuration parameters across
-various layers, including PHY, MAC, and RLC, as well as the application layer,
-to meet the desired QoS requirement in real-time. Extensive evaluation with the
-3GPP-compliant MATLAB 5G toolbox demonstrates the practicality and
-effectiveness of our proposed ACCORD framework.
+                    <h3>Optimizing and Exploring System Performance in Compact
+  Processing-in-Memory-based Chips</h3>
+                    <p><strong>Authors:</strong> Peilin Chen, Xiaoxuan Yang</p>
+                    <p>  Processing-in-memory (PIM) is a promising computing paradigm to tackle the
+"memory wall" challenge. However, PIM system-level benefits over traditional
+von Neumann architecture can be reduced when the memory array cannot fully
+store all the neural network (NN) weights. The NN size is increasing while the
+PIM design size cannot scale up accordingly due to area constraints. Therefore,
+this work targets the system performance optimization and exploration for
+compact PIM designs. We first analyze the impact of data movement on compact
+designs. Then, we propose a novel pipeline method that maximizes the reuse of
+NN weights to improve the throughput and energy efficiency of inference in
+compact chips. To further boost throughput, we introduce a scheduling algorithm
+to mitigate the pipeline bubble problem. Moreover, we investigate the trade-off
+between the network size and system performance for a compact PIM chip.
+Experimental results show that the proposed algorithm achieves 2.35x and 0.5%
+improvement in throughput and energy efficiency, respectively. Compared to the
+area-unlimited design, our compact chip achieves approximately 56.5% of the
+throughput and 58.6% of the energy efficiency while using only one-third of the
+chip area, along with 1.3x improvement in area efficiency. Our compact design
+also outperforms the modern GPU with 4.56x higher throughput and 157x better
+energy efficiency. Besides, our compact design uses less than 20% of the system
+energy for data movement as batch size scales up.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20320v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21259v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>FlexVAR: Flexible Visual Autoregressive Modeling without Residual
-  Prediction</h3>
-                    <p><strong>Authors:</strong> Siyu Jiao, Gengwei Zhang, Yinlong Qian, Jiancheng Huang, Yao Zhao, Humphrey Shi, Lin Ma, Yunchao Wei, Zequn Jie</p>
-                    <p>  This work challenges the residual prediction paradigm in visual
-autoregressive modeling and presents FlexVAR, a new Flexible Visual
-AutoRegressive image generation paradigm. FlexVAR facilitates autoregressive
-learning with ground-truth prediction, enabling each step to independently
-produce plausible images. This simple, intuitive approach swiftly learns visual
-distributions and makes the generation process more flexible and adaptable.
-Trained solely on low-resolution images ($\leq$ 256px), FlexVAR can: (1)
-Generate images of various resolutions and aspect ratios, even exceeding the
-resolution of the training images. (2) Support various image-to-image tasks,
-including image refinement, in/out-painting, and image expansion. (3) Adapt to
-various autoregressive steps, allowing for faster inference with fewer steps or
-enhancing image quality with more steps. Our 1.0B model outperforms its VAR
-counterpart on the ImageNet 256$\times$256 benchmark. Moreover, when zero-shot
-transfer the image generation process with 13 steps, the performance further
-improves to 2.08 FID, outperforming state-of-the-art autoregressive models
-AiM/VAR by 0.25/0.28 FID and popular diffusion models LDM/DiT by 1.52/0.19 FID,
-respectively. When transferring our 1.0B model to the ImageNet 512$\times$512
-benchmark in a zero-shot manner, FlexVAR achieves competitive results compared
-to the VAR 2.3B model, which is a fully supervised model trained at
-512$\times$512 resolution.
+                    <h3>Quantum information elements in Quantum Gravity states and processes</h3>
+                    <p><strong>Authors:</strong> Daniele Oriti</p>
+                    <p>  We summarize basic features of quantum gravity states and processes, common
+to a number of related quantum gravity formalisms, and sharing a purely
+combinatorial and algebraic language, and a discrete geometric interpretation.
+We emphasize how, in this context, entanglement is a seed of topological and
+geometric properties, and how a pre-geometric, discrete notion of quantum
+causality can be implemented, as well as some recent results (based on random
+tensor network techniques) on the conditions for information transmission and
+holographic behaviour in quantum gravity states. Together, these features
+indicate that quantum information concepts and tools play a key role in
+defining the fundamental structure of quantum spacetime.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20313v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21234v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Inferring Black Hole Spin from Interferometric Measurements of the First
-  Photon Ring: A Geometric Approach</h3>
-                    <p><strong>Authors:</strong> Lennox S. Keeble, Alejandro Cárdenas-Avendaño, Daniel C. M. Palumbo</p>
-                    <p>  Accurately inferring black hole spin is crucial for understanding black hole
-dynamics and their astrophysical environments. In this work, we outline a
-geometric method for spin estimation by using the interferometric shape of the
-first photon ring ($n=1$) as an approximation to the critical curve, which,
-given an assumed value of the black hole inclination, is then mapped to a spin
-value. While future space-based missions will capture a wealth of data on the
-first photon ring--including the full angle-dependent diameter, angular
-brightness profile, and astrometric offset from the $n=0$ ring--our analysis is
-restricted to using only two angle-dependent diameters to compute its shape
-asymmetry and infer spin. Focusing on low inclinations and moderate-to-high
-spins, we test the method across various emission models, baselines, and noise
-sources, including a mock space-based observation. Although the size of the
-$n=1$ ring depends on the emission model, its interferometric shape remains a
-robust spin probe at low inclinations. We find that the inferred asymmetry of
-the $n=1$ image may be biased by the critical curve morphology, and it can be
-heavily skewed by the presence of noise, whether astrophysical or instrumental.
-In low-noise limits at low viewing inclination, significant contributions from
-the n=0 image at short baselines may lead to a downward bias in asymmetry
-estimates. While our method can estimate high spins in noise-free time-averaged
-images, increasing the noise and astrophysical variability degrades the
-resulting constraints, providing only lower bounds on the spin when applied to
-synthetic observed data. Remarkably, even using only the ring's asymmetry, we
-can establish lower bounds on the spin, underscoring the promise of photon
-ring-based spin inference in future space-based very long baseline
-interferometry (VLBI) missions, such as the proposed Black Hole Explorer
-(BHEX).
+                    <h3>ARIES: Autonomous Reasoning with LLMs on Interactive Thought Graph
+  Environments</h3>
+                    <p><strong>Authors:</strong> Pedro Gimenes, Zeyu Cao, Jeffrey Wong, Yiren Zhao</p>
+                    <p>  Recent research has shown that LLM performance on reasoning tasks can be
+enhanced by scaling test-time compute. One promising approach, particularly
+with decomposable problems, involves arranging intermediate solutions as a
+graph on which transformations are performed to explore the solution space.
+However, prior works rely on pre-determined, task-specific transformation
+schedules which are subject to a set of searched hyperparameters. In this work,
+we view thought graph transformations as actions in a Markov decision process,
+and implement policy agents to drive effective action policies for the
+underlying reasoning LLM agent. In particular, we investigate the ability for
+another LLM to act as a policy agent on thought graph environments and
+introduce ARIES, a multi-agent architecture for reasoning with LLMs. In ARIES,
+reasoning LLM agents solve decomposed subproblems, while policy LLM agents
+maintain visibility of the thought graph states, and dynamically adapt the
+problem-solving strategy. Through extensive experiments, we observe that using
+off-the-shelf LLMs as policy agents with no supervised fine-tuning (SFT) can
+yield up to $29\%$ higher accuracy on HumanEval relative to static
+transformation schedules, as well as reducing inference costs by $35\%$ and
+avoid any search requirements. We also conduct a thorough analysis of observed
+failure modes, highlighting that limitations on LLM sizes and the depth of
+problem decomposition can be seen as challenges to scaling LLM-guided
+reasoning.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20312v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21208v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
                 <li>
-                    <h3>Mobius: Text to Seamless Looping Video Generation via Latent Shift</h3>
-                    <p><strong>Authors:</strong> Xiuli Bi, Jianfei Yuan, Bo Liu, Yong Zhang, Xiaodong Cun, Chi-Man Pun, Bin Xiao</p>
-                    <p>  We present Mobius, a novel method to generate seamlessly looping videos from
-text descriptions directly without any user annotations, thereby creating new
-visual materials for the multi-media presentation. Our method repurposes the
-pre-trained video latent diffusion model for generating looping videos from
-text prompts without any training. During inference, we first construct a
-latent cycle by connecting the starting and ending noise of the videos. Given
-that the temporal consistency can be maintained by the context of the video
-diffusion model, we perform multi-frame latent denoising by gradually shifting
-the first-frame latent to the end in each step. As a result, the denoising
-context varies in each step while maintaining consistency throughout the
-inference process. Moreover, the latent cycle in our method can be of any
-length. This extends our latent-shifting approach to generate seamless looping
-videos beyond the scope of the video diffusion model's context. Unlike previous
-cinemagraphs, the proposed method does not require an image as appearance,
-which will restrict the motions of the generated results. Instead, our method
-can produce more dynamic motion and better visual quality. We conduct multiple
-experiments and comparisons to verify the effectiveness of the proposed method,
-demonstrating its efficacy in different scenarios. All the code will be made
-available.
+                    <h3>AI-Enhanced Self-Triggering for Extensive Air Showers: Performance and
+  FPGA Feasibility</h3>
+                    <p><strong>Authors:</strong> Qader Dorosti</p>
+                    <p>  Cosmic-ray detection with radio antennas has traditionally depended on
+external triggers from particle detectors, constraining sensitivity and
+increasing complexity. Previous attempts at fully standalone, radio-only
+triggers have often failed under intense radio frequency interference, making
+genuine air-shower signals difficult to isolate. We present a
+proof-of-principle artificial intelligence-based self-triggering system that
+overcomes these limitations. By training a deep learning model on both real
+noise data and injected cosmic-ray-like pulses, we achieve an exceptionally low
+false-positive rate alongside high detection efficiency. Configurable operating
+points can suppress false positives below 0.01\% while retaining more than 88\%
+of genuine signals, and can even eliminate false positives entirely at a modest
+reduction in signal efficiency. This flexibility makes single-station
+cosmic-ray detection feasible without requiring external trigger inputs.
+Applying our approach to real-world noise conditions reduces the initial
+false-positive event rate by several orders of magnitude, supporting
+large-scale deployments. Extrapolation to dedicated hardware implementations,
+such as FPGAs, indicates that sub-\SI{}{\micro\second} inference times are
+achievable, enabling real-time autonomous triggering. These results highlight
+the transformative potential of artificial intelligence for enhancing radio
+detection sensitivity and inaugurate a new generation of fully self-triggered
+cosmic-ray observatories.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.20307v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2502.21198v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 2/28/2025</p>
                 </li>
             </ul>
         </section>
