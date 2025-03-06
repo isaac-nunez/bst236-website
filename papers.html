@@ -99,261 +99,263 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>LLM Post-Training: A Deep Dive into Reasoning Large Language Models</h3>
-                    <p><strong>Authors:</strong> Komal Kumar, Tajamul Ashraf, Omkar Thawakar, Rao Muhammad Anwer, Hisham Cholakkal, Mubarak Shah, Ming-Hsuan Yang, Phillip H. S. Torr, Salman Khan, Fahad Shahbaz Khan</p>
-                    <p>  Large Language Models (LLMs) have transformed the natural language processing
-landscape and brought to life diverse applications. Pretraining on vast
-web-scale data has laid the foundation for these models, yet the research
-community is now increasingly shifting focus toward post-training techniques to
-achieve further breakthroughs. While pretraining provides a broad linguistic
-foundation, post-training methods enable LLMs to refine their knowledge,
-improve reasoning, enhance factual accuracy, and align more effectively with
-user intents and ethical considerations. Fine-tuning, reinforcement learning,
-and test-time scaling have emerged as critical strategies for optimizing LLMs
-performance, ensuring robustness, and improving adaptability across various
-real-world tasks. This survey provides a systematic exploration of
-post-training methodologies, analyzing their role in refining LLMs beyond
-pretraining, addressing key challenges such as catastrophic forgetting, reward
-hacking, and inference-time trade-offs. We highlight emerging directions in
-model alignment, scalable adaptation, and inference-time reasoning, and outline
-future research directions. We also provide a public repository to continually
-track developments in this fast-evolving field:
-https://github.com/mbzuai-oryx/Awesome-LLM-Post-training.
+                    <h3>GEN3C: 3D-Informed World-Consistent Video Generation with Precise Camera
+  Control</h3>
+                    <p><strong>Authors:</strong> Xuanchi Ren, Tianchang Shen, Jiahui Huang, Huan Ling, Yifan Lu, Merlin Nimier-David, Thomas Müller, Alexander Keller, Sanja Fidler, Jun Gao</p>
+                    <p>  We present GEN3C, a generative video model with precise Camera Control and
+temporal 3D Consistency. Prior video models already generate realistic videos,
+but they tend to leverage little 3D information, leading to inconsistencies,
+such as objects popping in and out of existence. Camera control, if implemented
+at all, is imprecise, because camera parameters are mere inputs to the neural
+network which must then infer how the video depends on the camera. In contrast,
+GEN3C is guided by a 3D cache: point clouds obtained by predicting the
+pixel-wise depth of seed images or previously generated frames. When generating
+the next frames, GEN3C is conditioned on the 2D renderings of the 3D cache with
+the new camera trajectory provided by the user. Crucially, this means that
+GEN3C neither has to remember what it previously generated nor does it have to
+infer the image structure from the camera pose. The model, instead, can focus
+all its generative power on previously unobserved regions, as well as advancing
+the scene state to the next frame. Our results demonstrate more precise camera
+control than prior work, as well as state-of-the-art results in sparse-view
+novel view synthesis, even in challenging settings such as driving scenes and
+monocular dynamic video. Results are best viewed in videos. Check out our
+webpage! https://research.nvidia.com/labs/toronto-ai/GEN3C/
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21321v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03751v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Persuasion Should be Double-Blind: A Multi-Domain Dialogue Dataset With
-  Faithfulness Based on Causal Theory of Mind</h3>
-                    <p><strong>Authors:</strong> Dingyi Zhang, Deyu Zhou</p>
-                    <p>  Persuasive dialogue plays a pivotal role in human communication, influencing
-various domains. Recent persuasive dialogue datasets often fail to align with
-real-world interpersonal interactions, leading to unfaithful representations.
-For instance, unrealistic scenarios may arise, such as when the persuadee
-explicitly instructs the persuader on which persuasion strategies to employ,
-with each of the persuadee's questions corresponding to a specific strategy for
-the persuader to follow. This issue can be attributed to a violation of the
-"Double Blind" condition, where critical information is fully shared between
-participants. In actual human interactions, however, key information such as
-the mental state of the persuadee and the persuasion strategies of the
-persuader is not directly accessible. The persuader must infer the persuadee's
-mental state using Theory of Mind capabilities and construct arguments that
-align with the persuadee's motivations. To address this gap, we introduce
-ToMMA, a novel multi-agent framework for dialogue generation that is guided by
-causal Theory of Mind. This framework ensures that information remains
-undisclosed between agents, preserving "double-blind" conditions, while causal
-ToM directs the persuader's reasoning, enhancing alignment with human-like
-persuasion dynamics. Consequently, we present CToMPersu, a multi-domain,
-multi-turn persuasive dialogue dataset that tackles both double-blind and
-logical coherence issues, demonstrating superior performance across multiple
-metrics and achieving better alignment with real human dialogues. Our dataset
-and prompts are available at https://github.com/DingyiZhang/ToMMA-CToMPersu .
+                    <h3>Deep Causal Behavioral Policy Learning: Applications to Healthcare</h3>
+                    <p><strong>Authors:</strong> Jonas Knecht, Anna Zink, Jonathan Kolstad, Maya Petersen</p>
+                    <p>  We present a deep learning-based approach to studying dynamic clinical
+behavioral regimes in diverse non-randomized healthcare settings. Our proposed
+methodology - deep causal behavioral policy learning (DC-BPL) - uses deep
+learning algorithms to learn the distribution of high-dimensional clinical
+action paths, and identifies the causal link between these action paths and
+patient outcomes. Specifically, our approach: (1) identifies the causal effects
+of provider assignment on clinical outcomes; (2) learns the distribution of
+clinical actions a given provider would take given evolving patient
+information; (3) and combines these steps to identify the optimal provider for
+a given patient type and emulate that provider's care decisions. Underlying
+this strategy, we train a large clinical behavioral model (LCBM) on electronic
+health records data using a transformer architecture, and demonstrate its
+ability to estimate clinical behavioral policies. We propose a novel
+interpretation of a behavioral policy learned using the LCBM: that it is an
+efficient encoding of complex, often implicit, knowledge used to treat a
+patient. This allows us to learn a space of policies that are critical to a
+wide range of healthcare applications, in which the vast majority of clinical
+knowledge is acquired tacitly through years of practice and only a tiny
+fraction of information relevant to patient care is written down (e.g. in
+textbooks, studies or standardized guidelines).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21297v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03724v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Quantum arrival times in free fall</h3>
-                    <p><strong>Authors:</strong> Mathieu Beau, Timothey Szczepanski, Rafael Martellini, Lionel Martellini</p>
-                    <p>  The probability distribution of a time measurement $T_x$ at position $x$ can
-be inferred from the probability distribution of a position measurement $X_t$
-at time $t$ as given by the Born rule [Time-of-arrival distributions for
-continuous quantum systems and application to quantum backflow, Phys. Rev. A
-110, 052217 (2024)]. In an application to free-fall, this finding has been used
-to predict the existence of a mass-dependent positive relative shift with
-respect to the classical time-of-arrival in the long time-of-flight regime for
-dropped quantum particles [M. Beau and L. Martellini, Quantum delay in the time
-of arrival of free-falling atoms, Phys. Rev. A 109, 012216 (2024).]. The
-present paper extends these results in two important directions. We first show
-that for a Gaussian quantum particle of mass $m$ dropped in a uniform
-gravitational field $g$, the uncertainties about time and position measurements
-are related by the relation $ \Delta T_x \Delta X_t \geq \frac{\hbar}{2mg} . $
-This novel form of uncertainty relation suggests that choosing the initial
-state so as to obtain a lower uncertainty in the measured position leads to a
-higher uncertainty in the measured arrival time. Secondly, we examine the case
-of a free-falling particle starting from a non-Gaussian initial superposed
-state, for which we predict the presence of gravitationally induced
-interferences and oscillations in the mean time-of-arrival as a function of the
-detector's position that can be interpreted as the signature of a
-Zitterbewegung-like effect.
+                    <h3>Rethinking Video Tokenization: A Conditioned Diffusion-based Approach</h3>
+                    <p><strong>Authors:</strong> Nianzu Yang, Pandeng Li, Liming Zhao, Yang Li, Chen-Wei Xie, Yehui Tang, Xudong Lu, Zhihang Liu, Yun Zheng, Yu Liu, Junchi Yan</p>
+                    <p>  Video tokenizers, which transform videos into compact latent representations,
+are key to video generation. Existing video tokenizers are based on the VAE
+architecture and follow a paradigm where an encoder compresses videos into
+compact latents, and a deterministic decoder reconstructs the original videos
+from these latents. In this paper, we propose a novel
+\underline{\textbf{C}}onditioned \underline{\textbf{D}}iffusion-based video
+\underline{\textbf{T}}okenizer entitled \textbf{\ourmethod}, which departs from
+previous methods by replacing the deterministic decoder with a 3D causal
+diffusion model. The reverse diffusion generative process of the decoder is
+conditioned on the latent representations derived via the encoder. With a
+feature caching and sampling acceleration, the framework efficiently
+reconstructs high-fidelity videos of arbitrary lengths. Results show that
+{\ourmethod} achieves state-of-the-art performance in video reconstruction
+tasks using just a single-step sampling. Even a smaller version of {\ourmethod}
+still achieves reconstruction results on par with the top two baselines.
+Furthermore, the latent video generation model trained using {\ourmethod} also
+shows superior performance.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21295v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03708v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Large Sample Inference with Dynamic Information Borrowing</h3>
-                    <p><strong>Authors:</strong> Sergey Tarima, Silvia Calderazzo, Mary Homan</p>
-                    <p>  Large sample behavior of dynamic information borrowing (DIB) estimators is
-investigated. Asymptotic properties of several DIB approaches (adaptive risk
-minimization, adaptive LASSO, Bayesian procedures with empirical power prior,
-fully Bayesian procedures, and a Bayes-frequentist compromise) are explored
-against shrinking to zero alternatives. As shown theoretically and with
-simulations, local asymptotic distributions of DIB estimators are often
-non-normal. A simple Gaussian setting with external information borrowing
-illustrates that none of the considered DIB methods outperforms others in terms
-of mean squared error (MSE): at different conflict values, the MSEs of DIBs are
-changing between the MSEs of the maximum likelihood estimators based on the
-current and pooled data. To uniquely determine an optimality criterion for DIB,
-a prior distribution on the conflict needs be either implicitly or explicitly
-determined using data independent considerations. Data independent assumptions
-on the conflict are also needed for DIB-based hypothesis testing. New families
-of DIB estimators parameterized by a sensitivity-to-conflict parameter S are
-suggested and their use is illustrated in an infant mortality example. The
-choice of S is determined in a data-independent manner by a cost-benefit
-compromise associated with the use of external data.
+                    <h3>High-Energy Neutrinos by Hydrogen-rich Supernovae interacting with
+  low-massive Circumstellar Medium: The Case of SN 2023ixf</h3>
+                    <p><strong>Authors:</strong> S. P. Cosentino, M. L. Pumo, S. Cherubini</p>
+                    <p>  In hydrogen-rich (H-rich) Supernova (SN) events, the collision between the
+H-rich ejecta and the Circum-Stellar Medium (CSM) can accelerate particles and
+produce high-energy neutrinos (HE-$\nu$, TeV-PeV) through proton-proton
+inelastic scattering. Despite understanding the production mechanism of these
+neutrinos, the lack of direct observations raises questions about particle
+acceleration efficiency and the involved astrophysical conditions. This study
+focuses on neutrino emission from H-rich SNe with low-mass CSM, such as SN
+2023ixf. We developed a semi-analytical model to characterize the progenitor
+and CSM at the explosion time, allowing us to infer the expected neutrino flux
+at Earth during the SN's interaction phase. Our model shows that neutrino
+emission depends not only on shock velocity and CSM mass but also on the
+spatial matter distribution of the CSM. By analysing the bolometric light curve
+of SN 2023ixf beyond 100 days post-explosion, we find that its ejecta,
+consisting of $9\,\text{M}_{\rm \odot}$ (including $0.07\,\text{M}_{\rm \odot}$
+of radioactive $^{56}$Ni) and having a kinetic energy of $1.8\,\text{foe}$,
+collides with a low-mass CSM of $0.06\,\text{M}_{\rm \odot}$ distributed
+according to a power-law density profile with an exponent of $s=2.9$. Through
+these parameters, we estimate that up to $4\pm1\times 10^{-2}$ muon
+(anti-)neutrino events could be detected by IceCube within 50 days
+post-explosion. Although the predicted flux ($\lesssim 3\times
+10^{-9}\,\text{GeV} \, \text{cm}^{-2} \, \text{s}^{-1}$) is below current
+IceCube sensitivity, future telescopes like IceCube-Gen2 and KM3NeT could
+detect HE-$\nu$ from similar SN events.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21282v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03699v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Token-level Ensembling of Models with Different Vocabularies</h3>
-                    <p><strong>Authors:</strong> Rachel Wicks, Kartik Ravisankar, Xinchen Yang, Philipp Koehn, Matt Post</p>
-                    <p>  Model ensembling is a technique to combine the predicted distributions of two
-or more models, often leading to improved robustness and performance. For
-ensembling in text generation, the next token's probability distribution is
-derived from a weighted sum of the distributions of each individual model. This
-requires the underlying models to share the same subword vocabulary, limiting
-the applicability of ensembling, since many open-sourced models have distinct
-vocabularies. In research settings, experimentation or upgrades to vocabularies
-may introduce multiple vocabulary sizes. This paper proposes an inference-time
-only algorithm that allows for ensembling models with different vocabularies,
-without the need to learn additional parameters or alter the underlying models.
-Instead, the algorithm ensures that tokens generated by the ensembled models
-\textit{agree} in their surface form. We apply this technique to combinations
-of traditional encoder-decoder models and decoder-only LLMs and evaluate on
-machine translation. In addition to expanding to model pairs that were
-previously incapable of token-level ensembling, our algorithm frequently
-improves translation performance over either model individually.
+                    <h3>ILLC: Iterative Layer-by-Layer Compression for Enhancing Structural
+  Faithfulness in SpArX</h3>
+                    <p><strong>Authors:</strong> Ungsik Kim</p>
+                    <p>  In the field of Explainable Artificial Intelligence (XAI), argumentative XAI
+approaches have been proposed to represent the internal reasoning process of
+deep neural networks in a more transparent way by interpreting hidden nodes as
+arguements. However, as the number of layers increases, existing compression
+methods simplify all layers at once, which lead to high accumulative
+information loss. To compensate for this, we propose an iterative
+layer-by-layer compression technique in which each layer is compressed
+separately and the reduction error in the next layer is immediately compensated
+for, thereby improving the overall input-output and structural fidelity of the
+model. Experiments on the Breast Cancer Diagnosis dataset show that, compared
+to traditional compression, the method reduces input-output and structural
+unfaithfulness, and maintains a more consistent attack-support relationship in
+the Argumentative Explanation scheme. This is significant because it provides a
+new way to make complex MLP models more compact while still conveying their
+internal inference logic without distortion.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21265v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03693v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Modeling Human Beliefs about AI Behavior for Scalable Oversight</h3>
-                    <p><strong>Authors:</strong> Leon Lang, Patrick Forré</p>
-                    <p>  Contemporary work in AI alignment often relies on human feedback to teach AI
-systems human preferences and values. Yet as AI systems grow more capable,
-human feedback becomes increasingly unreliable. This raises the problem of
-scalable oversight: How can we supervise AI systems that exceed human
-capabilities? In this work, we propose to model the human evaluator's beliefs
-about the AI system's behavior to better interpret the human's feedback. We
-formalize human belief models and theoretically analyze their role in inferring
-human values. We then characterize the remaining ambiguity in this inference
-and conditions for which the ambiguity disappears. To mitigate reliance on
-exact belief models, we then introduce the relaxation of human belief model
-covering. Finally, we propose using foundation models to construct covering
-belief models, providing a new potential approach to scalable oversight.
+                    <h3>MAS-GPT: Training LLMs to Build LLM-based Multi-Agent Systems</h3>
+                    <p><strong>Authors:</strong> Rui Ye, Shuo Tang, Rui Ge, Yaxin Du, Zhenfei Yin, Siheng Chen, Jing Shao</p>
+                    <p>  LLM-based multi-agent systems (MAS) have shown significant potential in
+tackling diverse tasks. However, to design effective MAS, existing approaches
+heavily rely on manual configurations or multiple calls of advanced LLMs,
+resulting in inadaptability and high inference costs. In this paper, we
+simplify the process of building an MAS by reframing it as a generative
+language task, where the input is a user query and the output is a
+corresponding MAS. To address this novel task, we unify the representation of
+MAS as executable code and propose a consistency-oriented data construction
+pipeline to create a high-quality dataset comprising coherent and consistent
+query-MAS pairs. Using this dataset, we train MAS-GPT, an open-source
+medium-sized LLM that is capable of generating query-adaptive MAS within a
+single LLM inference. The generated MAS can be seamlessly applied to process
+user queries and deliver high-quality responses. Extensive experiments on 9
+benchmarks and 5 LLMs show that the proposed MAS-GPT consistently outperforms
+10+ baseline MAS methods on diverse settings, indicating MAS-GPT's high
+effectiveness, efficiency and strong generalization ability. Code will be
+available at https://github.com/rui-ye/MAS-GPT.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21262v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03686v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Optimizing and Exploring System Performance in Compact
-  Processing-in-Memory-based Chips</h3>
-                    <p><strong>Authors:</strong> Peilin Chen, Xiaoxuan Yang</p>
-                    <p>  Processing-in-memory (PIM) is a promising computing paradigm to tackle the
-"memory wall" challenge. However, PIM system-level benefits over traditional
-von Neumann architecture can be reduced when the memory array cannot fully
-store all the neural network (NN) weights. The NN size is increasing while the
-PIM design size cannot scale up accordingly due to area constraints. Therefore,
-this work targets the system performance optimization and exploration for
-compact PIM designs. We first analyze the impact of data movement on compact
-designs. Then, we propose a novel pipeline method that maximizes the reuse of
-NN weights to improve the throughput and energy efficiency of inference in
-compact chips. To further boost throughput, we introduce a scheduling algorithm
-to mitigate the pipeline bubble problem. Moreover, we investigate the trade-off
-between the network size and system performance for a compact PIM chip.
-Experimental results show that the proposed algorithm achieves 2.35x and 0.5%
-improvement in throughput and energy efficiency, respectively. Compared to the
-area-unlimited design, our compact chip achieves approximately 56.5% of the
-throughput and 58.6% of the energy efficiency while using only one-third of the
-chip area, along with 1.3x improvement in area efficiency. Our compact design
-also outperforms the modern GPU with 4.56x higher throughput and 157x better
-energy efficiency. Besides, our compact design uses less than 20% of the system
-energy for data movement as batch size scales up.
+                    <h3>Towards Trustworthy Federated Learning</h3>
+                    <p><strong>Authors:</strong> Alina Basharat, Yijun Bian, Ping Xu, Zhi Tian</p>
+                    <p>  This paper develops a comprehensive framework to address three critical
+trustworthy challenges in federated learning (FL): robustness against Byzantine
+attacks, fairness, and privacy preservation. To improve the system's defense
+against Byzantine attacks that send malicious information to bias the system's
+performance, we develop a Two-sided Norm Based Screening (TNBS) mechanism,
+which allows the central server to crop the gradients that have the l lowest
+norms and h highest norms. TNBS functions as a screening tool to filter out
+potential malicious participants whose gradients are far from the honest ones.
+To promote egalitarian fairness, we adopt the q-fair federated learning
+(q-FFL). Furthermore, we adopt a differential privacy-based scheme to prevent
+raw data at local clients from being inferred by curious parties. Convergence
+guarantees are provided for the proposed framework under different scenarios.
+Experimental results on real datasets demonstrate that the proposed framework
+effectively improves robustness and fairness while managing the trade-off
+between privacy and accuracy. This work appears to be the first study that
+experimentally and theoretically addresses fairness, privacy, and robustness in
+trustworthy FL.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21259v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03684v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>Quantum information elements in Quantum Gravity states and processes</h3>
-                    <p><strong>Authors:</strong> Daniele Oriti</p>
-                    <p>  We summarize basic features of quantum gravity states and processes, common
-to a number of related quantum gravity formalisms, and sharing a purely
-combinatorial and algebraic language, and a discrete geometric interpretation.
-We emphasize how, in this context, entanglement is a seed of topological and
-geometric properties, and how a pre-geometric, discrete notion of quantum
-causality can be implemented, as well as some recent results (based on random
-tensor network techniques) on the conditions for information transmission and
-holographic behaviour in quantum gravity states. Together, these features
-indicate that quantum information concepts and tools play a key role in
-defining the fundamental structure of quantum spacetime.
+                    <h3>Study of an active region prominence using spectropolarimetric data in
+  the He I D3 multiplet</h3>
+                    <p><strong>Authors:</strong> S. Esteban Pozuelo, A. Asensio Ramos, J. Trujillo Bueno, R. Ramelli, F. Zeuner, M. Bianda</p>
+                    <p>  Prominences are cool overdensities of plasma supported by magnetic fields
+that levitate in the solar corona. The physical characterization of these
+structures is key for understanding the magnetic field in the corona. Our work
+attempts to shed light on the properties of prominences by using observations
+at high polarimetric sensitivity in the He I D3 multiplet taken with the Zurich
+Imaging Polarimeter-3 instrument at the Istituto ricerche solari Aldo e Cele
+Dacco observatory. We used the HAZEL inversion code to infer the thermodynamic
+and magnetic properties of an active region prominence, assuming one- and
+two-component models. Our observations unveil a great diversity of physical
+conditions in the prominence. The observed Stokes profiles are usually broad
+and show interesting features, which can be described assuming a two-component
+model. The contribution of each component and the trends inferred for some
+parameters vary with the distance to the solar limb. While both components have
+analogous properties and contribute similarly close to the limb, a major
+component mainly describes the properties inferred at 10-40 arcsecs away from
+the limb. Moreover, both components usually show significant differences in
+thermal broadening, which is essential for ensuring a good fit quality between
+observations and synthetic profiles. Summarizing, the observed region of the
+prominence shows line-of-sight velocities of 1-3 km/s and rather horizontal
+fields of 20-80 gauss. We also report hints of a twist close to a prominence
+foot and changes in the magnetic configuration at specific locations. Our
+results indicate a mainly horizontal magnetic field of a few tens of gauss in
+the prominence. A model of two components with different thermal broadenings
+and filling factors, depending on the limb distance, is crucial for providing a
+consistent solution across most of the observed prominence.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21234v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03670v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>ARIES: Autonomous Reasoning with LLMs on Interactive Thought Graph
-  Environments</h3>
-                    <p><strong>Authors:</strong> Pedro Gimenes, Zeyu Cao, Jeffrey Wong, Yiren Zhao</p>
-                    <p>  Recent research has shown that LLM performance on reasoning tasks can be
-enhanced by scaling test-time compute. One promising approach, particularly
-with decomposable problems, involves arranging intermediate solutions as a
-graph on which transformations are performed to explore the solution space.
-However, prior works rely on pre-determined, task-specific transformation
-schedules which are subject to a set of searched hyperparameters. In this work,
-we view thought graph transformations as actions in a Markov decision process,
-and implement policy agents to drive effective action policies for the
-underlying reasoning LLM agent. In particular, we investigate the ability for
-another LLM to act as a policy agent on thought graph environments and
-introduce ARIES, a multi-agent architecture for reasoning with LLMs. In ARIES,
-reasoning LLM agents solve decomposed subproblems, while policy LLM agents
-maintain visibility of the thought graph states, and dynamically adapt the
-problem-solving strategy. Through extensive experiments, we observe that using
-off-the-shelf LLMs as policy agents with no supervised fine-tuning (SFT) can
-yield up to $29\%$ higher accuracy on HumanEval relative to static
-transformation schedules, as well as reducing inference costs by $35\%$ and
-avoid any search requirements. We also conduct a thorough analysis of observed
-failure modes, highlighting that limitations on LLM sizes and the depth of
-problem decomposition can be seen as challenges to scaling LLM-guided
-reasoning.
+                    <h3>Analogical Reasoning Inside Large Language Models: Concept Vectors and
+  the Limits of Abstraction</h3>
+                    <p><strong>Authors:</strong> Gustaw Opiełka, Hannes Rosenbusch, Claire E. Stevenson</p>
+                    <p>  Analogical reasoning relies on conceptual abstractions, but it is unclear
+whether Large Language Models (LLMs) harbor such internal representations. We
+explore distilled representations from LLM activations and find that function
+vectors (FVs; Todd et al., 2024) - compact representations for in-context
+learning (ICL) tasks - are not invariant to simple input changes (e.g.,
+open-ended vs. multiple-choice), suggesting they capture more than pure
+concepts. Using representational similarity analysis (RSA), we localize a small
+set of attention heads that encode invariant concept vectors (CVs) for verbal
+concepts like "antonym". These CVs function as feature detectors that operate
+independently of the final output - meaning that a model may form a correct
+internal representation yet still produce an incorrect output. Furthermore, CVs
+can be used to causally guide model behaviour. However, for more abstract
+concepts like "previous" and "next", we do not observe invariant linear
+representations, a finding we link to generalizability issues LLMs display
+within these domains.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21208v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03666v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
                 <li>
-                    <h3>AI-Enhanced Self-Triggering for Extensive Air Showers: Performance and
-  FPGA Feasibility</h3>
-                    <p><strong>Authors:</strong> Qader Dorosti</p>
-                    <p>  Cosmic-ray detection with radio antennas has traditionally depended on
-external triggers from particle detectors, constraining sensitivity and
-increasing complexity. Previous attempts at fully standalone, radio-only
-triggers have often failed under intense radio frequency interference, making
-genuine air-shower signals difficult to isolate. We present a
-proof-of-principle artificial intelligence-based self-triggering system that
-overcomes these limitations. By training a deep learning model on both real
-noise data and injected cosmic-ray-like pulses, we achieve an exceptionally low
-false-positive rate alongside high detection efficiency. Configurable operating
-points can suppress false positives below 0.01\% while retaining more than 88\%
-of genuine signals, and can even eliminate false positives entirely at a modest
-reduction in signal efficiency. This flexibility makes single-station
-cosmic-ray detection feasible without requiring external trigger inputs.
-Applying our approach to real-world noise conditions reduces the initial
-false-positive event rate by several orders of magnitude, supporting
-large-scale deployments. Extrapolation to dedicated hardware implementations,
-such as FPGAs, indicates that sub-\SI{}{\micro\second} inference times are
-achievable, enabling real-time autonomous triggering. These results highlight
-the transformative potential of artificial intelligence for enhancing radio
-detection sensitivity and inaugurate a new generation of fully self-triggered
-cosmic-ray observatories.
+                    <h3>Feature Matching Intervention: Leveraging Observational Data for Causal
+  Representation Learning</h3>
+                    <p><strong>Authors:</strong> Haoze Li, Jun Xie</p>
+                    <p>  A major challenge in causal discovery from observational data is the absence
+of perfect interventions, making it difficult to distinguish causal features
+from spurious ones. We propose an innovative approach, Feature Matching
+Intervention (FMI), which uses a matching procedure to mimic perfect
+interventions. We define causal latent graphs, extending structural causal
+models to latent feature space, providing a framework that connects FMI with
+causal graph learning. Our feature matching procedure emulates perfect
+interventions within these causal latent graphs. Theoretical results
+demonstrate that FMI exhibits strong out-of-distribution (OOD)
+generalizability. Experiments further highlight FMI's superior performance in
+effectively identifying causal features solely from observational data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2502.21198v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 2/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.03634v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/5/2025</p>
                 </li>
             </ul>
         </section>
