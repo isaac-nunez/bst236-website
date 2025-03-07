@@ -100,262 +100,279 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>GEN3C: 3D-Informed World-Consistent Video Generation with Precise Camera
-  Control</h3>
-                    <p><strong>Authors:</strong> Xuanchi Ren, Tianchang Shen, Jiahui Huang, Huan Ling, Yifan Lu, Merlin Nimier-David, Thomas Müller, Alexander Keller, Sanja Fidler, Jun Gao</p>
-                    <p>  We present GEN3C, a generative video model with precise Camera Control and
-temporal 3D Consistency. Prior video models already generate realistic videos,
-but they tend to leverage little 3D information, leading to inconsistencies,
-such as objects popping in and out of existence. Camera control, if implemented
-at all, is imprecise, because camera parameters are mere inputs to the neural
-network which must then infer how the video depends on the camera. In contrast,
-GEN3C is guided by a 3D cache: point clouds obtained by predicting the
-pixel-wise depth of seed images or previously generated frames. When generating
-the next frames, GEN3C is conditioned on the 2D renderings of the 3D cache with
-the new camera trajectory provided by the user. Crucially, this means that
-GEN3C neither has to remember what it previously generated nor does it have to
-infer the image structure from the camera pose. The model, instead, can focus
-all its generative power on previously unobserved regions, as well as advancing
-the scene state to the next frame. Our results demonstrate more precise camera
-control than prior work, as well as state-of-the-art results in sparse-view
-novel view synthesis, even in challenging settings such as driving scenes and
-monocular dynamic video. Results are best viewed in videos. Check out our
-webpage! https://research.nvidia.com/labs/toronto-ai/GEN3C/
+                    <h3>Enough Coin Flips Can Make LLMs Act Bayesian</h3>
+                    <p><strong>Authors:</strong> Ritwik Gupta, Rodolfo Corona, Jiaxin Ge, Eric Wang, Dan Klein, Trevor Darrell, David M. Chan</p>
+                    <p>  Large language models (LLMs) exhibit the ability to generalize given few-shot
+examples in their input prompt, an emergent capability known as in-context
+learning (ICL). We investigate whether LLMs utilize ICL to perform structured
+reasoning in ways that are consistent with a Bayesian framework or rely on
+pattern matching. Using a controlled setting of biased coin flips, we find
+that: (1) LLMs often possess biased priors, causing initial divergence in
+zero-shot settings, (2) in-context evidence outweighs explicit bias
+instructions, (3) LLMs broadly follow Bayesian posterior updates, with
+deviations primarily due to miscalibrated priors rather than flawed updates,
+and (4) attention magnitude has negligible effect on Bayesian inference. With
+sufficient demonstrations of biased coin flips via ICL, LLMs update their
+priors in a Bayesian manner.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03751v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04722v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Deep Causal Behavioral Policy Learning: Applications to Healthcare</h3>
-                    <p><strong>Authors:</strong> Jonas Knecht, Anna Zink, Jonathan Kolstad, Maya Petersen</p>
-                    <p>  We present a deep learning-based approach to studying dynamic clinical
-behavioral regimes in diverse non-randomized healthcare settings. Our proposed
-methodology - deep causal behavioral policy learning (DC-BPL) - uses deep
-learning algorithms to learn the distribution of high-dimensional clinical
-action paths, and identifies the causal link between these action paths and
-patient outcomes. Specifically, our approach: (1) identifies the causal effects
-of provider assignment on clinical outcomes; (2) learns the distribution of
-clinical actions a given provider would take given evolving patient
-information; (3) and combines these steps to identify the optimal provider for
-a given patient type and emulate that provider's care decisions. Underlying
-this strategy, we train a large clinical behavioral model (LCBM) on electronic
-health records data using a transformer architecture, and demonstrate its
-ability to estimate clinical behavioral policies. We propose a novel
-interpretation of a behavioral policy learned using the LCBM: that it is an
-efficient encoding of complex, often implicit, knowledge used to treat a
-patient. This allows us to learn a space of policies that are critical to a
-wide range of healthcare applications, in which the vast majority of clinical
-knowledge is acquired tacitly through years of practice and only a tiny
-fraction of information relevant to patient care is written down (e.g. in
-textbooks, studies or standardized guidelines).
+                    <h3>Floxels: Fast Unsupervised Voxel Based Scene Flow Estimation</h3>
+                    <p><strong>Authors:</strong> David T. Hoffmann, Syed Haseeb Raza, Hanqiu Jiang, Denis Tananaev, Steffen Klingenhoefer, Martin Meinke</p>
+                    <p>  Scene flow estimation is a foundational task for many robotic applications,
+including robust dynamic object detection, automatic labeling, and sensor
+synchronization. Two types of approaches to the problem have evolved: 1)
+Supervised and 2) optimization-based methods. Supervised methods are fast
+during inference and achieve high-quality results, however, they are limited by
+the need for large amounts of labeled training data and are susceptible to
+domain gaps. In contrast, unsupervised test-time optimization methods do not
+face the problem of domain gaps but usually suffer from substantial runtime,
+exhibit artifacts, or fail to converge to the right solution. In this work, we
+mitigate several limitations of existing optimization-based methods. To this
+end, we 1) introduce a simple voxel grid-based model that improves over the
+standard MLP-based formulation in multiple dimensions and 2) introduce a new
+multiframe loss formulation. 3) We combine both contributions in our new
+method, termed Floxels. On the Argoverse 2 benchmark, Floxels is surpassed only
+by EulerFlow among unsupervised methods while achieving comparable performance
+at a fraction of the computational cost. Floxels achieves a massive speedup of
+more than ~60 - 140x over EulerFlow, reducing the runtime from a day to 10
+minutes per sequence. Over the faster but low-quality baseline, NSFP, Floxels
+achieves a speedup of ~14x.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03724v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04718v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Rethinking Video Tokenization: A Conditioned Diffusion-based Approach</h3>
-                    <p><strong>Authors:</strong> Nianzu Yang, Pandeng Li, Liming Zhao, Yang Li, Chen-Wei Xie, Yehui Tang, Xudong Lu, Zhihang Liu, Yun Zheng, Yu Liu, Junchi Yan</p>
-                    <p>  Video tokenizers, which transform videos into compact latent representations,
-are key to video generation. Existing video tokenizers are based on the VAE
-architecture and follow a paradigm where an encoder compresses videos into
-compact latents, and a deterministic decoder reconstructs the original videos
-from these latents. In this paper, we propose a novel
-\underline{\textbf{C}}onditioned \underline{\textbf{D}}iffusion-based video
-\underline{\textbf{T}}okenizer entitled \textbf{\ourmethod}, which departs from
-previous methods by replacing the deterministic decoder with a 3D causal
-diffusion model. The reverse diffusion generative process of the decoder is
-conditioned on the latent representations derived via the encoder. With a
-feature caching and sampling acceleration, the framework efficiently
-reconstructs high-fidelity videos of arbitrary lengths. Results show that
-{\ourmethod} achieves state-of-the-art performance in video reconstruction
-tasks using just a single-step sampling. Even a smaller version of {\ourmethod}
-still achieves reconstruction results on par with the top two baselines.
-Furthermore, the latent video generation model trained using {\ourmethod} also
-shows superior performance.
+                    <h3>Inferring kilonova ejecta photospheric properties from early blackbody
+  spectra</h3>
+                    <p><strong>Authors:</strong> Gilad Sadeh</p>
+                    <p>  We present simple analytic corrections to the standard blackbody fitting used
+for early kilonova emission. We consider a spherical, relativistically
+expanding shell that radiates thermally at a single temperature in its own rest
+frame. Due to relativistic effects, including Doppler boosting, time delay, and
+temperature evolution -- the observed temperature is smeared across different
+polar angles by approximately $\sim10\%$. While the observed spectrum remains
+roughly consistent with a single-temperature blackbody, neglecting relativistic
+effects leads to significant systematic inaccuracies: the inferred photospheric
+velocity and temperature are overestimated by up to $\sim50\%$ for mildly
+relativistic velocities. By applying our analytic corrections, these deviations
+are reduced to within $10\%$, even in cases where the photosphere is receding
+and cooling is considered. Applying our corrections to observed kilonovae
+(AT2017gfo and the thermal component of GRB211211A) reveals that standard
+blackbody fitting overestimated the inferred velocities and temperatures by
+$10\%-40\%$.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03708v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04700v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>High-Energy Neutrinos by Hydrogen-rich Supernovae interacting with
-  low-massive Circumstellar Medium: The Case of SN 2023ixf</h3>
-                    <p><strong>Authors:</strong> S. P. Cosentino, M. L. Pumo, S. Cherubini</p>
-                    <p>  In hydrogen-rich (H-rich) Supernova (SN) events, the collision between the
-H-rich ejecta and the Circum-Stellar Medium (CSM) can accelerate particles and
-produce high-energy neutrinos (HE-$\nu$, TeV-PeV) through proton-proton
-inelastic scattering. Despite understanding the production mechanism of these
-neutrinos, the lack of direct observations raises questions about particle
-acceleration efficiency and the involved astrophysical conditions. This study
-focuses on neutrino emission from H-rich SNe with low-mass CSM, such as SN
-2023ixf. We developed a semi-analytical model to characterize the progenitor
-and CSM at the explosion time, allowing us to infer the expected neutrino flux
-at Earth during the SN's interaction phase. Our model shows that neutrino
-emission depends not only on shock velocity and CSM mass but also on the
-spatial matter distribution of the CSM. By analysing the bolometric light curve
-of SN 2023ixf beyond 100 days post-explosion, we find that its ejecta,
-consisting of $9\,\text{M}_{\rm \odot}$ (including $0.07\,\text{M}_{\rm \odot}$
-of radioactive $^{56}$Ni) and having a kinetic energy of $1.8\,\text{foe}$,
-collides with a low-mass CSM of $0.06\,\text{M}_{\rm \odot}$ distributed
-according to a power-law density profile with an exponent of $s=2.9$. Through
-these parameters, we estimate that up to $4\pm1\times 10^{-2}$ muon
-(anti-)neutrino events could be detected by IceCube within 50 days
-post-explosion. Although the predicted flux ($\lesssim 3\times
-10^{-9}\,\text{GeV} \, \text{cm}^{-2} \, \text{s}^{-1}$) is below current
-IceCube sensitivity, future telescopes like IceCube-Gen2 and KM3NeT could
-detect HE-$\nu$ from similar SN events.
+                    <h3>DEAL-YOLO: Drone-based Efficient Animal Localization using YOLO</h3>
+                    <p><strong>Authors:</strong> Aditya Prashant Naidu, Hem Gosalia, Ishaan Gakhar, Shaurya Singh Rathore, Krish Didwania, Ujjwal Verma</p>
+                    <p>  Although advances in deep learning and aerial surveillance technology are
+improving wildlife conservation efforts, complex and erratic environmental
+conditions still pose a problem, requiring innovative solutions for
+cost-effective small animal detection. This work introduces DEAL-YOLO, a novel
+approach that improves small object detection in Unmanned Aerial Vehicle (UAV)
+images by using multi-objective loss functions like Wise IoU (WIoU) and
+Normalized Wasserstein Distance (NWD), which prioritize pixels near the centre
+of the bounding box, ensuring smoother localization and reducing abrupt
+deviations. Additionally, the model is optimized through efficient feature
+extraction with Linear Deformable (LD) convolutions, enhancing accuracy while
+maintaining computational efficiency. The Scaled Sequence Feature Fusion (SSFF)
+module enhances object detection by effectively capturing inter-scale
+relationships, improving feature representation, and boosting metrics through
+optimized multiscale fusion. Comparison with baseline models reveals high
+efficacy with up to 69.5\% fewer parameters compared to vanilla Yolov8-N,
+highlighting the robustness of the proposed modifications. Through this
+approach, our paper aims to facilitate the detection of endangered species,
+animal population analysis, habitat monitoring, biodiversity research, and
+various other applications that enrich wildlife conservation efforts. DEAL-YOLO
+employs a two-stage inference paradigm for object detection, refining selected
+regions to improve localization and confidence. This approach enhances
+performance, especially for small instances with low objectness scores.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03699v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04698v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>ILLC: Iterative Layer-by-Layer Compression for Enhancing Structural
-  Faithfulness in SpArX</h3>
-                    <p><strong>Authors:</strong> Ungsik Kim</p>
-                    <p>  In the field of Explainable Artificial Intelligence (XAI), argumentative XAI
-approaches have been proposed to represent the internal reasoning process of
-deep neural networks in a more transparent way by interpreting hidden nodes as
-arguements. However, as the number of layers increases, existing compression
-methods simplify all layers at once, which lead to high accumulative
-information loss. To compensate for this, we propose an iterative
-layer-by-layer compression technique in which each layer is compressed
-separately and the reduction error in the next layer is immediately compensated
-for, thereby improving the overall input-output and structural fidelity of the
-model. Experiments on the Breast Cancer Diagnosis dataset show that, compared
-to traditional compression, the method reduces input-output and structural
-unfaithfulness, and maintains a more consistent attack-support relationship in
-the Argumentative Explanation scheme. This is significant because it provides a
-new way to make complex MLP models more compact while still conveying their
-internal inference logic without distortion.
+                    <h3>Matrix Factorization for Inferring Associations and Missing Links</h3>
+                    <p><strong>Authors:</strong> Ryan Barron, Maksim E. Eren, Duc P. Truong, Cynthia Matuszek, James Wendelberger, Mary F. Dorn, Boian Alexandrov</p>
+                    <p>  Missing link prediction is a method for network analysis, with applications
+in recommender systems, biology, social sciences, cybersecurity, information
+retrieval, and Artificial Intelligence (AI) reasoning in Knowledge Graphs.
+Missing link prediction identifies unseen but potentially existing connections
+in a network by analyzing the observed patterns and relationships. In
+proliferation detection, this supports efforts to identify and characterize
+attempts by state and non-state actors to acquire nuclear weapons or associated
+technology - a notoriously challenging but vital mission for global security.
+Dimensionality reduction techniques like Non-Negative Matrix Factorization
+(NMF) and Logistic Matrix Factorization (LMF) are effective but require
+selection of the matrix rank parameter, that is, of the number of hidden
+features, k, to avoid over/under-fitting. We introduce novel Weighted (WNMFk),
+Boolean (BNMFk), and Recommender (RNMFk) matrix factorization methods, along
+with ensemble variants incorporating logistic factorization, for link
+prediction. Our methods integrate automatic model determination for rank
+estimation by evaluating stability and accuracy using a modified bootstrap
+methodology and uncertainty quantification (UQ), assessing prediction
+reliability under random perturbations. We incorporate Otsu threshold selection
+and k-means clustering for Boolean matrix factorization, comparing them to
+coordinate descent-based Boolean thresholding. Our experiments highlight the
+impact of rank k selection, evaluate model performance under varying test-set
+sizes, and demonstrate the benefits of UQ for reliable predictions using
+abstention. We validate our methods on three synthetic datasets (Boolean and
+uniformly distributed) and benchmark them against LMF and symmetric LMF
+(symLMF) on five real-world protein-protein interaction networks, showcasing an
+improved prediction performance.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03693v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04680v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>MAS-GPT: Training LLMs to Build LLM-based Multi-Agent Systems</h3>
-                    <p><strong>Authors:</strong> Rui Ye, Shuo Tang, Rui Ge, Yaxin Du, Zhenfei Yin, Siheng Chen, Jing Shao</p>
-                    <p>  LLM-based multi-agent systems (MAS) have shown significant potential in
-tackling diverse tasks. However, to design effective MAS, existing approaches
-heavily rely on manual configurations or multiple calls of advanced LLMs,
-resulting in inadaptability and high inference costs. In this paper, we
-simplify the process of building an MAS by reframing it as a generative
-language task, where the input is a user query and the output is a
-corresponding MAS. To address this novel task, we unify the representation of
-MAS as executable code and propose a consistency-oriented data construction
-pipeline to create a high-quality dataset comprising coherent and consistent
-query-MAS pairs. Using this dataset, we train MAS-GPT, an open-source
-medium-sized LLM that is capable of generating query-adaptive MAS within a
-single LLM inference. The generated MAS can be seamlessly applied to process
-user queries and deliver high-quality responses. Extensive experiments on 9
-benchmarks and 5 LLMs show that the proposed MAS-GPT consistently outperforms
-10+ baseline MAS methods on diverse settings, indicating MAS-GPT's high
-effectiveness, efficiency and strong generalization ability. Code will be
-available at https://github.com/rui-ye/MAS-GPT.
+                    <h3>Multi-Agent Inverse Q-Learning from Demonstrations</h3>
+                    <p><strong>Authors:</strong> Nathaniel Haynam, Adam Khoja, Dhruv Kumar, Vivek Myers, Erdem Bıyık</p>
+                    <p>  When reward functions are hand-designed, deep reinforcement learning
+algorithms often suffer from reward misspecification, causing them to learn
+suboptimal policies in terms of the intended task objectives. In the
+single-agent case, inverse reinforcement learning (IRL) techniques attempt to
+address this issue by inferring the reward function from expert demonstrations.
+However, in multi-agent problems, misalignment between the learned and true
+objectives is exacerbated due to increased environment non-stationarity and
+variance that scales with multiple agents. As such, in multi-agent general-sum
+games, multi-agent IRL algorithms have difficulty balancing cooperative and
+competitive objectives. To address these issues, we propose Multi-Agent
+Marginal Q-Learning from Demonstrations (MAMQL), a novel sample-efficient
+framework for multi-agent IRL. For each agent, MAMQL learns a critic
+marginalized over the other agents' policies, allowing for a well-motivated use
+of Boltzmann policies in the multi-agent context. We identify a connection
+between optimal marginalized critics and single-agent soft-Q IRL, allowing us
+to apply a direct, simple optimization criterion from the single-agent domain.
+Across our experiments on three different simulated domains, MAMQL
+significantly outperforms previous multi-agent methods in average reward,
+sample efficiency, and reward recovery by often more than 2-5x. We make our
+code available at https://sites.google.com/view/mamql .
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03686v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04679v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Towards Trustworthy Federated Learning</h3>
-                    <p><strong>Authors:</strong> Alina Basharat, Yijun Bian, Ping Xu, Zhi Tian</p>
-                    <p>  This paper develops a comprehensive framework to address three critical
-trustworthy challenges in federated learning (FL): robustness against Byzantine
-attacks, fairness, and privacy preservation. To improve the system's defense
-against Byzantine attacks that send malicious information to bias the system's
-performance, we develop a Two-sided Norm Based Screening (TNBS) mechanism,
-which allows the central server to crop the gradients that have the l lowest
-norms and h highest norms. TNBS functions as a screening tool to filter out
-potential malicious participants whose gradients are far from the honest ones.
-To promote egalitarian fairness, we adopt the q-fair federated learning
-(q-FFL). Furthermore, we adopt a differential privacy-based scheme to prevent
-raw data at local clients from being inferred by curious parties. Convergence
-guarantees are provided for the proposed framework under different scenarios.
-Experimental results on real datasets demonstrate that the proposed framework
-effectively improves robustness and fairness while managing the trade-off
-between privacy and accuracy. This work appears to be the first study that
-experimentally and theoretically addresses fairness, privacy, and robustness in
-trustworthy FL.
+                    <h3>LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable
+  User Satisfaction Estimation in Dialogue</h3>
+                    <p><strong>Authors:</strong> Sangyeop Kim, Sohhyung Park, Jaewon Jung, Jinseok Kim, Sungzoon Cho</p>
+                    <p>  Understanding user satisfaction with conversational systems, known as User
+Satisfaction Estimation (USE), is essential for assessing dialogue quality and
+enhancing user experiences. However, existing methods for USE face challenges
+due to limited understanding of underlying reasons for user dissatisfaction and
+the high costs of annotating user intentions. To address these challenges, we
+propose PRAISE (Plan and Retrieval Alignment for Interpretable Satisfaction
+Estimation), an interpretable framework for effective user satisfaction
+prediction. PRAISE operates through three key modules. The Strategy Planner
+develops strategies, which are natural language criteria for classifying user
+satisfaction. The Feature Retriever then incorporates knowledge on user
+satisfaction from Large Language Models (LLMs) and retrieves relevance features
+from utterances. Finally, the Score Analyzer evaluates strategy predictions and
+classifies user satisfaction. Experimental results demonstrate that PRAISE
+achieves state-of-the-art performance on three benchmarks for the USE task.
+Beyond its superior performance, PRAISE offers additional benefits. It enhances
+interpretability by providing instance-level explanations through effective
+alignment of utterances with strategies. Moreover, PRAISE operates more
+efficiently than existing approaches by eliminating the need for LLMs during
+the inference phase.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03684v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04675v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Study of an active region prominence using spectropolarimetric data in
-  the He I D3 multiplet</h3>
-                    <p><strong>Authors:</strong> S. Esteban Pozuelo, A. Asensio Ramos, J. Trujillo Bueno, R. Ramelli, F. Zeuner, M. Bianda</p>
-                    <p>  Prominences are cool overdensities of plasma supported by magnetic fields
-that levitate in the solar corona. The physical characterization of these
-structures is key for understanding the magnetic field in the corona. Our work
-attempts to shed light on the properties of prominences by using observations
-at high polarimetric sensitivity in the He I D3 multiplet taken with the Zurich
-Imaging Polarimeter-3 instrument at the Istituto ricerche solari Aldo e Cele
-Dacco observatory. We used the HAZEL inversion code to infer the thermodynamic
-and magnetic properties of an active region prominence, assuming one- and
-two-component models. Our observations unveil a great diversity of physical
-conditions in the prominence. The observed Stokes profiles are usually broad
-and show interesting features, which can be described assuming a two-component
-model. The contribution of each component and the trends inferred for some
-parameters vary with the distance to the solar limb. While both components have
-analogous properties and contribute similarly close to the limb, a major
-component mainly describes the properties inferred at 10-40 arcsecs away from
-the limb. Moreover, both components usually show significant differences in
-thermal broadening, which is essential for ensuring a good fit quality between
-observations and synthetic profiles. Summarizing, the observed region of the
-prominence shows line-of-sight velocities of 1-3 km/s and rather horizontal
-fields of 20-80 gauss. We also report hints of a twist close to a prominence
-foot and changes in the magnetic configuration at specific locations. Our
-results indicate a mainly horizontal magnetic field of a few tens of gauss in
-the prominence. A model of two components with different thermal broadenings
-and filling factors, depending on the limb distance, is crucial for providing a
-consistent solution across most of the observed prominence.
+                    <h3>Joint Masked Reconstruction and Contrastive Learning for Mining
+  Interactions Between Proteins</h3>
+                    <p><strong>Authors:</strong> Jiang Li, Xiaoping Wang</p>
+                    <p>  Protein-protein interaction (PPI) prediction is an instrumental means in
+elucidating the mechanisms underlying cellular operations, holding significant
+practical implications for the realms of pharmaceutical development and
+clinical treatment. Presently, the majority of research methods primarily
+concentrate on the analysis of amino acid sequences, while investigations
+predicated on protein structures remain in the nascent stages of exploration.
+Despite the emergence of several structure-based algorithms in recent years,
+these are still confronted with inherent challenges: (1) the extraction of
+intrinsic structural information of proteins typically necessitates the
+expenditure of substantial computational resources; (2) these models are overly
+reliant on seen protein data, struggling to effectively unearth interaction
+cues between unknown proteins. To further propel advancements in this domain,
+this paper introduces a novel PPI prediction method jointing masked
+reconstruction and contrastive learning, termed JmcPPI. This methodology
+dissects the PPI prediction task into two distinct phases: during the residue
+structure encoding phase, JmcPPI devises two feature reconstruction tasks and
+employs graph attention mechanism to capture structural information between
+residues; during the protein interaction inference phase, JmcPPI perturbs the
+original PPI graph and employs a multi-graph contrastive learning strategy to
+thoroughly mine extrinsic interaction information of novel proteins. Extensive
+experiments conducted on three widely utilized PPI datasets demonstrate that
+JmcPPI surpasses existing optimal baseline models across various data partition
+schemes. The associated code can be accessed via
+https://github.com/lijfrank-open/JmcPPI.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03670v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04650v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Analogical Reasoning Inside Large Language Models: Concept Vectors and
-  the Limits of Abstraction</h3>
-                    <p><strong>Authors:</strong> Gustaw Opiełka, Hannes Rosenbusch, Claire E. Stevenson</p>
-                    <p>  Analogical reasoning relies on conceptual abstractions, but it is unclear
-whether Large Language Models (LLMs) harbor such internal representations. We
-explore distilled representations from LLM activations and find that function
-vectors (FVs; Todd et al., 2024) - compact representations for in-context
-learning (ICL) tasks - are not invariant to simple input changes (e.g.,
-open-ended vs. multiple-choice), suggesting they capture more than pure
-concepts. Using representational similarity analysis (RSA), we localize a small
-set of attention heads that encode invariant concept vectors (CVs) for verbal
-concepts like "antonym". These CVs function as feature detectors that operate
-independently of the final output - meaning that a model may form a correct
-internal representation yet still produce an incorrect output. Furthermore, CVs
-can be used to causally guide model behaviour. However, for more abstract
-concepts like "previous" and "next", we do not observe invariant linear
-representations, a finding we link to generalizability issues LLMs display
-within these domains.
+                    <h3>Transferable Foundation Models for Geometric Tasks on Point Cloud
+  Representations: Geometric Neural Operators</h3>
+                    <p><strong>Authors:</strong> Blaine Quackenbush, Paul J. Atzberger</p>
+                    <p>  We introduce methods for obtaining pretrained Geometric Neural Operators
+(GNPs) that can serve as basal foundation models for use in obtaining geometric
+features. These can be used within data processing pipelines for machine
+learning tasks and numerical methods. We show how our GNPs can be trained to
+learn robust latent representations for the differential geometry of
+point-clouds to provide estimates of metric, curvature, and other shape-related
+features. We demonstrate how our pre-trained GNPs can be used (i) to estimate
+the geometric properties of surfaces of arbitrary shape and topologies with
+robustness in the presence of noise, (ii) to approximate solutions of geometric
+partial differential equations (PDEs) on manifolds, and (iii) to solve
+equations for shape deformations such as curvature driven flows. We also
+release a package of the codes and weights for using our pre-trained GNPs for
+processing point cloud representations. This allows for incorporating our
+pre-trained GNPs as components for reuse within existing and new data
+processing pipelines. The GNPs also can be used as part of numerical solvers
+involving geometry or as part of methods for performing inference and other
+geometric tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03666v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04649v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
                 <li>
-                    <h3>Feature Matching Intervention: Leveraging Observational Data for Causal
-  Representation Learning</h3>
-                    <p><strong>Authors:</strong> Haoze Li, Jun Xie</p>
-                    <p>  A major challenge in causal discovery from observational data is the absence
-of perfect interventions, making it difficult to distinguish causal features
-from spurious ones. We propose an innovative approach, Feature Matching
-Intervention (FMI), which uses a matching procedure to mimic perfect
-interventions. We define causal latent graphs, extending structural causal
-models to latent feature space, providing a framework that connects FMI with
-causal graph learning. Our feature matching procedure emulates perfect
-interventions within these causal latent graphs. Theoretical results
-demonstrate that FMI exhibits strong out-of-distribution (OOD)
-generalizability. Experiments further highlight FMI's superior performance in
-effectively identifying causal features solely from observational data.
+                    <h3>Assessing the performance of compartmental and renewal models for
+  learning $R_{t}$ using spatially heterogeneous epidemic simulations on real
+  geographies</h3>
+                    <p><strong>Authors:</strong> Matthew Ghosh, Yunli Qi, Abbie Evans, Tom Reed, Lara Herriott, Ioana Bouros, Ben Lambert, David J. Gavaghan, Katherine M. Shepherd, Richard Creswell, Kit Gallagher</p>
+                    <p>  The time-varying reproduction number ($R_t$) gives an indication of the
+trajectory of an infectious disease outbreak. Commonly used frameworks for
+inferring $R_t$ from epidemiological time series include those based on
+compartmental models (such as the SEIR model) and renewal equation models.
+These inference methods are usually validated using synthetic data generated
+from a simple model, often from the same class of model as the inference
+framework. However, in a real outbreak the transmission processes, and thus the
+infection data collected, are much more complex. The performance of common
+$R_t$ inference methods on data with similar complexity to real world scenarios
+has been subject to less comprehensive validation. We therefore propose
+evaluating these inference methods on outbreak data generated from a
+sophisticated, geographically accurate agent-based model. We illustrate this
+proposed method by generating synthetic data for two outbreaks in Northern
+Ireland: one with minimal spatial heterogeneity, and one with additional
+heterogeneity. We find that the simple SEIR model struggles with the greater
+heterogeneity, while the renewal equation model demonstrates greater robustness
+to spatial heterogeneity, though is sensitive to the accuracy of the generation
+time distribution used in inference. Our approach represents a principled way
+to benchmark epidemiological inference tools and is built upon an open-source
+software platform for reproducible epidemic simulation and inference.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.03634v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/5/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.04648v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/6/2025</p>
                 </li>
             </ul>
         </section>
