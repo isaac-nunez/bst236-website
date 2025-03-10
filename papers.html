@@ -102,278 +102,272 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Enough Coin Flips Can Make LLMs Act Bayesian</h3>
-                    <p><strong>Authors:</strong> Ritwik Gupta, Rodolfo Corona, Jiaxin Ge, Eric Wang, Dan Klein, Trevor Darrell, David M. Chan</p>
-                    <p>  Large language models (LLMs) exhibit the ability to generalize given few-shot
-examples in their input prompt, an emergent capability known as in-context
-learning (ICL). We investigate whether LLMs utilize ICL to perform structured
-reasoning in ways that are consistent with a Bayesian framework or rely on
-pattern matching. Using a controlled setting of biased coin flips, we find
-that: (1) LLMs often possess biased priors, causing initial divergence in
-zero-shot settings, (2) in-context evidence outweighs explicit bias
-instructions, (3) LLMs broadly follow Bayesian posterior updates, with
-deviations primarily due to miscalibrated priors rather than flawed updates,
-and (4) attention magnitude has negligible effect on Bayesian inference. With
-sufficient demonstrations of biased coin flips via ICL, LLMs update their
-priors in a Bayesian manner.
+                    <h3>Reionization and the Hubble Constant: Correlations in the Cosmic
+  Microwave Background</h3>
+                    <p><strong>Authors:</strong> Itamar J. Allali, Praniti Singh, JiJi Fan, Lingfeng Li</p>
+                    <p>  Recently, the James Webb Space Telescope (JWST) has found early galaxies
+producing photons from more efficient ionization than previously assumed. This
+may suggest a reionization process with a larger reionization optical depth,
+$\tau_{\rm reio}$, in some mild disagreement with that inferred from
+measurements of cosmic microwave background (CMB). Intriguingly, the CMB would
+prefer larger values of $\tau_{\rm reio}$, more consistent with the recent JWST
+hint, if the large-scale measurements (i.e. $\ell <30$) of E-mode polarization
+are removed. In addition, $\tau_{\rm reio}$ has an indirect correlation with
+today's Hubble constant $H_0$ in $\Lambda$CDM. Motivated by these interesting
+observations, we investigate and reveal the underlying mechanism for this
+correlation, using the CMB dataset without the low-$\ell$ polarization data as
+a proxy for a potential cosmology with a larger $\tau_{\rm reio}$. We further
+explore how this correlation may impact the Hubble tension between early and
+late universe measurements of $H_0$, in $\Lambda$CDM as well as two proposals
+to alleviate the Hubble tension: the dark radiation (DR) and early dark energy
+(EDE) models. We find that the Hubble tension gets further reduced mildly for
+almost all cases due to the larger $\tau_{\rm reio}$ and its positive
+correlation with $H_0$, with either the Baryon Acoustic Oscillations (BAO) data
+before those from the Dark Energy Spectroscopic Instrument (DESI) or the DESI
+data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04722v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05691v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Floxels: Fast Unsupervised Voxel Based Scene Flow Estimation</h3>
-                    <p><strong>Authors:</strong> David T. Hoffmann, Syed Haseeb Raza, Hanqiu Jiang, Denis Tananaev, Steffen Klingenhoefer, Martin Meinke</p>
-                    <p>  Scene flow estimation is a foundational task for many robotic applications,
-including robust dynamic object detection, automatic labeling, and sensor
-synchronization. Two types of approaches to the problem have evolved: 1)
-Supervised and 2) optimization-based methods. Supervised methods are fast
-during inference and achieve high-quality results, however, they are limited by
-the need for large amounts of labeled training data and are susceptible to
-domain gaps. In contrast, unsupervised test-time optimization methods do not
-face the problem of domain gaps but usually suffer from substantial runtime,
-exhibit artifacts, or fail to converge to the right solution. In this work, we
-mitigate several limitations of existing optimization-based methods. To this
-end, we 1) introduce a simple voxel grid-based model that improves over the
-standard MLP-based formulation in multiple dimensions and 2) introduce a new
-multiframe loss formulation. 3) We combine both contributions in our new
-method, termed Floxels. On the Argoverse 2 benchmark, Floxels is surpassed only
-by EulerFlow among unsupervised methods while achieving comparable performance
-at a fraction of the computational cost. Floxels achieves a massive speedup of
-more than ~60 - 140x over EulerFlow, reducing the runtime from a day to 10
-minutes per sequence. Over the faster but low-quality baseline, NSFP, Floxels
-achieves a speedup of ~14x.
+                    <h3>Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for
+  Heterogeneous Reasoning</h3>
+                    <p><strong>Authors:</strong> Justin Chih-Yao Chen, Sukwon Yun, Elias Stengel-Eskin, Tianlong Chen, Mohit Bansal</p>
+                    <p>  Combining existing pre-trained expert LLMs is a promising avenue for scalably
+tackling large-scale and diverse tasks. However, selecting experts at the task
+level is often too coarse-grained, as heterogeneous tasks may require different
+expertise for each instance. To enable adaptive instance-level mixing of
+pre-trained LLM experts, we propose Symbolic-MoE, a symbolic, text-based, and
+gradient-free Mixture-of-Experts framework. Symbolic-MoE takes a fine-grained
+approach to selection by emphasizing skills, e.g., algebra in math or molecular
+biology in biomedical reasoning. We propose a skill-based recruiting strategy
+that dynamically selects the most relevant set of expert LLMs for diverse
+reasoning tasks based on their strengths. Each selected expert then generates
+its own reasoning, resulting in k outputs from k experts, which are then
+synthesized into a final high-quality response by an aggregator chosen based on
+its ability to integrate diverse reasoning outputs. We show that Symbolic-MoE's
+instance-level expert selection improves performance by a large margin but --
+when implemented naively -- can introduce a high computational overhead due to
+the need for constant model loading and offloading. To address this, we
+implement a batch inference strategy that groups instances based on their
+assigned experts, loading each model only once. This allows us to integrate 16
+expert models on 1 GPU with a time cost comparable to or better than prior
+multi-agent baselines using 4 GPUs. Through extensive evaluations on diverse
+benchmarks (MMLU-Pro, GPQA, AIME, and MedMCQA), we demonstrate that
+Symbolic-MoE outperforms strong LLMs like GPT4o-mini, as well as multi-agent
+approaches, with an absolute average improvement of 8.15% over the best
+multi-agent baseline. Moreover, Symbolic-MoE removes the need for expensive
+multi-round discussions, outperforming discussion baselines with less
+computation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04718v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05641v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Inferring kilonova ejecta photospheric properties from early blackbody
-  spectra</h3>
-                    <p><strong>Authors:</strong> Gilad Sadeh</p>
-                    <p>  We present simple analytic corrections to the standard blackbody fitting used
-for early kilonova emission. We consider a spherical, relativistically
-expanding shell that radiates thermally at a single temperature in its own rest
-frame. Due to relativistic effects, including Doppler boosting, time delay, and
-temperature evolution -- the observed temperature is smeared across different
-polar angles by approximately $\sim10\%$. While the observed spectrum remains
-roughly consistent with a single-temperature blackbody, neglecting relativistic
-effects leads to significant systematic inaccuracies: the inferred photospheric
-velocity and temperature are overestimated by up to $\sim50\%$ for mildly
-relativistic velocities. By applying our analytic corrections, these deviations
-are reduced to within $10\%$, even in cases where the photosphere is receding
-and cooling is considered. Applying our corrections to observed kilonovae
-(AT2017gfo and the thermal component of GRB211211A) reveals that standard
-blackbody fitting overestimated the inferred velocities and temperatures by
-$10\%-40\%$.
+                    <h3>Integration of aggregated data in causally interpretable meta-analysis
+  by inverse weighting</h3>
+                    <p><strong>Authors:</strong> Tat-Thang Vo, Tran Trong Khoi Le, Sivem Afach, Stijn Vansteelandt</p>
+                    <p>  Obtaining causally interpretable meta-analysis results is challenging when
+there are differences in the distribution of effect modifiers between eligible
+trials. To overcome this, recent work on transportability methods has
+considered standardizing results of individual studies over the case-mix of a
+target population, prior to pooling them as in a classical random-effect
+meta-analysis. One practical challenge, however, is that case-mix
+standardization often requires individual participant data (IPD) on outcome,
+treatments and case-mix characteristics to be fully accessible in every
+eligible study, along with IPD case-mix characteristics for a random sample
+from the target population. In this paper, we aim to develop novel strategies
+to integrate aggregated-level data from eligible trials with non-accessible IPD
+into a causal meta-analysis, by extending moment-based methods frequently used
+for population-adjusted indirect comparison in health technology assessment.
+Since valid inference for these moment-based methods by M-estimation theory
+requires additional aggregated data that are often unavailable in practice,
+computational methods to address this concern are also developed. We assess the
+finite-sample performance of the proposed approaches by simulated data, and
+then apply these on real-world clinical data to investigate the effectiveness
+of risankizumab versus ustekinumab among patients with moderate to severe
+psoriasis.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04700v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05634v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>DEAL-YOLO: Drone-based Efficient Animal Localization using YOLO</h3>
-                    <p><strong>Authors:</strong> Aditya Prashant Naidu, Hem Gosalia, Ishaan Gakhar, Shaurya Singh Rathore, Krish Didwania, Ujjwal Verma</p>
-                    <p>  Although advances in deep learning and aerial surveillance technology are
-improving wildlife conservation efforts, complex and erratic environmental
-conditions still pose a problem, requiring innovative solutions for
-cost-effective small animal detection. This work introduces DEAL-YOLO, a novel
-approach that improves small object detection in Unmanned Aerial Vehicle (UAV)
-images by using multi-objective loss functions like Wise IoU (WIoU) and
-Normalized Wasserstein Distance (NWD), which prioritize pixels near the centre
-of the bounding box, ensuring smoother localization and reducing abrupt
-deviations. Additionally, the model is optimized through efficient feature
-extraction with Linear Deformable (LD) convolutions, enhancing accuracy while
-maintaining computational efficiency. The Scaled Sequence Feature Fusion (SSFF)
-module enhances object detection by effectively capturing inter-scale
-relationships, improving feature representation, and boosting metrics through
-optimized multiscale fusion. Comparison with baseline models reveals high
-efficacy with up to 69.5\% fewer parameters compared to vanilla Yolov8-N,
-highlighting the robustness of the proposed modifications. Through this
-approach, our paper aims to facilitate the detection of endangered species,
-animal population analysis, habitat monitoring, biodiversity research, and
-various other applications that enrich wildlife conservation efforts. DEAL-YOLO
-employs a two-stage inference paradigm for object detection, refining selected
-regions to improve localization and confidence. This approach enhances
-performance, especially for small instances with low objectness scores.
+                    <h3>Conformal Prediction for Image Segmentation Using Morphological
+  Prediction Sets</h3>
+                    <p><strong>Authors:</strong> Luca Mossina, Corentin Friedrich</p>
+                    <p>  Image segmentation is a challenging task influenced by multiple sources of
+uncertainty, such as the data labeling process or the sampling of training
+data. In this paper we focus on binary segmentation and address these
+challenges using conformal prediction, a family of model- and data-agnostic
+methods for uncertainty quantification that provide finite-sample theoretical
+guarantees and applicable to any pretrained predictor. Our approach involves
+computing nonconformity scores, a type of prediction residual, on held-out
+calibration data not used during training. We use dilation, one of the
+fundamental operations in mathematical morphology, to construct a margin added
+to the borders of predicted segmentation masks. At inference, the predicted set
+formed by the mask and its margin contains the ground-truth mask with high
+probability, at a confidence level specified by the user. The size of the
+margin serves as an indicator of predictive uncertainty for a given model and
+dataset. We work in a regime of minimal information as we do not require any
+feedback from the predictor: only the predicted masks are needed for computing
+the prediction sets. Hence, our method is applicable to any segmentation model,
+including those based on deep learning; we evaluate our approach on several
+medical imaging applications.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04698v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05618v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Matrix Factorization for Inferring Associations and Missing Links</h3>
-                    <p><strong>Authors:</strong> Ryan Barron, Maksim E. Eren, Duc P. Truong, Cynthia Matuszek, James Wendelberger, Mary F. Dorn, Boian Alexandrov</p>
-                    <p>  Missing link prediction is a method for network analysis, with applications
-in recommender systems, biology, social sciences, cybersecurity, information
-retrieval, and Artificial Intelligence (AI) reasoning in Knowledge Graphs.
-Missing link prediction identifies unseen but potentially existing connections
-in a network by analyzing the observed patterns and relationships. In
-proliferation detection, this supports efforts to identify and characterize
-attempts by state and non-state actors to acquire nuclear weapons or associated
-technology - a notoriously challenging but vital mission for global security.
-Dimensionality reduction techniques like Non-Negative Matrix Factorization
-(NMF) and Logistic Matrix Factorization (LMF) are effective but require
-selection of the matrix rank parameter, that is, of the number of hidden
-features, k, to avoid over/under-fitting. We introduce novel Weighted (WNMFk),
-Boolean (BNMFk), and Recommender (RNMFk) matrix factorization methods, along
-with ensemble variants incorporating logistic factorization, for link
-prediction. Our methods integrate automatic model determination for rank
-estimation by evaluating stability and accuracy using a modified bootstrap
-methodology and uncertainty quantification (UQ), assessing prediction
-reliability under random perturbations. We incorporate Otsu threshold selection
-and k-means clustering for Boolean matrix factorization, comparing them to
-coordinate descent-based Boolean thresholding. Our experiments highlight the
-impact of rank k selection, evaluate model performance under varying test-set
-sizes, and demonstrate the benefits of UQ for reliable predictions using
-abstention. We validate our methods on three synthetic datasets (Boolean and
-uniformly distributed) and benchmark them against LMF and symmetric LMF
-(symLMF) on five real-world protein-protein interaction networks, showcasing an
-improved prediction performance.
+                    <h3>The shape of FIREbox galaxies and a potential tension with low-mass
+  disks</h3>
+                    <p><strong>Authors:</strong> Courtney Klein, James S. Bullock, Luke Xia, Jorge Moreno, Robert Feldmann, Francisco J. Mercado, Claude-André Faucher-Giguère, Jonathan Stern, N. Nicole Sanchez, Abdelaziz Hussein</p>
+                    <p>  We study the intrinsic and observable shapes of approximately 700
+star-forming galaxies with stellar masses $10^8 - 10^{11}$ M$_\odot$ from the
+FIREbox simulation at $z=0$. We calculate intrinsic axis ratios using inertia
+tensors weighted by: All Stars, Young Stars, and Luminosity-weighted Stars.
+Young Stars, in particular, are arranged in systematically different 3D
+configurations as a function of galaxy stellar mass, with spheroidal,
+elongated, and disky shapes dominant at stellar masses of $10^{8.5}$ M$_\odot$,
+$10^{9.5}$ M$_\odot$, and $10^{10.5}$ M$_\odot$, respectively. We construct
+mock images for each galaxy and show that projected short-to-long axis ratios,
+$q$, inferred from 2D S\'ersic fits are most closely related to
+Luminosity-weighted tensor shapes and least resemble the All Stars shapes. This
+suggests observed 2D shape distributions should not be compared to predictions
+based on 3D stellar mass shapes. We construct a sample of mock images projected
+in random orientations and compare them to observed axis ratio distributions
+from the GAMA survey. For galaxies with stellar masses $10^{10} - 10^{11}$
+M$_\odot$, we reproduce axis ratios comparable to the thinnest observed in real
+galaxies ($q \sim 0.1$), suggesting this model is capable of making thin disk
+galaxies at Milky Way scale. However, at masses below $10^{10}$ M$_\odot$, we
+produce an insufficient population of galaxies with observed $q<0.4$ and none
+with $q<0.2$, suggesting that FIREbox does not produce enough low-mass disk
+galaxies. Future observational and theoretical programs aimed at understanding
+low-mass disk fractions will provide crucial tests of galaxy formation models.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04680v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05612v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Multi-Agent Inverse Q-Learning from Demonstrations</h3>
-                    <p><strong>Authors:</strong> Nathaniel Haynam, Adam Khoja, Dhruv Kumar, Vivek Myers, Erdem Bıyık</p>
-                    <p>  When reward functions are hand-designed, deep reinforcement learning
-algorithms often suffer from reward misspecification, causing them to learn
-suboptimal policies in terms of the intended task objectives. In the
-single-agent case, inverse reinforcement learning (IRL) techniques attempt to
-address this issue by inferring the reward function from expert demonstrations.
-However, in multi-agent problems, misalignment between the learned and true
-objectives is exacerbated due to increased environment non-stationarity and
-variance that scales with multiple agents. As such, in multi-agent general-sum
-games, multi-agent IRL algorithms have difficulty balancing cooperative and
-competitive objectives. To address these issues, we propose Multi-Agent
-Marginal Q-Learning from Demonstrations (MAMQL), a novel sample-efficient
-framework for multi-agent IRL. For each agent, MAMQL learns a critic
-marginalized over the other agents' policies, allowing for a well-motivated use
-of Boltzmann policies in the multi-agent context. We identify a connection
-between optimal marginalized critics and single-agent soft-Q IRL, allowing us
-to apply a direct, simple optimization criterion from the single-agent domain.
-Across our experiments on three different simulated domains, MAMQL
-significantly outperforms previous multi-agent methods in average reward,
-sample efficiency, and reward recovery by often more than 2-5x. We make our
-code available at https://sites.google.com/view/mamql .
+                    <h3>From Theory to Application: A Practical Introduction to Neural Operators
+  in Scientific Computing</h3>
+                    <p><strong>Authors:</strong> Prashant K. Jha</p>
+                    <p>  This focused review explores a range of neural operator architectures for
+approximating solutions to parametric partial differential equations (PDEs),
+emphasizing high-level concepts and practical implementation strategies. The
+study covers foundational models such as Deep Operator Networks (DeepONet),
+Principal Component Analysis-based Neural Networks (PCANet), and Fourier Neural
+Operators (FNO), providing comparative insights into their core methodologies
+and performance. These architectures are demonstrated on two classical linear
+parametric PDEs: the Poisson equation and linear elastic deformation. Beyond
+forward problem-solving, the review delves into applying neural operators as
+surrogates in Bayesian inference problems, showcasing their effectiveness in
+accelerating posterior inference while maintaining accuracy. The paper
+concludes by discussing current challenges, particularly in controlling
+prediction accuracy and generalization. It outlines emerging strategies to
+address these issues, such as residual-based error correction and multi-level
+training. This review can be seen as a comprehensive guide to implementing
+neural operators and integrating them into scientific computing workflows.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04679v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05598v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable
-  User Satisfaction Estimation in Dialogue</h3>
-                    <p><strong>Authors:</strong> Sangyeop Kim, Sohhyung Park, Jaewon Jung, Jinseok Kim, Sungzoon Cho</p>
-                    <p>  Understanding user satisfaction with conversational systems, known as User
-Satisfaction Estimation (USE), is essential for assessing dialogue quality and
-enhancing user experiences. However, existing methods for USE face challenges
-due to limited understanding of underlying reasons for user dissatisfaction and
-the high costs of annotating user intentions. To address these challenges, we
-propose PRAISE (Plan and Retrieval Alignment for Interpretable Satisfaction
-Estimation), an interpretable framework for effective user satisfaction
-prediction. PRAISE operates through three key modules. The Strategy Planner
-develops strategies, which are natural language criteria for classifying user
-satisfaction. The Feature Retriever then incorporates knowledge on user
-satisfaction from Large Language Models (LLMs) and retrieves relevance features
-from utterances. Finally, the Score Analyzer evaluates strategy predictions and
-classifies user satisfaction. Experimental results demonstrate that PRAISE
-achieves state-of-the-art performance on three benchmarks for the USE task.
-Beyond its superior performance, PRAISE offers additional benefits. It enhances
-interpretability by providing instance-level explanations through effective
-alignment of utterances with strategies. Moreover, PRAISE operates more
-efficiently than existing approaches by eliminating the need for LLMs during
-the inference phase.
+                    <h3>Search for primordial black holes from gravitational wave populations
+  using deep learning</h3>
+                    <p><strong>Authors:</strong> Hai-Long Huang, Jun-Qian Jiang, Jibin He, Yu-Tong Wang, Yun-Song Piao</p>
+                    <p>  Gravitational waves (GWs) signals detected by the LIGO/Virgo/KAGRA
+collaboration might be sourced (partly) by the merges of primordial black holes
+(PBHs). The conventional hierarchical Bayesian inference methods can allow us
+to study population properties of GW events to search for the hints for PBHs.
+However, hierarchical Bayesian analysis require an analytic population model,
+and becomes increasingly computationally expensive as the number of sources
+grows. In this paper, we present a novel population analysis method based on
+deep learning, which enables the direct and efficient estimation of PBH
+population hyperparameters, such as the PBH fraction in dark matter, $f_{\rm
+PBH}$. Our approach leverages neural posterior estimation combined with
+conditional normalizing flows and two embedding networks. Our results
+demonstrate that inference can be performed within seconds, highlighting the
+promise of deep learning as a powerful tool for population inference with an
+increasing number of GW signals for next-generation detectors.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04675v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05570v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Joint Masked Reconstruction and Contrastive Learning for Mining
-  Interactions Between Proteins</h3>
-                    <p><strong>Authors:</strong> Jiang Li, Xiaoping Wang</p>
-                    <p>  Protein-protein interaction (PPI) prediction is an instrumental means in
-elucidating the mechanisms underlying cellular operations, holding significant
-practical implications for the realms of pharmaceutical development and
-clinical treatment. Presently, the majority of research methods primarily
-concentrate on the analysis of amino acid sequences, while investigations
-predicated on protein structures remain in the nascent stages of exploration.
-Despite the emergence of several structure-based algorithms in recent years,
-these are still confronted with inherent challenges: (1) the extraction of
-intrinsic structural information of proteins typically necessitates the
-expenditure of substantial computational resources; (2) these models are overly
-reliant on seen protein data, struggling to effectively unearth interaction
-cues between unknown proteins. To further propel advancements in this domain,
-this paper introduces a novel PPI prediction method jointing masked
-reconstruction and contrastive learning, termed JmcPPI. This methodology
-dissects the PPI prediction task into two distinct phases: during the residue
-structure encoding phase, JmcPPI devises two feature reconstruction tasks and
-employs graph attention mechanism to capture structural information between
-residues; during the protein interaction inference phase, JmcPPI perturbs the
-original PPI graph and employs a multi-graph contrastive learning strategy to
-thoroughly mine extrinsic interaction information of novel proteins. Extensive
-experiments conducted on three widely utilized PPI datasets demonstrate that
-JmcPPI surpasses existing optimal baseline models across various data partition
-schemes. The associated code can be accessed via
-https://github.com/lijfrank-open/JmcPPI.
+                    <h3>Leveraging Approximate Caching for Faster Retrieval-Augmented Generation</h3>
+                    <p><strong>Authors:</strong> Shai Bergman, Zhang Ji, Anne-Marie Kermarrec, Diana Petrescu, Rafael Pires, Mathis Randl, Martijn de Vos</p>
+                    <p>  Retrieval-augmented generation (RAG) enhances the reliability of large
+language model (LLM) answers by integrating external knowledge. However, RAG
+increases the end-to-end inference time since looking for relevant documents
+from large vector databases is computationally expensive. To address this, we
+introduce Proximity, an approximate key-value cache that optimizes the RAG
+workflow by leveraging similarities in user queries. Instead of treating each
+query independently, Proximity reuses previously retrieved documents when
+similar queries appear, reducing reliance on expensive vector database lookups.
+We evaluate Proximity on the MMLU and MedRAG benchmarks, demonstrating that it
+significantly improves retrieval efficiency while maintaining response
+accuracy. Proximity reduces retrieval latency by up to 59% while maintaining
+accuracy and lowers the computational burden on the vector database. We also
+experiment with different similarity thresholds and quantify the trade-off
+between speed and recall. Our work shows that approximate caching is a viable
+and effective strategy for optimizing RAG-based systems.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04650v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/abs/2503.05530v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Transferable Foundation Models for Geometric Tasks on Point Cloud
-  Representations: Geometric Neural Operators</h3>
-                    <p><strong>Authors:</strong> Blaine Quackenbush, Paul J. Atzberger</p>
-                    <p>  We introduce methods for obtaining pretrained Geometric Neural Operators
-(GNPs) that can serve as basal foundation models for use in obtaining geometric
-features. These can be used within data processing pipelines for machine
-learning tasks and numerical methods. We show how our GNPs can be trained to
-learn robust latent representations for the differential geometry of
-point-clouds to provide estimates of metric, curvature, and other shape-related
-features. We demonstrate how our pre-trained GNPs can be used (i) to estimate
-the geometric properties of surfaces of arbitrary shape and topologies with
-robustness in the presence of noise, (ii) to approximate solutions of geometric
-partial differential equations (PDEs) on manifolds, and (iii) to solve
-equations for shape deformations such as curvature driven flows. We also
-release a package of the codes and weights for using our pre-trained GNPs for
-processing point cloud representations. This allows for incorporating our
-pre-trained GNPs as components for reuse within existing and new data
-processing pipelines. The GNPs also can be used as part of numerical solvers
-involving geometry or as part of methods for performing inference and other
-geometric tasks.
+                    <h3>A systemic and cybernetic perspective on causality, big data and social
+  networks in tourism</h3>
+                    <p><strong>Authors:</strong> Miguel Lloret-Climent, Andrés Montoyo-Guijarro, Yoan Gutierrez-Vázquez, Rafael Muñoz-Guillena, Kristian Alonso-Stenberg</p>
+                    <p>  Purpose - The purpose of this paper is to propose a mathematical model to
+determine invariant sets, set covering, orbits and, in particular, attractors
+in the set of tourism variables. Analysis was carried out based on an algorithm
+and applying an interpretation of chaos theory developed in the context of
+General Systems Theory and Big Data. Design/methodology/approach - Tourism is
+one of the most digitalized sectors of the economy, and social networks are an
+important source of data for information gathering. However, the high levels of
+redundant information on the Web and the appearance of contradictory opinions
+and facts produce undesirable effects that must be cross-checked against real
+data. This paper sets out the causal relationships associated with tourist
+flows to enable the formulation of appropriate strategies. Findings - The
+results can be applied to numerous cases, for example, in the analysis of
+tourist flows, these findings can be used to determine whether the behaviour of
+certain groups affects that of other groups, as well as analysing tourist
+behaviour in terms of the most relevant variables. Originality/value - The
+technique presented here breaks with the usual treatment of the tourism topics.
+Unlike statistical analyses that merely provide information on current data,
+the authors use orbit analysis to forecast, if attractors are found, the
+behaviour of tourist variables in the immediate future.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04649v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/abs/2503.05502v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
                 <li>
-                    <h3>Assessing the performance of compartmental and renewal models for
-  learning $R_{t}$ using spatially heterogeneous epidemic simulations on real
-  geographies</h3>
-                    <p><strong>Authors:</strong> Matthew Ghosh, Yunli Qi, Abbie Evans, Tom Reed, Lara Herriott, Ioana Bouros, Ben Lambert, David J. Gavaghan, Katherine M. Shepherd, Richard Creswell, Kit Gallagher</p>
-                    <p>  The time-varying reproduction number ($R_t$) gives an indication of the
-trajectory of an infectious disease outbreak. Commonly used frameworks for
-inferring $R_t$ from epidemiological time series include those based on
-compartmental models (such as the SEIR model) and renewal equation models.
-These inference methods are usually validated using synthetic data generated
-from a simple model, often from the same class of model as the inference
-framework. However, in a real outbreak the transmission processes, and thus the
-infection data collected, are much more complex. The performance of common
-$R_t$ inference methods on data with similar complexity to real world scenarios
-has been subject to less comprehensive validation. We therefore propose
-evaluating these inference methods on outbreak data generated from a
-sophisticated, geographically accurate agent-based model. We illustrate this
-proposed method by generating synthetic data for two outbreaks in Northern
-Ireland: one with minimal spatial heterogeneity, and one with additional
-heterogeneity. We find that the simple SEIR model struggles with the greater
-heterogeneity, while the renewal equation model demonstrates greater robustness
-to spatial heterogeneity, though is sensitive to the accuracy of the generation
-time distribution used in inference. Our approach represents a principled way
-to benchmark epidemiological inference tools and is built upon an open-source
-software platform for reproducible epidemic simulation and inference.
+                    <h3>Mol-CADiff: Causality-Aware Autoregressive Diffusion for Molecule
+  Generation</h3>
+                    <p><strong>Authors:</strong> Md Atik Ahamed, Qiang Ye, Qiang Cheng</p>
+                    <p>  The design of novel molecules with desired properties is a key challenge in
+drug discovery and materials science. Traditional methods rely on
+trial-and-error, while recent deep learning approaches have accelerated
+molecular generation. However, existing models struggle with generating
+molecules based on specific textual descriptions. We introduce Mol-CADiff, a
+novel diffusion-based framework that uses causal attention mechanisms for
+text-conditional molecular generation. Our approach explicitly models the
+causal relationship between textual prompts and molecular structures,
+overcoming key limitations in existing methods. We enhance dependency modeling
+both within and across modalities, enabling precise control over the generation
+process. Our extensive experiments demonstrate that Mol-CADiff outperforms
+state-of-the-art methods in generating diverse, novel, and chemically valid
+molecules, with better alignment to specified properties, enabling more
+intuitive language-driven molecular design.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.04648v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/6/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.05499v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/7/2025</p>
                 </li>
             </ul>
         </section>
