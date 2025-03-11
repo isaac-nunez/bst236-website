@@ -103,271 +103,274 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Reionization and the Hubble Constant: Correlations in the Cosmic
-  Microwave Background</h3>
-                    <p><strong>Authors:</strong> Itamar J. Allali, Praniti Singh, JiJi Fan, Lingfeng Li</p>
-                    <p>  Recently, the James Webb Space Telescope (JWST) has found early galaxies
-producing photons from more efficient ionization than previously assumed. This
-may suggest a reionization process with a larger reionization optical depth,
-$\tau_{\rm reio}$, in some mild disagreement with that inferred from
-measurements of cosmic microwave background (CMB). Intriguingly, the CMB would
-prefer larger values of $\tau_{\rm reio}$, more consistent with the recent JWST
-hint, if the large-scale measurements (i.e. $\ell <30$) of E-mode polarization
-are removed. In addition, $\tau_{\rm reio}$ has an indirect correlation with
-today's Hubble constant $H_0$ in $\Lambda$CDM. Motivated by these interesting
-observations, we investigate and reveal the underlying mechanism for this
-correlation, using the CMB dataset without the low-$\ell$ polarization data as
-a proxy for a potential cosmology with a larger $\tau_{\rm reio}$. We further
-explore how this correlation may impact the Hubble tension between early and
-late universe measurements of $H_0$, in $\Lambda$CDM as well as two proposals
-to alleviate the Hubble tension: the dark radiation (DR) and early dark energy
-(EDE) models. We find that the Hubble tension gets further reduced mildly for
-almost all cases due to the larger $\tau_{\rm reio}$ and its positive
-correlation with $H_0$, with either the Baryon Acoustic Oscillations (BAO) data
-before those from the Dark Energy Spectroscopic Instrument (DESI) or the DESI
-data.
+                    <h3>Efficient Membership Inference Attacks by Bayesian Neural Network</h3>
+                    <p><strong>Authors:</strong> Zhenlong Liu, Wenyu Jiang, Feng Zhou, Hongxin Wei</p>
+                    <p>  Membership Inference Attacks (MIAs) aim to estimate whether a specific data
+point was used in the training of a given model. Previous attacks often utilize
+multiple reference models to approximate the conditional score distribution,
+leading to significant computational overhead. While recent work leverages
+quantile regression to estimate conditional thresholds, it fails to capture
+epistemic uncertainty, resulting in bias in low-density regions. In this work,
+we propose a novel approach - Bayesian Membership Inference Attack (BMIA),
+which performs conditional attack through Bayesian inference. In particular, we
+transform a trained reference model into Bayesian neural networks by Laplace
+approximation, enabling the direct estimation of the conditional score
+distribution by probabilistic model parameters. Our method addresses both
+epistemic and aleatoric uncertainty with only a reference model, enabling
+efficient and powerful MIA. Extensive experiments on five datasets demonstrate
+the effectiveness and efficiency of BMIA.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05691v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07482v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for
-  Heterogeneous Reasoning</h3>
-                    <p><strong>Authors:</strong> Justin Chih-Yao Chen, Sukwon Yun, Elias Stengel-Eskin, Tianlong Chen, Mohit Bansal</p>
-                    <p>  Combining existing pre-trained expert LLMs is a promising avenue for scalably
-tackling large-scale and diverse tasks. However, selecting experts at the task
-level is often too coarse-grained, as heterogeneous tasks may require different
-expertise for each instance. To enable adaptive instance-level mixing of
-pre-trained LLM experts, we propose Symbolic-MoE, a symbolic, text-based, and
-gradient-free Mixture-of-Experts framework. Symbolic-MoE takes a fine-grained
-approach to selection by emphasizing skills, e.g., algebra in math or molecular
-biology in biomedical reasoning. We propose a skill-based recruiting strategy
-that dynamically selects the most relevant set of expert LLMs for diverse
-reasoning tasks based on their strengths. Each selected expert then generates
-its own reasoning, resulting in k outputs from k experts, which are then
-synthesized into a final high-quality response by an aggregator chosen based on
-its ability to integrate diverse reasoning outputs. We show that Symbolic-MoE's
-instance-level expert selection improves performance by a large margin but --
-when implemented naively -- can introduce a high computational overhead due to
-the need for constant model loading and offloading. To address this, we
-implement a batch inference strategy that groups instances based on their
-assigned experts, loading each model only once. This allows us to integrate 16
-expert models on 1 GPU with a time cost comparable to or better than prior
-multi-agent baselines using 4 GPUs. Through extensive evaluations on diverse
-benchmarks (MMLU-Pro, GPQA, AIME, and MedMCQA), we demonstrate that
-Symbolic-MoE outperforms strong LLMs like GPT4o-mini, as well as multi-agent
-approaches, with an absolute average improvement of 8.15% over the best
-multi-agent baseline. Moreover, Symbolic-MoE removes the need for expensive
-multi-round discussions, outperforming discussion baselines with less
-computation.
+                    <h3>Sample Complexity of Nonparametric Closeness Testing for Continuous
+  Distributions and Its Application to Causal Discovery with Hidden Confounding</h3>
+                    <p><strong>Authors:</strong> Fateme Jamshidi, Sina Akbari, Negar Kiyavash</p>
+                    <p>  We study the problem of closeness testing for continuous distributions and
+its implications for causal discovery. Specifically, we analyze the sample
+complexity of distinguishing whether two multidimensional continuous
+distributions are identical or differ by at least $\epsilon$ in terms of
+Kullback-Leibler (KL) divergence under non-parametric assumptions. To this end,
+we propose an estimator of KL divergence which is based on the von Mises
+expansion. Our closeness test attains optimal parametric rates under smoothness
+assumptions. Equipped with this test, which serves as a building block of our
+causal discovery algorithm to identify the causal structure between two
+multidimensional random variables, we establish sample complexity guarantees
+for our causal discovery method. To the best of our knowledge, this work is the
+first work that provides sample complexity guarantees for distinguishing cause
+and effect in multidimensional non-linear models with non-Gaussian continuous
+variables in the presence of unobserved confounding.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05641v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07475v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Integration of aggregated data in causally interpretable meta-analysis
-  by inverse weighting</h3>
-                    <p><strong>Authors:</strong> Tat-Thang Vo, Tran Trong Khoi Le, Sivem Afach, Stijn Vansteelandt</p>
-                    <p>  Obtaining causally interpretable meta-analysis results is challenging when
-there are differences in the distribution of effect modifiers between eligible
-trials. To overcome this, recent work on transportability methods has
-considered standardizing results of individual studies over the case-mix of a
-target population, prior to pooling them as in a classical random-effect
-meta-analysis. One practical challenge, however, is that case-mix
-standardization often requires individual participant data (IPD) on outcome,
-treatments and case-mix characteristics to be fully accessible in every
-eligible study, along with IPD case-mix characteristics for a random sample
-from the target population. In this paper, we aim to develop novel strategies
-to integrate aggregated-level data from eligible trials with non-accessible IPD
-into a causal meta-analysis, by extending moment-based methods frequently used
-for population-adjusted indirect comparison in health technology assessment.
-Since valid inference for these moment-based methods by M-estimation theory
-requires additional aggregated data that are often unavailable in practice,
-computational methods to address this concern are also developed. We assess the
-finite-sample performance of the proposed approaches by simulated data, and
-then apply these on real-world clinical data to investigate the effectiveness
-of risankizumab versus ustekinumab among patients with moderate to severe
-psoriasis.
+                    <h3>YOLOE: Real-Time Seeing Anything</h3>
+                    <p><strong>Authors:</strong> Ao Wang, Lihao Liu, Hui Chen, Zijia Lin, Jungong Han, Guiguang Ding</p>
+                    <p>  Object detection and segmentation are widely employed in computer vision
+applications, yet conventional models like YOLO series, while efficient and
+accurate, are limited by predefined categories, hindering adaptability in open
+scenarios. Recent open-set methods leverage text prompts, visual cues, or
+prompt-free paradigm to overcome this, but often compromise between performance
+and efficiency due to high computational demands or deployment complexity. In
+this work, we introduce YOLOE, which integrates detection and segmentation
+across diverse open prompt mechanisms within a single highly efficient model,
+achieving real-time seeing anything. For text prompts, we propose
+Re-parameterizable Region-Text Alignment (RepRTA) strategy. It refines
+pretrained textual embeddings via a re-parameterizable lightweight auxiliary
+network and enhances visual-textual alignment with zero inference and
+transferring overhead. For visual prompts, we present Semantic-Activated Visual
+Prompt Encoder (SAVPE). It employs decoupled semantic and activation branches
+to bring improved visual embedding and accuracy with minimal complexity. For
+prompt-free scenario, we introduce Lazy Region-Prompt Contrast (LRPC) strategy.
+It utilizes a built-in large vocabulary and specialized embedding to identify
+all objects, avoiding costly language model dependency. Extensive experiments
+show YOLOE's exceptional zero-shot performance and transferability with high
+inference efficiency and low training cost. Notably, on LVIS, with 3$\times$
+less training cost and 1.4$\times$ inference speedup, YOLOE-v8-S surpasses
+YOLO-Worldv2-S by 3.5 AP. When transferring to COCO, YOLOE-v8-L achieves 0.6
+AP$^b$ and 0.4 AP$^m$ gains over closed-set YOLOv8-L with nearly 4$\times$ less
+training time. Code and models are available at
+https://github.com/THU-MIG/yoloe.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05634v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07465v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Conformal Prediction for Image Segmentation Using Morphological
-  Prediction Sets</h3>
-                    <p><strong>Authors:</strong> Luca Mossina, Corentin Friedrich</p>
-                    <p>  Image segmentation is a challenging task influenced by multiple sources of
-uncertainty, such as the data labeling process or the sampling of training
-data. In this paper we focus on binary segmentation and address these
-challenges using conformal prediction, a family of model- and data-agnostic
-methods for uncertainty quantification that provide finite-sample theoretical
-guarantees and applicable to any pretrained predictor. Our approach involves
-computing nonconformity scores, a type of prediction residual, on held-out
-calibration data not used during training. We use dilation, one of the
-fundamental operations in mathematical morphology, to construct a margin added
-to the borders of predicted segmentation masks. At inference, the predicted set
-formed by the mask and its margin contains the ground-truth mask with high
-probability, at a confidence level specified by the user. The size of the
-margin serves as an indicator of predictive uncertainty for a given model and
-dataset. We work in a regime of minimal information as we do not require any
-feedback from the predictor: only the predicted masks are needed for computing
-the prediction sets. Hence, our method is applicable to any segmentation model,
-including those based on deep learning; we evaluate our approach on several
-medical imaging applications.
+                    <h3>MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for
+  Complex Medical Reasoning</h3>
+                    <p><strong>Authors:</strong> Xiangru Tang, Daniel Shao, Jiwoong Sohn, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein</p>
+                    <p>  Large Language Models (LLMs) have shown impressive performance on existing
+medical question-answering benchmarks. This high performance makes it
+increasingly difficult to meaningfully evaluate and differentiate advanced
+methods. We present MedAgentsBench, a benchmark that focuses on challenging
+medical questions requiring multi-step clinical reasoning, diagnosis
+formulation, and treatment planning-scenarios where current models still
+struggle despite their strong performance on standard tests. Drawing from seven
+established medical datasets, our benchmark addresses three key limitations in
+existing evaluations: (1) the prevalence of straightforward questions where
+even base models achieve high performance, (2) inconsistent sampling and
+evaluation protocols across studies, and (3) lack of systematic analysis of the
+interplay between performance, cost, and inference time. Through experiments
+with various base models and reasoning methods, we demonstrate that the latest
+thinking models, DeepSeek R1 and OpenAI o3, exhibit exceptional performance in
+complex medical reasoning tasks. Additionally, advanced search-based agent
+methods offer promising performance-to-cost ratios compared to traditional
+approaches. Our analysis reveals substantial performance gaps between model
+families on complex questions and identifies optimal model selections for
+different computational constraints. Our benchmark and evaluation framework are
+publicly available at https://github.com/gersteinlab/medagents-benchmark.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05618v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07459v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>The shape of FIREbox galaxies and a potential tension with low-mass
-  disks</h3>
-                    <p><strong>Authors:</strong> Courtney Klein, James S. Bullock, Luke Xia, Jorge Moreno, Robert Feldmann, Francisco J. Mercado, Claude-André Faucher-Giguère, Jonathan Stern, N. Nicole Sanchez, Abdelaziz Hussein</p>
-                    <p>  We study the intrinsic and observable shapes of approximately 700
-star-forming galaxies with stellar masses $10^8 - 10^{11}$ M$_\odot$ from the
-FIREbox simulation at $z=0$. We calculate intrinsic axis ratios using inertia
-tensors weighted by: All Stars, Young Stars, and Luminosity-weighted Stars.
-Young Stars, in particular, are arranged in systematically different 3D
-configurations as a function of galaxy stellar mass, with spheroidal,
-elongated, and disky shapes dominant at stellar masses of $10^{8.5}$ M$_\odot$,
-$10^{9.5}$ M$_\odot$, and $10^{10.5}$ M$_\odot$, respectively. We construct
-mock images for each galaxy and show that projected short-to-long axis ratios,
-$q$, inferred from 2D S\'ersic fits are most closely related to
-Luminosity-weighted tensor shapes and least resemble the All Stars shapes. This
-suggests observed 2D shape distributions should not be compared to predictions
-based on 3D stellar mass shapes. We construct a sample of mock images projected
-in random orientations and compare them to observed axis ratio distributions
-from the GAMA survey. For galaxies with stellar masses $10^{10} - 10^{11}$
-M$_\odot$, we reproduce axis ratios comparable to the thinnest observed in real
-galaxies ($q \sim 0.1$), suggesting this model is capable of making thin disk
-galaxies at Milky Way scale. However, at masses below $10^{10}$ M$_\odot$, we
-produce an insufficient population of galaxies with observed $q<0.4$ and none
-with $q<0.2$, suggesting that FIREbox does not produce enough low-mass disk
-galaxies. Future observational and theoretical programs aimed at understanding
-low-mass disk fractions will provide crucial tests of galaxy formation models.
+                    <h3>Causality violation of Schrödinger-Newton equation: direct test on
+  the horizon?</h3>
+                    <p><strong>Authors:</strong> Lajos Diósi</p>
+                    <p>  We quote a definitive simple proof that neither classical stochastic dynamics
+nor quantum dynamics can be nonlinear if we stick to their standard statistical
+interpretations. A recently proposed optomechanical test of gravity's
+classicality versus quantumness is based on the nonlinear Schr\"odinger-Newton
+equation (SNE) which is the nonrelativistic limit of standard semiclassical
+gravity. While in typical cosmological applications of semiclassical gravity
+the predicted violation of causality is ignored, it cannot be disregarded in
+applications of the SNE in high sensitive laboratory tests hoped for the coming
+years. We reveal that, in a recently designed experiment, quantum optical
+monitoring of massive probes predicts fake action-at-a-distance (acausality) on
+a single probe already. The proposed experiment might first include the direct
+test of this acausality.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05612v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07458v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>From Theory to Application: A Practical Introduction to Neural Operators
-  in Scientific Computing</h3>
-                    <p><strong>Authors:</strong> Prashant K. Jha</p>
-                    <p>  This focused review explores a range of neural operator architectures for
-approximating solutions to parametric partial differential equations (PDEs),
-emphasizing high-level concepts and practical implementation strategies. The
-study covers foundational models such as Deep Operator Networks (DeepONet),
-Principal Component Analysis-based Neural Networks (PCANet), and Fourier Neural
-Operators (FNO), providing comparative insights into their core methodologies
-and performance. These architectures are demonstrated on two classical linear
-parametric PDEs: the Poisson equation and linear elastic deformation. Beyond
-forward problem-solving, the review delves into applying neural operators as
-surrogates in Bayesian inference problems, showcasing their effectiveness in
-accelerating posterior inference while maintaining accuracy. The paper
-concludes by discussing current challenges, particularly in controlling
-prediction accuracy and generalization. It outlines emerging strategies to
-address these issues, such as residual-based error correction and multi-level
-training. This review can be seen as a comprehensive guide to implementing
-neural operators and integrating them into scientific computing workflows.
+                    <h3>Is a Good Foundation Necessary for Efficient Reinforcement Learning? The
+  Computational Role of the Base Model in Exploration</h3>
+                    <p><strong>Authors:</strong> Dylan J. Foster, Zakaria Mhammedi, Dhruv Rohatgi</p>
+                    <p>  Language model alignment (or, reinforcement learning) techniques that
+leverage active exploration -- deliberately encouraging the model to produce
+diverse, informative responses -- offer the promise of super-human
+capabilities. However, current understanding of algorithm design primitives for
+computationally efficient exploration with language models is limited. To
+better understand how to leverage access to powerful pre-trained generative
+models to improve the efficiency of exploration, we introduce a new
+computational framework for RL with language models, in which the learner
+interacts with the model through a sampling oracle. Focusing on the linear
+softmax model parameterization, we provide new results that reveal the
+computational-statistical tradeoffs of efficient exploration:
+  1. Necessity of coverage: Coverage refers to the extent to which the
+pre-trained model covers near-optimal responses -- a form of hidden knowledge.
+We show that coverage, while not necessary for data efficiency, lower bounds
+the runtime of any algorithm in our framework.
+  2. Inference-time exploration: We introduce a new algorithm, SpannerSampling,
+which obtains optimal data efficiency and is computationally efficient whenever
+the pre-trained model enjoys sufficient coverage, matching our lower bound.
+SpannerSampling leverages inference-time computation with the pre-trained model
+to reduce the effective search space for exploration.
+  3. Insufficiency of training-time interventions: We contrast the result above
+by showing that training-time interventions that produce proper policies cannot
+achieve similar guarantees in polynomial time.
+  4. Computational benefits of multi-turn exploration: Finally, we show that
+under additional representational assumptions, one can achieve improved runtime
+(replacing sequence-level coverage with token-level coverage) through
+multi-turn exploration.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05598v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07453v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Search for primordial black holes from gravitational wave populations
-  using deep learning</h3>
-                    <p><strong>Authors:</strong> Hai-Long Huang, Jun-Qian Jiang, Jibin He, Yu-Tong Wang, Yun-Song Piao</p>
-                    <p>  Gravitational waves (GWs) signals detected by the LIGO/Virgo/KAGRA
-collaboration might be sourced (partly) by the merges of primordial black holes
-(PBHs). The conventional hierarchical Bayesian inference methods can allow us
-to study population properties of GW events to search for the hints for PBHs.
-However, hierarchical Bayesian analysis require an analytic population model,
-and becomes increasingly computationally expensive as the number of sources
-grows. In this paper, we present a novel population analysis method based on
-deep learning, which enables the direct and efficient estimation of PBH
-population hyperparameters, such as the PBH fraction in dark matter, $f_{\rm
-PBH}$. Our approach leverages neural posterior estimation combined with
-conditional normalizing flows and two embedding networks. Our results
-demonstrate that inference can be performed within seconds, highlighting the
-promise of deep learning as a powerful tool for population inference with an
-increasing number of GW signals for next-generation detectors.
+                    <h3>Open-Set Gait Recognition from Sparse mmWave Radar Point Clouds</h3>
+                    <p><strong>Authors:</strong> Riccardo Mazzieri, Jacopo Pegoraro, Michele Rossi</p>
+                    <p>  The adoption of Millimeter-Wave (mmWave) radar devices for human sensing,
+particularly gait recognition, has recently gathered significant attention due
+to their efficiency, resilience to environmental conditions, and
+privacy-preserving nature. In this work, we tackle the challenging problem of
+Open-set Gait Recognition (OSGR) from sparse mmWave radar point clouds. Unlike
+most existing research, which assumes a closed-set scenario, our work considers
+the more realistic open-set case, where unknown subjects might be present at
+inference time, and should be correctly recognized by the system. Point clouds
+are well-suited for edge computing applications with resource constraints, but
+are more significantly affected by noise and random fluctuations than other
+representations, like the more common micro-Doppler signature. This is the
+first work addressing open-set gait recognition with sparse point cloud data.
+To do so, we propose a novel neural network architecture that combines
+supervised classification with unsupervised reconstruction of the point clouds,
+creating a robust, rich, and highly regularized latent space of gait features.
+To detect unknown subjects at inference time, we introduce a probabilistic
+novelty detection algorithm that leverages the structured latent space and
+offers a tunable trade-off between inference speed and prediction accuracy.
+Along with this paper, we release mmGait10, an original human gait dataset
+featuring over five hours of measurements from ten subjects, under varied
+walking modalities. Extensive experimental results show that our solution
+attains F1-Score improvements by 24% over state-of-the-art methods, on average,
+and across multiple openness levels.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05570v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07435v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Leveraging Approximate Caching for Faster Retrieval-Augmented Generation</h3>
-                    <p><strong>Authors:</strong> Shai Bergman, Zhang Ji, Anne-Marie Kermarrec, Diana Petrescu, Rafael Pires, Mathis Randl, Martijn de Vos</p>
-                    <p>  Retrieval-augmented generation (RAG) enhances the reliability of large
-language model (LLM) answers by integrating external knowledge. However, RAG
-increases the end-to-end inference time since looking for relevant documents
-from large vector databases is computationally expensive. To address this, we
-introduce Proximity, an approximate key-value cache that optimizes the RAG
-workflow by leveraging similarities in user queries. Instead of treating each
-query independently, Proximity reuses previously retrieved documents when
-similar queries appear, reducing reliance on expensive vector database lookups.
-We evaluate Proximity on the MMLU and MedRAG benchmarks, demonstrating that it
-significantly improves retrieval efficiency while maintaining response
-accuracy. Proximity reduces retrieval latency by up to 59% while maintaining
-accuracy and lowers the computational burden on the vector database. We also
-experiment with different similarity thresholds and quantify the trade-off
-between speed and recall. Our work shows that approximate caching is a viable
-and effective strategy for optimizing RAG-based systems.
+                    <h3>CATPlan: Loss-based Collision Prediction in End-to-End Autonomous
+  Driving</h3>
+                    <p><strong>Authors:</strong> Ziliang Xiong, Shipeng Liu, Nathaniel Helgesen, Joakim Johnander, Per-Erik Forssen</p>
+                    <p>  In recent years, there has been increased interest in the design, training,
+and evaluation of end-to-end autonomous driving (AD) systems. One often
+overlooked aspect is the uncertainty of planned trajectories predicted by these
+systems, despite awareness of their own uncertainty being key to achieve safety
+and robustness. We propose to estimate this uncertainty by adapting loss
+prediction from the uncertainty quantification literature. To this end, we
+introduce a novel light-weight module, dubbed CATPlan, that is trained to
+decode motion and planning embeddings into estimates of the collision loss used
+to partially supervise end-to-end AD systems. During inference, these estimates
+are interpreted as collision risk. We evaluate CATPlan on the safety-critical,
+nerf-based, closed-loop benchmark NeuroNCAP and find that it manages to detect
+collisions with a $54.8\%$ relative improvement to average precision over a
+GMM-based baseline in which the predicted trajectory is compared to the
+forecasted trajectories of other road users. Our findings indicate that the
+addition of CATPlan can lead to safer end-to-end AD systems and hope that our
+work will spark increased interest in uncertainty quantification for such
+systems.
 </p>
-                    <p><a href="http://arxiv.org/abs/2503.05530v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07425v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>A systemic and cybernetic perspective on causality, big data and social
-  networks in tourism</h3>
-                    <p><strong>Authors:</strong> Miguel Lloret-Climent, Andrés Montoyo-Guijarro, Yoan Gutierrez-Vázquez, Rafael Muñoz-Guillena, Kristian Alonso-Stenberg</p>
-                    <p>  Purpose - The purpose of this paper is to propose a mathematical model to
-determine invariant sets, set covering, orbits and, in particular, attractors
-in the set of tourism variables. Analysis was carried out based on an algorithm
-and applying an interpretation of chaos theory developed in the context of
-General Systems Theory and Big Data. Design/methodology/approach - Tourism is
-one of the most digitalized sectors of the economy, and social networks are an
-important source of data for information gathering. However, the high levels of
-redundant information on the Web and the appearance of contradictory opinions
-and facts produce undesirable effects that must be cross-checked against real
-data. This paper sets out the causal relationships associated with tourist
-flows to enable the formulation of appropriate strategies. Findings - The
-results can be applied to numerous cases, for example, in the analysis of
-tourist flows, these findings can be used to determine whether the behaviour of
-certain groups affects that of other groups, as well as analysing tourist
-behaviour in terms of the most relevant variables. Originality/value - The
-technique presented here breaks with the usual treatment of the tourism topics.
-Unlike statistical analyses that merely provide information on current data,
-the authors use orbit analysis to forecast, if attractors are found, the
-behaviour of tourist variables in the immediate future.
+                    <h3>AR-Diffusion: Asynchronous Video Generation with Auto-Regressive
+  Diffusion</h3>
+                    <p><strong>Authors:</strong> Mingzhen Sun, Weining Wang, Gen Li, Jiawei Liu, Jiahui Sun, Wanquan Feng, Shanshan Lao, SiYu Zhou, Qian He, Jing Liu</p>
+                    <p>  The task of video generation requires synthesizing visually realistic and
+temporally coherent video frames. Existing methods primarily use asynchronous
+auto-regressive models or synchronous diffusion models to address this
+challenge. However, asynchronous auto-regressive models often suffer from
+inconsistencies between training and inference, leading to issues such as error
+accumulation, while synchronous diffusion models are limited by their reliance
+on rigid sequence length. To address these issues, we introduce Auto-Regressive
+Diffusion (AR-Diffusion), a novel model that combines the strengths of
+auto-regressive and diffusion models for flexible, asynchronous video
+generation. Specifically, our approach leverages diffusion to gradually corrupt
+video frames in both training and inference, reducing the discrepancy between
+these phases. Inspired by auto-regressive generation, we incorporate a
+non-decreasing constraint on the corruption timesteps of individual frames,
+ensuring that earlier frames remain clearer than subsequent ones. This setup,
+together with temporal causal attention, enables flexible generation of videos
+with varying lengths while preserving temporal coherence. In addition, we
+design two specialized timestep schedulers: the FoPP scheduler for balanced
+timestep sampling during training, and the AD scheduler for flexible timestep
+differences during inference, supporting both synchronous and asynchronous
+generation. Extensive experiments demonstrate the superiority of our proposed
+method, which achieves competitive and state-of-the-art results across four
+challenging benchmarks.
 </p>
-                    <p><a href="http://arxiv.org/abs/2503.05502v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07418v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
                 <li>
-                    <h3>Mol-CADiff: Causality-Aware Autoregressive Diffusion for Molecule
-  Generation</h3>
-                    <p><strong>Authors:</strong> Md Atik Ahamed, Qiang Ye, Qiang Cheng</p>
-                    <p>  The design of novel molecules with desired properties is a key challenge in
-drug discovery and materials science. Traditional methods rely on
-trial-and-error, while recent deep learning approaches have accelerated
-molecular generation. However, existing models struggle with generating
-molecules based on specific textual descriptions. We introduce Mol-CADiff, a
-novel diffusion-based framework that uses causal attention mechanisms for
-text-conditional molecular generation. Our approach explicitly models the
-causal relationship between textual prompts and molecular structures,
-overcoming key limitations in existing methods. We enhance dependency modeling
-both within and across modalities, enabling precise control over the generation
-process. Our extensive experiments demonstrate that Mol-CADiff outperforms
-state-of-the-art methods in generating diverse, novel, and chemically valid
-molecules, with better alignment to specified properties, enabling more
-intuitive language-driven molecular design.
+                    <h3>Is My Text in Your AI Model? Gradient-based Membership Inference Test
+  applied to LLMs</h3>
+                    <p><strong>Authors:</strong> Gonzalo Mancera, Daniel de Alcala, Julian Fierrez, Ruben Tolosana, Aythami Morales</p>
+                    <p>  This work adapts and studies the gradient-based Membership Inference Test
+(gMINT) to the classification of text based on LLMs. MINT is a general approach
+intended to determine if given data was used for training machine learning
+models, and this work focuses on its application to the domain of Natural
+Language Processing. Using gradient-based analysis, the MINT model identifies
+whether particular data samples were included during the language model
+training phase, addressing growing concerns about data privacy in machine
+learning. The method was evaluated in seven Transformer-based models and six
+datasets comprising over 2.5 million sentences, focusing on text classification
+tasks. Experimental results demonstrate MINTs robustness, achieving AUC scores
+between 85% and 99%, depending on data size and model architecture. These
+findings highlight MINTs potential as a scalable and reliable tool for auditing
+machine learning models, ensuring transparency, safeguarding sensitive data,
+and fostering ethical compliance in the deployment of AI/NLP technologies.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.05499v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.07384v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/10/2025</p>
                 </li>
             </ul>
         </section>
