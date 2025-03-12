@@ -104,273 +104,255 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Efficient Membership Inference Attacks by Bayesian Neural Network</h3>
-                    <p><strong>Authors:</strong> Zhenlong Liu, Wenyu Jiang, Feng Zhou, Hongxin Wei</p>
-                    <p>  Membership Inference Attacks (MIAs) aim to estimate whether a specific data
-point was used in the training of a given model. Previous attacks often utilize
-multiple reference models to approximate the conditional score distribution,
-leading to significant computational overhead. While recent work leverages
-quantile regression to estimate conditional thresholds, it fails to capture
-epistemic uncertainty, resulting in bias in low-density regions. In this work,
-we propose a novel approach - Bayesian Membership Inference Attack (BMIA),
-which performs conditional attack through Bayesian inference. In particular, we
-transform a trained reference model into Bayesian neural networks by Laplace
-approximation, enabling the direct estimation of the conditional score
-distribution by probabilistic model parameters. Our method addresses both
-epistemic and aleatoric uncertainty with only a reference model, enabling
-efficient and powerful MIA. Extensive experiments on five datasets demonstrate
-the effectiveness and efficiency of BMIA.
+                    <h3>OmniMamba: Efficient and Unified Multimodal Understanding and Generation
+  via State Space Models</h3>
+                    <p><strong>Authors:</strong> Jialv Zou, Bencheng Liao, Qian Zhang, Wenyu Liu, Xinggang Wang</p>
+                    <p>  Recent advancements in unified multimodal understanding and visual generation
+(or multimodal generation) models have been hindered by their quadratic
+computational complexity and dependence on large-scale training data. We
+present OmniMamba, the first linear-architecture-based multimodal generation
+model that generates both text and images through a unified next-token
+prediction paradigm. The model fully leverages Mamba-2's high computational and
+memory efficiency, extending its capabilities from text generation to
+multimodal generation. To address the data inefficiency of existing unified
+models, we propose two key innovations: (1) decoupled vocabularies to guide
+modality-specific generation, and (2) task-specific LoRA for
+parameter-efficient adaptation. Furthermore, we introduce a decoupled two-stage
+training strategy to mitigate data imbalance between two tasks. Equipped with
+these techniques, OmniMamba achieves competitive performance with JanusFlow
+while surpassing Show-o across benchmarks, despite being trained on merely 2M
+image-text pairs, which is 1,000 times fewer than Show-o. Notably, OmniMamba
+stands out with outstanding inference efficiency, achieving up to a 119.2 times
+speedup and 63% GPU memory reduction for long-sequence generation compared to
+Transformer-based counterparts. Code and models are released at
+https://github.com/hustvl/OmniMamba
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07482v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08686v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
                 <li>
-                    <h3>Sample Complexity of Nonparametric Closeness Testing for Continuous
-  Distributions and Its Application to Causal Discovery with Hidden Confounding</h3>
-                    <p><strong>Authors:</strong> Fateme Jamshidi, Sina Akbari, Negar Kiyavash</p>
-                    <p>  We study the problem of closeness testing for continuous distributions and
-its implications for causal discovery. Specifically, we analyze the sample
-complexity of distinguishing whether two multidimensional continuous
-distributions are identical or differ by at least $\epsilon$ in terms of
-Kullback-Leibler (KL) divergence under non-parametric assumptions. To this end,
-we propose an estimator of KL divergence which is based on the von Mises
-expansion. Our closeness test attains optimal parametric rates under smoothness
-assumptions. Equipped with this test, which serves as a building block of our
-causal discovery algorithm to identify the causal structure between two
-multidimensional random variables, we establish sample complexity guarantees
-for our causal discovery method. To the best of our knowledge, this work is the
-first work that provides sample complexity guarantees for distinguishing cause
-and effect in multidimensional non-linear models with non-Gaussian continuous
-variables in the presence of unobserved confounding.
+                    <h3>"Principal Components" Enable A New Language of Images</h3>
+                    <p><strong>Authors:</strong> Xin Wen, Bingchen Zhao, Ismail Elezi, Jiankang Deng, Xiaojuan Qi</p>
+                    <p>  We introduce a novel visual tokenization framework that embeds a provable
+PCA-like structure into the latent token space. While existing visual
+tokenizers primarily optimize for reconstruction fidelity, they often neglect
+the structural properties of the latent space -- a critical factor for both
+interpretability and downstream tasks. Our method generates a 1D causal token
+sequence for images, where each successive token contributes non-overlapping
+information with mathematically guaranteed decreasing explained variance,
+analogous to principal component analysis. This structural constraint ensures
+the tokenizer extracts the most salient visual features first, with each
+subsequent token adding diminishing yet complementary information.
+Additionally, we identified and resolved a semantic-spectrum coupling effect
+that causes the unwanted entanglement of high-level semantic content and
+low-level spectral details in the tokens by leveraging a diffusion decoder.
+Experiments demonstrate that our approach achieves state-of-the-art
+reconstruction performance and enables better interpretability to align with
+the human vision system. Moreover, auto-regressive models trained on our token
+sequences achieve performance comparable to current state-of-the-art methods
+while requiring fewer tokens for training and inference.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07475v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08685v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
                 <li>
-                    <h3>YOLOE: Real-Time Seeing Anything</h3>
-                    <p><strong>Authors:</strong> Ao Wang, Lihao Liu, Hui Chen, Zijia Lin, Jungong Han, Guiguang Ding</p>
-                    <p>  Object detection and segmentation are widely employed in computer vision
-applications, yet conventional models like YOLO series, while efficient and
-accurate, are limited by predefined categories, hindering adaptability in open
-scenarios. Recent open-set methods leverage text prompts, visual cues, or
-prompt-free paradigm to overcome this, but often compromise between performance
-and efficiency due to high computational demands or deployment complexity. In
-this work, we introduce YOLOE, which integrates detection and segmentation
-across diverse open prompt mechanisms within a single highly efficient model,
-achieving real-time seeing anything. For text prompts, we propose
-Re-parameterizable Region-Text Alignment (RepRTA) strategy. It refines
-pretrained textual embeddings via a re-parameterizable lightweight auxiliary
-network and enhances visual-textual alignment with zero inference and
-transferring overhead. For visual prompts, we present Semantic-Activated Visual
-Prompt Encoder (SAVPE). It employs decoupled semantic and activation branches
-to bring improved visual embedding and accuracy with minimal complexity. For
-prompt-free scenario, we introduce Lazy Region-Prompt Contrast (LRPC) strategy.
-It utilizes a built-in large vocabulary and specialized embedding to identify
-all objects, avoiding costly language model dependency. Extensive experiments
-show YOLOE's exceptional zero-shot performance and transferability with high
-inference efficiency and low training cost. Notably, on LVIS, with 3$\times$
-less training cost and 1.4$\times$ inference speedup, YOLOE-v8-S surpasses
-YOLO-Worldv2-S by 3.5 AP. When transferring to COCO, YOLOE-v8-L achieves 0.6
-AP$^b$ and 0.4 AP$^m$ gains over closed-set YOLOv8-L with nearly 4$\times$ less
-training time. Code and models are available at
-https://github.com/THU-MIG/yoloe.
+                    <h3>Perplexity Trap: PLM-Based Retrievers Overrate Low Perplexity Documents</h3>
+                    <p><strong>Authors:</strong> Haoyu Wang, Sunhao Dai, Haiyuan Zhao, Liang Pang, Xiao Zhang, Gang Wang, Zhenhua Dong, Jun Xu, Ji-Rong Wen</p>
+                    <p>  Previous studies have found that PLM-based retrieval models exhibit a
+preference for LLM-generated content, assigning higher relevance scores to
+these documents even when their semantic quality is comparable to human-written
+ones. This phenomenon, known as source bias, threatens the sustainable
+development of the information access ecosystem. However, the underlying causes
+of source bias remain unexplored. In this paper, we explain the process of
+information retrieval with a causal graph and discover that PLM-based
+retrievers learn perplexity features for relevance estimation, causing source
+bias by ranking the documents with low perplexity higher. Theoretical analysis
+further reveals that the phenomenon stems from the positive correlation between
+the gradients of the loss functions in language modeling task and retrieval
+task. Based on the analysis, a causal-inspired inference-time debiasing method
+is proposed, called Causal Diagnosis and Correction (CDC). CDC first diagnoses
+the bias effect of the perplexity and then separates the bias effect from the
+overall estimated relevance score. Experimental results across three domains
+demonstrate the superior debiasing effectiveness of CDC, emphasizing the
+validity of our proposed explanatory framework. Source codes are available at
+https://github.com/WhyDwelledOnAi/Perplexity-Trap.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07465v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08684v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
                 <li>
-                    <h3>MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for
-  Complex Medical Reasoning</h3>
-                    <p><strong>Authors:</strong> Xiangru Tang, Daniel Shao, Jiwoong Sohn, Jiapeng Chen, Jiayi Zhang, Jinyu Xiang, Fang Wu, Yilun Zhao, Chenglin Wu, Wenqi Shi, Arman Cohan, Mark Gerstein</p>
-                    <p>  Large Language Models (LLMs) have shown impressive performance on existing
-medical question-answering benchmarks. This high performance makes it
-increasingly difficult to meaningfully evaluate and differentiate advanced
-methods. We present MedAgentsBench, a benchmark that focuses on challenging
-medical questions requiring multi-step clinical reasoning, diagnosis
-formulation, and treatment planning-scenarios where current models still
-struggle despite their strong performance on standard tests. Drawing from seven
-established medical datasets, our benchmark addresses three key limitations in
-existing evaluations: (1) the prevalence of straightforward questions where
-even base models achieve high performance, (2) inconsistent sampling and
-evaluation protocols across studies, and (3) lack of systematic analysis of the
-interplay between performance, cost, and inference time. Through experiments
-with various base models and reasoning methods, we demonstrate that the latest
-thinking models, DeepSeek R1 and OpenAI o3, exhibit exceptional performance in
-complex medical reasoning tasks. Additionally, advanced search-based agent
-methods offer promising performance-to-cost ratios compared to traditional
-approaches. Our analysis reveals substantial performance gaps between model
-families on complex questions and identifies optimal model selections for
-different computational constraints. Our benchmark and evaluation framework are
-publicly available at https://github.com/gersteinlab/medagents-benchmark.
-</p>
-                    <p><a href="http://arxiv.org/pdf/2503.07459v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
-                </li>
-                <li>
-                    <h3>Causality violation of Schrödinger-Newton equation: direct test on
-  the horizon?</h3>
-                    <p><strong>Authors:</strong> Lajos Diósi</p>
-                    <p>  We quote a definitive simple proof that neither classical stochastic dynamics
-nor quantum dynamics can be nonlinear if we stick to their standard statistical
-interpretations. A recently proposed optomechanical test of gravity's
-classicality versus quantumness is based on the nonlinear Schr\"odinger-Newton
-equation (SNE) which is the nonrelativistic limit of standard semiclassical
-gravity. While in typical cosmological applications of semiclassical gravity
-the predicted violation of causality is ignored, it cannot be disregarded in
-applications of the SNE in high sensitive laboratory tests hoped for the coming
-years. We reveal that, in a recently designed experiment, quantum optical
-monitoring of massive probes predicts fake action-at-a-distance (acausality) on
-a single probe already. The proposed experiment might first include the direct
-test of this acausality.
-</p>
-                    <p><a href="http://arxiv.org/pdf/2503.07458v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
-                </li>
-                <li>
-                    <h3>Is a Good Foundation Necessary for Efficient Reinforcement Learning? The
-  Computational Role of the Base Model in Exploration</h3>
-                    <p><strong>Authors:</strong> Dylan J. Foster, Zakaria Mhammedi, Dhruv Rohatgi</p>
-                    <p>  Language model alignment (or, reinforcement learning) techniques that
-leverage active exploration -- deliberately encouraging the model to produce
-diverse, informative responses -- offer the promise of super-human
-capabilities. However, current understanding of algorithm design primitives for
-computationally efficient exploration with language models is limited. To
-better understand how to leverage access to powerful pre-trained generative
-models to improve the efficiency of exploration, we introduce a new
-computational framework for RL with language models, in which the learner
-interacts with the model through a sampling oracle. Focusing on the linear
-softmax model parameterization, we provide new results that reveal the
-computational-statistical tradeoffs of efficient exploration:
-  1. Necessity of coverage: Coverage refers to the extent to which the
-pre-trained model covers near-optimal responses -- a form of hidden knowledge.
-We show that coverage, while not necessary for data efficiency, lower bounds
-the runtime of any algorithm in our framework.
-  2. Inference-time exploration: We introduce a new algorithm, SpannerSampling,
-which obtains optimal data efficiency and is computationally efficient whenever
-the pre-trained model enjoys sufficient coverage, matching our lower bound.
-SpannerSampling leverages inference-time computation with the pre-trained model
-to reduce the effective search space for exploration.
-  3. Insufficiency of training-time interventions: We contrast the result above
-by showing that training-time interventions that produce proper policies cannot
-achieve similar guarantees in polynomial time.
-  4. Computational benefits of multi-turn exploration: Finally, we show that
-under additional representational assumptions, one can achieve improved runtime
-(replacing sequence-level coverage with token-level coverage) through
-multi-turn exploration.
-</p>
-                    <p><a href="http://arxiv.org/pdf/2503.07453v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
-                </li>
-                <li>
-                    <h3>Open-Set Gait Recognition from Sparse mmWave Radar Point Clouds</h3>
-                    <p><strong>Authors:</strong> Riccardo Mazzieri, Jacopo Pegoraro, Michele Rossi</p>
-                    <p>  The adoption of Millimeter-Wave (mmWave) radar devices for human sensing,
-particularly gait recognition, has recently gathered significant attention due
-to their efficiency, resilience to environmental conditions, and
-privacy-preserving nature. In this work, we tackle the challenging problem of
-Open-set Gait Recognition (OSGR) from sparse mmWave radar point clouds. Unlike
-most existing research, which assumes a closed-set scenario, our work considers
-the more realistic open-set case, where unknown subjects might be present at
-inference time, and should be correctly recognized by the system. Point clouds
-are well-suited for edge computing applications with resource constraints, but
-are more significantly affected by noise and random fluctuations than other
-representations, like the more common micro-Doppler signature. This is the
-first work addressing open-set gait recognition with sparse point cloud data.
-To do so, we propose a novel neural network architecture that combines
-supervised classification with unsupervised reconstruction of the point clouds,
-creating a robust, rich, and highly regularized latent space of gait features.
-To detect unknown subjects at inference time, we introduce a probabilistic
-novelty detection algorithm that leverages the structured latent space and
-offers a tunable trade-off between inference speed and prediction accuracy.
-Along with this paper, we release mmGait10, an original human gait dataset
-featuring over five hours of measurements from ten subjects, under varied
-walking modalities. Extensive experimental results show that our solution
-attains F1-Score improvements by 24% over state-of-the-art methods, on average,
-and across multiple openness levels.
-</p>
-                    <p><a href="http://arxiv.org/pdf/2503.07435v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
-                </li>
-                <li>
-                    <h3>CATPlan: Loss-based Collision Prediction in End-to-End Autonomous
+                    <h3>CoLMDriver: LLM-based Negotiation Benefits Cooperative Autonomous
   Driving</h3>
-                    <p><strong>Authors:</strong> Ziliang Xiong, Shipeng Liu, Nathaniel Helgesen, Joakim Johnander, Per-Erik Forssen</p>
-                    <p>  In recent years, there has been increased interest in the design, training,
-and evaluation of end-to-end autonomous driving (AD) systems. One often
-overlooked aspect is the uncertainty of planned trajectories predicted by these
-systems, despite awareness of their own uncertainty being key to achieve safety
-and robustness. We propose to estimate this uncertainty by adapting loss
-prediction from the uncertainty quantification literature. To this end, we
-introduce a novel light-weight module, dubbed CATPlan, that is trained to
-decode motion and planning embeddings into estimates of the collision loss used
-to partially supervise end-to-end AD systems. During inference, these estimates
-are interpreted as collision risk. We evaluate CATPlan on the safety-critical,
-nerf-based, closed-loop benchmark NeuroNCAP and find that it manages to detect
-collisions with a $54.8\%$ relative improvement to average precision over a
-GMM-based baseline in which the predicted trajectory is compared to the
-forecasted trajectories of other road users. Our findings indicate that the
-addition of CATPlan can lead to safer end-to-end AD systems and hope that our
-work will spark increased interest in uncertainty quantification for such
-systems.
+                    <p><strong>Authors:</strong> Changxing Liu, Genjia Liu, Zijun Wang, Jinchang Yang, Siheng Chen</p>
+                    <p>  Vehicle-to-vehicle (V2V) cooperative autonomous driving holds great promise
+for improving safety by addressing the perception and prediction uncertainties
+inherent in single-agent systems. However, traditional cooperative methods are
+constrained by rigid collaboration protocols and limited generalization to
+unseen interactive scenarios. While LLM-based approaches offer generalized
+reasoning capabilities, their challenges in spatial planning and unstable
+inference latency hinder their direct application in cooperative driving. To
+address these limitations, we propose CoLMDriver, the first full-pipeline
+LLM-based cooperative driving system, enabling effective language-based
+negotiation and real-time driving control. CoLMDriver features a parallel
+driving pipeline with two key components: (i) an LLM-based negotiation module
+under an actor-critic paradigm, which continuously refines cooperation policies
+through feedback from previous decisions of all vehicles; and (ii) an
+intention-guided waypoint generator, which translates negotiation outcomes into
+executable waypoints. Additionally, we introduce InterDrive, a CARLA-based
+simulation benchmark comprising 10 challenging interactive driving scenarios
+for evaluating V2V cooperation. Experimental results demonstrate that
+CoLMDriver significantly outperforms existing approaches, achieving an 11%
+higher success rate across diverse highly interactive V2V driving scenarios.
+Code will be released on https://github.com/cxliu0314/CoLMDriver.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07425v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08683v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
                 <li>
-                    <h3>AR-Diffusion: Asynchronous Video Generation with Auto-Regressive
-  Diffusion</h3>
-                    <p><strong>Authors:</strong> Mingzhen Sun, Weining Wang, Gen Li, Jiawei Liu, Jiahui Sun, Wanquan Feng, Shanshan Lao, SiYu Zhou, Qian He, Jing Liu</p>
-                    <p>  The task of video generation requires synthesizing visually realistic and
-temporally coherent video frames. Existing methods primarily use asynchronous
-auto-regressive models or synchronous diffusion models to address this
-challenge. However, asynchronous auto-regressive models often suffer from
-inconsistencies between training and inference, leading to issues such as error
-accumulation, while synchronous diffusion models are limited by their reliance
-on rigid sequence length. To address these issues, we introduce Auto-Regressive
-Diffusion (AR-Diffusion), a novel model that combines the strengths of
-auto-regressive and diffusion models for flexible, asynchronous video
-generation. Specifically, our approach leverages diffusion to gradually corrupt
-video frames in both training and inference, reducing the discrepancy between
-these phases. Inspired by auto-regressive generation, we incorporate a
-non-decreasing constraint on the corruption timesteps of individual frames,
-ensuring that earlier frames remain clearer than subsequent ones. This setup,
-together with temporal causal attention, enables flexible generation of videos
-with varying lengths while preserving temporal coherence. In addition, we
-design two specialized timestep schedulers: the FoPP scheduler for balanced
-timestep sampling during training, and the AD scheduler for flexible timestep
-differences during inference, supporting both synchronous and asynchronous
-generation. Extensive experiments demonstrate the superiority of our proposed
-method, which achieves competitive and state-of-the-art results across four
-challenging benchmarks.
+                    <h3>GarmentCrafter: Progressive Novel View Synthesis for Single-View 3D
+  Garment Reconstruction and Editing</h3>
+                    <p><strong>Authors:</strong> Yuanhao Wang, Cheng Zhang, Gonçalo Frazão, Jinlong Yang, Alexandru-Eugen Ichim, Thabo Beeler, Fernando De la Torre</p>
+                    <p>  We introduce GarmentCrafter, a new approach that enables non-professional
+users to create and modify 3D garments from a single-view image. While recent
+advances in image generation have facilitated 2D garment design, creating and
+editing 3D garments remains challenging for non-professional users. Existing
+methods for single-view 3D reconstruction often rely on pre-trained generative
+models to synthesize novel views conditioning on the reference image and camera
+pose, yet they lack cross-view consistency, failing to capture the internal
+relationships across different views. In this paper, we tackle this challenge
+through progressive depth prediction and image warping to approximate novel
+views. Subsequently, we train a multi-view diffusion model to complete occluded
+and unknown clothing regions, informed by the evolving camera pose. By jointly
+inferring RGB and depth, GarmentCrafter enforces inter-view coherence and
+reconstructs precise geometries and fine details. Extensive experiments
+demonstrate that our method achieves superior visual fidelity and inter-view
+coherence compared to state-of-the-art single-view 3D garment reconstruction
+methods.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07418v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08678v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
                 <li>
-                    <h3>Is My Text in Your AI Model? Gradient-based Membership Inference Test
-  applied to LLMs</h3>
-                    <p><strong>Authors:</strong> Gonzalo Mancera, Daniel de Alcala, Julian Fierrez, Ruben Tolosana, Aythami Morales</p>
-                    <p>  This work adapts and studies the gradient-based Membership Inference Test
-(gMINT) to the classification of text based on LLMs. MINT is a general approach
-intended to determine if given data was used for training machine learning
-models, and this work focuses on its application to the domain of Natural
-Language Processing. Using gradient-based analysis, the MINT model identifies
-whether particular data samples were included during the language model
-training phase, addressing growing concerns about data privacy in machine
-learning. The method was evaluated in seven Transformer-based models and six
-datasets comprising over 2.5 million sentences, focusing on text classification
-tasks. Experimental results demonstrate MINTs robustness, achieving AUC scores
-between 85% and 99%, depending on data size and model architecture. These
-findings highlight MINTs potential as a scalable and reliable tool for auditing
-machine learning models, ensuring transparency, safeguarding sensitive data,
-and fostering ethical compliance in the deployment of AI/NLP technologies.
+                    <h3>REGEN: Learning Compact Video Embedding with (Re-)Generative Decoder</h3>
+                    <p><strong>Authors:</strong> Yitian Zhang, Long Mai, Aniruddha Mahapatra, David Bourgin, Yicong Hong, Jonah Casebeer, Feng Liu, Yun Fu</p>
+                    <p>  We present a novel perspective on learning video embedders for generative
+modeling: rather than requiring an exact reproduction of an input video, an
+effective embedder should focus on synthesizing visually plausible
+reconstructions. This relaxed criterion enables substantial improvements in
+compression ratios without compromising the quality of downstream generative
+models. Specifically, we propose replacing the conventional encoder-decoder
+video embedder with an encoder-generator framework that employs a diffusion
+transformer (DiT) to synthesize missing details from a compact latent space.
+Therein, we develop a dedicated latent conditioning module to condition the DiT
+decoder on the encoded video latent embedding. Our experiments demonstrate that
+our approach enables superior encoding-decoding performance compared to
+state-of-the-art methods, particularly as the compression ratio increases. To
+demonstrate the efficacy of our approach, we report results from our video
+embedders achieving a temporal compression ratio of up to 32x (8x higher than
+leading video embedders) and validate the robustness of this ultra-compact
+latent space for text-to-video generation, providing a significant efficiency
+boost in latent diffusion model training and inference.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.07384v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/10/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08665v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                </li>
+                <li>
+                    <h3>On a new robust method of inference for general time series models</h3>
+                    <p><strong>Authors:</strong> Zihan Wang, Xinghao Qiao, Dong Li, Howell Tong</p>
+                    <p>  In this article, we propose a novel logistic quasi-maximum likelihood
+estimation (LQMLE) for general parametric time series models. Compared to the
+classical Gaussian QMLE and existing robust estimations, it enjoys many
+distinctive advantages, such as robustness in respect of distributional
+misspecification and heavy-tailedness of the innovation, more resiliency to
+outliers, smoothness and strict concavity of the log logistic quasi-likelihood
+function, and boundedness of the influence function among others. Under some
+mild conditions, we establish the strong consistency and asymptotic normality
+of the LQMLE. Moreover, we propose a new and vital parameter identifiability
+condition to ensure desirable asymptotics of the LQMLE. Further, based on the
+LQMLE, we consider the Wald test and the Lagrange multiplier test for the
+unknown parameters, and derive the limiting distributions of the corresponding
+test statistics. The applicability of our methodology is demonstrated by
+several time series models, including DAR, GARCH, ARMA-GARCH, DTARMACH, and
+EXPAR. Numerical simulation studies are carried out to assess the finite-sample
+performance of our methodology, and an empirical example is analyzed to
+illustrate its usefulness.
+</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08655v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                </li>
+                <li>
+                    <h3>Leveraging national forest inventory data to estimate forest carbon
+  density status and trends for small areas</h3>
+                    <p><strong>Authors:</strong> Elliot S. Shannon, Andrew O. Finley, Paul B. May, Grant M. Domke, Hans-Erik Andersen, George C. Gaines III, Arne Nothdurft, Sudipto Banerjee</p>
+                    <p>  National forest inventory (NFI) data are often costly to collect, which
+inhibits efforts to estimate parameters of interest for small spatial,
+temporal, or biophysical domains. Traditionally, design-based estimators are
+used to estimate status of forest parameters of interest, but are unreliable
+for small areas where data are sparse. Additionally, design-based estimates
+constructed directly from the survey data are often unavailable when sample
+sizes are especially small. Traditional model-based small area estimation
+approaches, such as the Fay-Herriot (FH) model, rely on these direct estimates
+for inference; hence, missing direct estimates preclude the use of such
+approaches. Here, we detail a Bayesian spatio-temporal small area estimation
+model that efficiently leverages sparse NFI data to estimate status and trends
+for forest parameters. The proposed model bypasses the use of direct estimates
+and instead uses plot-level NFI measurements along with auxiliary data
+including remotely sensed tree canopy cover. We produce forest carbon estimates
+from the United States NFI over 14 years across the contiguous US (CONUS) and
+conduct a simulation study to assess our proposed model's accuracy, precision,
+and bias, compared to that of a design-based estimator. The proposed model
+provides improved precision and accuracy over traditional estimation methods,
+and provides useful insights into county-level forest carbon dynamics across
+the CONUS.
+</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08653v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                </li>
+                <li>
+                    <h3>Rethinking Diffusion Model in High Dimension</h3>
+                    <p><strong>Authors:</strong> Zhenxin Zheng, Zhenjie Zheng</p>
+                    <p>  Curse of Dimensionality is an unavoidable challenge in statistical
+probability models, yet diffusion models seem to overcome this limitation,
+achieving impressive results in high-dimensional data generation. Diffusion
+models assume that they can learn the statistical properties of the underlying
+probability distribution, enabling sampling from this distribution to generate
+realistic samples. But is this really how they work? To address this question,
+this paper conducts a detailed analysis of the objective function and inference
+methods of diffusion models, leading to several important conclusions that help
+answer the above question: 1) In high-dimensional sparse scenarios, the target
+of the objective function fitting degrades from a weighted sum of multiple
+samples to a single sample. 2) The mainstream inference methods can all be
+represented within a simple unified framework, without requiring statistical
+concepts such as Markov chains and SDEs. 3) Guided by this simple framework,
+more efficient inference methods can be discovered.
+</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08643v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                </li>
+                <li>
+                    <h3>Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse
+  Attention</h3>
+                    <p><strong>Authors:</strong> Emily Xiao, Chin-Jou Li, Yilin Zhang, Graham Neubig, Amanda Bertsch</p>
+                    <p>  Many-shot in-context learning has recently shown promise as an alternative to
+finetuning, with the major advantage that the same model can be served for
+multiple tasks. However, this shifts the computational burden from
+training-time to inference-time, making deployment of many-shot ICL challenging
+to justify in-practice. This cost is further increased if a custom
+demonstration set is retrieved for each inference example. We present Dynamic
+Block-Sparse Attention, a training-free framework for retrieval-based many-shot
+in-context learning. By combining carefully designed block-sparse attention and
+retrieval of cached groups of demonstrations, we achieve comparable per-example
+latency to finetuning while maintaining on average >95% of the best method's
+accuracy across strong ICL and finetuning baselines. We hope that this will
+further enable the deployment of many-shot ICL at scale.
+</p>
+                    <p><a href="http://arxiv.org/pdf/2503.08640v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/11/2025</p>
                 </li>
             </ul>
         </section>
