@@ -105,254 +105,258 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>OmniMamba: Efficient and Unified Multimodal Understanding and Generation
-  via State Space Models</h3>
-                    <p><strong>Authors:</strong> Jialv Zou, Bencheng Liao, Qian Zhang, Wenyu Liu, Xinggang Wang</p>
-                    <p>  Recent advancements in unified multimodal understanding and visual generation
-(or multimodal generation) models have been hindered by their quadratic
-computational complexity and dependence on large-scale training data. We
-present OmniMamba, the first linear-architecture-based multimodal generation
-model that generates both text and images through a unified next-token
-prediction paradigm. The model fully leverages Mamba-2's high computational and
-memory efficiency, extending its capabilities from text generation to
-multimodal generation. To address the data inefficiency of existing unified
-models, we propose two key innovations: (1) decoupled vocabularies to guide
-modality-specific generation, and (2) task-specific LoRA for
-parameter-efficient adaptation. Furthermore, we introduce a decoupled two-stage
-training strategy to mitigate data imbalance between two tasks. Equipped with
-these techniques, OmniMamba achieves competitive performance with JanusFlow
-while surpassing Show-o across benchmarks, despite being trained on merely 2M
-image-text pairs, which is 1,000 times fewer than Show-o. Notably, OmniMamba
-stands out with outstanding inference efficiency, achieving up to a 119.2 times
-speedup and 63% GPU memory reduction for long-sequence generation compared to
-Transformer-based counterparts. Code and models are released at
-https://github.com/hustvl/OmniMamba
+                    <h3>Cost-Optimal Grouped-Query Attention for Long-Context LLMs</h3>
+                    <p><strong>Authors:</strong> Yingfa Chen, Yutong Wu, Xu Han, Zhiyuan Liu, Maosong Sun</p>
+                    <p>  Building effective and efficient Transformer-based large language models
+(LLMs) has recently become a research focus, requiring maximizing model
+language capabilities and minimizing training and deployment costs. Existing
+efforts have primarily described complex relationships among model performance,
+parameter size, and data size, as well as searched for the optimal compute
+allocation to train LLMs. However, they overlook the impacts of context length
+and attention head configuration (the number of query and key-value heads in
+grouped-query attention) on training and inference. In this paper, we
+systematically compare models with different parameter sizes, context lengths,
+and attention head configurations in terms of model performance, computational
+cost, and memory cost. Then, we extend the existing scaling methods, which are
+based solely on parameter size and training compute, to guide the construction
+of cost-optimal LLMs during both training and inference. Our quantitative
+scaling studies show that, when processing sufficiently long sequences, a
+larger model with fewer attention heads can achieve a lower loss while
+incurring lower computational and memory costs. Our findings provide valuable
+insights for developing practical LLMs, especially in long-context processing
+scenarios. We will publicly release our code and data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08686v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09579v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>"Principal Components" Enable A New Language of Images</h3>
-                    <p><strong>Authors:</strong> Xin Wen, Bingchen Zhao, Ismail Elezi, Jiankang Deng, Xiaojuan Qi</p>
-                    <p>  We introduce a novel visual tokenization framework that embeds a provable
-PCA-like structure into the latent token space. While existing visual
-tokenizers primarily optimize for reconstruction fidelity, they often neglect
-the structural properties of the latent space -- a critical factor for both
-interpretability and downstream tasks. Our method generates a 1D causal token
-sequence for images, where each successive token contributes non-overlapping
-information with mathematically guaranteed decreasing explained variance,
-analogous to principal component analysis. This structural constraint ensures
-the tokenizer extracts the most salient visual features first, with each
-subsequent token adding diminishing yet complementary information.
-Additionally, we identified and resolved a semantic-spectrum coupling effect
-that causes the unwanted entanglement of high-level semantic content and
-low-level spectral details in the tokens by leveraging a diffusion decoder.
-Experiments demonstrate that our approach achieves state-of-the-art
-reconstruction performance and enables better interpretability to align with
-the human vision system. Moreover, auto-regressive models trained on our token
-sequences achieve performance comparable to current state-of-the-art methods
-while requiring fewer tokens for training and inference.
+                    <h3>Block Diffusion: Interpolating Between Autoregressive and Diffusion
+  Language Models</h3>
+                    <p><strong>Authors:</strong> Marianne Arriola, Aaron Gokaslan, Justin T Chiu, Zhihan Yang, Zhixuan Qi, Jiaqi Han, Subham Sekhar Sahoo, Volodymyr Kuleshov</p>
+                    <p>  Diffusion language models offer unique benefits over autoregressive models
+due to their potential for parallelized generation and controllability, yet
+they lag in likelihood modeling and are limited to fixed-length generation. In
+this work, we introduce a class of block diffusion language models that
+interpolate between discrete denoising diffusion and autoregressive models.
+Block diffusion overcomes key limitations of both approaches by supporting
+flexible-length generation and improving inference efficiency with KV caching
+and parallel token sampling. We propose a recipe for building effective block
+diffusion models that includes an efficient training algorithm, estimators of
+gradient variance, and data-driven noise schedules to minimize the variance.
+Block diffusion sets a new state-of-the-art performance among diffusion models
+on language modeling benchmarks and enables generation of arbitrary-length
+sequences. We provide the code, along with the model weights and blog post on
+the project page: https://m-arriola.com/bd3lms/
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08685v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09573v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>Perplexity Trap: PLM-Based Retrievers Overrate Low Perplexity Documents</h3>
-                    <p><strong>Authors:</strong> Haoyu Wang, Sunhao Dai, Haiyuan Zhao, Liang Pang, Xiao Zhang, Gang Wang, Zhenhua Dong, Jun Xu, Ji-Rong Wen</p>
-                    <p>  Previous studies have found that PLM-based retrieval models exhibit a
-preference for LLM-generated content, assigning higher relevance scores to
-these documents even when their semantic quality is comparable to human-written
-ones. This phenomenon, known as source bias, threatens the sustainable
-development of the information access ecosystem. However, the underlying causes
-of source bias remain unexplored. In this paper, we explain the process of
-information retrieval with a causal graph and discover that PLM-based
-retrievers learn perplexity features for relevance estimation, causing source
-bias by ranking the documents with low perplexity higher. Theoretical analysis
-further reveals that the phenomenon stems from the positive correlation between
-the gradients of the loss functions in language modeling task and retrieval
-task. Based on the analysis, a causal-inspired inference-time debiasing method
-is proposed, called Causal Diagnosis and Correction (CDC). CDC first diagnoses
-the bias effect of the perplexity and then separates the bias effect from the
-overall estimated relevance score. Experimental results across three domains
-demonstrate the superior debiasing effectiveness of CDC, emphasizing the
-validity of our proposed explanatory framework. Source codes are available at
-https://github.com/WhyDwelledOnAi/Perplexity-Trap.
+                    <h3>Biological Multi-Layer and Single Cell Network-Based Multiomics Models -
+  a Review</h3>
+                    <p><strong>Authors:</strong> Marcello Barylli, Joyaditya Saha, Tineke E. Buffart, Jan Koster, Kristiaan J. Lenos, Louis Vermeulen, Vivek M. Sheraton</p>
+                    <p>  Recent advances in single cell sequencing and multi-omics techniques have
+significantly improved our understanding of biological phenomena and our
+capacity to model them. Despite combined capture of data modalities showing
+similar progress, notably single cell transcriptomics and proteomics,
+simultaneous multi-omics level probing still remains challenging. As an
+alternative to combined capture of biological data, in this review, we explore
+current and upcoming methods for post-hoc network inference and integration
+with an emphasis on single cell transcriptomics and proteomics. By examining
+various approaches, from probabilistic models to graph-based algorithms, we
+outline the challenges and potential strategies for effectively combining
+biological data types while simultaneously highlighting the importance of model
+validation. With this review, we aim to inform readers of the breadth of tools
+currently available for the purpose-specific generation of heterogeneous
+multi-layer networks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08684v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09568v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>CoLMDriver: LLM-based Negotiation Benefits Cooperative Autonomous
-  Driving</h3>
-                    <p><strong>Authors:</strong> Changxing Liu, Genjia Liu, Zijun Wang, Jinchang Yang, Siheng Chen</p>
-                    <p>  Vehicle-to-vehicle (V2V) cooperative autonomous driving holds great promise
-for improving safety by addressing the perception and prediction uncertainties
-inherent in single-agent systems. However, traditional cooperative methods are
-constrained by rigid collaboration protocols and limited generalization to
-unseen interactive scenarios. While LLM-based approaches offer generalized
-reasoning capabilities, their challenges in spatial planning and unstable
-inference latency hinder their direct application in cooperative driving. To
-address these limitations, we propose CoLMDriver, the first full-pipeline
-LLM-based cooperative driving system, enabling effective language-based
-negotiation and real-time driving control. CoLMDriver features a parallel
-driving pipeline with two key components: (i) an LLM-based negotiation module
-under an actor-critic paradigm, which continuously refines cooperation policies
-through feedback from previous decisions of all vehicles; and (ii) an
-intention-guided waypoint generator, which translates negotiation outcomes into
-executable waypoints. Additionally, we introduce InterDrive, a CARLA-based
-simulation benchmark comprising 10 challenging interactive driving scenarios
-for evaluating V2V cooperation. Experimental results demonstrate that
-CoLMDriver significantly outperforms existing approaches, achieving an 11%
-higher success rate across diverse highly interactive V2V driving scenarios.
-Code will be released on https://github.com/cxliu0314/CoLMDriver.
+                    <h3>TPDiff: Temporal Pyramid Video Diffusion Model</h3>
+                    <p><strong>Authors:</strong> Lingmin Ran, Mike Zheng Shou</p>
+                    <p>  The development of video diffusion models unveils a significant challenge:
+the substantial computational demands. To mitigate this challenge, we note that
+the reverse process of diffusion exhibits an inherent entropy-reducing nature.
+Given the inter-frame redundancy in video modality, maintaining full frame
+rates in high-entropy stages is unnecessary. Based on this insight, we propose
+TPDiff, a unified framework to enhance training and inference efficiency. By
+dividing diffusion into several stages, our framework progressively increases
+frame rate along the diffusion process with only the last stage operating on
+full frame rate, thereby optimizing computational efficiency. To train the
+multi-stage diffusion model, we introduce a dedicated training framework:
+stage-wise diffusion. By solving the partitioned probability flow ordinary
+differential equations (ODE) of diffusion under aligned data and noise, our
+training strategy is applicable to various diffusion forms and further enhances
+training efficiency. Comprehensive experimental evaluations validate the
+generality of our method, demonstrating 50% reduction in training cost and 1.5x
+improvement in inference efficiency.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08683v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09566v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>GarmentCrafter: Progressive Novel View Synthesis for Single-View 3D
-  Garment Reconstruction and Editing</h3>
-                    <p><strong>Authors:</strong> Yuanhao Wang, Cheng Zhang, Gonçalo Frazão, Jinlong Yang, Alexandru-Eugen Ichim, Thabo Beeler, Fernando De la Torre</p>
-                    <p>  We introduce GarmentCrafter, a new approach that enables non-professional
-users to create and modify 3D garments from a single-view image. While recent
-advances in image generation have facilitated 2D garment design, creating and
-editing 3D garments remains challenging for non-professional users. Existing
-methods for single-view 3D reconstruction often rely on pre-trained generative
-models to synthesize novel views conditioning on the reference image and camera
-pose, yet they lack cross-view consistency, failing to capture the internal
-relationships across different views. In this paper, we tackle this challenge
-through progressive depth prediction and image warping to approximate novel
-views. Subsequently, we train a multi-view diffusion model to complete occluded
-and unknown clothing regions, informed by the evolving camera pose. By jointly
-inferring RGB and depth, GarmentCrafter enforces inter-view coherence and
-reconstructs precise geometries and fine details. Extensive experiments
-demonstrate that our method achieves superior visual fidelity and inter-view
-coherence compared to state-of-the-art single-view 3D garment reconstruction
-methods.
+                    <h3>CombatVLA: An Efficient Vision-Language-Action Model for Combat Tasks in
+  3D Action Role-Playing Games</h3>
+                    <p><strong>Authors:</strong> Peng Chen, Pi Bu, Yingyao Wang, Xinyi Wang, Ziming Wang, Jie Guo, Yingxiu Zhao, Qi Zhu, Jun Song, Siran Yang, Jiamang Wang, Bo Zheng</p>
+                    <p>  Recent advances in Vision-Language-Action models (VLAs) have expanded the
+capabilities of embodied intelligence. However, significant challenges remain
+in real-time decision-making in complex 3D environments, which demand
+second-level responses, high-resolution perception, and tactical reasoning
+under dynamic conditions. To advance the field, we introduce CombatVLA, an
+efficient VLA model optimized for combat tasks in 3D action role-playing
+games(ARPGs). Specifically, our CombatVLA is a 3B model trained on video-action
+pairs collected by an action tracker, where the data is formatted as
+action-of-thought (AoT) sequences. Thereafter, CombatVLA seamlessly integrates
+into an action execution framework, allowing efficient inference through our
+truncated AoT strategy. Experimental results demonstrate that CombatVLA not
+only outperforms all existing models on the combat understanding benchmark but
+also achieves a 50-fold acceleration in game combat. Moreover, it has a higher
+task success rate than human players. We will open-source all resources,
+including the action tracker, dataset, benchmark, model weights, training code,
+and the implementation of the framework at https://combatvla.github.io/.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08678v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09527v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>REGEN: Learning Compact Video Embedding with (Re-)Generative Decoder</h3>
-                    <p><strong>Authors:</strong> Yitian Zhang, Long Mai, Aniruddha Mahapatra, David Bourgin, Yicong Hong, Jonah Casebeer, Feng Liu, Yun Fu</p>
-                    <p>  We present a novel perspective on learning video embedders for generative
-modeling: rather than requiring an exact reproduction of an input video, an
-effective embedder should focus on synthesizing visually plausible
-reconstructions. This relaxed criterion enables substantial improvements in
-compression ratios without compromising the quality of downstream generative
-models. Specifically, we propose replacing the conventional encoder-decoder
-video embedder with an encoder-generator framework that employs a diffusion
-transformer (DiT) to synthesize missing details from a compact latent space.
-Therein, we develop a dedicated latent conditioning module to condition the DiT
-decoder on the encoded video latent embedding. Our experiments demonstrate that
-our approach enables superior encoding-decoding performance compared to
-state-of-the-art methods, particularly as the compression ratio increases. To
-demonstrate the efficacy of our approach, we report results from our video
-embedders achieving a temporal compression ratio of up to 32x (8x higher than
-leading video embedders) and validate the robustness of this ultra-compact
-latent space for text-to-video generation, providing a significant efficiency
-boost in latent diffusion model training and inference.
+                    <h3>Search-R1: Training LLMs to Reason and Leverage Search Engines with
+  Reinforcement Learning</h3>
+                    <p><strong>Authors:</strong> Bowen Jin, Hansi Zeng, Zhenrui Yue, Dong Wang, Hamed Zamani, Jiawei Han</p>
+                    <p>  Efficiently acquiring external knowledge and up-to-date information is
+essential for effective reasoning and text generation in large language models
+(LLMs). Retrieval augmentation and tool-use training approaches where a search
+engine is treated as a tool lack complex multi-turn retrieval flexibility or
+require large-scale supervised data. Prompting advanced LLMs with reasoning
+capabilities during inference to use search engines is not optimal, since the
+LLM does not learn how to optimally interact with the search engine. This paper
+introduces Search-R1, an extension of the DeepSeek-R1 model where the LLM
+learns -- solely through reinforcement learning (RL) -- to autonomously
+generate (multiple) search queries during step-by-step reasoning with real-time
+retrieval. Search-R1 optimizes LLM rollouts with multi-turn search
+interactions, leveraging retrieved token masking for stable RL training and a
+simple outcome-based reward function. Experiments on seven question-answering
+datasets show that Search-R1 improves performance by 26% (Qwen2.5-7B), 21%
+(Qwen2.5-3B), and 10% (LLaMA3.2-3B) over SOTA baselines. This paper further
+provides empirical insights into RL optimization methods, LLM choices, and
+response length dynamics in retrieval-augmented reasoning. The code and model
+checkpoints are available at https://github.com/PeterGriffinJin/Search-R1.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08665v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09516v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>On a new robust method of inference for general time series models</h3>
-                    <p><strong>Authors:</strong> Zihan Wang, Xinghao Qiao, Dong Li, Howell Tong</p>
-                    <p>  In this article, we propose a novel logistic quasi-maximum likelihood
-estimation (LQMLE) for general parametric time series models. Compared to the
-classical Gaussian QMLE and existing robust estimations, it enjoys many
-distinctive advantages, such as robustness in respect of distributional
-misspecification and heavy-tailedness of the innovation, more resiliency to
-outliers, smoothness and strict concavity of the log logistic quasi-likelihood
-function, and boundedness of the influence function among others. Under some
-mild conditions, we establish the strong consistency and asymptotic normality
-of the LQMLE. Moreover, we propose a new and vital parameter identifiability
-condition to ensure desirable asymptotics of the LQMLE. Further, based on the
-LQMLE, we consider the Wald test and the Lagrange multiplier test for the
-unknown parameters, and derive the limiting distributions of the corresponding
-test statistics. The applicability of our methodology is demonstrated by
-several time series models, including DAR, GARCH, ARMA-GARCH, DTARMACH, and
-EXPAR. Numerical simulation studies are carried out to assess the finite-sample
-performance of our methodology, and an empirical example is analyzed to
-illustrate its usefulness.
+                    <h3>CM-Diff: A Single Generative Network for Bidirectional Cross-Modality
+  Translation Diffusion Model Between Infrared and Visible Images</h3>
+                    <p><strong>Authors:</strong> Bin Hu, Chenqiang Gao, Shurui Liu, Junjie Guo, Fang Chen, Fangcen Liu</p>
+                    <p>  The image translation method represents a crucial approach for mitigating
+information deficiencies in the infrared and visible modalities, while also
+facilitating the enhancement of modality-specific datasets. However, existing
+methods for infrared and visible image translation either achieve
+unidirectional modality translation or rely on cycle consistency for
+bidirectional modality translation, which may result in suboptimal performance.
+In this work, we present the cross-modality translation diffusion model
+(CM-Diff) for simultaneously modeling data distributions in both the infrared
+and visible modalities. We address this challenge by combining translation
+direction labels for guidance during training with cross-modality feature
+control. Specifically, we view the establishment of the mapping relationship
+between the two modalities as the process of learning data distributions and
+understanding modality differences, achieved through a novel Bidirectional
+Diffusion Training (BDT) strategy. Additionally, we propose a Statistical
+Constraint Inference (SCI) strategy to ensure the generated image closely
+adheres to the data distribution of the target modality. Experimental results
+demonstrate the superiority of our CM-Diff over state-of-the-art methods,
+highlighting its potential for generating dual-modality datasets.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08655v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09514v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>Leveraging national forest inventory data to estimate forest carbon
-  density status and trends for small areas</h3>
-                    <p><strong>Authors:</strong> Elliot S. Shannon, Andrew O. Finley, Paul B. May, Grant M. Domke, Hans-Erik Andersen, George C. Gaines III, Arne Nothdurft, Sudipto Banerjee</p>
-                    <p>  National forest inventory (NFI) data are often costly to collect, which
-inhibits efforts to estimate parameters of interest for small spatial,
-temporal, or biophysical domains. Traditionally, design-based estimators are
-used to estimate status of forest parameters of interest, but are unreliable
-for small areas where data are sparse. Additionally, design-based estimates
-constructed directly from the survey data are often unavailable when sample
-sizes are especially small. Traditional model-based small area estimation
-approaches, such as the Fay-Herriot (FH) model, rely on these direct estimates
-for inference; hence, missing direct estimates preclude the use of such
-approaches. Here, we detail a Bayesian spatio-temporal small area estimation
-model that efficiently leverages sparse NFI data to estimate status and trends
-for forest parameters. The proposed model bypasses the use of direct estimates
-and instead uses plot-level NFI measurements along with auxiliary data
-including remotely sensed tree canopy cover. We produce forest carbon estimates
-from the United States NFI over 14 years across the contiguous US (CONUS) and
-conduct a simulation study to assess our proposed model's accuracy, precision,
-and bias, compared to that of a design-based estimator. The proposed model
-provides improved precision and accuracy over traditional estimation methods,
-and provides useful insights into county-level forest carbon dynamics across
-the CONUS.
+                    <h3>RESTRAIN: Reinforcement Learning-Based Secure Framework for
+  Trigger-Action IoT Environment</h3>
+                    <p><strong>Authors:</strong> Md Morshed Alam, Lokesh Chandra Das, Sandip Roy, Sachin Shetty, Weichao Wang</p>
+                    <p>  Internet of Things (IoT) platforms with trigger-action capability allow event
+conditions to trigger actions in IoT devices autonomously by creating a chain
+of interactions. Adversaries exploit this chain of interactions to maliciously
+inject fake event conditions into IoT hubs, triggering unauthorized actions on
+target IoT devices to implement remote injection attacks. Existing defense
+mechanisms focus mainly on the verification of event transactions using
+physical event fingerprints to enforce the security policies to block unsafe
+event transactions. These approaches are designed to provide offline defense
+against injection attacks. The state-of-the-art online defense mechanisms offer
+real-time defense, but extensive reliability on the inference of attack impacts
+on the IoT network limits the generalization capability of these approaches. In
+this paper, we propose a platform-independent multi-agent online defense
+system, namely RESTRAIN, to counter remote injection attacks at runtime.
+RESTRAIN allows the defense agent to profile attack actions at runtime and
+leverages reinforcement learning to optimize a defense policy that complies
+with the security requirements of the IoT network. The experimental results
+show that the defense agent effectively takes real-time defense actions against
+complex and dynamic remote injection attacks and maximizes the security gain
+with minimal computational overhead.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08653v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09513v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>Rethinking Diffusion Model in High Dimension</h3>
-                    <p><strong>Authors:</strong> Zhenxin Zheng, Zhenjie Zheng</p>
-                    <p>  Curse of Dimensionality is an unavoidable challenge in statistical
-probability models, yet diffusion models seem to overcome this limitation,
-achieving impressive results in high-dimensional data generation. Diffusion
-models assume that they can learn the statistical properties of the underlying
-probability distribution, enabling sampling from this distribution to generate
-realistic samples. But is this really how they work? To address this question,
-this paper conducts a detailed analysis of the objective function and inference
-methods of diffusion models, leading to several important conclusions that help
-answer the above question: 1) In high-dimensional sparse scenarios, the target
-of the objective function fitting degrades from a weighted sum of multiple
-samples to a single sample. 2) The mainstream inference methods can all be
-represented within a simple unified framework, without requiring statistical
-concepts such as Markov chains and SDEs. 3) Guided by this simple framework,
-more efficient inference methods can be discovered.
+                    <h3>Double-Stage Feature-Level Clustering-Based Mixture of Experts Framework</h3>
+                    <p><strong>Authors:</strong> Bakary Badjie, José Cecílio, António Casimiro</p>
+                    <p>  The Mixture-of-Experts (MoE) model has succeeded in deep learning (DL).
+However, its complex architecture and advantages over dense models in image
+classification remain unclear. In previous studies, MoE performance has often
+been affected by noise and outliers in the input space. Some approaches
+incorporate input clustering for training MoE models, but most clustering
+algorithms lack access to labeled data, limiting their effectiveness. This
+paper introduces the Double-stage Feature-level Clustering and
+Pseudo-labeling-based Mixture of Experts (DFCP-MoE) framework, which consists
+of input feature extraction, feature-level clustering, and a computationally
+efficient pseudo-labeling strategy. This approach reduces the impact of noise
+and outliers while leveraging a small subset of labeled data to label a large
+portion of unlabeled inputs. We propose a conditional end-to-end joint training
+method that improves expert specialization by training the MoE model on
+well-labeled, clustered inputs. Unlike traditional MoE and dense models, the
+DFCP-MoE framework effectively captures input space diversity, leading to
+competitive inference results. We validate our approach on three benchmark
+datasets for multi-class classification tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08643v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09504v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
                 <li>
-                    <h3>Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse
-  Attention</h3>
-                    <p><strong>Authors:</strong> Emily Xiao, Chin-Jou Li, Yilin Zhang, Graham Neubig, Amanda Bertsch</p>
-                    <p>  Many-shot in-context learning has recently shown promise as an alternative to
-finetuning, with the major advantage that the same model can be served for
-multiple tasks. However, this shifts the computational burden from
-training-time to inference-time, making deployment of many-shot ICL challenging
-to justify in-practice. This cost is further increased if a custom
-demonstration set is retrieved for each inference example. We present Dynamic
-Block-Sparse Attention, a training-free framework for retrieval-based many-shot
-in-context learning. By combining carefully designed block-sparse attention and
-retrieval of cached groups of demonstrations, we achieve comparable per-example
-latency to finetuning while maintaining on average >95% of the best method's
-accuracy across strong ICL and finetuning baselines. We hope that this will
-further enable the deployment of many-shot ICL at scale.
+                    <h3>MindGYM: Enhancing Vision-Language Models via Synthetic Self-Challenging
+  Questions</h3>
+                    <p><strong>Authors:</strong> Zhe Xu, Daoyuan Chen, Zhenqing Ling, Yaliang Li, Ying Shen</p>
+                    <p>  Large vision-language models (VLMs) face challenges in achieving robust,
+transferable reasoning abilities due to reliance on labor-intensive manual
+instruction datasets or computationally expensive self-supervised methods. To
+address these issues, we introduce MindGYM, a framework that enhances VLMs
+through synthetic self-challenging questions, consisting of three stages: (1)
+Seed Single-Hop Question Synthesis, generating cognitive questions across
+textual (e.g., logical deduction) and multimodal contexts (e.g., diagram-based
+queries) spanning eight semantic areas like ethical analysis; (2) Challenging
+Multi-Hop Question Synthesis, combining seed questions via diverse principles
+like bridging, visual-textual alignment, to create multi-step problems
+demanding deeper reasoning; and (3) Thinking-Induced Curriculum Fine-Tuning, a
+structured pipeline that progressively trains the model from scaffolded
+reasoning to standalone inference. By leveraging the model's self-synthesis
+capability, MindGYM achieves high data efficiency (e.g., +16% gains on
+MathVision-Mini with only 400 samples), computational efficiency (reducing both
+training and inference costs), and robust generalization across tasks.
+Extensive evaluations on seven benchmarks demonstrate superior performance over
+strong baselines, with notable improvements (+15.77% win rates) in reasoning
+depth and breadth validated via GPT-based scoring. MindGYM underscores the
+viability of self-challenging for refining VLM capabilities while minimizing
+human intervention and resource demands. Code and data are released to advance
+multimodal reasoning research.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.08640v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/11/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.09499v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/12/2025</p>
                 </li>
             </ul>
         </section>
