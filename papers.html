@@ -109,286 +109,260 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>The Curse of Conditions: Analyzing and Improving Optimal Transport for
-  Conditional Flow-Based Generation</h3>
-                    <p><strong>Authors:</strong> Ho Kei Cheng, Alexander Schwing</p>
-                    <p>  Minibatch optimal transport coupling straightens paths in unconditional flow
-matching. This leads to computationally less demanding inference as fewer
-integration steps and less complex numerical solvers can be employed when
-numerically solving an ordinary differential equation at test time. However, in
-the conditional setting, minibatch optimal transport falls short. This is
-because the default optimal transport mapping disregards conditions, resulting
-in a conditionally skewed prior distribution during training. In contrast, at
-test time, we have no access to the skewed prior, and instead sample from the
-full, unbiased prior distribution. This gap between training and testing leads
-to a subpar performance. To bridge this gap, we propose conditional optimal
-transport C^2OT that adds a conditional weighting term in the cost matrix when
-computing the optimal transport assignment. Experiments demonstrate that this
-simple fix works with both discrete and continuous conditions in
-8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method
-performs better overall compared to the existing baselines across different
-function evaluation budgets. Code is available at
-https://hkchengrex.github.io/C2OT
+                    <h3>VGGT: Visual Geometry Grounded Transformer</h3>
+                    <p><strong>Authors:</strong> Jianyuan Wang, Minghao Chen, Nikita Karaev, Andrea Vedaldi, Christian Rupprecht, David Novotny</p>
+                    <p>  We present VGGT, a feed-forward neural network that directly infers all key
+3D attributes of a scene, including camera parameters, point maps, depth maps,
+and 3D point tracks, from one, a few, or hundreds of its views. This approach
+is a step forward in 3D computer vision, where models have typically been
+constrained to and specialized for single tasks. It is also simple and
+efficient, reconstructing images in under one second, and still outperforming
+alternatives that require post-processing with visual geometry optimization
+techniques. The network achieves state-of-the-art results in multiple 3D tasks,
+including camera parameter estimation, multi-view depth estimation, dense point
+cloud reconstruction, and 3D point tracking. We also show that using pretrained
+VGGT as a feature backbone significantly enhances downstream tasks, such as
+non-rigid point tracking and feed-forward novel view synthesis. Code and models
+are publicly available at https://github.com/facebookresearch/vggt.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10636v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11651v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>Distilling Diversity and Control in Diffusion Models</h3>
-                    <p><strong>Authors:</strong> Rohit Gandikota, David Bau</p>
-                    <p>  Distilled diffusion models suffer from a critical limitation: reduced sample
-diversity compared to their base counterparts. In this work, we uncover that
-despite this diversity loss, distilled models retain the fundamental concept
-representations of base models. We demonstrate control distillation - where
-control mechanisms like Concept Sliders and LoRAs trained on base models can be
-seamlessly transferred to distilled models and vice-versa, effectively
-distilling control without any retraining. This preservation of
-representational structure prompted our investigation into the mechanisms of
-diversity collapse during distillation. To understand how distillation affects
-diversity, we introduce Diffusion Target (DT) Visualization, an analysis and
-debugging tool that reveals how models predict final outputs at intermediate
-steps. Through DT-Visualization, we identify generation artifacts,
-inconsistencies, and demonstrate that initial diffusion timesteps
-disproportionately determine output diversity, while later steps primarily
-refine details. Based on these insights, we introduce diversity distillation -
-a hybrid inference approach that strategically employs the base model for only
-the first critical timestep before transitioning to the efficient distilled
-model. Our experiments demonstrate that this simple modification not only
-restores the diversity capabilities from base to distilled models but
-surprisingly exceeds it, while maintaining nearly the computational efficiency
-of distilled inference, all without requiring additional training or model
-modifications. Our code and data are available at
-https://distillation.baulab.info
+                    <h3>Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</h3>
+                    <p><strong>Authors:</strong> Chonghao Sima, Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez</p>
+                    <p>  How can we rely on an end-to-end autonomous vehicle's complex decision-making
+system during deployment? One common solution is to have a ``fallback layer''
+that checks the planned trajectory for rule violations and replaces it with a
+pre-defined safe action if necessary. Another approach involves adjusting the
+planner's decisions to minimize a pre-defined ``cost function'' using
+additional system predictions such as road layouts and detected obstacles.
+However, these pre-programmed rules or cost functions cannot learn and improve
+with new training data, often resulting in overly conservative behaviors. In
+this work, we propose Centaur (Cluster Entropy for Test-time trAining using
+Uncertainty) which updates a planner's behavior via test-time training, without
+relying on hand-engineered rules or cost functions. Instead, we measure and
+minimize the uncertainty in the planner's decisions. For this, we develop a
+novel uncertainty measure, called Cluster Entropy, which is simple,
+interpretable, and compatible with state-of-the-art planning algorithms. Using
+data collected at prior test-time time-steps, we perform an update to the
+model's parameters using a gradient that minimizes the Cluster Entropy. With
+only this sole gradient update prior to inference, Centaur exhibits significant
+improvements, ranking first on the navtest leaderboard with notable gains in
+safety-critical metrics such as time to collision. To provide detailed insights
+on a per-scenario basis, we also introduce navsafe, a challenging new
+benchmark, which highlights previously undiscovered failure modes of driving
+models.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10637v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11650v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>UniGoal: Towards Universal Zero-shot Goal-oriented Navigation</h3>
-                    <p><strong>Authors:</strong> Hang Yin, Xiuwei Xu, Lingqing Zhao, Ziwei Wang, Jie Zhou, Jiwen Lu</p>
-                    <p>  In this paper, we propose a general framework for universal zero-shot
-goal-oriented navigation. Existing zero-shot methods build inference framework
-upon large language models (LLM) for specific tasks, which differs a lot in
-overall pipeline and fails to generalize across different types of goal.
-Towards the aim of universal zero-shot navigation, we propose a uniform graph
-representation to unify different goals, including object category, instance
-image and text description. We also convert the observation of agent into an
-online maintained scene graph. With this consistent scene and goal
-representation, we preserve most structural information compared with pure text
-and are able to leverage LLM for explicit graph-based reasoning. Specifically,
-we conduct graph matching between the scene graph and goal graph at each time
-instant and propose different strategies to generate long-term goal of
-exploration according to different matching states. The agent first iteratively
-searches subgraph of goal when zero-matched. With partial matching, the agent
-then utilizes coordinate projection and anchor pair alignment to infer the goal
-location. Finally scene graph correction and goal verification are applied for
-perfect matching. We also present a blacklist mechanism to enable robust switch
-between stages. Extensive experiments on several benchmarks show that our
-UniGoal achieves state-of-the-art zero-shot performance on three studied
-navigation tasks with a single model, even outperforming task-specific
-zero-shot methods and supervised universal methods.
+                    <h3>Gradient-bridged Posterior: Bayesian Inference for Models with Implicit
+  Functions</h3>
+                    <p><strong>Authors:</strong> Cheng Zeng, Yaozhi Yang, Jason Xu, Leo L Duan</p>
+                    <p>  Many statistical problems include model parameters that are defined as the
+solutions to optimization sub-problems. These include classical approaches such
+as profile likelihood as well as modern applications involving flow networks or
+Procrustes distances. In such cases, the likelihood of the data involves an
+implicit function, often complicating inferential procedures and entailing
+prohibitive computational cost. In this article, we propose an intuitive and
+tractable posterior inference approach for this setting. We introduce a class
+of continuous models that handle implicit function values using the first-order
+optimality of the sub-problems. Specifically, we apply a shrinkage kernel to
+the gradient norm, which retains a probabilistic interpretation within a
+generative model. This can be understood as a generalization of the Gibbs
+posterior framework to newly enable concentration around partial minimizers in
+a subset of the parameters. We show that this method, termed the
+gradient-bridged posterior, is amenable to efficient posterior computation, and
+enjoys theoretical guarantees, establishing a Bernstein--von Mises theorem for
+asymptotic normality. The advantages of our approach are highlighted on a
+synthetic flow network experiment and an application to data integration using
+Procrustes distances.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10630v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11637v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>LHM: Large Animatable Human Reconstruction Model from a Single Image in
-  Seconds</h3>
-                    <p><strong>Authors:</strong> Lingteng Qiu, Xiaodong Gu, Peihao Li, Qi Zuo, Weichao Shen, Junfei Zhang, Kejie Qiu, Weihao Yuan, Guanying Chen, Zilong Dong, Liefeng Bo</p>
-                    <p>  Animatable 3D human reconstruction from a single image is a challenging
-problem due to the ambiguity in decoupling geometry, appearance, and
-deformation. Recent advances in 3D human reconstruction mainly focus on static
-human modeling, and the reliance of using synthetic 3D scans for training
-limits their generalization ability. Conversely, optimization-based video
-methods achieve higher fidelity but demand controlled capture conditions and
-computationally intensive refinement processes. Motivated by the emergence of
-large reconstruction models for efficient static reconstruction, we propose LHM
-(Large Animatable Human Reconstruction Model) to infer high-fidelity avatars
-represented as 3D Gaussian splatting in a feed-forward pass. Our model
-leverages a multimodal transformer architecture to effectively encode the human
-body positional features and image features with attention mechanism, enabling
-detailed preservation of clothing geometry and texture. To further boost the
-face identity preservation and fine detail recovery, we propose a head feature
-pyramid encoding scheme to aggregate multi-scale features of the head regions.
-Extensive experiments demonstrate that our LHM generates plausible animatable
-human in seconds without post-processing for face and hands, outperforming
-existing methods in both reconstruction accuracy and generalization ability.
+                    <h3>Towards Markov-State Holography</h3>
+                    <p><strong>Authors:</strong> Xizhu Zhao, Dmitrii E. Makarov, Aljaž Godec</p>
+                    <p>  Experiments, in particular on biological systems, typically probe
+lower-dimensional observables which are projections of high-dimensional
+dynamics. In order to infer consistent models capturing the relevant dynamics
+of the system, it is important to detect and account for the memory in the
+dynamics. We develop a method to infer the presence of hidden states and
+transition pathways based on observable transition probabilities conditioned on
+history sequences for projected (i.e. observed) dynamics of Markov processes.
+Histograms conditioned on histories reveal information on the transition
+probabilities of hidden paths locally between any specific pair of observed
+states. The convergence rate of these histograms towards a stationary
+distribution provides a local quantification of the duration of memory, which
+reflects how distinct microscopic paths projecting onto the same observed
+transition decorrelate in path space. This provides insight about the hidden
+topology of microscopic paths in a holography-like fashion. The method can be
+used to test for the local Markov property of observables. The information
+extracted is also helpful in inferring relevant hidden transitions which are
+not captured by a Markov-state model.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10625v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11636v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>DriveLMM-o1: A Step-by-Step Reasoning Dataset and Large Multimodal Model
-  for Driving Scenario Understanding</h3>
-                    <p><strong>Authors:</strong> Ayesha Ishaq, Jean Lahoud, Ketan More, Omkar Thawakar, Ritesh Thawkar, Dinura Dissanayake, Noor Ahsan, Yuhao Li, Fahad Shahbaz Khan, Hisham Cholakkal, Ivan Laptev, Rao Muhammad Anwer, Salman Khan</p>
-                    <p>  While large multimodal models (LMMs) have demonstrated strong performance
-across various Visual Question Answering (VQA) tasks, certain challenges
-require complex multi-step reasoning to reach accurate answers. One
-particularly challenging task is autonomous driving, which demands thorough
-cognitive processing before decisions can be made. In this domain, a sequential
-and interpretive understanding of visual cues is essential for effective
-perception, prediction, and planning. Nevertheless, common VQA benchmarks often
-focus on the accuracy of the final answer while overlooking the reasoning
-process that enables the generation of accurate responses. Moreover, existing
-methods lack a comprehensive framework for evaluating step-by-step reasoning in
-realistic driving scenarios. To address this gap, we propose DriveLMM-o1, a new
-dataset and benchmark specifically designed to advance step-wise visual
-reasoning for autonomous driving. Our benchmark features over 18k VQA examples
-in the training set and more than 4k in the test set, covering diverse
-questions on perception, prediction, and planning, each enriched with
-step-by-step reasoning to ensure logical inference in autonomous driving
-scenarios. We further introduce a large multimodal model that is fine-tuned on
-our reasoning dataset, demonstrating robust performance in complex driving
-scenarios. In addition, we benchmark various open-source and closed-source
-methods on our proposed dataset, systematically comparing their reasoning
-capabilities for autonomous driving tasks. Our model achieves a +7.49% gain in
-final answer accuracy, along with a 3.62% improvement in reasoning score over
-the previous best open-source model. Our framework, dataset, and model are
-available at https://github.com/ayesha-ishaq/DriveLMM-o1.
+                    <h3>Euclid preparation. BAO analysis of photometric galaxy clustering in
+  configuration space</h3>
+                    <p><strong>Authors:</strong>  Euclid Collaboration, V. Duret, S. Escoffier, W. Gillard, I. Tutusaus, S. Camera, N. Tessore, F. J. Castander, N. Aghanim, A. Amara, L. Amendola, S. Andreon, N. Auricchio, C. Baccigalupi, M. Baldi, S. Bardelli, P. Battaglia, A. Biviano, D. Bonino, E. Branchini, M. Brescia, J. Brinchmann, A. Caillat, G. Cañas-Herrera, V. Capobianco, C. Carbone, V. F. Cardone, J. Carretero, S. Casas, M. Castellano, G. Castignani, S. Cavuoti, K. C. Chambers, A. Cimatti, C. Colodro-Conde, G. Congedo, C. J. Conselice, L. Conversi, Y. Copin, F. Courbin, H. M. Courtois, M. Cropper, A. Da Silva, H. Degaudenzi, S. de la Torre, G. De Lucia, A. M. Di Giorgio, H. Dole, F. Dubath, X. Dupac, S. Dusini, A. Ealet, M. Farina, R. Farinelli, S. Farrens, F. Faustini, S. Ferriol, F. Finelli, S. Fotopoulou, N. Fourmanoit, M. Frailis, E. Franceschi, M. Fumana, S. Galeotta, B. Gillis, C. Giocoli, J. Gracia-Carpio, A. Grazian, F. Grupp, S. V. H. Haugan, W. Holmes, F. Hormuth, A. Hornstrup, P. Hudelot, K. Jahnke, M. Jhabvala, B. Joachimi, E. Keihänen, S. Kermiche, A. Kiessling, M. Kilbinger, B. Kubik, M. Kunz, H. Kurki-Suonio, O. Lahav, A. M. C. Le Brun, S. Ligori, P. B. Lilje, V. Lindholm, I. Lloro, G. Mainetti, D. Maino, E. Maiorano, O. Mansutti, S. Marcin, O. Marggraf, K. Markovic, M. Martinelli, N. Martinet, F. Marulli, R. Massey, S. Maurogordato, E. Medinaceli, S. Mei, M. Melchior, Y. Mellier, M. Meneghetti, E. Merlin, G. Meylan, A. Mora, M. Moresco, B. Morin, L. Moscardini, E. Munari, R. Nakajima, C. Neissner, R. C. Nichol, S. -M. Niemi, C. Padilla, S. Paltani, F. Pasian, K. Pedersen, W. J. Percival, V. Pettorino, S. Pires, G. Polenta, M. Poncet, L. A. Popa, L. Pozzetti, F. Raison, R. Rebolo, J. Rhodes, G. Riccio, E. Romelli, M. Roncarelli, R. Saglia, Z. Sakr, D. Sapone, B. Sartoris, J. A. Schewtschenko, P. Schneider, T. Schrabback, A. Secroun, E. Sefusatti, G. Seidel, S. Serrano, P. Simon, C. Sirignano, G. Sirri, A. Spurio Mancini, L. Stanco, J. -L. Starck, J. Steinwagner, P. Tallada-Crespí, D. Tavagnacco, A. N. Taylor, I. Tereno, S. Toft, R. Toledo-Moreo, F. Torradeflot, J. Valiviita, T. Vassallo, G. Verdoes Kleijn, A. Veropalumbo, Y. Wang, J. Weller, G. Zamorani, F. M. Zerbi, E. Zucca, M. Bolzonella, C. Burigana, M. Calabrese, D. Di Ferdinando, J. A. Escartin Vigo, L. Gabarra, S. Matthew, N. Mauri, A. Pezzotta, M. Pöntinen, C. Porciani, V. Scottez, M. Tenti, M. Viel, M. Wiesmann, Y. Akrami, V. Allevato, I. T. Andika, M. Archidiacono, F. Atrio-Barandela, A. Balaguera-Antolinez, M. Ballardini, D. Bertacca, M. Bethermin, A. Blanchard, L. Blot, H. Böhringer, S. Borgani, M. L. Brown, S. Bruton, R. Cabanac, A. Calabro, B. Camacho Quevedo, A. Cappi, F. Caro, C. S. Carvalho, T. Castro, F. Cogato, S. Contarini, T. Contini, A. R. Cooray, S. Davini, F. De Paolis, G. Desprez, A. Díaz-Sánchez, S. Di Domizio, J. M. Diego, A. G. Ferrari, P. G. Ferreira, A. Finoguenov, K. Ganga, J. García-Bellido, T. Gasparetto, E. Gaztanaga, F. Giacomini, F. Gianotti, G. Gozaliasl, A. Gregorio, M. Guidi, C. M. Gutierrez, A. Hall, S. Hemmati, H. Hildebrandt, J. Hjorth, J. J. E. Kajava, Y. Kang, V. Kansal, D. Karagiannis, C. C. Kirkpatrick, S. Kruk, M. Lattanzi, M. Lembo, G. Leroy, J. Lesgourgues, T. I. Liaudat, S. J. Liu, A. Loureiro, G. Maggio, M. Magliocchetti, F. Mannucci, R. Maoli, J. Martín-Fleitas, C. J. A. P. Martins, L. Maurin, R. B. Metcalf, M. Miluzio, P. Monaco, C. Moretti, C. Murray, S. Nadathur, K. Naidoo, A. Navarro-Alsina, S. Nesseris, K. Paterson, A. Pisani, D. Potter, I. Risso, P. -F. Rocci, M. Sahlén, E. Sarpa, A. Schneider, D. Sciotti, E. Sellentin, M. Sereno, A. Silvestri, L. C. Smith, K. Tanidis, C. Tao, G. Testera, R. Teyssier, S. Tosi, A. Troja, M. Tucci, C. Valieri, A. Venhola, D. Vergani, F. Vernizzi, G. Verza, P. Vielzeuf, N. A. Walton</p>
+                    <p>  With about 1.5 billion galaxies expected to be observed, the very large
+number of objects in the \textit{Euclid}\xspace photometric survey will allow
+for precise studies of galaxy clustering from a single survey, over a large
+range of redshifts $0.2 < z < 2.5$. In this work, we use photometric redshifts
+to extract the baryon acoustic oscillation signal (BAO) from the Flagship
+galaxy mock catalogue with a tomographic approach to constrain the evolution of
+the Universe and infer its cosmological parameters. We measure the two-point
+angular correlation function in 13 redshift bins. A template-fitting approach
+is applied to the measurement to extract the shift of the BAO peak through the
+transverse Alcock--Paczynski parameter $\alpha$. A joint analysis of all
+redshift bins is performed to constrain $\alpha$ at the effective redshift
+$z_\mathrm{eff}=0.77$ with MCMC and profile likelihood techniques. We also
+extract one $\alpha_i$ parameter per redshift bin to quantify its evolution as
+a function of time. From these 13 $\alpha_i$, which are directly proportional
+to the ratio $D_\mathrm{A}/\,r_\mathrm{s,\,drag}$, we constrain $h$,
+$\Omega_\mathrm{b}$, and $\Omega_\mathrm{cdm}$. From the joint analysis, we
+constrain $\alpha(z_\mathrm{eff}=0.77)=1.0011^{+0.0078}_{-0.0079}$, which
+represents a three-fold improvement over current constraints from the Dark
+Energy Survey. As expected, the constraining power in the analysis of each
+redshift bin is lower, with an uncertainty ranging from $\pm\,0.13$ to
+$\pm\,0.024$. From these results, we constrain $h$ at 0.45 %,
+$\Omega_\mathrm{b}$ at 0.91 %, and $\Omega_\mathrm{cdm}$ at 7.7 %. We quantify
+the influence of analysis choices like the template, scale cuts, redshift bins,
+and systematic effects like redshift-space distortions over our constraints
+both at the level of the extracted $\alpha_i$ parameters and at the level of
+cosmological inference.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10621v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11621v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>OVTR: End-to-End Open-Vocabulary Multiple Object Tracking with
-  Transformer</h3>
-                    <p><strong>Authors:</strong> Jinyang Li, En Yu, Sijia Chen, Wenbing Tao</p>
-                    <p>  Open-vocabulary multiple object tracking aims to generalize trackers to
-unseen categories during training, enabling their application across a variety
-of real-world scenarios. However, the existing open-vocabulary tracker is
-constrained by its framework structure, isolated frame-level perception, and
-insufficient modal interactions, which hinder its performance in
-open-vocabulary classification and tracking. In this paper, we propose OVTR
-(End-to-End Open-Vocabulary Multiple Object Tracking with TRansformer), the
-first end-to-end open-vocabulary tracker that models motion, appearance, and
-category simultaneously. To achieve stable classification and continuous
-tracking, we design the CIP (Category Information Propagation) strategy, which
-establishes multiple high-level category information priors for subsequent
-frames. Additionally, we introduce a dual-branch structure for generalization
-capability and deep multimodal interaction, and incorporate protective
-strategies in the decoder to enhance performance. Experimental results show
-that our method surpasses previous trackers on the open-vocabulary MOT
-benchmark while also achieving faster inference speeds and significantly
-reducing preprocessing requirements. Moreover, the experiment transferring the
-model to another dataset demonstrates its strong adaptability. Models and code
-are released at https://github.com/jinyanglii/OVTR.
+                    <h3>Neutralizing Bias in LLM Reasoning using Entailment Graphs</h3>
+                    <p><strong>Authors:</strong> Liang Cheng, Tianyi Li, Zhaowei Wang, Tianyang Liu, Mark Steedman</p>
+                    <p>  LLMs are often claimed to be capable of Natural Language Inference (NLI),
+which is widely regarded as a cornerstone of more complex forms of reasoning.
+However, recent works show that LLMs still suffer from hallucinations in NLI
+due to attestation bias, where LLMs overly rely on propositional memory to
+build shortcuts. To solve the issue, we design an unsupervised framework to
+construct counterfactual reasoning data and fine-tune LLMs to reduce
+attestation bias. To measure bias reduction, we build bias-adversarial variants
+of NLI datasets with randomly replaced predicates in premises while keeping
+hypotheses unchanged. Extensive evaluations show that our framework can
+significantly reduce hallucinations from attestation bias. Then, we further
+evaluate LLMs fine-tuned with our framework on original NLI datasets and their
+bias-neutralized versions, where original entities are replaced with randomly
+sampled ones. Extensive results show that our framework consistently improves
+inferential performance on both original and bias-neutralized NLI datasets.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10616v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11614v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>ConsisLoRA: Enhancing Content and Style Consistency for LoRA-based Style
-  Transfer</h3>
-                    <p><strong>Authors:</strong> Bolin Chen, Baoquan Zhao, Haoran Xie, Yi Cai, Qing Li, Xudong Mao</p>
-                    <p>  Style transfer involves transferring the style from a reference image to the
-content of a target image. Recent advancements in LoRA-based (Low-Rank
-Adaptation) methods have shown promise in effectively capturing the style of a
-single image. However, these approaches still face significant challenges such
-as content inconsistency, style misalignment, and content leakage. In this
-paper, we comprehensively analyze the limitations of the standard diffusion
-parameterization, which learns to predict noise, in the context of style
-transfer. To address these issues, we introduce ConsisLoRA, a LoRA-based method
-that enhances both content and style consistency by optimizing the LoRA weights
-to predict the original image rather than noise. We also propose a two-step
-training strategy that decouples the learning of content and style from the
-reference image. To effectively capture both the global structure and local
-details of the content image, we introduce a stepwise loss transition strategy.
-Additionally, we present an inference guidance method that enables continuous
-control over content and style strengths during inference. Through both
-qualitative and quantitative evaluations, our method demonstrates significant
-improvements in content and style consistency while effectively reducing
-content leakage.
+                    <h3>Enhanced Soups for Graph Neural Networks</h3>
+                    <p><strong>Authors:</strong> Joseph Zuber, Aishwarya Sarkar, Joseph Jennings, Ali Jannesari</p>
+                    <p>  Graph Neural Networks (GNN) have demonstrated state-of-the-art performance in
+numerous scientific and high-performance computing (HPC) applications. Recent
+work suggests that "souping" (combining) individually trained GNNs into a
+single model can improve performance without increasing compute and memory
+costs during inference. However, existing souping algorithms are often slow and
+memory-intensive, which limits their scalability.
+  We introduce Learned Souping for GNNs, a gradient-descent-based souping
+strategy that substantially reduces time and memory overhead compared to
+existing methods. Our approach is evaluated across multiple Open Graph
+Benchmark (OGB) datasets and GNN architectures, achieving up to 1.2% accuracy
+improvement and 2.1X speedup. Additionally, we propose Partition Learned
+Souping, a novel partition-based variant of learned souping that significantly
+reduces memory usage. On the ogbn-products dataset with GraphSAGE, partition
+learned souping achieves a 24.5X speedup and a 76% memory reduction without
+compromising accuracy.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10614v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11612v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>Hierarchical Bayesian inference for uncertainty quantification of
-  thermal grease rheology</h3>
-                    <p><strong>Authors:</strong> Pranay P. Nagrani, Akshay J. Thomas, Amy M. Marconnet, Ivan C. Christov</p>
-                    <p>  Rheologically complex soft solids such as thermal greases consist of filler
-particles within a polymer matrix. These materials find applications in
-improving the conformity of solid-solid contacts and enhancing heat transfer.
-Complex soft solids exhibit a transient non-Newtonian rheological response,
-including thixotropy and viscoelasticity. Previously, stress relaxation and
-buildup in sheared commercial thermal greases were successfully captured using
-a nonlinear elasto-visco-plastic (NEVP) model and a thixo-elasto-visco-plastic
-(TEVP). However, the previous model calibration methods ignored parameter
-uncertainty, providing only single values of the rheological parameters, and
-did not quantitatively address the chosen model's identifiability from the data
-or credibility of the calibration. We address these limitations via
-hierarchical Bayesian inference, accounting for uncertainties arising from
-epistemic and aleatoric sources. Importantly, the hierarchical approach allows
-us to assimilate experiments measuring the stress responses at various startup
-shear rates by allowing the models' parameters to vary across different shear
-rates. Then, a global distribution and the associated uncertainty are obtained
-by pooling. We also propagate uncertainties to the transient shear stress
-response predicted by the models. Overall, we demonstrate that the chosen NEVP
-and NEVP models are identifiable from rheometric startup data. However, for the
-TEVP model, the uncertainty of the parameters is lower (narrower distributions)
-when higher shear rates are used for inference.
+                    <h3>Rethinking Few-Shot Adaptation of Vision-Language Models in Two Stages</h3>
+                    <p><strong>Authors:</strong> Matteo Farina, Massimiliano Mancini, Giovanni Iacca, Elisa Ricci</p>
+                    <p>  An old-school recipe for training a classifier is to (i) learn a good feature
+extractor and (ii) optimize a linear layer atop. When only a handful of samples
+are available per category, as in Few-Shot Adaptation (FSA), data are
+insufficient to fit a large number of parameters, rendering the above
+impractical. This is especially true with large pre-trained Vision-Language
+Models (VLMs), which motivated successful research at the intersection of
+Parameter-Efficient Fine-tuning (PEFT) and FSA. In this work, we start by
+analyzing the learning dynamics of PEFT techniques when trained on few-shot
+data from only a subset of categories, referred to as the ``base'' classes. We
+show that such dynamics naturally splits into two distinct phases: (i)
+task-level feature extraction and (ii) specialization to the available
+concepts. To accommodate this dynamic, we then depart from prompt- or
+adapter-based methods and tackle FSA differently. Specifically, given a fixed
+computational budget, we split it to (i) learn a task-specific feature
+extractor via PEFT and (ii) train a linear classifier on top. We call this
+scheme Two-Stage Few-Shot Adaptation (2SFS). Differently from established
+methods, our scheme enables a novel form of selective inference at a category
+level, i.e., at test time, only novel categories are embedded by the adapted
+text encoder, while embeddings of base categories are available within the
+classifier. Results with fixed hyperparameters across two settings, three
+backbones, and eleven datasets, show that 2SFS matches or surpasses the
+state-of-the-art, while established methods degrade significantly across
+settings.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10608v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11609v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>TruthPrInt: Mitigating LVLM Object Hallucination Via Latent
-  Truthful-Guided Pre-Intervention</h3>
-                    <p><strong>Authors:</strong> Jinhao Duan, Fei Kong, Hao Cheng, James Diffenderfer, Bhavya Kailkhura, Lichao Sun, Xiaofeng Zhu, Xiaoshuang Shi, Kaidi Xu</p>
-                    <p>  Object Hallucination (OH) has been acknowledged as one of the major
-trustworthy challenges in Large Vision-Language Models (LVLMs). Recent
-advancements in Large Language Models (LLMs) indicate that internal states,
-such as hidden states, encode the "overall truthfulness" of generated
-responses. However, it remains under-explored how internal states in LVLMs
-function and whether they could serve as "per-token" hallucination indicators,
-which is essential for mitigating OH. In this paper, we first conduct an
-in-depth exploration of LVLM internal states in relation to OH issues and
-discover that (1) LVLM internal states are high-specificity per-token
-indicators of hallucination behaviors. Moreover, (2) different LVLMs encode
-universal patterns of hallucinations in common latent subspaces, indicating
-that there exist "generic truthful directions" shared by various LVLMs. Based
-on these discoveries, we propose Truthful-Guided Pre-Intervention (TruthPrInt)
-that first learns the truthful direction of LVLM decoding and then applies
-truthful-guided inference-time intervention during LVLM decoding. We further
-propose ComnHallu to enhance both cross-LVLM and cross-data hallucination
-detection transferability by constructing and aligning hallucination latent
-subspaces. We evaluate TruthPrInt in extensive experimental settings, including
-in-domain and out-of-domain scenarios, over popular LVLMs and OH benchmarks.
-Experimental results indicate that TruthPrInt significantly outperforms
-state-of-the-art methods. Codes will be available at
-https://github.com/jinhaoduan/TruthPrInt.
+                    <h3>Microlensing Constraints on the Stellar and Planetary Mass Functions</h3>
+                    <p><strong>Authors:</strong> Jennifer C. Yee, Scott J. Kenyon</p>
+                    <p>  The mass function (MF) of isolated objects measured by microlensing consists
+of both a stellar and a planetary component. We compare the microlensing MFs of
+Gould et al (2022) and Sumi et al (2023) to other measurements of the MF. The
+abundance of brown dwarfs in the Sumi et al (2023) stellar MF is consistent
+with measurements from the local solar neighborhood (Kirkpatrick et al 2024).
+Microlensing free-floating planets ($\mu$FFPs) may may be free-floating or
+orbit host stars with semimajor axes $a\gtrsim 10~\mathrm{au}$ and therefore
+can constrain the populations of both free-floating planetary-mass objects and
+wide-orbit planets. Comparisons to radial velocity and direct imaging planet
+populations suggest that either most of the $\mu$FFP population with masses
+$>1~M_{\rm Jup}$ is bound to hosts more massive than M dwarfs or some fraction
+of the observed bound population actually comes from the low-mass tail of the
+stellar population. The $\mu$FFP population also places strong constraints on
+planets inferred from debris disks and gaps in protoplanetary disks observed by
+ALMA.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10602v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11597v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
                 <li>
-                    <h3>Analysis and sample-size determination for $2^K$ audit experiments with
-  binary response and application to identification of effect of racial
-  discrimination on access to justice</h3>
-                    <p><strong>Authors:</strong> Nicole Pashley, Brian Libgober, Tirthankar Dasgupta</p>
-                    <p>  Social scientists have increasingly turned to audit experiments to
-investigate discrimination in the market for jobs, loans, housing and other
-opportunities. In a typical audit experiment, researchers assign ``signals''
-(the treatment) to subjects at random and compare success rates across
-treatment conditions. In the recent past there has been increased interest in
-using randomized multifactor designs for audit experiments, popularly called
-factorial experiments, in which combinations of multiple signals are assigned
-to subjects. Although social scientists have manipulated multiple factors like
-race, gender and income, the analyses have been mostly exploratory in nature.
-In this paper we lay out a comprehensive methodology for design and analysis of
-$2^K$ factorial designs with binary response using model-free,
-randomization-based Neymanian inference and demonstrate its application by
-analyzing the audit experiment reported in Libgober (2020). Specifically, we
-integrate and extend several sections of the randomization-based,
-finite-population literature for binary outcomes, including sample size and
-power calculations, and non-linear factorial estimators, extending results.
+                    <h3>Vamba: Understanding Hour-Long Videos with Hybrid Mamba-Transformers</h3>
+                    <p><strong>Authors:</strong> Weiming Ren, Wentao Ma, Huan Yang, Cong Wei, Ge Zhang, Wenhu Chen</p>
+                    <p>  State-of-the-art transformer-based large multimodal models (LMMs) struggle to
+handle hour-long video inputs due to the quadratic complexity of the causal
+self-attention operations, leading to high computational costs during training
+and inference. Existing token compression-based methods reduce the number of
+video tokens but often incur information loss and remain inefficient for
+extremely long sequences. In this paper, we explore an orthogonal direction to
+build a hybrid Mamba-Transformer model (VAMBA) that employs Mamba-2 blocks to
+encode video tokens with linear complexity. Without any token reduction, VAMBA
+can encode more than 1024 frames (640$\times$360) on a single GPU, while
+transformer-based models can only encode 256 frames. On long video input, VAMBA
+achieves at least 50% reduction in GPU memory usage during training and
+inference, and nearly doubles the speed per training step compared to
+transformer-based LMMs. Our experimental results demonstrate that VAMBA
+improves accuracy by 4.3% on the challenging hour-long video understanding
+benchmark LVBench over prior efficient video LMMs, and maintains strong
+performance on a broad spectrum of long and short video understanding tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.10591v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/13/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.11579v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/14/2025</p>
                 </li>
             </ul>
         </section>
