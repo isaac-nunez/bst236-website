@@ -110,259 +110,270 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>VGGT: Visual Geometry Grounded Transformer</h3>
-                    <p><strong>Authors:</strong> Jianyuan Wang, Minghao Chen, Nikita Karaev, Andrea Vedaldi, Christian Rupprecht, David Novotny</p>
-                    <p>  We present VGGT, a feed-forward neural network that directly infers all key
-3D attributes of a scene, including camera parameters, point maps, depth maps,
-and 3D point tracks, from one, a few, or hundreds of its views. This approach
-is a step forward in 3D computer vision, where models have typically been
-constrained to and specialized for single tasks. It is also simple and
-efficient, reconstructing images in under one second, and still outperforming
-alternatives that require post-processing with visual geometry optimization
-techniques. The network achieves state-of-the-art results in multiple 3D tasks,
-including camera parameter estimation, multi-view depth estimation, dense point
-cloud reconstruction, and 3D point tracking. We also show that using pretrained
-VGGT as a feature backbone significantly enhances downstream tasks, such as
-non-rigid point tracking and feed-forward novel view synthesis. Code and models
-are publicly available at https://github.com/facebookresearch/vggt.
+                    <h3>MetaScale: Test-Time Scaling with Evolving Meta-Thoughts</h3>
+                    <p><strong>Authors:</strong> Qin Liu, Wenxuan Zhou, Nan Xu, James Y. Huang, Fei Wang, Sheng Zhang, Hoifung Poon, Muhao Chen</p>
+                    <p>  One critical challenge for large language models (LLMs) for making complex
+reasoning is their reliance on matching reasoning patterns from training data,
+instead of proactively selecting the most appropriate cognitive strategy to
+solve a given task. Existing approaches impose fixed cognitive structures that
+enhance performance in specific tasks but lack adaptability across diverse
+scenarios. To address this limitation, we introduce METASCALE, a test-time
+scaling framework based on meta-thoughts -- adaptive thinking strategies
+tailored to each task. METASCALE initializes a pool of candidate meta-thoughts,
+then iteratively selects and evaluates them using a multi-armed bandit
+algorithm with upper confidence bound selection, guided by a reward model. To
+further enhance adaptability, a genetic algorithm evolves high-reward
+meta-thoughts, refining and extending the strategy pool over time. By
+dynamically proposing and optimizing meta-thoughts at inference time, METASCALE
+improves both accuracy and generalization across a wide range of tasks.
+Experimental results demonstrate that MetaScale consistently outperforms
+standard inference approaches, achieving an 11% performance gain in win rate on
+Arena-Hard for GPT-4o, surpassing o1-mini by 0.9% under style control. Notably,
+METASCALE scales more effectively with increasing sampling budgets and produces
+more structured, expert-level responses.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11651v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13447v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</h3>
-                    <p><strong>Authors:</strong> Chonghao Sima, Kashyap Chitta, Zhiding Yu, Shiyi Lan, Ping Luo, Andreas Geiger, Hongyang Li, Jose M. Alvarez</p>
-                    <p>  How can we rely on an end-to-end autonomous vehicle's complex decision-making
-system during deployment? One common solution is to have a ``fallback layer''
-that checks the planned trajectory for rule violations and replaces it with a
-pre-defined safe action if necessary. Another approach involves adjusting the
-planner's decisions to minimize a pre-defined ``cost function'' using
-additional system predictions such as road layouts and detected obstacles.
-However, these pre-programmed rules or cost functions cannot learn and improve
-with new training data, often resulting in overly conservative behaviors. In
-this work, we propose Centaur (Cluster Entropy for Test-time trAining using
-Uncertainty) which updates a planner's behavior via test-time training, without
-relying on hand-engineered rules or cost functions. Instead, we measure and
-minimize the uncertainty in the planner's decisions. For this, we develop a
-novel uncertainty measure, called Cluster Entropy, which is simple,
-interpretable, and compatible with state-of-the-art planning algorithms. Using
-data collected at prior test-time time-steps, we perform an update to the
-model's parameters using a gradient that minimizes the Cluster Entropy. With
-only this sole gradient update prior to inference, Centaur exhibits significant
-improvements, ranking first on the navtest leaderboard with notable gains in
-safety-critical metrics such as time to collision. To provide detailed insights
-on a per-scenario basis, we also introduce navsafe, a challenging new
-benchmark, which highlights previously undiscovered failure modes of driving
-models.
+                    <h3>MaTVLM: Hybrid Mamba-Transformer for Efficient Vision-Language Modeling</h3>
+                    <p><strong>Authors:</strong> Yingyue Li, Bencheng Liao, Wenyu Liu, Xinggang Wang</p>
+                    <p>  With the advancement of RNN models with linear complexity, the quadratic
+complexity challenge of transformers has the potential to be overcome. Notably,
+the emerging Mamba-2 has demonstrated competitive performance, bridging the gap
+between RNN models and transformers. However, due to sequential processing and
+vanishing gradients, RNN models struggle to capture long-range dependencies,
+limiting contextual understanding. This results in slow convergence, high
+resource demands, and poor performance on downstream understanding and complex
+reasoning tasks. In this work, we present a hybrid model MaTVLM by substituting
+a portion of the transformer decoder layers in a pre-trained VLM with Mamba-2
+layers. Leveraging the inherent relationship between attention and Mamba-2, we
+initialize Mamba-2 with corresponding attention weights to accelerate
+convergence. Subsequently, we employ a single-stage distillation process, using
+the pre-trained VLM as the teacher model to transfer knowledge to the MaTVLM,
+further enhancing convergence speed and performance. Furthermore, we
+investigate the impact of differential distillation loss within our training
+framework. We evaluate the MaTVLM on multiple benchmarks, demonstrating
+competitive performance against the teacher model and existing VLMs while
+surpassing both Mamba-based VLMs and models of comparable parameter scales.
+Remarkably, the MaTVLM achieves up to 3.6x faster inference than the teacher
+model while reducing GPU memory consumption by 27.5%, all without compromising
+performance. Code and models are released at http://github.com/hustvl/MaTVLM.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11650v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13440v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Gradient-bridged Posterior: Bayesian Inference for Models with Implicit
-  Functions</h3>
-                    <p><strong>Authors:</strong> Cheng Zeng, Yaozhi Yang, Jason Xu, Leo L Duan</p>
-                    <p>  Many statistical problems include model parameters that are defined as the
-solutions to optimization sub-problems. These include classical approaches such
-as profile likelihood as well as modern applications involving flow networks or
-Procrustes distances. In such cases, the likelihood of the data involves an
-implicit function, often complicating inferential procedures and entailing
-prohibitive computational cost. In this article, we propose an intuitive and
-tractable posterior inference approach for this setting. We introduce a class
-of continuous models that handle implicit function values using the first-order
-optimality of the sub-problems. Specifically, we apply a shrinkage kernel to
-the gradient norm, which retains a probabilistic interpretation within a
-generative model. This can be understood as a generalization of the Gibbs
-posterior framework to newly enable concentration around partial minimizers in
-a subset of the parameters. We show that this method, termed the
-gradient-bridged posterior, is amenable to efficient posterior computation, and
-enjoys theoretical guarantees, establishing a Bernstein--von Mises theorem for
-asymptotic normality. The advantages of our approach are highlighted on a
-synthetic flow network experiment and an application to data integration using
-Procrustes distances.
+                    <h3>Deep Belief Markov Models for POMDP Inference</h3>
+                    <p><strong>Authors:</strong> Giacomo Arcieri, Konstantinos G. Papakonstantinou, Daniel Straub, Eleni Chatzi</p>
+                    <p>  This work introduces a novel deep learning-based architecture, termed the
+Deep Belief Markov Model (DBMM), which provides efficient, model-formulation
+agnostic inference in Partially Observable Markov Decision Process (POMDP)
+problems. The POMDP framework allows for modeling and solving sequential
+decision-making problems under observation uncertainty. In complex,
+high-dimensional, partially observable environments, existing methods for
+inference based on exact computations (e.g., via Bayes' theorem) or sampling
+algorithms do not scale well. Furthermore, ground truth states may not be
+available for learning the exact transition dynamics. DBMMs extend deep Markov
+models into the partially observable decision-making framework and allow
+efficient belief inference entirely based on available observation data via
+variational inference methods. By leveraging the potency of neural networks,
+DBMMs can infer and simulate non-linear relationships in the system dynamics
+and naturally scale to problems with high dimensionality and discrete or
+continuous variables. In addition, neural network parameters can be dynamically
+updated efficiently based on data availability. DBMMs can thus be used to infer
+a belief variable, thus enabling the derivation of POMDP solutions over the
+belief space. We evaluate the efficacy of the proposed methodology by
+evaluating the capability of model-formulation agnostic inference of DBMMs in
+benchmark problems that include discrete and continuous variables.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11637v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13438v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Towards Markov-State Holography</h3>
-                    <p><strong>Authors:</strong> Xizhu Zhao, Dmitrii E. Makarov, Aljaž Godec</p>
-                    <p>  Experiments, in particular on biological systems, typically probe
-lower-dimensional observables which are projections of high-dimensional
-dynamics. In order to infer consistent models capturing the relevant dynamics
-of the system, it is important to detect and account for the memory in the
-dynamics. We develop a method to infer the presence of hidden states and
-transition pathways based on observable transition probabilities conditioned on
-history sequences for projected (i.e. observed) dynamics of Markov processes.
-Histograms conditioned on histories reveal information on the transition
-probabilities of hidden paths locally between any specific pair of observed
-states. The convergence rate of these histograms towards a stationary
-distribution provides a local quantification of the duration of memory, which
-reflects how distinct microscopic paths projecting onto the same observed
-transition decorrelate in path space. This provides insight about the hidden
-topology of microscopic paths in a holography-like fashion. The method can be
-used to test for the local Markov property of observables. The information
-extracted is also helpful in inferring relevant hidden transitions which are
-not captured by a Markov-state model.
+                    <h3>Uncovering Utility Functions from Observed Outcomes</h3>
+                    <p><strong>Authors:</strong> Marta Grzeskiewicz</p>
+                    <p>  Determining consumer preferences and utility is a foundational challenge in
+economics. They are central in determining consumer behaviour through the
+utility-maximising consumer decision-making process. However, preferences and
+utilities are not observable and may not even be known to the individual making
+the choice; only the outcome is observed in the form of demand. Without the
+ability to observe the decision-making mechanism, demand estimation becomes a
+challenging task and current methods fall short due to lack of scalability or
+ability to identify causal effects. Estimating these effects is critical when
+considering changes in policy, such as pricing, the impact of taxes and
+subsidies, and the effect of a tariff. To address the shortcomings of existing
+methods, we combine revealed preference theory and inverse reinforcement
+learning to present a novel algorithm, Preference Extraction and Reward
+Learning (PEARL) which, to the best of our knowledge, is the only algorithm
+that can uncover a representation of the utility function that best
+rationalises observed consumer choice data given a specified functional form.
+We introduce a flexible utility function, the Input-Concave Neural Network
+which captures complex relationships across goods, including cross-price
+elasticities. Results show PEARL outperforms the benchmark on both noise-free
+and noisy synthetic data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11636v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13432v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Euclid preparation. BAO analysis of photometric galaxy clustering in
-  configuration space</h3>
-                    <p><strong>Authors:</strong>  Euclid Collaboration, V. Duret, S. Escoffier, W. Gillard, I. Tutusaus, S. Camera, N. Tessore, F. J. Castander, N. Aghanim, A. Amara, L. Amendola, S. Andreon, N. Auricchio, C. Baccigalupi, M. Baldi, S. Bardelli, P. Battaglia, A. Biviano, D. Bonino, E. Branchini, M. Brescia, J. Brinchmann, A. Caillat, G. Cañas-Herrera, V. Capobianco, C. Carbone, V. F. Cardone, J. Carretero, S. Casas, M. Castellano, G. Castignani, S. Cavuoti, K. C. Chambers, A. Cimatti, C. Colodro-Conde, G. Congedo, C. J. Conselice, L. Conversi, Y. Copin, F. Courbin, H. M. Courtois, M. Cropper, A. Da Silva, H. Degaudenzi, S. de la Torre, G. De Lucia, A. M. Di Giorgio, H. Dole, F. Dubath, X. Dupac, S. Dusini, A. Ealet, M. Farina, R. Farinelli, S. Farrens, F. Faustini, S. Ferriol, F. Finelli, S. Fotopoulou, N. Fourmanoit, M. Frailis, E. Franceschi, M. Fumana, S. Galeotta, B. Gillis, C. Giocoli, J. Gracia-Carpio, A. Grazian, F. Grupp, S. V. H. Haugan, W. Holmes, F. Hormuth, A. Hornstrup, P. Hudelot, K. Jahnke, M. Jhabvala, B. Joachimi, E. Keihänen, S. Kermiche, A. Kiessling, M. Kilbinger, B. Kubik, M. Kunz, H. Kurki-Suonio, O. Lahav, A. M. C. Le Brun, S. Ligori, P. B. Lilje, V. Lindholm, I. Lloro, G. Mainetti, D. Maino, E. Maiorano, O. Mansutti, S. Marcin, O. Marggraf, K. Markovic, M. Martinelli, N. Martinet, F. Marulli, R. Massey, S. Maurogordato, E. Medinaceli, S. Mei, M. Melchior, Y. Mellier, M. Meneghetti, E. Merlin, G. Meylan, A. Mora, M. Moresco, B. Morin, L. Moscardini, E. Munari, R. Nakajima, C. Neissner, R. C. Nichol, S. -M. Niemi, C. Padilla, S. Paltani, F. Pasian, K. Pedersen, W. J. Percival, V. Pettorino, S. Pires, G. Polenta, M. Poncet, L. A. Popa, L. Pozzetti, F. Raison, R. Rebolo, J. Rhodes, G. Riccio, E. Romelli, M. Roncarelli, R. Saglia, Z. Sakr, D. Sapone, B. Sartoris, J. A. Schewtschenko, P. Schneider, T. Schrabback, A. Secroun, E. Sefusatti, G. Seidel, S. Serrano, P. Simon, C. Sirignano, G. Sirri, A. Spurio Mancini, L. Stanco, J. -L. Starck, J. Steinwagner, P. Tallada-Crespí, D. Tavagnacco, A. N. Taylor, I. Tereno, S. Toft, R. Toledo-Moreo, F. Torradeflot, J. Valiviita, T. Vassallo, G. Verdoes Kleijn, A. Veropalumbo, Y. Wang, J. Weller, G. Zamorani, F. M. Zerbi, E. Zucca, M. Bolzonella, C. Burigana, M. Calabrese, D. Di Ferdinando, J. A. Escartin Vigo, L. Gabarra, S. Matthew, N. Mauri, A. Pezzotta, M. Pöntinen, C. Porciani, V. Scottez, M. Tenti, M. Viel, M. Wiesmann, Y. Akrami, V. Allevato, I. T. Andika, M. Archidiacono, F. Atrio-Barandela, A. Balaguera-Antolinez, M. Ballardini, D. Bertacca, M. Bethermin, A. Blanchard, L. Blot, H. Böhringer, S. Borgani, M. L. Brown, S. Bruton, R. Cabanac, A. Calabro, B. Camacho Quevedo, A. Cappi, F. Caro, C. S. Carvalho, T. Castro, F. Cogato, S. Contarini, T. Contini, A. R. Cooray, S. Davini, F. De Paolis, G. Desprez, A. Díaz-Sánchez, S. Di Domizio, J. M. Diego, A. G. Ferrari, P. G. Ferreira, A. Finoguenov, K. Ganga, J. García-Bellido, T. Gasparetto, E. Gaztanaga, F. Giacomini, F. Gianotti, G. Gozaliasl, A. Gregorio, M. Guidi, C. M. Gutierrez, A. Hall, S. Hemmati, H. Hildebrandt, J. Hjorth, J. J. E. Kajava, Y. Kang, V. Kansal, D. Karagiannis, C. C. Kirkpatrick, S. Kruk, M. Lattanzi, M. Lembo, G. Leroy, J. Lesgourgues, T. I. Liaudat, S. J. Liu, A. Loureiro, G. Maggio, M. Magliocchetti, F. Mannucci, R. Maoli, J. Martín-Fleitas, C. J. A. P. Martins, L. Maurin, R. B. Metcalf, M. Miluzio, P. Monaco, C. Moretti, C. Murray, S. Nadathur, K. Naidoo, A. Navarro-Alsina, S. Nesseris, K. Paterson, A. Pisani, D. Potter, I. Risso, P. -F. Rocci, M. Sahlén, E. Sarpa, A. Schneider, D. Sciotti, E. Sellentin, M. Sereno, A. Silvestri, L. C. Smith, K. Tanidis, C. Tao, G. Testera, R. Teyssier, S. Tosi, A. Troja, M. Tucci, C. Valieri, A. Venhola, D. Vergani, F. Vernizzi, G. Verza, P. Vielzeuf, N. A. Walton</p>
-                    <p>  With about 1.5 billion galaxies expected to be observed, the very large
-number of objects in the \textit{Euclid}\xspace photometric survey will allow
-for precise studies of galaxy clustering from a single survey, over a large
-range of redshifts $0.2 < z < 2.5$. In this work, we use photometric redshifts
-to extract the baryon acoustic oscillation signal (BAO) from the Flagship
-galaxy mock catalogue with a tomographic approach to constrain the evolution of
-the Universe and infer its cosmological parameters. We measure the two-point
-angular correlation function in 13 redshift bins. A template-fitting approach
-is applied to the measurement to extract the shift of the BAO peak through the
-transverse Alcock--Paczynski parameter $\alpha$. A joint analysis of all
-redshift bins is performed to constrain $\alpha$ at the effective redshift
-$z_\mathrm{eff}=0.77$ with MCMC and profile likelihood techniques. We also
-extract one $\alpha_i$ parameter per redshift bin to quantify its evolution as
-a function of time. From these 13 $\alpha_i$, which are directly proportional
-to the ratio $D_\mathrm{A}/\,r_\mathrm{s,\,drag}$, we constrain $h$,
-$\Omega_\mathrm{b}$, and $\Omega_\mathrm{cdm}$. From the joint analysis, we
-constrain $\alpha(z_\mathrm{eff}=0.77)=1.0011^{+0.0078}_{-0.0079}$, which
-represents a three-fold improvement over current constraints from the Dark
-Energy Survey. As expected, the constraining power in the analysis of each
-redshift bin is lower, with an uncertainty ranging from $\pm\,0.13$ to
-$\pm\,0.024$. From these results, we constrain $h$ at 0.45 %,
-$\Omega_\mathrm{b}$ at 0.91 %, and $\Omega_\mathrm{cdm}$ at 7.7 %. We quantify
-the influence of analysis choices like the template, scale cuts, redshift bins,
-and systematic effects like redshift-space distortions over our constraints
-both at the level of the extracted $\alpha_i$ parameters and at the level of
-cosmological inference.
+                    <h3>xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference</h3>
+                    <p><strong>Authors:</strong> Maximilian Beck, Korbinian Pöppel, Phillip Lippe, Richard Kurle, Patrick M. Blies, Günter Klambauer, Sebastian Böck, Sepp Hochreiter</p>
+                    <p>  Recent breakthroughs in solving reasoning, math and coding problems with
+Large Language Models (LLMs) have been enabled by investing substantial
+computation budgets at inference time. Therefore, inference speed is one of the
+most critical properties of LLM architectures, and there is a growing need for
+LLMs that are efficient and fast at inference. Recently, LLMs built on the
+xLSTM architecture have emerged as a powerful alternative to Transformers,
+offering linear compute scaling with sequence length and constant memory usage,
+both highly desirable properties for efficient inference. However, such
+xLSTM-based LLMs have yet to be scaled to larger models and assessed and
+compared with respect to inference speed and efficiency. In this work, we
+introduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's
+architectural benefits with targeted optimizations for fast and efficient
+inference. Our experiments demonstrate that xLSTM 7B achieves performance on
+downstream tasks comparable to other similar-sized LLMs, while providing
+significantly faster inference speeds and greater efficiency compared to Llama-
+and Mamba-based LLMs. These results establish xLSTM 7B as the fastest and most
+efficient 7B LLM, offering a solution for tasks that require large amounts of
+test-time computation. Our work highlights xLSTM's potential as a foundational
+architecture for methods building on heavy use of LLM inference. Our model
+weights, model code and training code are open-source.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11621v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13427v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Neutralizing Bias in LLM Reasoning using Entailment Graphs</h3>
-                    <p><strong>Authors:</strong> Liang Cheng, Tianyi Li, Zhaowei Wang, Tianyang Liu, Mark Steedman</p>
-                    <p>  LLMs are often claimed to be capable of Natural Language Inference (NLI),
-which is widely regarded as a cornerstone of more complex forms of reasoning.
-However, recent works show that LLMs still suffer from hallucinations in NLI
-due to attestation bias, where LLMs overly rely on propositional memory to
-build shortcuts. To solve the issue, we design an unsupervised framework to
-construct counterfactual reasoning data and fine-tune LLMs to reduce
-attestation bias. To measure bias reduction, we build bias-adversarial variants
-of NLI datasets with randomly replaced predicates in premises while keeping
-hypotheses unchanged. Extensive evaluations show that our framework can
-significantly reduce hallucinations from attestation bias. Then, we further
-evaluate LLMs fine-tuned with our framework on original NLI datasets and their
-bias-neutralized versions, where original entities are replaced with randomly
-sampled ones. Extensive results show that our framework consistently improves
-inferential performance on both original and bias-neutralized NLI datasets.
+                    <h3>SuperBPE: Space Travel for Language Models</h3>
+                    <p><strong>Authors:</strong> Alisa Liu, Jonathan Hayase, Valentin Hofmann, Sewoong Oh, Noah A. Smith, Yejin Choi</p>
+                    <p>  The assumption across nearly all language model (LM) tokenization schemes is
+that tokens should be subwords, i.e., contained within word boundaries. While
+providing a seemingly reasonable inductive bias, is this common practice
+limiting the potential of modern LMs? Whitespace is not a reliable delimiter of
+meaning, as evidenced by multi-word expressions (e.g., "by the way"),
+crosslingual variation in the number of words needed to express a concept
+(e.g., "spacesuit helmet" in German is "raumanzughelm"), and languages that do
+not use whitespace at all (e.g., Chinese). To explore the potential of
+tokenization beyond subwords, we introduce a "superword" tokenizer, SuperBPE,
+which incorporates a simple pretokenization curriculum into the byte-pair
+encoding (BPE) algorithm to first learn subwords, then superwords that bridge
+whitespace. This brings dramatic improvements in encoding efficiency: when
+fixing the vocabulary size to 200k, SuperBPE encodes a fixed piece of text with
+up to 33% fewer tokens than BPE on average. In experiments, we pretrain 8B
+transformer LMs from scratch while fixing the model size, vocabulary size, and
+train compute, varying *only* the algorithm for learning the vocabulary. Our
+model trained with SuperBPE achieves an average +4.0% absolute improvement over
+the BPE baseline across 30 downstream tasks (including +8.2% on MMLU), while
+simultaneously requiring 27% less compute at inference time. In analysis, we
+find that SuperBPE results in segmentations of text that are more uniform in
+per-token difficulty. Qualitatively, this may be because SuperBPE tokens often
+capture common multi-word expressions that function semantically as a single
+unit. SuperBPE is a straightforward, local modification to tokenization that
+improves both encoding efficiency and downstream performance, yielding better
+language models overall.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11614v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13423v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Enhanced Soups for Graph Neural Networks</h3>
-                    <p><strong>Authors:</strong> Joseph Zuber, Aishwarya Sarkar, Joseph Jennings, Ali Jannesari</p>
-                    <p>  Graph Neural Networks (GNN) have demonstrated state-of-the-art performance in
-numerous scientific and high-performance computing (HPC) applications. Recent
-work suggests that "souping" (combining) individually trained GNNs into a
-single model can improve performance without increasing compute and memory
-costs during inference. However, existing souping algorithms are often slow and
-memory-intensive, which limits their scalability.
-  We introduce Learned Souping for GNNs, a gradient-descent-based souping
-strategy that substantially reduces time and memory overhead compared to
-existing methods. Our approach is evaluated across multiple Open Graph
-Benchmark (OGB) datasets and GNN architectures, achieving up to 1.2% accuracy
-improvement and 2.1X speedup. Additionally, we propose Partition Learned
-Souping, a novel partition-based variant of learned souping that significantly
-reduces memory usage. On the ogbn-products dataset with GraphSAGE, partition
-learned souping achieves a 24.5X speedup and a 76% memory reduction without
-compromising accuracy.
+                    <h3>Optimal Expert Selection for Distributed Mixture-of-Experts at the
+  Wireless Edge</h3>
+                    <p><strong>Authors:</strong> Shengling Qin, Hai Wu, Hongyang Du, Kaibin Huang</p>
+                    <p>  The emergence of distributed Mixture-of-Experts (DMoE) systems, which deploy
+expert models at edge nodes, offers a pathway to achieving connected
+intelligence in sixth-generation (6G) mobile networks and edge artificial
+intelligence (AI). However, current DMoE systems lack an effective expert
+selection algorithm to address the simultaneous task-expert relevance and
+channel diversity inherent in these systems. Traditional AI or communication
+systems focus on either performance or channel conditions, and direct
+application of these methods leads to high communication overhead or low
+performance. To address this, we propose the DMoE protocol to schedule the
+expert inference and inter-expert transmission. This protocol identifies expert
+selection and subcarrier allocation as key optimization problems. We formulate
+an expert selection problem by incorporating both AI performance and channel
+conditions, and further extend it to a Joint Expert and Subcarrier Allocation
+(JESA) problem for comprehensive AI and channel management within the DMoE
+framework. For the NP-hard expert selection problem, we introduce the Dynamic
+Expert Selection (DES) algorithm, which leverages a linear relaxation as a
+bounding criterion to significantly reduce search complexity. For the JESA
+problem, we discover a unique structural property that ensures asymptotic
+optimality in most scenarios. We propose an iterative algorithm that addresses
+subcarrier allocation as a subproblem and integrates it with the DES algorithm.
+The proposed framework effectively manages the tradeoff between task relevance
+and channel conditions through a tunable importance factor, enabling flexible
+adaptation to diverse scenarios. Numerical experiments validate the dual
+benefits of the proposed expert selection algorithm: high performance and
+significantly reduced cost.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11612v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13421v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Rethinking Few-Shot Adaptation of Vision-Language Models in Two Stages</h3>
-                    <p><strong>Authors:</strong> Matteo Farina, Massimiliano Mancini, Giovanni Iacca, Elisa Ricci</p>
-                    <p>  An old-school recipe for training a classifier is to (i) learn a good feature
-extractor and (ii) optimize a linear layer atop. When only a handful of samples
-are available per category, as in Few-Shot Adaptation (FSA), data are
-insufficient to fit a large number of parameters, rendering the above
-impractical. This is especially true with large pre-trained Vision-Language
-Models (VLMs), which motivated successful research at the intersection of
-Parameter-Efficient Fine-tuning (PEFT) and FSA. In this work, we start by
-analyzing the learning dynamics of PEFT techniques when trained on few-shot
-data from only a subset of categories, referred to as the ``base'' classes. We
-show that such dynamics naturally splits into two distinct phases: (i)
-task-level feature extraction and (ii) specialization to the available
-concepts. To accommodate this dynamic, we then depart from prompt- or
-adapter-based methods and tackle FSA differently. Specifically, given a fixed
-computational budget, we split it to (i) learn a task-specific feature
-extractor via PEFT and (ii) train a linear classifier on top. We call this
-scheme Two-Stage Few-Shot Adaptation (2SFS). Differently from established
-methods, our scheme enables a novel form of selective inference at a category
-level, i.e., at test time, only novel categories are embedded by the adapted
-text encoder, while embeddings of base categories are available within the
-classifier. Results with fixed hyperparameters across two settings, three
-backbones, and eleven datasets, show that 2SFS matches or surpasses the
-state-of-the-art, while established methods degrade significantly across
-settings.
+                    <h3>Causal Emergence 2.0: Quantifying emergent complexity</h3>
+                    <p><strong>Authors:</strong> Erik Hoel</p>
+                    <p>  Complex systems can be described at myriad different scales, and their causal
+workings often have multiscale structure (e.g., a computer can be described at
+the microscale of its hardware circuitry, the mesoscale of its machine code,
+and the macroscale of its operating system). While scientists study and model
+systems across the full hierarchy of their scales, from microphysics to
+macroeconomics, there is debate about what the macroscales of systems can
+possibly add beyond mere compression. To resolve this longstanding issue, here
+a new theory of emergence is introduced wherein the different scales of a
+system are treated like slices of a higher-dimensional object. The theory can
+distinguish which of these scales possess unique causal contributions, and
+which are not causally relevant. Constructed from an axiomatic notion of
+causation, the theory's application is demonstrated in coarse-grains of Markov
+chains. It identifies all cases of macroscale causation: instances where
+reduction to a microscale is possible, yet lossy about causation. Furthermore,
+the theory posits a causal apportioning schema that calculates the causal
+contribution of each scale, showing what each uniquely adds. Finally, it
+reveals a novel measure of emergent complexity: how widely distributed a
+system's causal workings are across its hierarchy of scales.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11609v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13395v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Microlensing Constraints on the Stellar and Planetary Mass Functions</h3>
-                    <p><strong>Authors:</strong> Jennifer C. Yee, Scott J. Kenyon</p>
-                    <p>  The mass function (MF) of isolated objects measured by microlensing consists
-of both a stellar and a planetary component. We compare the microlensing MFs of
-Gould et al (2022) and Sumi et al (2023) to other measurements of the MF. The
-abundance of brown dwarfs in the Sumi et al (2023) stellar MF is consistent
-with measurements from the local solar neighborhood (Kirkpatrick et al 2024).
-Microlensing free-floating planets ($\mu$FFPs) may may be free-floating or
-orbit host stars with semimajor axes $a\gtrsim 10~\mathrm{au}$ and therefore
-can constrain the populations of both free-floating planetary-mass objects and
-wide-orbit planets. Comparisons to radial velocity and direct imaging planet
-populations suggest that either most of the $\mu$FFP population with masses
-$>1~M_{\rm Jup}$ is bound to hosts more massive than M dwarfs or some fraction
-of the observed bound population actually comes from the low-mass tail of the
-stellar population. The $\mu$FFP population also places strong constraints on
-planets inferred from debris disks and gaps in protoplanetary disks observed by
-ALMA.
+                    <h3>Aligned Probing: Relating Toxic Behavior and Model Internals</h3>
+                    <p><strong>Authors:</strong> Andreas Waldis, Vagrant Gautam, Anne Lauscher, Dietrich Klakow, Iryna Gurevych</p>
+                    <p>  We introduce aligned probing, a novel interpretability framework that aligns
+the behavior of language models (LMs), based on their outputs, and their
+internal representations (internals). Using this framework, we examine over 20
+OLMo, Llama, and Mistral models, bridging behavioral and internal perspectives
+for toxicity for the first time. Our results show that LMs strongly encode
+information about the toxicity level of inputs and subsequent outputs,
+particularly in lower layers. Focusing on how unique LMs differ offers both
+correlative and causal evidence that they generate less toxic output when
+strongly encoding information about the input toxicity. We also highlight the
+heterogeneity of toxicity, as model behavior and internals vary across unique
+attributes such as Threat. Finally, four case studies analyzing detoxification,
+multi-prompt evaluations, model quantization, and pre-training dynamics
+underline the practical impact of aligned probing with further concrete
+insights. Our findings contribute to a more holistic understanding of LMs, both
+within and beyond the context of toxicity.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11597v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13390v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
                 <li>
-                    <h3>Vamba: Understanding Hour-Long Videos with Hybrid Mamba-Transformers</h3>
-                    <p><strong>Authors:</strong> Weiming Ren, Wentao Ma, Huan Yang, Cong Wei, Ge Zhang, Wenhu Chen</p>
-                    <p>  State-of-the-art transformer-based large multimodal models (LMMs) struggle to
-handle hour-long video inputs due to the quadratic complexity of the causal
-self-attention operations, leading to high computational costs during training
-and inference. Existing token compression-based methods reduce the number of
-video tokens but often incur information loss and remain inefficient for
-extremely long sequences. In this paper, we explore an orthogonal direction to
-build a hybrid Mamba-Transformer model (VAMBA) that employs Mamba-2 blocks to
-encode video tokens with linear complexity. Without any token reduction, VAMBA
-can encode more than 1024 frames (640$\times$360) on a single GPU, while
-transformer-based models can only encode 256 frames. On long video input, VAMBA
-achieves at least 50% reduction in GPU memory usage during training and
-inference, and nearly doubles the speed per training step compared to
-transformer-based LMMs. Our experimental results demonstrate that VAMBA
-improves accuracy by 4.3% on the challenging hour-long video understanding
-benchmark LVBench over prior efficient video LMMs, and maintains strong
-performance on a broad spectrum of long and short video understanding tasks.
+                    <h3>TimeZero: Temporal Video Grounding with Reasoning-Guided LVLM</h3>
+                    <p><strong>Authors:</strong> Ye Wang, Boshen Xu, Zihao Yue, Zihan Xiao, Ziheng Wang, Liang Zhang, Dingyi Yang, Wenxuan Wang, Qin Jin</p>
+                    <p>  We introduce TimeZero, a reasoning-guided LVLM designed for the temporal
+video grounding (TVG) task. This task requires precisely localizing relevant
+video segments within long videos based on a given language query. TimeZero
+tackles this challenge by extending the inference process, enabling the model
+to reason about video-language relationships solely through reinforcement
+learning. To evaluate the effectiveness of TimeZero, we conduct experiments on
+two benchmarks, where TimeZero achieves state-of-the-art performance on
+Charades-STA. Code is available at https://github.com/www-Ye/TimeZero.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.11579v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/14/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.13377v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/17/2025</p>
                 </li>
             </ul>
         </section>
