@@ -111,269 +111,247 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>MetaScale: Test-Time Scaling with Evolving Meta-Thoughts</h3>
-                    <p><strong>Authors:</strong> Qin Liu, Wenxuan Zhou, Nan Xu, James Y. Huang, Fei Wang, Sheng Zhang, Hoifung Poon, Muhao Chen</p>
-                    <p>  One critical challenge for large language models (LLMs) for making complex
-reasoning is their reliance on matching reasoning patterns from training data,
-instead of proactively selecting the most appropriate cognitive strategy to
-solve a given task. Existing approaches impose fixed cognitive structures that
-enhance performance in specific tasks but lack adaptability across diverse
-scenarios. To address this limitation, we introduce METASCALE, a test-time
-scaling framework based on meta-thoughts -- adaptive thinking strategies
-tailored to each task. METASCALE initializes a pool of candidate meta-thoughts,
-then iteratively selects and evaluates them using a multi-armed bandit
-algorithm with upper confidence bound selection, guided by a reward model. To
-further enhance adaptability, a genetic algorithm evolves high-reward
-meta-thoughts, refining and extending the strategy pool over time. By
-dynamically proposing and optimizing meta-thoughts at inference time, METASCALE
-improves both accuracy and generalization across a wide range of tasks.
-Experimental results demonstrate that MetaScale consistently outperforms
-standard inference approaches, achieving an 11% performance gain in win rate on
-Arena-Hard for GPT-4o, surpassing o1-mini by 0.9% under style control. Notably,
-METASCALE scales more effectively with increasing sampling budgets and produces
-more structured, expert-level responses.
+                    <h3>Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal
+  Control</h3>
+                    <p><strong>Authors:</strong>  NVIDIA,  :, Hassan Abu Alhaija, Jose Alvarez, Maciej Bala, Tiffany Cai, Tianshi Cao, Liz Cha, Joshua Chen, Mike Chen, Francesco Ferroni, Sanja Fidler, Dieter Fox, Yunhao Ge, Jinwei Gu, Ali Hassani, Michael Isaev, Pooya Jannaty, Shiyi Lan, Tobias Lasser, Huan Ling, Ming-Yu Liu, Xian Liu, Yifan Lu, Alice Luo, Qianli Ma, Hanzi Mao, Fabio Ramos, Xuanchi Ren, Tianchang Shen, Shitao Tang, Ting-Chun Wang, Jay Wu, Jiashu Xu, Stella Xu, Kevin Xie, Yuchong Ye, Xiaodong Yang, Xiaohui Zeng, Yu Zeng</p>
+                    <p>  We introduce Cosmos-Transfer, a conditional world generation model that can
+generate world simulations based on multiple spatial control inputs of various
+modalities such as segmentation, depth, and edge. In the design, the spatial
+conditional scheme is adaptive and customizable. It allows weighting different
+conditional inputs differently at different spatial locations. This enables
+highly controllable world generation and finds use in various world-to-world
+transfer use cases, including Sim2Real. We conduct extensive evaluations to
+analyze the proposed model and demonstrate its applications for Physical AI,
+including robotics Sim2Real and autonomous vehicle data enrichment. We further
+demonstrate an inference scaling strategy to achieve real-time world generation
+with an NVIDIA GB200 NVL72 rack. To help accelerate research development in the
+field, we open-source our models and code at
+https://github.com/nvidia-cosmos/cosmos-transfer1.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13447v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14492v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>MaTVLM: Hybrid Mamba-Transformer for Efficient Vision-Language Modeling</h3>
-                    <p><strong>Authors:</strong> Yingyue Li, Bencheng Liao, Wenyu Liu, Xinggang Wang</p>
-                    <p>  With the advancement of RNN models with linear complexity, the quadratic
-complexity challenge of transformers has the potential to be overcome. Notably,
-the emerging Mamba-2 has demonstrated competitive performance, bridging the gap
-between RNN models and transformers. However, due to sequential processing and
-vanishing gradients, RNN models struggle to capture long-range dependencies,
-limiting contextual understanding. This results in slow convergence, high
-resource demands, and poor performance on downstream understanding and complex
-reasoning tasks. In this work, we present a hybrid model MaTVLM by substituting
-a portion of the transformer decoder layers in a pre-trained VLM with Mamba-2
-layers. Leveraging the inherent relationship between attention and Mamba-2, we
-initialize Mamba-2 with corresponding attention weights to accelerate
-convergence. Subsequently, we employ a single-stage distillation process, using
-the pre-trained VLM as the teacher model to transfer knowledge to the MaTVLM,
-further enhancing convergence speed and performance. Furthermore, we
-investigate the impact of differential distillation loss within our training
-framework. We evaluate the MaTVLM on multiple benchmarks, demonstrating
-competitive performance against the teacher model and existing VLMs while
-surpassing both Mamba-based VLMs and models of comparable parameter scales.
-Remarkably, the MaTVLM achieves up to 3.6x faster inference than the teacher
-model while reducing GPU memory consumption by 27.5%, all without compromising
-performance. Code and models are released at http://github.com/hustvl/MaTVLM.
+                    <h3>Gricean Norms as a Basis for Effective Collaboration</h3>
+                    <p><strong>Authors:</strong> Fardin Saad, Pradeep K. Murukannaiah, Munindar P. Singh</p>
+                    <p>  Effective human-AI collaboration hinges not only on the AI agent's ability to
+follow explicit instructions but also on its capacity to navigate ambiguity,
+incompleteness, invalidity, and irrelevance in communication. Gricean
+conversational and inference norms facilitate collaboration by aligning unclear
+instructions with cooperative principles. We propose a normative framework that
+integrates Gricean norms and cognitive frameworks -- common ground, relevance
+theory, and theory of mind -- into large language model (LLM) based agents. The
+normative framework adopts the Gricean maxims of quantity, quality, relation,
+and manner, along with inference, as Gricean norms to interpret unclear
+instructions, which are: ambiguous, incomplete, invalid, or irrelevant. Within
+this framework, we introduce Lamoids, GPT-4 powered agents designed to
+collaborate with humans. To assess the influence of Gricean norms in human-AI
+collaboration, we evaluate two versions of a Lamoid: one with norms and one
+without. In our experiments, a Lamoid collaborates with a human to achieve
+shared goals in a grid world (Doors, Keys, and Gems) by interpreting both clear
+and unclear natural language instructions. Our results reveal that the Lamoid
+with Gricean norms achieves higher task accuracy and generates clearer, more
+accurate, and contextually relevant responses than the Lamoid without norms.
+This improvement stems from the normative framework, which enhances the agent's
+pragmatic reasoning, fostering effective human-AI collaboration and enabling
+context-aware communication in LLM-based agents.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13440v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14484v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>Deep Belief Markov Models for POMDP Inference</h3>
-                    <p><strong>Authors:</strong> Giacomo Arcieri, Konstantinos G. Papakonstantinou, Daniel Straub, Eleni Chatzi</p>
-                    <p>  This work introduces a novel deep learning-based architecture, termed the
-Deep Belief Markov Model (DBMM), which provides efficient, model-formulation
-agnostic inference in Partially Observable Markov Decision Process (POMDP)
-problems. The POMDP framework allows for modeling and solving sequential
-decision-making problems under observation uncertainty. In complex,
-high-dimensional, partially observable environments, existing methods for
-inference based on exact computations (e.g., via Bayes' theorem) or sampling
-algorithms do not scale well. Furthermore, ground truth states may not be
-available for learning the exact transition dynamics. DBMMs extend deep Markov
-models into the partially observable decision-making framework and allow
-efficient belief inference entirely based on available observation data via
-variational inference methods. By leveraging the potency of neural networks,
-DBMMs can infer and simulate non-linear relationships in the system dynamics
-and naturally scale to problems with high dimensionality and discrete or
-continuous variables. In addition, neural network parameters can be dynamically
-updated efficiently based on data availability. DBMMs can thus be used to infer
-a belief variable, thus enabling the derivation of POMDP solutions over the
-belief space. We evaluate the efficacy of the proposed methodology by
-evaluating the capability of model-formulation agnostic inference of DBMMs in
-benchmark problems that include discrete and continuous variables.
+                    <h3>Calibrating Verbal Uncertainty as a Linear Feature to Reduce
+  Hallucinations</h3>
+                    <p><strong>Authors:</strong> Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang, Anthony Hartshorn, Alan Schelten, Cheng Zhang, Pascale Fung, Nicola Cancedda</p>
+                    <p>  LLMs often adopt an assertive language style also when making false claims.
+Such ``overconfident hallucinations'' mislead users and erode trust. Achieving
+the ability to express in language the actual degree of uncertainty around a
+claim is therefore of great importance. We find that ``verbal uncertainty'' is
+governed by a single linear feature in the representation space of LLMs, and
+show that this has only moderate correlation with the actual ``semantic
+uncertainty'' of the model. We apply this insight and show that (1) the
+mismatch between semantic and verbal uncertainty is a better predictor of
+hallucinations than semantic uncertainty alone and (2) we can intervene on
+verbal uncertainty at inference time and reduce hallucinations on short-form
+answers, achieving an average relative reduction of 32%.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13438v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14477v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>Uncovering Utility Functions from Observed Outcomes</h3>
-                    <p><strong>Authors:</strong> Marta Grzeskiewicz</p>
-                    <p>  Determining consumer preferences and utility is a foundational challenge in
-economics. They are central in determining consumer behaviour through the
-utility-maximising consumer decision-making process. However, preferences and
-utilities are not observable and may not even be known to the individual making
-the choice; only the outcome is observed in the form of demand. Without the
-ability to observe the decision-making mechanism, demand estimation becomes a
-challenging task and current methods fall short due to lack of scalability or
-ability to identify causal effects. Estimating these effects is critical when
-considering changes in policy, such as pricing, the impact of taxes and
-subsidies, and the effect of a tariff. To address the shortcomings of existing
-methods, we combine revealed preference theory and inverse reinforcement
-learning to present a novel algorithm, Preference Extraction and Reward
-Learning (PEARL) which, to the best of our knowledge, is the only algorithm
-that can uncover a representation of the utility function that best
-rationalises observed consumer choice data given a specified functional form.
-We introduce a flexible utility function, the Input-Concave Neural Network
-which captures complex relationships across goods, including cross-price
-elasticities. Results show PEARL outperforms the benchmark on both noise-free
-and noisy synthetic data.
+                    <h3>DAPO: An Open-Source LLM Reinforcement Learning System at Scale</h3>
+                    <p><strong>Authors:</strong> Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Tiantian Fan, Gaohong Liu, Lingjun Liu, Xin Liu, Haibin Lin, Zhiqi Lin, Bole Ma, Guangming Sheng, Yuxuan Tong, Chi Zhang, Mofan Zhang, Wang Zhang, Hang Zhu, Jinhua Zhu, Jiaze Chen, Jiangjie Chen, Chengyi Wang, Hongli Yu, Weinan Dai, Yuxuan Song, Xiangpeng Wei, Hao Zhou, Jingjing Liu, Wei-Ying Ma, Ya-Qin Zhang, Lin Yan, Mu Qiao, Yonghui Wu, Mingxuan Wang</p>
+                    <p>  Inference scaling empowers LLMs with unprecedented reasoning ability, with
+reinforcement learning as the core technique to elicit complex reasoning.
+However, key technical details of state-of-the-art reasoning LLMs are concealed
+(such as in OpenAI o1 blog and DeepSeek R1 technical report), thus the
+community still struggles to reproduce their RL training results. We propose
+the $\textbf{D}$ecoupled Clip and $\textbf{D}$ynamic s$\textbf{A}$mpling
+$\textbf{P}$olicy $\textbf{O}$ptimization ($\textbf{DAPO}$) algorithm, and
+fully open-source a state-of-the-art large-scale RL system that achieves 50
+points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that
+withhold training details, we introduce four key techniques of our algorithm
+that make large-scale LLM RL a success. In addition, we open-source our
+training code, which is built on the verl framework, along with a carefully
+curated and processed dataset. These components of our open-source system
+enhance reproducibility and support future research in large-scale LLM RL.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13432v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14476v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference</h3>
-                    <p><strong>Authors:</strong> Maximilian Beck, Korbinian Pöppel, Phillip Lippe, Richard Kurle, Patrick M. Blies, Günter Klambauer, Sebastian Böck, Sepp Hochreiter</p>
-                    <p>  Recent breakthroughs in solving reasoning, math and coding problems with
-Large Language Models (LLMs) have been enabled by investing substantial
-computation budgets at inference time. Therefore, inference speed is one of the
-most critical properties of LLM architectures, and there is a growing need for
-LLMs that are efficient and fast at inference. Recently, LLMs built on the
-xLSTM architecture have emerged as a powerful alternative to Transformers,
-offering linear compute scaling with sequence length and constant memory usage,
-both highly desirable properties for efficient inference. However, such
-xLSTM-based LLMs have yet to be scaled to larger models and assessed and
-compared with respect to inference speed and efficiency. In this work, we
-introduce xLSTM 7B, a 7-billion-parameter LLM that combines xLSTM's
-architectural benefits with targeted optimizations for fast and efficient
-inference. Our experiments demonstrate that xLSTM 7B achieves performance on
-downstream tasks comparable to other similar-sized LLMs, while providing
-significantly faster inference speeds and greater efficiency compared to Llama-
-and Mamba-based LLMs. These results establish xLSTM 7B as the fastest and most
-efficient 7B LLM, offering a solution for tasks that require large amounts of
-test-time computation. Our work highlights xLSTM's potential as a foundational
-architecture for methods building on heavy use of LLM inference. Our model
-weights, model code and training code are open-source.
+                    <h3>Attribution Score Alignment in Explainable Data Management</h3>
+                    <p><strong>Authors:</strong> Felipe Azua, Leopoldo Bertossi</p>
+                    <p>  Different attribution-scores have been proposed to quantify the relevance of
+database tuples for a query answer from a database. Among them, we find Causal
+Responsibility, the Shapley Value, the Banzhaf Power-Index, and the Causal
+Effect. They have been analyzed in isolation, mainly in terms of computational
+properties. In this work, we start an investigation into the alignment of these
+scores on the basis of the queries at hand; that is, on whether they induce
+compatible rankings of tuples. We are able to identify vast classes of queries
+for which some pairs of scores are always aligned, and others for which they
+are not. It turns out that the presence of exogenous tuples makes a crucial
+difference in this regard.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13427v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14469v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>SuperBPE: Space Travel for Language Models</h3>
-                    <p><strong>Authors:</strong> Alisa Liu, Jonathan Hayase, Valentin Hofmann, Sewoong Oh, Noah A. Smith, Yejin Choi</p>
-                    <p>  The assumption across nearly all language model (LM) tokenization schemes is
-that tokens should be subwords, i.e., contained within word boundaries. While
-providing a seemingly reasonable inductive bias, is this common practice
-limiting the potential of modern LMs? Whitespace is not a reliable delimiter of
-meaning, as evidenced by multi-word expressions (e.g., "by the way"),
-crosslingual variation in the number of words needed to express a concept
-(e.g., "spacesuit helmet" in German is "raumanzughelm"), and languages that do
-not use whitespace at all (e.g., Chinese). To explore the potential of
-tokenization beyond subwords, we introduce a "superword" tokenizer, SuperBPE,
-which incorporates a simple pretokenization curriculum into the byte-pair
-encoding (BPE) algorithm to first learn subwords, then superwords that bridge
-whitespace. This brings dramatic improvements in encoding efficiency: when
-fixing the vocabulary size to 200k, SuperBPE encodes a fixed piece of text with
-up to 33% fewer tokens than BPE on average. In experiments, we pretrain 8B
-transformer LMs from scratch while fixing the model size, vocabulary size, and
-train compute, varying *only* the algorithm for learning the vocabulary. Our
-model trained with SuperBPE achieves an average +4.0% absolute improvement over
-the BPE baseline across 30 downstream tasks (including +8.2% on MMLU), while
-simultaneously requiring 27% less compute at inference time. In analysis, we
-find that SuperBPE results in segmentations of text that are more uniform in
-per-token difficulty. Qualitatively, this may be because SuperBPE tokens often
-capture common multi-word expressions that function semantically as a single
-unit. SuperBPE is a straightforward, local modification to tokenization that
-improves both encoding efficiency and downstream performance, yielding better
-language models overall.
+                    <h3>Low-Metallicity Star Formation Survey in Sh2-284 (LZ-STAR). I. Ordered
+  massive star formation in the outer Galaxy</h3>
+                    <p><strong>Authors:</strong> Yu Cheng, Jonathan C. Tan, Morten Andersen, Rubén Fedriani, Yichen Zhang, Massimo Robberto, Zhi-Yun Li, Kei E. I. Tanaka</p>
+                    <p>  Star formation is a fundamental, yet poorly understood, process of the
+Universe. It is important to study how star formation occurs in different
+galactic environments. Thus, here, in the first of a series of papers, we
+introduce the Low-Metallicity Star Formation (LZ-STAR) survey of the Sh2-284
+(hereafter S284) region, which, at $Z\sim 0.3-0.5Z_\odot$, is one of the
+lowest-metallicity star-forming regions of our Galaxy. LZ-STAR is a
+multi-facility survey, including observations with {\it JWST}, {\it ALMA}, {\it
+HST}, {\it Chandra} and {\it Gemini}. As a starting point, we report {\it JWST}
+and {\it ALMA} observations of one of the most massive protostars in the
+region, S284p1. The observations of shock-excited molecular hydrogen reveal a
+symmetric, bipolar outflow originating from the protostar, spanning several
+parsecs, and fully covered by the {\it JWST} field of view and the {\it ALMA}
+observations of CO(2-1) emission. This allows us to infer that the protostar
+has maintained a relatively stable orientation of disk accretion over its
+formation history. The {\it JWST} near-IR continuum observations detect a
+centrally illuminated bipolar outflow cavity around the protostar, as well as a
+surrounding cluster of low-mass young stars. We develop new radiative transfer
+models of massive protostars designed for the low metallicity of S284. Fitting
+these models to the protostar's spectral energy distribution implies a current
+protostellar mass of $\sim11\:M_\odot$ has formed from an initially
+$\sim100\:M_\odot$ core over the last $\sim3\times10^5$ years. Overall, these
+results indicate that massive stars can form in an ordered manner in
+low-metallicity, protocluster environments.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13423v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14460v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>Optimal Expert Selection for Distributed Mixture-of-Experts at the
-  Wireless Edge</h3>
-                    <p><strong>Authors:</strong> Shengling Qin, Hai Wu, Hongyang Du, Kaibin Huang</p>
-                    <p>  The emergence of distributed Mixture-of-Experts (DMoE) systems, which deploy
-expert models at edge nodes, offers a pathway to achieving connected
-intelligence in sixth-generation (6G) mobile networks and edge artificial
-intelligence (AI). However, current DMoE systems lack an effective expert
-selection algorithm to address the simultaneous task-expert relevance and
-channel diversity inherent in these systems. Traditional AI or communication
-systems focus on either performance or channel conditions, and direct
-application of these methods leads to high communication overhead or low
-performance. To address this, we propose the DMoE protocol to schedule the
-expert inference and inter-expert transmission. This protocol identifies expert
-selection and subcarrier allocation as key optimization problems. We formulate
-an expert selection problem by incorporating both AI performance and channel
-conditions, and further extend it to a Joint Expert and Subcarrier Allocation
-(JESA) problem for comprehensive AI and channel management within the DMoE
-framework. For the NP-hard expert selection problem, we introduce the Dynamic
-Expert Selection (DES) algorithm, which leverages a linear relaxation as a
-bounding criterion to significantly reduce search complexity. For the JESA
-problem, we discover a unique structural property that ensures asymptotic
-optimality in most scenarios. We propose an iterative algorithm that addresses
-subcarrier allocation as a subproblem and integrates it with the DES algorithm.
-The proposed framework effectively manages the tradeoff between task relevance
-and channel conditions through a tunable importance factor, enabling flexible
-adaptation to diverse scenarios. Numerical experiments validate the dual
-benefits of the proposed expert selection algorithm: high performance and
-significantly reduced cost.
+                    <h3>Doubly robust identification of treatment effects from multiple
+  environments</h3>
+                    <p><strong>Authors:</strong> Piersilvio De Bartolomeis, Julia Kostin, Javier Abad, Yixin Wang, Fanny Yang</p>
+                    <p>  Practical and ethical constraints often require the use of observational data
+for causal inference, particularly in medicine and social sciences. Yet,
+observational datasets are prone to confounding, potentially compromising the
+validity of causal conclusions. While it is possible to correct for biases if
+the underlying causal graph is known, this is rarely a feasible ask in
+practical scenarios. A common strategy is to adjust for all available
+covariates, yet this approach can yield biased treatment effect estimates,
+especially when post-treatment or unobserved variables are present. We propose
+RAMEN, an algorithm that produces unbiased treatment effect estimates by
+leveraging the heterogeneity of multiple data sources without the need to know
+or learn the underlying causal graph. Notably, RAMEN achieves doubly robust
+identification: it can identify the treatment effect whenever the causal
+parents of the treatment or those of the outcome are observed, and the node
+whose parents are observed satisfies an invariance assumption. Empirical
+evaluations on synthetic and real-world datasets show that our approach
+outperforms existing methods.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13421v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14459v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>Causal Emergence 2.0: Quantifying emergent complexity</h3>
-                    <p><strong>Authors:</strong> Erik Hoel</p>
-                    <p>  Complex systems can be described at myriad different scales, and their causal
-workings often have multiscale structure (e.g., a computer can be described at
-the microscale of its hardware circuitry, the mesoscale of its machine code,
-and the macroscale of its operating system). While scientists study and model
-systems across the full hierarchy of their scales, from microphysics to
-macroeconomics, there is debate about what the macroscales of systems can
-possibly add beyond mere compression. To resolve this longstanding issue, here
-a new theory of emergence is introduced wherein the different scales of a
-system are treated like slices of a higher-dimensional object. The theory can
-distinguish which of these scales possess unique causal contributions, and
-which are not causally relevant. Constructed from an axiomatic notion of
-causation, the theory's application is demonstrated in coarse-grains of Markov
-chains. It identifies all cases of macroscale causation: instances where
-reduction to a microscale is possible, yet lossy about causation. Furthermore,
-the theory posits a causal apportioning schema that calculates the causal
-contribution of each scale, showing what each uniquely adds. Finally, it
-reveals a novel measure of emergent complexity: how widely distributed a
-system's causal workings are across its hierarchy of scales.
+                    <h3>RWKV-7 "Goose" with Expressive Dynamic State Evolution</h3>
+                    <p><strong>Authors:</strong> Bo Peng, Ruichong Zhang, Daniel Goldstein, Eric Alcaide, Haowen Hou, Janna Lu, William Merrill, Guangyu Song, Kaifeng Tan, Saiteja Utpala, Nathan Wilce, Johan S. Wind, Tianyi Wu, Daniel Wuttke, Christian Zhou-Zheng</p>
+                    <p>  We present RWKV-7 "Goose", a new sequence modeling architecture, along with
+pre-trained language models that establish a new state-of-the-art in downstream
+performance at the 3 billion parameter scale on multilingual tasks, and match
+current SoTA English language performance despite being trained on dramatically
+fewer tokens than other top 3B models. Nevertheless, RWKV-7 models require only
+constant memory usage and constant inference time per token. RWKV-7 introduces
+a newly generalized formulation of the delta rule with vector-valued gating and
+in-context learning rates, as well as a relaxed value replacement rule. We show
+that RWKV-7 can perform state tracking and recognize all regular languages,
+while retaining parallelizability of training. This exceeds the capabilities of
+Transformers under standard complexity conjectures, which are limited to
+$\mathsf{TC}^0$. To demonstrate RWKV-7's language modeling capability, we also
+present an extended open source 3.1 trillion token multilingual corpus, and
+train four RWKV-7 models ranging from 0.19 billion to 2.9 billion parameters on
+this dataset.
+  To foster openness, reproduction, and adoption, we release our models and
+dataset component listing at https://huggingface.co/RWKV, and our training and
+inference code at https://github.com/RWKV/RWKV-LM all under the Apache 2.0
+License.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13395v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14456v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>Aligned Probing: Relating Toxic Behavior and Model Internals</h3>
-                    <p><strong>Authors:</strong> Andreas Waldis, Vagrant Gautam, Anne Lauscher, Dietrich Klakow, Iryna Gurevych</p>
-                    <p>  We introduce aligned probing, a novel interpretability framework that aligns
-the behavior of language models (LMs), based on their outputs, and their
-internal representations (internals). Using this framework, we examine over 20
-OLMo, Llama, and Mistral models, bridging behavioral and internal perspectives
-for toxicity for the first time. Our results show that LMs strongly encode
-information about the toxicity level of inputs and subsequent outputs,
-particularly in lower layers. Focusing on how unique LMs differ offers both
-correlative and causal evidence that they generate less toxic output when
-strongly encoding information about the input toxicity. We also highlight the
-heterogeneity of toxicity, as model behavior and internals vary across unique
-attributes such as Threat. Finally, four case studies analyzing detoxification,
-multi-prompt evaluations, model quantization, and pre-training dynamics
-underline the practical impact of aligned probing with further concrete
-insights. Our findings contribute to a more holistic understanding of LMs, both
-within and beyond the context of toxicity.
+                    <h3>The Atacama Cosmology Telescope: DR6 Constraints on Extended
+  Cosmological Models</h3>
+                    <p><strong>Authors:</strong> Erminia Calabrese, J. Colin Hill, Hidde T. Jense, Adrien La Posta, Irene Abril-Cabezas, Graeme E. Addison, Peter A. R. Ade, Simone Aiola, Tommy Alford, David Alonso, Mandana Amiri, Rui An, Zachary Atkins, Jason E. Austermann, Eleonora Barbavara, Nicola Barbieri, Nicholas Battaglia, Elia Stefano Battistelli, James A. Beall, Rachel Bean, Ali Beheshti, Benjamin Beringue, Tanay Bhandarkar, Emily Biermann, Boris Bolliet, J Richard Bond, Valentina Capalbo, Felipe Carrero, Stephen Chen, Grace Chesmore, Hsiao-mei Cho, Steve K. Choi, Susan E. Clark, Nicholas F. Cothard, Kevin Coughlin, William Coulton, Devin Crichton, Kevin T. Crowley, Omar Darwish, Mark J. Devlin, Simon Dicker, Cody J. Duell, Shannon M. Duff, Adriaan J. Duivenvoorden, Jo Dunkley, Rolando Dunner, Carmen Embil Villagra, Max Fankhanel, Gerrit S. Farren, Simone Ferraro, Allen Foster, Rodrigo Freundt, Brittany Fuzia, Patricio A. Gallardo, Xavier Garrido, Martina Gerbino, Serena Giardiello, Ajay Gill, Jahmour Givans, Vera Gluscevic, Samuel Goldstein, Joseph E. Golec, Yulin Gong, Yilun Guan, Mark Halpern, Ian Harrison, Matthew Hasselfield, Adam He, Erin Healy, Shawn Henderson, Brandon Hensley, Carlos Hervías-Caimapo, Gene C. Hilton, Matt Hilton, Adam D. Hincks, Renée Hložek, Shuay-Pwu Patty Ho, John Hood, Erika Hornecker, Zachary B. Huber, Johannes Hubmayr, Kevin M. Huffenberger, John P. Hughes, Margaret Ikape, Kent Irwin, Giovanni Isopi, Neha Joshi, Ben Keller, Joshua Kim, Kenda Knowles, Brian J. Koopman, Arthur Kosowsky, Darby Kramer, Aleksandra Kusiak, Alex Lague, Victoria Lakey, Massimiliano Lattanzi, Eunseong Lee, Yaqiong Li, Zack Li, Michele Limon, Martine Lokken, Thibaut Louis, Marius Lungu, Niall MacCrann, Amanda MacInnis, Mathew S. Madhavacheril, Diego Maldonado, Felipe Maldonado, Maya Mallaby-Kay, Gabriela A. Marques, Joshiwa van Marrewijk, Fiona McCarthy, Jeff McMahon, Yogesh Mehta, Felipe Menanteau, Kavilan Moodley, Thomas W. Morris, Tony Mroczkowski, Sigurd Naess, Toshiya Namikawa, Federico Nati, Simran K. Nerval, Laura Newburgh, Andrina Nicola, Michael D. Niemack, Michael R. Nolta, John Orlowski-Scherer, Luca Pagano, Lyman A. Page, Shivam Pandey, Bruce Partridge, Karen Perez Sarmiento, Heather Prince, Roberto Puddu, Frank J. Qu, Damien C. Ragavan, Bernardita Ried Guachalla, Keir K. Rogers, Felipe Rojas, Tai Sakuma, Emmanuel Schaan, Benjamin L. Schmitt, Neelima Sehgal, Shabbir Shaikh, Blake D. Sherwin, Carlos Sierra, Jon Sievers, Cristóbal Sifón, Sara Simon, Rita Sonka, David N. Spergel, Suzanne T. Staggs, Emilie Storer, Kristen Surrao, Eric R. Switzer, Niklas Tampier, Leander Thiele, Robert Thornton, Hy Trac, Carole Tucker, Joel Ullom, Leila R. Vale, Alexander Van Engelen, Jeff Van Lanen, Cristian Vargas, Eve M. Vavagiakis, Kasey Wagoner, Yuhan Wang, Lukas Wenzl, Edward J. Wollack, Kaiwen Zheng</p>
+                    <p>  We use new cosmic microwave background (CMB) primary temperature and
+polarization anisotropy measurements from the Atacama Cosmology Telescope (ACT)
+Data Release 6 (DR6) to test foundational assumptions of the standard
+cosmological model and set constraints on extensions to it. We derive
+constraints from the ACT DR6 power spectra alone, as well as in combination
+with legacy data from Planck. To break geometric degeneracies, we include ACT
+and Planck CMB lensing data and baryon acoustic oscillation data from DESI
+Year-1, and further add supernovae measurements from Pantheon+ for models that
+affect the late-time expansion history. We verify the near-scale-invariance
+(running of the spectral index $d n_s/d\ln k = 0.0062 \pm 0.0052$) and
+adiabaticity of the primordial perturbations. Neutrino properties are
+consistent with Standard Model predictions: we find no evidence for new light,
+relativistic species that are free-streaming ($N_{\rm eff} = 2.86 \pm 0.13$,
+which combined with external BBN data becomes $N_{\rm eff} = 2.89 \pm 0.11$),
+for non-zero neutrino masses ($\sum m_\nu < 0.082$ eV at 95% CL), or for
+neutrino self-interactions. We also find no evidence for self-interacting dark
+radiation ($N_{\rm idr} < 0.134$), early-universe variation of fundamental
+constants, early dark energy, primordial magnetic fields, or modified
+recombination. Our data are consistent with standard BBN, the FIRAS-inferred
+CMB temperature, a dark matter component that is collisionless and with only a
+small fraction allowed as axion-like particles, a cosmological constant, and
+the late-time growth rate predicted by general relativity. We find no
+statistically significant preference for a departure from the baseline
+$\Lambda$CDM model. In general, models introduced to increase the Hubble
+constant or to decrease the amplitude of density fluctuations inferred from the
+primary CMB are not favored by our data.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13390v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14454v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
                 <li>
-                    <h3>TimeZero: Temporal Video Grounding with Reasoning-Guided LVLM</h3>
-                    <p><strong>Authors:</strong> Ye Wang, Boshen Xu, Zihao Yue, Zihan Xiao, Ziheng Wang, Liang Zhang, Dingyi Yang, Wenxuan Wang, Qin Jin</p>
-                    <p>  We introduce TimeZero, a reasoning-guided LVLM designed for the temporal
-video grounding (TVG) task. This task requires precisely localizing relevant
-video segments within long videos based on a given language query. TimeZero
-tackles this challenge by extending the inference process, enabling the model
-to reason about video-language relationships solely through reinforcement
-learning. To evaluate the effectiveness of TimeZero, we conduct experiments on
-two benchmarks, where TimeZero achieves state-of-the-art performance on
-Charades-STA. Code is available at https://github.com/www-Ye/TimeZero.
+                    <h3>Bolt3D: Generating 3D Scenes in Seconds</h3>
+                    <p><strong>Authors:</strong> Stanislaw Szymanowicz, Jason Y. Zhang, Pratul Srinivasan, Ruiqi Gao, Arthur Brussee, Aleksander Holynski, Ricardo Martin-Brualla, Jonathan T. Barron, Philipp Henzler</p>
+                    <p>  We present a latent diffusion model for fast feed-forward 3D scene
+generation. Given one or more images, our model Bolt3D directly samples a 3D
+scene representation in less than seven seconds on a single GPU. We achieve
+this by leveraging powerful and scalable existing 2D diffusion network
+architectures to produce consistent high-fidelity 3D scene representations. To
+train this model, we create a large-scale multiview-consistent dataset of 3D
+geometry and appearance by applying state-of-the-art dense 3D reconstruction
+techniques to existing multiview image datasets. Compared to prior multiview
+generative models that require per-scene optimization for 3D reconstruction,
+Bolt3D reduces the inference cost by a factor of up to 300 times.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.13377v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/17/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.14445v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/18/2025</p>
                 </li>
             </ul>
         </section>
