@@ -112,246 +112,267 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal
-  Control</h3>
-                    <p><strong>Authors:</strong>  NVIDIA,  :, Hassan Abu Alhaija, Jose Alvarez, Maciej Bala, Tiffany Cai, Tianshi Cao, Liz Cha, Joshua Chen, Mike Chen, Francesco Ferroni, Sanja Fidler, Dieter Fox, Yunhao Ge, Jinwei Gu, Ali Hassani, Michael Isaev, Pooya Jannaty, Shiyi Lan, Tobias Lasser, Huan Ling, Ming-Yu Liu, Xian Liu, Yifan Lu, Alice Luo, Qianli Ma, Hanzi Mao, Fabio Ramos, Xuanchi Ren, Tianchang Shen, Shitao Tang, Ting-Chun Wang, Jay Wu, Jiashu Xu, Stella Xu, Kevin Xie, Yuchong Ye, Xiaodong Yang, Xiaohui Zeng, Yu Zeng</p>
-                    <p>  We introduce Cosmos-Transfer, a conditional world generation model that can
-generate world simulations based on multiple spatial control inputs of various
-modalities such as segmentation, depth, and edge. In the design, the spatial
-conditional scheme is adaptive and customizable. It allows weighting different
-conditional inputs differently at different spatial locations. This enables
-highly controllable world generation and finds use in various world-to-world
-transfer use cases, including Sim2Real. We conduct extensive evaluations to
-analyze the proposed model and demonstrate its applications for Physical AI,
-including robotics Sim2Real and autonomous vehicle data enrichment. We further
-demonstrate an inference scaling strategy to achieve real-time world generation
-with an NVIDIA GB200 NVL72 rack. To help accelerate research development in the
-field, we open-source our models and code at
-https://github.com/nvidia-cosmos/cosmos-transfer1.
+                    <h3>From 1,000,000 Users to Every User: Scaling Up Personalized Preference
+  for User-level Alignment</h3>
+                    <p><strong>Authors:</strong> Jia-Nan Li, Jian Guan, Songhao Wu, Wei Wu, Rui Yan</p>
+                    <p>  Large language models (LLMs) have traditionally been aligned through
+one-size-fits-all approaches that assume uniform human preferences,
+fundamentally overlooking the diversity in user values and needs. This paper
+introduces a comprehensive framework for scalable personalized alignment of
+LLMs. We establish a systematic preference space characterizing psychological
+and behavioral dimensions, alongside diverse persona representations for robust
+preference inference in real-world scenarios. Building upon this foundation, we
+introduce \textsc{AlignX}, a large-scale dataset of over 1.3 million
+personalized preference examples, and develop two complementary alignment
+approaches: \textit{in-context alignment} directly conditioning on persona
+representations and \textit{preference-bridged alignment} modeling intermediate
+preference distributions. Extensive experiments demonstrate substantial
+improvements over existing methods, with an average 17.06\% accuracy gain
+across four benchmarks while exhibiting a strong adaptation capability to novel
+preferences, robustness to limited user data, and precise preference
+controllability. These results validate our framework's effectiveness,
+advancing toward truly user-adaptive AI systems.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14492v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15463v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Gricean Norms as a Basis for Effective Collaboration</h3>
-                    <p><strong>Authors:</strong> Fardin Saad, Pradeep K. Murukannaiah, Munindar P. Singh</p>
-                    <p>  Effective human-AI collaboration hinges not only on the AI agent's ability to
-follow explicit instructions but also on its capacity to navigate ambiguity,
-incompleteness, invalidity, and irrelevance in communication. Gricean
-conversational and inference norms facilitate collaboration by aligning unclear
-instructions with cooperative principles. We propose a normative framework that
-integrates Gricean norms and cognitive frameworks -- common ground, relevance
-theory, and theory of mind -- into large language model (LLM) based agents. The
-normative framework adopts the Gricean maxims of quantity, quality, relation,
-and manner, along with inference, as Gricean norms to interpret unclear
-instructions, which are: ambiguous, incomplete, invalid, or irrelevant. Within
-this framework, we introduce Lamoids, GPT-4 powered agents designed to
-collaborate with humans. To assess the influence of Gricean norms in human-AI
-collaboration, we evaluate two versions of a Lamoid: one with norms and one
-without. In our experiments, a Lamoid collaborates with a human to achieve
-shared goals in a grid world (Doors, Keys, and Gems) by interpreting both clear
-and unclear natural language instructions. Our results reveal that the Lamoid
-with Gricean norms achieves higher task accuracy and generates clearer, more
-accurate, and contextually relevant responses than the Lamoid without norms.
-This improvement stems from the normative framework, which enhances the agent's
-pragmatic reasoning, fostering effective human-AI collaboration and enabling
-context-aware communication in LLM-based agents.
+                    <h3>Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step
+  Generator</h3>
+                    <p><strong>Authors:</strong> Yuanzhi Zhu, Xi Wang, Stéphane Lathuilière, Vicky Kalogeiton</p>
+                    <p>  Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling
+technique. Despite their remarkable results, they typically suffer from slow
+inference with several steps. In this paper, we propose Di$\mathtt{[M]}$O, a
+novel approach that distills masked diffusion models into a one-step generator.
+Di$\mathtt{[M]}$O addresses two key challenges: (1) the intractability of using
+intermediate-step information for one-step generation, which we solve through
+token-level distribution matching that optimizes model output logits by an
+'on-policy framework' with the help of an auxiliary model; and (2) the lack of
+entropy in the initial distribution, which we address through a token
+initialization strategy that injects randomness while maintaining similarity to
+teacher training distribution. We show Di$\mathtt{[M]}$O's effectiveness on
+both class-conditional and text-conditional image generation, impressively
+achieving performance competitive to multi-step teacher outputs while
+drastically reducing inference time. To our knowledge, we are the first to
+successfully achieve one-step distillation of masked diffusion models and the
+first to apply discrete distillation to text-to-image generation, opening new
+paths for efficient generative modeling.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14484v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15457v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Calibrating Verbal Uncertainty as a Linear Feature to Reduce
-  Hallucinations</h3>
-                    <p><strong>Authors:</strong> Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang, Anthony Hartshorn, Alan Schelten, Cheng Zhang, Pascale Fung, Nicola Cancedda</p>
-                    <p>  LLMs often adopt an assertive language style also when making false claims.
-Such ``overconfident hallucinations'' mislead users and erode trust. Achieving
-the ability to express in language the actual degree of uncertainty around a
-claim is therefore of great importance. We find that ``verbal uncertainty'' is
-governed by a single linear feature in the representation space of LLMs, and
-show that this has only moderate correlation with the actual ``semantic
-uncertainty'' of the model. We apply this insight and show that (1) the
-mismatch between semantic and verbal uncertainty is a better predictor of
-hallucinations than semantic uncertainty alone and (2) we can intervene on
-verbal uncertainty at inference time and reduce hallucinations on short-form
-answers, achieving an average relative reduction of 32%.
+                    <h3>MotionStreamer: Streaming Motion Generation via Diffusion-based
+  Autoregressive Model in Causal Latent Space</h3>
+                    <p><strong>Authors:</strong> Lixing Xiao, Shunlin Lu, Huaijin Pi, Ke Fan, Liang Pan, Yueer Zhou, Ziyong Feng, Xiaowei Zhou, Sida Peng, Jingbo Wang</p>
+                    <p>  This paper addresses the challenge of text-conditioned streaming motion
+generation, which requires us to predict the next-step human pose based on
+variable-length historical motions and incoming texts. Existing methods
+struggle to achieve streaming motion generation, e.g., diffusion models are
+constrained by pre-defined motion lengths, while GPT-based methods suffer from
+delayed response and error accumulation problem due to discretized non-causal
+tokenization. To solve these problems, we propose MotionStreamer, a novel
+framework that incorporates a continuous causal latent space into a
+probabilistic autoregressive model. The continuous latents mitigate information
+loss caused by discretization and effectively reduce error accumulation during
+long-term autoregressive generation. In addition, by establishing temporal
+causal dependencies between current and historical motion latents, our model
+fully utilizes the available information to achieve accurate online motion
+decoding. Experiments show that our method outperforms existing approaches
+while offering more applications, including multi-round generation, long-term
+generation, and dynamic motion composition. Project Page:
+https://zju3dv.github.io/MotionStreamer/
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14477v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15451v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>DAPO: An Open-Source LLM Reinforcement Learning System at Scale</h3>
-                    <p><strong>Authors:</strong> Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Tiantian Fan, Gaohong Liu, Lingjun Liu, Xin Liu, Haibin Lin, Zhiqi Lin, Bole Ma, Guangming Sheng, Yuxuan Tong, Chi Zhang, Mofan Zhang, Wang Zhang, Hang Zhu, Jinhua Zhu, Jiaze Chen, Jiangjie Chen, Chengyi Wang, Hongli Yu, Weinan Dai, Yuxuan Song, Xiangpeng Wei, Hao Zhou, Jingjing Liu, Wei-Ying Ma, Ya-Qin Zhang, Lin Yan, Mu Qiao, Yonghui Wu, Mingxuan Wang</p>
-                    <p>  Inference scaling empowers LLMs with unprecedented reasoning ability, with
-reinforcement learning as the core technique to elicit complex reasoning.
-However, key technical details of state-of-the-art reasoning LLMs are concealed
-(such as in OpenAI o1 blog and DeepSeek R1 technical report), thus the
-community still struggles to reproduce their RL training results. We propose
-the $\textbf{D}$ecoupled Clip and $\textbf{D}$ynamic s$\textbf{A}$mpling
-$\textbf{P}$olicy $\textbf{O}$ptimization ($\textbf{DAPO}$) algorithm, and
-fully open-source a state-of-the-art large-scale RL system that achieves 50
-points on AIME 2024 using Qwen2.5-32B base model. Unlike previous works that
-withhold training details, we introduce four key techniques of our algorithm
-that make large-scale LLM RL a success. In addition, we open-source our
-training code, which is built on the verl framework, along with a carefully
-curated and processed dataset. These components of our open-source system
-enhance reproducibility and support future research in large-scale LLM RL.
+                    <h3>An extensive simulation study evaluating the interaction of resampling
+  techniques across multiple causal discovery contexts</h3>
+                    <p><strong>Authors:</strong> Ritwick Banerjee, Bryan Andrews, Erich Kummerfeld</p>
+                    <p>  Despite the accelerating presence of exploratory causal analysis in modern
+science and medicine, the available non-experimental methods for validating
+causal models are not well characterized. One of the most popular methods is to
+evaluate the stability of model features after resampling the data, similar to
+resampling methods for estimating confidence intervals in statistics. Many
+aspects of this approach have received little to no attention, however, such as
+whether the choice of resampling method should depend on the sample size,
+algorithms being used, or algorithm tuning parameters. We present theoretical
+results proving that certain resampling methods closely emulate the assignment
+of specific values to algorithm tuning parameters. We also report the results
+of extensive simulation experiments, which verify the theoretical result and
+provide substantial data to aid researchers in further characterizing
+resampling in the context of causal discovery analysis. Together, the
+theoretical work and simulation results provide specific guidance on how
+resampling methods and tuning parameters should be selected in practice.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14476v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15436v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Attribution Score Alignment in Explainable Data Management</h3>
-                    <p><strong>Authors:</strong> Felipe Azua, Leopoldo Bertossi</p>
-                    <p>  Different attribution-scores have been proposed to quantify the relevance of
-database tuples for a query answer from a database. Among them, we find Causal
-Responsibility, the Shapley Value, the Banzhaf Power-Index, and the Causal
-Effect. They have been analyzed in isolation, mainly in terms of computational
-properties. In this work, we start an investigation into the alignment of these
-scores on the basis of the queries at hand; that is, on whether they induce
-compatible rankings of tuples. We are able to identify vast classes of queries
-for which some pairs of scores are always aligned, and others for which they
-are not. It turns out that the presence of exogenous tuples makes a crucial
-difference in this regard.
+                    <h3>Limits on the Ejecta Mass During the Search for Kilonovae Associated
+  with Neutron Star-Black Hole Mergers: A case study of S230518h, GW230529,
+  S230627c and the Low-Significance Candidate S240422ed</h3>
+                    <p><strong>Authors:</strong> M. Pillas, S. Antier, K. Ackley, T. Ahumada, D. Akl, L. de Almeida, S. Anand, C. Andrade, I. Andreoni, K. A. Bostroem, M. Bulla, E. Burns, T. Cabrera, S. Chang, H. Choi, B. O'Connor, M. W. Coughlin, W. Corradi, A. R. Gibbs, T. Dietrich, D. Dornic, J. -G. Ducoin, P. -A. Duverne, M. Dyer, H. -B. Eggenstein, M. Freeberg, M. Fausnaugh, W. Fong, F. Foucart, D. Frostig, N. Guessoum, V. Gupta, P. Hello, G. Hosseinzadeh, L. Hu, T. Hussenot-Desenonges, M. Im, R. Jayaraman, M. Jeong, V. Karambelkar, S. Karpov, M. Kasliwal, C. D. Kilpatrick, S. Kim, N. Kochiashvili, K. Kunnumkai, M. Lamoureux, C. U. Lee, N. Lourie, J. Lyman, F. Magnani, M. Masek, G. Mo, M. Molham, F. Navarete, D. O'Neill, M. Nicholl, A. H. Nitz, K. Noysena, G. S. H. Paek, A. Palmese, R. Poggiani, T. Pradier, O. Pyshna, Y. Rajabov, J. C. Rastinejad, D. J. Sand, P. Shawhan, M. Shrestha, R. Simcoe, S. J. Smartt, D. Steeghs, R. Stein, H. F. Stevance, M. Sun, A. Takey, A. Toivonen, D. Turpin, K. Ulaczyk, A. Wold, T. Wouters</p>
+                    <p>  Neutron star-black hole (NSBH) mergers, detectable via their
+gravitational-wave (GW) emission, are expected to produce kilonovae (KNe). Four
+NSBH candidates have been identified and followed-up by more than fifty
+instruments since the start of the fourth GW Observing Run (O4), in May 2023,
+up to July 2024; however, no confirmed associated KN has been detected. This
+study evaluates ejecta properties from multi-messenger observations to
+understand the absence of detectable KN: we use GW public information and joint
+observations taken from 05.2023 to 07.2024 (LVK, ATLAS, DECam, GECKO, GOTO,
+GRANDMA, SAGUARO, TESS, WINTER, ZTF). First, our analysis on follow-up
+observation strategies shows that, on average, more than 50% of the simulated
+KNe associated with NSBH mergers reach their peak luminosity around one day
+after merger in the $g,r,i$- bands, which is not necessarily covered for each
+NSBH GW candidate. We also analyze the trade-off between observation efficiency
+and the intrinsic properties of the KN emission, to understand the impact on
+how these constraints affect our ability to detect the KN, and underlying
+ejecta properties for each GW candidate. In particular, we can only confirm the
+kilonova was not missed for 1% of the GW230529 and S230627c sky localization
+region, given the large sky localization error of GW230529 and the large
+distance for S230627c and, their respective KN faint luminosities. More
+constraining, for S230518h, we infer the dynamical ejecta and post-merger disk
+wind ejecta $m_{dyn}, m_{wind}$ $<$ $0.03$ $M_\odot$ and the viewing angle
+$\theta>25^\circ$. Similarly, the non-astrophysical origin of S240422ed is
+likely further confirmed by the fact that we would have detected even a faint
+KN at the time and presumed distance of the S240422ed event candidate, within a
+minimum 45% credible region of the sky area, that can be larger depending on
+the KN scenario.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14469v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15422v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Low-Metallicity Star Formation Survey in Sh2-284 (LZ-STAR). I. Ordered
-  massive star formation in the outer Galaxy</h3>
-                    <p><strong>Authors:</strong> Yu Cheng, Jonathan C. Tan, Morten Andersen, Rubén Fedriani, Yichen Zhang, Massimo Robberto, Zhi-Yun Li, Kei E. I. Tanaka</p>
-                    <p>  Star formation is a fundamental, yet poorly understood, process of the
-Universe. It is important to study how star formation occurs in different
-galactic environments. Thus, here, in the first of a series of papers, we
-introduce the Low-Metallicity Star Formation (LZ-STAR) survey of the Sh2-284
-(hereafter S284) region, which, at $Z\sim 0.3-0.5Z_\odot$, is one of the
-lowest-metallicity star-forming regions of our Galaxy. LZ-STAR is a
-multi-facility survey, including observations with {\it JWST}, {\it ALMA}, {\it
-HST}, {\it Chandra} and {\it Gemini}. As a starting point, we report {\it JWST}
-and {\it ALMA} observations of one of the most massive protostars in the
-region, S284p1. The observations of shock-excited molecular hydrogen reveal a
-symmetric, bipolar outflow originating from the protostar, spanning several
-parsecs, and fully covered by the {\it JWST} field of view and the {\it ALMA}
-observations of CO(2-1) emission. This allows us to infer that the protostar
-has maintained a relatively stable orientation of disk accretion over its
-formation history. The {\it JWST} near-IR continuum observations detect a
-centrally illuminated bipolar outflow cavity around the protostar, as well as a
-surrounding cluster of low-mass young stars. We develop new radiative transfer
-models of massive protostars designed for the low metallicity of S284. Fitting
-these models to the protostar's spectral energy distribution implies a current
-protostellar mass of $\sim11\:M_\odot$ has formed from an initially
-$\sim100\:M_\odot$ core over the last $\sim3\times10^5$ years. Overall, these
-results indicate that massive stars can form in an ordered manner in
-low-metallicity, protocluster environments.
+                    <h3>LIFT: Latent Implicit Functions for Task- and Data-Agnostic Encoding</h3>
+                    <p><strong>Authors:</strong> Amirhossein Kazerouni, Soroush Mehraban, Michael Brudno, Babak Taati</p>
+                    <p>  Implicit Neural Representations (INRs) are proving to be a powerful paradigm
+in unifying task modeling across diverse data domains, offering key advantages
+such as memory efficiency and resolution independence. Conventional deep
+learning models are typically modality-dependent, often requiring custom
+architectures and objectives for different types of signals. However, existing
+INR frameworks frequently rely on global latent vectors or exhibit
+computational inefficiencies that limit their broader applicability. We
+introduce LIFT, a novel, high-performance framework that addresses these
+challenges by capturing multiscale information through meta-learning. LIFT
+leverages multiple parallel localized implicit functions alongside a
+hierarchical latent generator to produce unified latent representations that
+span local, intermediate, and global features. This architecture facilitates
+smooth transitions across local regions, enhancing expressivity while
+maintaining inference efficiency. Additionally, we introduce ReLIFT, an
+enhanced variant of LIFT that incorporates residual connections and expressive
+frequency encodings. With this straightforward approach, ReLIFT effectively
+addresses the convergence-capacity gap found in comparable methods, providing
+an efficient yet powerful solution to improve capacity and speed up
+convergence. Empirical results show that LIFT achieves state-of-the-art (SOTA)
+performance in generative modeling and classification tasks, with notable
+reductions in computational costs. Moreover, in single-task settings, the
+streamlined ReLIFT architecture proves effective in signal representations and
+inverse problem tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14460v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15420v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Doubly robust identification of treatment effects from multiple
-  environments</h3>
-                    <p><strong>Authors:</strong> Piersilvio De Bartolomeis, Julia Kostin, Javier Abad, Yixin Wang, Fanny Yang</p>
-                    <p>  Practical and ethical constraints often require the use of observational data
-for causal inference, particularly in medicine and social sciences. Yet,
-observational datasets are prone to confounding, potentially compromising the
-validity of causal conclusions. While it is possible to correct for biases if
-the underlying causal graph is known, this is rarely a feasible ask in
-practical scenarios. A common strategy is to adjust for all available
-covariates, yet this approach can yield biased treatment effect estimates,
-especially when post-treatment or unobserved variables are present. We propose
-RAMEN, an algorithm that produces unbiased treatment effect estimates by
-leveraging the heterogeneity of multiple data sources without the need to know
-or learn the underlying causal graph. Notably, RAMEN achieves doubly robust
-identification: it can identify the treatment effect whenever the causal
-parents of the treatment or those of the outcome are observed, and the node
-whose parents are observed satisfies an invariance assumption. Empirical
-evaluations on synthetic and real-world datasets show that our approach
-outperforms existing methods.
+                    <h3>Automated Processing of eXplainable Artificial Intelligence Outputs in
+  Deep Learning Models for Fault Diagnostics of Large Infrastructures</h3>
+                    <p><strong>Authors:</strong> Giovanni Floreale, Piero Baraldi, Enrico Zio, Olga Fink</p>
+                    <p>  Deep Learning (DL) models processing images to recognize the health state of
+large infrastructure components can exhibit biases and rely on non-causal
+shortcuts. eXplainable Artificial Intelligence (XAI) can address these issues
+but manually analyzing explanations generated by XAI techniques is
+time-consuming and prone to errors. This work proposes a novel framework that
+combines post-hoc explanations with semi-supervised learning to automatically
+identify anomalous explanations that deviate from those of correctly classified
+images and may therefore indicate model abnormal behaviors. This significantly
+reduces the workload for maintenance decision-makers, who only need to manually
+reclassify images flagged as having anomalous explanations. The proposed
+framework is applied to drone-collected images of insulator shells for power
+grid infrastructure monitoring, considering two different Convolutional Neural
+Networks (CNNs), GradCAM explanations and Deep Semi-Supervised Anomaly
+Detection. The average classification accuracy on two faulty classes is
+improved by 8% and maintenance operators are required to manually reclassify
+only 15% of the images. We compare the proposed framework with a
+state-of-the-art approach based on the faithfulness metric: the experimental
+results obtained demonstrate that the proposed framework consistently achieves
+F_1 scores larger than those of the faithfulness-based approach. Additionally,
+the proposed framework successfully identifies correct classifications that
+result from non-causal shortcuts, such as the presence of ID tags printed on
+insulator shells.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14459v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15415v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>RWKV-7 "Goose" with Expressive Dynamic State Evolution</h3>
-                    <p><strong>Authors:</strong> Bo Peng, Ruichong Zhang, Daniel Goldstein, Eric Alcaide, Haowen Hou, Janna Lu, William Merrill, Guangyu Song, Kaifeng Tan, Saiteja Utpala, Nathan Wilce, Johan S. Wind, Tianyi Wu, Daniel Wuttke, Christian Zhou-Zheng</p>
-                    <p>  We present RWKV-7 "Goose", a new sequence modeling architecture, along with
-pre-trained language models that establish a new state-of-the-art in downstream
-performance at the 3 billion parameter scale on multilingual tasks, and match
-current SoTA English language performance despite being trained on dramatically
-fewer tokens than other top 3B models. Nevertheless, RWKV-7 models require only
-constant memory usage and constant inference time per token. RWKV-7 introduces
-a newly generalized formulation of the delta rule with vector-valued gating and
-in-context learning rates, as well as a relaxed value replacement rule. We show
-that RWKV-7 can perform state tracking and recognize all regular languages,
-while retaining parallelizability of training. This exceeds the capabilities of
-Transformers under standard complexity conjectures, which are limited to
-$\mathsf{TC}^0$. To demonstrate RWKV-7's language modeling capability, we also
-present an extended open source 3.1 trillion token multilingual corpus, and
-train four RWKV-7 models ranging from 0.19 billion to 2.9 billion parameters on
-this dataset.
-  To foster openness, reproduction, and adoption, we release our models and
-dataset component listing at https://huggingface.co/RWKV, and our training and
-inference code at https://github.com/RWKV/RWKV-LM all under the Apache 2.0
-License.
+                    <h3>Loophole-free argument for physicality of electromagnetic potential from
+  causal structure of flux quantization</h3>
+                    <p><strong>Authors:</strong> Konrad Schlichtholz, Marcin Markiewicz</p>
+                    <p>  Recent work by Vaidman [Phys. Rev. A 86,040101 (2012)] showed that
+Aharonov-Bohm effect can be explained in terms of local fields, thus
+effectively restating an old problem of physicality of potentials. In this
+work, we propose an argument demonstrating the physicality of electromagnetic
+potential (upon the assumption of locality) based on the causal structure in
+flux quantization setup. Crucially, we discuss the fundamental difference
+between the considered setup and the Aharonov-Bohm experiment that allows for
+avoiding Vaidman's loophole in our scenario.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14456v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15410v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>The Atacama Cosmology Telescope: DR6 Constraints on Extended
-  Cosmological Models</h3>
-                    <p><strong>Authors:</strong> Erminia Calabrese, J. Colin Hill, Hidde T. Jense, Adrien La Posta, Irene Abril-Cabezas, Graeme E. Addison, Peter A. R. Ade, Simone Aiola, Tommy Alford, David Alonso, Mandana Amiri, Rui An, Zachary Atkins, Jason E. Austermann, Eleonora Barbavara, Nicola Barbieri, Nicholas Battaglia, Elia Stefano Battistelli, James A. Beall, Rachel Bean, Ali Beheshti, Benjamin Beringue, Tanay Bhandarkar, Emily Biermann, Boris Bolliet, J Richard Bond, Valentina Capalbo, Felipe Carrero, Stephen Chen, Grace Chesmore, Hsiao-mei Cho, Steve K. Choi, Susan E. Clark, Nicholas F. Cothard, Kevin Coughlin, William Coulton, Devin Crichton, Kevin T. Crowley, Omar Darwish, Mark J. Devlin, Simon Dicker, Cody J. Duell, Shannon M. Duff, Adriaan J. Duivenvoorden, Jo Dunkley, Rolando Dunner, Carmen Embil Villagra, Max Fankhanel, Gerrit S. Farren, Simone Ferraro, Allen Foster, Rodrigo Freundt, Brittany Fuzia, Patricio A. Gallardo, Xavier Garrido, Martina Gerbino, Serena Giardiello, Ajay Gill, Jahmour Givans, Vera Gluscevic, Samuel Goldstein, Joseph E. Golec, Yulin Gong, Yilun Guan, Mark Halpern, Ian Harrison, Matthew Hasselfield, Adam He, Erin Healy, Shawn Henderson, Brandon Hensley, Carlos Hervías-Caimapo, Gene C. Hilton, Matt Hilton, Adam D. Hincks, Renée Hložek, Shuay-Pwu Patty Ho, John Hood, Erika Hornecker, Zachary B. Huber, Johannes Hubmayr, Kevin M. Huffenberger, John P. Hughes, Margaret Ikape, Kent Irwin, Giovanni Isopi, Neha Joshi, Ben Keller, Joshua Kim, Kenda Knowles, Brian J. Koopman, Arthur Kosowsky, Darby Kramer, Aleksandra Kusiak, Alex Lague, Victoria Lakey, Massimiliano Lattanzi, Eunseong Lee, Yaqiong Li, Zack Li, Michele Limon, Martine Lokken, Thibaut Louis, Marius Lungu, Niall MacCrann, Amanda MacInnis, Mathew S. Madhavacheril, Diego Maldonado, Felipe Maldonado, Maya Mallaby-Kay, Gabriela A. Marques, Joshiwa van Marrewijk, Fiona McCarthy, Jeff McMahon, Yogesh Mehta, Felipe Menanteau, Kavilan Moodley, Thomas W. Morris, Tony Mroczkowski, Sigurd Naess, Toshiya Namikawa, Federico Nati, Simran K. Nerval, Laura Newburgh, Andrina Nicola, Michael D. Niemack, Michael R. Nolta, John Orlowski-Scherer, Luca Pagano, Lyman A. Page, Shivam Pandey, Bruce Partridge, Karen Perez Sarmiento, Heather Prince, Roberto Puddu, Frank J. Qu, Damien C. Ragavan, Bernardita Ried Guachalla, Keir K. Rogers, Felipe Rojas, Tai Sakuma, Emmanuel Schaan, Benjamin L. Schmitt, Neelima Sehgal, Shabbir Shaikh, Blake D. Sherwin, Carlos Sierra, Jon Sievers, Cristóbal Sifón, Sara Simon, Rita Sonka, David N. Spergel, Suzanne T. Staggs, Emilie Storer, Kristen Surrao, Eric R. Switzer, Niklas Tampier, Leander Thiele, Robert Thornton, Hy Trac, Carole Tucker, Joel Ullom, Leila R. Vale, Alexander Van Engelen, Jeff Van Lanen, Cristian Vargas, Eve M. Vavagiakis, Kasey Wagoner, Yuhan Wang, Lukas Wenzl, Edward J. Wollack, Kaiwen Zheng</p>
-                    <p>  We use new cosmic microwave background (CMB) primary temperature and
-polarization anisotropy measurements from the Atacama Cosmology Telescope (ACT)
-Data Release 6 (DR6) to test foundational assumptions of the standard
-cosmological model and set constraints on extensions to it. We derive
-constraints from the ACT DR6 power spectra alone, as well as in combination
-with legacy data from Planck. To break geometric degeneracies, we include ACT
-and Planck CMB lensing data and baryon acoustic oscillation data from DESI
-Year-1, and further add supernovae measurements from Pantheon+ for models that
-affect the late-time expansion history. We verify the near-scale-invariance
-(running of the spectral index $d n_s/d\ln k = 0.0062 \pm 0.0052$) and
-adiabaticity of the primordial perturbations. Neutrino properties are
-consistent with Standard Model predictions: we find no evidence for new light,
-relativistic species that are free-streaming ($N_{\rm eff} = 2.86 \pm 0.13$,
-which combined with external BBN data becomes $N_{\rm eff} = 2.89 \pm 0.11$),
-for non-zero neutrino masses ($\sum m_\nu < 0.082$ eV at 95% CL), or for
-neutrino self-interactions. We also find no evidence for self-interacting dark
-radiation ($N_{\rm idr} < 0.134$), early-universe variation of fundamental
-constants, early dark energy, primordial magnetic fields, or modified
-recombination. Our data are consistent with standard BBN, the FIRAS-inferred
-CMB temperature, a dark matter component that is collisionless and with only a
-small fraction allowed as axion-like particles, a cosmological constant, and
-the late-time growth rate predicted by general relativity. We find no
-statistically significant preference for a departure from the baseline
-$\Lambda$CDM model. In general, models introduced to increase the Hubble
-constant or to decrease the amplitude of density fluctuations inferred from the
-primary CMB are not favored by our data.
+                    <h3>Making Online Polls More Accurate: Statistical Methods Explained</h3>
+                    <p><strong>Authors:</strong> Alberto Arletti, Maria Letizia Tanturri, Omar Paccagnella</p>
+                    <p>  Online data has the potential to transform how researchers and companies
+produce election forecasts. Social media surveys, online panels and even
+comments scraped from the internet can offer valuable insights into political
+preferences. However, such data is often affected by significant selection
+bias, as online respondents may not be representative of the overall
+population. At the same time, traditional data collection methods are becoming
+increasingly cost-prohibitive. In this scenario, scientists need instruments to
+be able to draw the most accurate estimate possible from samples drawn online.
+This paper provides an introduction to key statistical methods for mitigating
+bias and improving inference in such cases, with a focus on electoral polling.
+Specifically, it presents the main statistical techniques, categorized into
+weighting, modeling and other approaches. It also offers practical
+recommendations for drawing estimates with measures of uncertainty. Designed
+for both researchers and industry practitioners, this introduction takes a
+hands-on approach, with code available for implementing the main methods.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14454v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15395v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
                 <li>
-                    <h3>Bolt3D: Generating 3D Scenes in Seconds</h3>
-                    <p><strong>Authors:</strong> Stanislaw Szymanowicz, Jason Y. Zhang, Pratul Srinivasan, Ruiqi Gao, Arthur Brussee, Aleksander Holynski, Ricardo Martin-Brualla, Jonathan T. Barron, Philipp Henzler</p>
-                    <p>  We present a latent diffusion model for fast feed-forward 3D scene
-generation. Given one or more images, our model Bolt3D directly samples a 3D
-scene representation in less than seven seconds on a single GPU. We achieve
-this by leveraging powerful and scalable existing 2D diffusion network
-architectures to produce consistent high-fidelity 3D scene representations. To
-train this model, we create a large-scale multiview-consistent dataset of 3D
-geometry and appearance by applying state-of-the-art dense 3D reconstruction
-techniques to existing multiview image datasets. Compared to prior multiview
-generative models that require per-scene optimization for 3D reconstruction,
-Bolt3D reduces the inference cost by a factor of up to 300 times.
+                    <h3>Orbital eccentricity in a neutron star - black hole binary</h3>
+                    <p><strong>Authors:</strong> Gonzalo Morras, Geraint Pratten, Patricia Schmidt</p>
+                    <p>  The observation of gravitational waves from merging black holes and neutron
+stars provides a unique opportunity to discern information about their
+astrophysical environment. Two signatures that are considered powerful tracers
+to distinguish between different binary formation channels are
+general-relativistic spin-induced orbital precession and orbital eccentricity.
+Both effects leave characteristic imprints in the gravitational-wave signal
+that can be extracted from observations. To date, neither precession nor
+eccentricity have been discerned in neutron star - black hole binaries. Here we
+report the first measurement of orbital eccentricity in a neutron star - black
+hole binary. Using, for the first time, a waveform model that incorporates
+precession and eccentricity, we perform Bayesian inference on the event
+GW200105 and infer a median orbital eccentricity of $e_{20}\sim 0.145$ at an
+orbital period of $0.1$s, excluding zero at more than $99\%$ confidence. We
+find inconclusive evidence for the presence of precession, consistent with
+previous, non-eccentric results. Our result implies a fraction of these
+binaries will exhibit orbital eccentricity even at small separations,
+suggesting formation through mechanisms involving dynamical interactions beyond
+isolated binary evolution. Future observations will reveal the contribution of
+eccentric neutron star - black hole binaries to the total merger rate across
+cosmic time.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.14445v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/18/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.15393v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/19/2025</p>
                 </li>
             </ul>
         </section>
