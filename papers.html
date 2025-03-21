@@ -113,266 +113,281 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>From 1,000,000 Users to Every User: Scaling Up Personalized Preference
-  for User-level Alignment</h3>
-                    <p><strong>Authors:</strong> Jia-Nan Li, Jian Guan, Songhao Wu, Wei Wu, Rui Yan</p>
-                    <p>  Large language models (LLMs) have traditionally been aligned through
-one-size-fits-all approaches that assume uniform human preferences,
-fundamentally overlooking the diversity in user values and needs. This paper
-introduces a comprehensive framework for scalable personalized alignment of
-LLMs. We establish a systematic preference space characterizing psychological
-and behavioral dimensions, alongside diverse persona representations for robust
-preference inference in real-world scenarios. Building upon this foundation, we
-introduce \textsc{AlignX}, a large-scale dataset of over 1.3 million
-personalized preference examples, and develop two complementary alignment
-approaches: \textit{in-context alignment} directly conditioning on persona
-representations and \textit{preference-bridged alignment} modeling intermediate
-preference distributions. Extensive experiments demonstrate substantial
-improvements over existing methods, with an average 17.06\% accuracy gain
-across four benchmarks while exhibiting a strong adaptation capability to novel
-preferences, robustness to limited user data, and precise preference
-controllability. These results validate our framework's effectiveness,
-advancing toward truly user-adaptive AI systems.
+                    <h3>XAttention: Block Sparse Attention with Antidiagonal Scoring</h3>
+                    <p><strong>Authors:</strong> Ruyi Xu, Guangxuan Xiao, Haofeng Huang, Junxian Guo, Song Han</p>
+                    <p>  Long-Context Transformer Models (LCTMs) are vital for real-world applications
+but suffer high computational costs due to attention's quadratic complexity.
+Block-sparse attention mitigates this by focusing computation on critical
+regions, yet existing methods struggle with balancing accuracy and efficiency
+due to costly block importance measurements. In this paper, we introduce
+XAttention, a plug-and-play framework that dramatically accelerates
+long-context inference in Transformers models using sparse attention.
+XAttention's key innovation is the insight that the sum of antidiagonal values
+(i.e., from the lower-left to upper-right) in the attention matrix provides a
+powerful proxy for block importance. This allows for precise identification and
+pruning of non-essential blocks, resulting in high sparsity and dramatically
+accelerated inference. Across comprehensive evaluations on demanding
+long-context benchmarks-including RULER and LongBench for language, VideoMME
+for video understanding, and VBench for video generation. XAttention achieves
+accuracy comparable to full attention while delivering substantial
+computational gains. We demonstrate up to 13.5x acceleration in attention
+computation. These results underscore XAttention's ability to unlock the
+practical potential of block sparse attention, paving the way for scalable and
+efficient deployment of LCTMs in real-world applications. Code is available at
+https://github.com/mit-han-lab/x-attention.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15463v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16428v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step
-  Generator</h3>
-                    <p><strong>Authors:</strong> Yuanzhi Zhu, Xi Wang, Stéphane Lathuilière, Vicky Kalogeiton</p>
-                    <p>  Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling
-technique. Despite their remarkable results, they typically suffer from slow
-inference with several steps. In this paper, we propose Di$\mathtt{[M]}$O, a
-novel approach that distills masked diffusion models into a one-step generator.
-Di$\mathtt{[M]}$O addresses two key challenges: (1) the intractability of using
-intermediate-step information for one-step generation, which we solve through
-token-level distribution matching that optimizes model output logits by an
-'on-policy framework' with the help of an auxiliary model; and (2) the lack of
-entropy in the initial distribution, which we address through a token
-initialization strategy that injects randomness while maintaining similarity to
-teacher training distribution. We show Di$\mathtt{[M]}$O's effectiveness on
-both class-conditional and text-conditional image generation, impressively
-achieving performance competitive to multi-step teacher outputs while
-drastically reducing inference time. To our knowledge, we are the first to
-successfully achieve one-step distillation of masked diffusion models and the
-first to apply discrete distillation to text-to-image generation, opening new
-paths for efficient generative modeling.
+                    <h3>Stop Overthinking: A Survey on Efficient Reasoning for Large Language
+  Models</h3>
+                    <p><strong>Authors:</strong> Yang Sui, Yu-Neng Chuang, Guanchu Wang, Jiamu Zhang, Tianyi Zhang, Jiayi Yuan, Hongyi Liu, Andrew Wen,  Shaochen,  Zhong, Hanjie Chen, Xia Hu</p>
+                    <p>  Large Language Models (LLMs) have demonstrated remarkable capabilities in
+complex tasks. Recent advancements in Large Reasoning Models (LRMs), such as
+OpenAI o1 and DeepSeek-R1, have further improved performance in System-2
+reasoning domains like mathematics and programming by harnessing supervised
+fine-tuning (SFT) and reinforcement learning (RL) techniques to enhance the
+Chain-of-Thought (CoT) reasoning. However, while longer CoT reasoning sequences
+improve performance, they also introduce significant computational overhead due
+to verbose and redundant outputs, known as the "overthinking phenomenon". In
+this paper, we provide the first structured survey to systematically
+investigate and explore the current progress toward achieving efficient
+reasoning in LLMs. Overall, relying on the inherent mechanism of LLMs, we
+categorize existing works into several key directions: (1) model-based
+efficient reasoning, which considers optimizing full-length reasoning models
+into more concise reasoning models or directly training efficient reasoning
+models; (2) reasoning output-based efficient reasoning, which aims to
+dynamically reduce reasoning steps and length during inference; (3) input
+prompts-based efficient reasoning, which seeks to enhance reasoning efficiency
+based on input prompt properties such as difficulty or length control.
+Additionally, we introduce the use of efficient data for training reasoning
+models, explore the reasoning capabilities of small language models, and
+discuss evaluation methods and benchmarking.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15457v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16419v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>MotionStreamer: Streaming Motion Generation via Diffusion-based
-  Autoregressive Model in Causal Latent Space</h3>
-                    <p><strong>Authors:</strong> Lixing Xiao, Shunlin Lu, Huaijin Pi, Ke Fan, Liang Pan, Yueer Zhou, Ziyong Feng, Xiaowei Zhou, Sida Peng, Jingbo Wang</p>
-                    <p>  This paper addresses the challenge of text-conditioned streaming motion
-generation, which requires us to predict the next-step human pose based on
-variable-length historical motions and incoming texts. Existing methods
-struggle to achieve streaming motion generation, e.g., diffusion models are
-constrained by pre-defined motion lengths, while GPT-based methods suffer from
-delayed response and error accumulation problem due to discretized non-causal
-tokenization. To solve these problems, we propose MotionStreamer, a novel
-framework that incorporates a continuous causal latent space into a
-probabilistic autoregressive model. The continuous latents mitigate information
-loss caused by discretization and effectively reduce error accumulation during
-long-term autoregressive generation. In addition, by establishing temporal
-causal dependencies between current and historical motion latents, our model
-fully utilizes the available information to achieve accurate online motion
-decoding. Experiments show that our method outperforms existing approaches
-while offering more applications, including multi-round generation, long-term
-generation, and dynamic motion composition. Project Page:
-https://zju3dv.github.io/MotionStreamer/
+                    <h3>M3: 3D-Spatial MultiModal Memory</h3>
+                    <p><strong>Authors:</strong> Xueyan Zou, Yuchen Song, Ri-Zhao Qiu, Xuanbin Peng, Jianglong Ye, Sifei Liu, Xiaolong Wang</p>
+                    <p>  We present 3D Spatial MultiModal Memory (M3), a multimodal memory system
+designed to retain information about medium-sized static scenes through video
+sources for visual perception. By integrating 3D Gaussian Splatting techniques
+with foundation models, M3 builds a multimodal memory capable of rendering
+feature representations across granularities, encompassing a wide range of
+knowledge. In our exploration, we identify two key challenges in previous works
+on feature splatting: (1) computational constraints in storing high-dimensional
+features for each Gaussian primitive, and (2) misalignment or information loss
+between distilled features and foundation model features. To address these
+challenges, we propose M3 with key components of principal scene components and
+Gaussian memory attention, enabling efficient training and inference. To
+validate M3, we conduct comprehensive quantitative evaluations of feature
+similarity and downstream tasks, as well as qualitative visualizations to
+highlight the pixel trace of Gaussian memory attention. Our approach
+encompasses a diverse range of foundation models, including vision-language
+models (VLMs), perception models, and large multimodal and language models
+(LMMs/LLMs). Furthermore, to demonstrate real-world applicability, we deploy
+M3's feature field in indoor scenes on a quadruped robot. Notably, we claim
+that M3 is the first work to address the core compression challenges in 3D
+feature distillation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15451v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16413v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>An extensive simulation study evaluating the interaction of resampling
-  techniques across multiple causal discovery contexts</h3>
-                    <p><strong>Authors:</strong> Ritwick Banerjee, Bryan Andrews, Erich Kummerfeld</p>
-                    <p>  Despite the accelerating presence of exploratory causal analysis in modern
-science and medicine, the available non-experimental methods for validating
-causal models are not well characterized. One of the most popular methods is to
-evaluate the stability of model features after resampling the data, similar to
-resampling methods for estimating confidence intervals in statistics. Many
-aspects of this approach have received little to no attention, however, such as
-whether the choice of resampling method should depend on the sample size,
-algorithms being used, or algorithm tuning parameters. We present theoretical
-results proving that certain resampling methods closely emulate the assignment
-of specific values to algorithm tuning parameters. We also report the results
-of extensive simulation experiments, which verify the theoretical result and
-provide substantial data to aid researchers in further characterizing
-resampling in the context of causal discovery analysis. Together, the
-theoretical work and simulation results provide specific guidance on how
-resampling methods and tuning parameters should be selected in practice.
+                    <h3>A foundational derivation of quantum weak values and time-dependent
+  density functional theory</h3>
+                    <p><strong>Authors:</strong> Russell B. Thompson, Zarin Tasneem, Yves Caudano</p>
+                    <p>  The equations of time-dependent density functional theory are derived, via
+the expression for the quantum weak value, from ring polymer quantum theory
+using a symmetry between time and imaginary time. The imaginary time path
+integral formalism of Feynman, in which inverse temperature is seen to be a
+Wick rotation of time, allows one to write the equilibrium partition function
+of a quantum system in a form isomorphic with the path integral expression for
+the dynamics. Therefore the self-consistent field theory equations which are
+solutions to the equilibrium partition function are Wick rotated back into a
+set of dynamic equations, which are shown to give the formula for the quantum
+weak value. As a special case, this in turn reduces to the equations of
+time-dependent density functional theory. This first-principles derivation does
+not use the theorems of density functional theory, which are instead applied to
+guarantee equivalence with standard quantum mechanics. An expression for
+finite-temperature dynamics is also derived using the limits of the equilibrium
+equations and the ground state dynamics. This finite temperature expression
+shows that a ring polymer model for quantum particles holds for time-dependent
+systems as well as static situations. Issues arising in time-dependent density
+functional theory, such as causality, initial state dependence, and
+$v$-representability, are discussed in the context of the ring polymer
+derivation. Connections with a variety of quantum phenomena is reviewed, and a
+possible link with de Broglie-Bohm theory is mentioned.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15436v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16409v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Limits on the Ejecta Mass During the Search for Kilonovae Associated
-  with Neutron Star-Black Hole Mergers: A case study of S230518h, GW230529,
-  S230627c and the Low-Significance Candidate S240422ed</h3>
-                    <p><strong>Authors:</strong> M. Pillas, S. Antier, K. Ackley, T. Ahumada, D. Akl, L. de Almeida, S. Anand, C. Andrade, I. Andreoni, K. A. Bostroem, M. Bulla, E. Burns, T. Cabrera, S. Chang, H. Choi, B. O'Connor, M. W. Coughlin, W. Corradi, A. R. Gibbs, T. Dietrich, D. Dornic, J. -G. Ducoin, P. -A. Duverne, M. Dyer, H. -B. Eggenstein, M. Freeberg, M. Fausnaugh, W. Fong, F. Foucart, D. Frostig, N. Guessoum, V. Gupta, P. Hello, G. Hosseinzadeh, L. Hu, T. Hussenot-Desenonges, M. Im, R. Jayaraman, M. Jeong, V. Karambelkar, S. Karpov, M. Kasliwal, C. D. Kilpatrick, S. Kim, N. Kochiashvili, K. Kunnumkai, M. Lamoureux, C. U. Lee, N. Lourie, J. Lyman, F. Magnani, M. Masek, G. Mo, M. Molham, F. Navarete, D. O'Neill, M. Nicholl, A. H. Nitz, K. Noysena, G. S. H. Paek, A. Palmese, R. Poggiani, T. Pradier, O. Pyshna, Y. Rajabov, J. C. Rastinejad, D. J. Sand, P. Shawhan, M. Shrestha, R. Simcoe, S. J. Smartt, D. Steeghs, R. Stein, H. F. Stevance, M. Sun, A. Takey, A. Toivonen, D. Turpin, K. Ulaczyk, A. Wold, T. Wouters</p>
-                    <p>  Neutron star-black hole (NSBH) mergers, detectable via their
-gravitational-wave (GW) emission, are expected to produce kilonovae (KNe). Four
-NSBH candidates have been identified and followed-up by more than fifty
-instruments since the start of the fourth GW Observing Run (O4), in May 2023,
-up to July 2024; however, no confirmed associated KN has been detected. This
-study evaluates ejecta properties from multi-messenger observations to
-understand the absence of detectable KN: we use GW public information and joint
-observations taken from 05.2023 to 07.2024 (LVK, ATLAS, DECam, GECKO, GOTO,
-GRANDMA, SAGUARO, TESS, WINTER, ZTF). First, our analysis on follow-up
-observation strategies shows that, on average, more than 50% of the simulated
-KNe associated with NSBH mergers reach their peak luminosity around one day
-after merger in the $g,r,i$- bands, which is not necessarily covered for each
-NSBH GW candidate. We also analyze the trade-off between observation efficiency
-and the intrinsic properties of the KN emission, to understand the impact on
-how these constraints affect our ability to detect the KN, and underlying
-ejecta properties for each GW candidate. In particular, we can only confirm the
-kilonova was not missed for 1% of the GW230529 and S230627c sky localization
-region, given the large sky localization error of GW230529 and the large
-distance for S230627c and, their respective KN faint luminosities. More
-constraining, for S230518h, we infer the dynamical ejecta and post-merger disk
-wind ejecta $m_{dyn}, m_{wind}$ $<$ $0.03$ $M_\odot$ and the viewing angle
-$\theta>25^\circ$. Similarly, the non-astrophysical origin of S240422ed is
-likely further confirmed by the fact that we would have detected even a faint
-KN at the time and presumed distance of the S240422ed event candidate, within a
-minimum 45% credible region of the sky area, that can be larger depending on
-the KN scenario.
+                    <h3>ScalingNoise: Scaling Inference-Time Search for Generating Infinite
+  Videos</h3>
+                    <p><strong>Authors:</strong> Haolin Yang, Feilong Tang, Ming Hu, Yulong Li, Junjie Guo, Yexin Liu, Zelin Peng, Junjun He, Zongyuan Ge, Imran Razzak</p>
+                    <p>  Video diffusion models (VDMs) facilitate the generation of high-quality
+videos, with current research predominantly concentrated on scaling efforts
+during training through improvements in data quality, computational resources,
+and model complexity. However, inference-time scaling has received less
+attention, with most approaches restricting models to a single generation
+attempt. Recent studies have uncovered the existence of "golden noises" that
+can enhance video quality during generation. Building on this, we find that
+guiding the scaling inference-time search of VDMs to identify better noise
+candidates not only evaluates the quality of the frames generated in the
+current step but also preserves the high-level object features by referencing
+the anchor frame from previous multi-chunks, thereby delivering long-term
+value. Our analysis reveals that diffusion models inherently possess flexible
+adjustments of computation by varying denoising steps, and even a one-step
+denoising approach, when guided by a reward signal, yields significant
+long-term benefits. Based on the observation, we proposeScalingNoise, a
+plug-and-play inference-time search strategy that identifies golden initial
+noises for the diffusion sampling process to improve global content consistency
+and visual diversity. Specifically, we perform one-step denoising to convert
+initial noises into a clip and subsequently evaluate its long-term value,
+leveraging a reward model anchored by previously generated content. Moreover,
+to preserve diversity, we sample candidates from a tilted noise distribution
+that up-weights promising noises. In this way, ScalingNoise significantly
+reduces noise-induced errors, ensuring more coherent and spatiotemporally
+consistent video generation. Extensive experiments on benchmark datasets
+demonstrate that the proposed ScalingNoise effectively improves long video
+generation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15422v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16400v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>LIFT: Latent Implicit Functions for Task- and Data-Agnostic Encoding</h3>
-                    <p><strong>Authors:</strong> Amirhossein Kazerouni, Soroush Mehraban, Michael Brudno, Babak Taati</p>
-                    <p>  Implicit Neural Representations (INRs) are proving to be a powerful paradigm
-in unifying task modeling across diverse data domains, offering key advantages
-such as memory efficiency and resolution independence. Conventional deep
-learning models are typically modality-dependent, often requiring custom
-architectures and objectives for different types of signals. However, existing
-INR frameworks frequently rely on global latent vectors or exhibit
-computational inefficiencies that limit their broader applicability. We
-introduce LIFT, a novel, high-performance framework that addresses these
-challenges by capturing multiscale information through meta-learning. LIFT
-leverages multiple parallel localized implicit functions alongside a
-hierarchical latent generator to produce unified latent representations that
-span local, intermediate, and global features. This architecture facilitates
-smooth transitions across local regions, enhancing expressivity while
-maintaining inference efficiency. Additionally, we introduce ReLIFT, an
-enhanced variant of LIFT that incorporates residual connections and expressive
-frequency encodings. With this straightforward approach, ReLIFT effectively
-addresses the convergence-capacity gap found in comparable methods, providing
-an efficient yet powerful solution to improve capacity and speed up
-convergence. Empirical results show that LIFT achieves state-of-the-art (SOTA)
-performance in generative modeling and classification tasks, with notable
-reductions in computational costs. Moreover, in single-task settings, the
-streamlined ReLIFT architecture proves effective in signal representations and
-inverse problem tasks.
+                    <h3>Scale-wise Distillation of Diffusion Models</h3>
+                    <p><strong>Authors:</strong> Nikita Starodubcev, Denis Kuznedelev, Artem Babenko, Dmitry Baranchuk</p>
+                    <p>  We present SwD, a scale-wise distillation framework for diffusion models
+(DMs), which effectively employs next-scale prediction ideas for
+diffusion-based few-step generators. In more detail, SwD is inspired by the
+recent insights relating diffusion processes to the implicit spectral
+autoregression. We suppose that DMs can initiate generation at lower data
+resolutions and gradually upscale the samples at each denoising step without
+loss in performance while significantly reducing computational costs. SwD
+naturally integrates this idea into existing diffusion distillation methods
+based on distribution matching. Also, we enrich the family of distribution
+matching approaches by introducing a novel patch loss enforcing finer-grained
+similarity to the target distribution. When applied to state-of-the-art
+text-to-image diffusion models, SwD approaches the inference times of two full
+resolution steps and significantly outperforms the counterparts under the same
+computation budget, as evidenced by automated metrics and human preference
+studies.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15420v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16397v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Automated Processing of eXplainable Artificial Intelligence Outputs in
-  Deep Learning Models for Fault Diagnostics of Large Infrastructures</h3>
-                    <p><strong>Authors:</strong> Giovanni Floreale, Piero Baraldi, Enrico Zio, Olga Fink</p>
-                    <p>  Deep Learning (DL) models processing images to recognize the health state of
-large infrastructure components can exhibit biases and rely on non-causal
-shortcuts. eXplainable Artificial Intelligence (XAI) can address these issues
-but manually analyzing explanations generated by XAI techniques is
-time-consuming and prone to errors. This work proposes a novel framework that
-combines post-hoc explanations with semi-supervised learning to automatically
-identify anomalous explanations that deviate from those of correctly classified
-images and may therefore indicate model abnormal behaviors. This significantly
-reduces the workload for maintenance decision-makers, who only need to manually
-reclassify images flagged as having anomalous explanations. The proposed
-framework is applied to drone-collected images of insulator shells for power
-grid infrastructure monitoring, considering two different Convolutional Neural
-Networks (CNNs), GradCAM explanations and Deep Semi-Supervised Anomaly
-Detection. The average classification accuracy on two faulty classes is
-improved by 8% and maintenance operators are required to manually reclassify
-only 15% of the images. We compare the proposed framework with a
-state-of-the-art approach based on the faithfulness metric: the experimental
-results obtained demonstrate that the proposed framework consistently achieves
-F_1 scores larger than those of the faithfulness-based approach. Additionally,
-the proposed framework successfully identifies correct classifications that
-result from non-causal shortcuts, such as the presence of ID tags printed on
-insulator shells.
+                    <h3>The impact of baryons on the sparsity of simulated galaxy clusters from
+  The Three Hundred Project</h3>
+                    <p><strong>Authors:</strong> P. S. Corasaniti, T. R. G. Richardson, S. Ettori, M. De Petris, E. Rasia, W. Cui, G. Yepes, G. Gianfagna, A. M. C. Le Bun, Y. Rasera</p>
+                    <p>  Measurements of the sparsity of galaxy clusters can be used to probe the
+cosmological information encoded in the host dark matter halo profile, and
+infer constraints on the cosmological model parameters. Key to the success of
+these analyses is the control of potential sources of systematic uncertainty.
+As an example, the presence of baryons can alter the cluster sparsity with
+respect to predictions from N-body simulations. Similarly, a radial dependent
+mass bias, as in the case of masses inferred under the hydrostatic equilibrium
+(HE) hypothesis, can affect sparsity estimates. We examine the imprint of
+baryonic processes on the sparsity statistics. Then, we investigate the
+relation between cluster sparsities and gas mass fraction. Finally, we perform
+a study of the impact of HE mass bias on sparsity measurements and the
+implication on cosmological parameter inference analyses. We use catalogues of
+simulated galaxy clusters from The Three Hundred project and run a comparative
+analysis of the sparsity of clusters from N-body/hydro simulations implementing
+different feedback model scenarios. Sparsities which probe the mass profile
+across a large radial range are affected by the presence of baryons in a way
+that is particularly sensitive to astrophysical feedback, whereas those probing
+exclusively external cluster regions are less affected. In the former case, we
+find the sparsities to be moderately correlated with measurements of the gas
+fraction in the inner cluster regions. We infer constraints on $S_8$ using
+synthetic average sparsity measurements generated to evaluate the impact of
+baryons, selection effects and HE bias. In the case of multiple sparsities
+these lead to highly bias results. Hence, we calibrate linear bias models that
+enable us to correct for these effects and recover unbiased constraints that
+are significantly tighter than those inferred from single sparsity analyses.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15415v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16379v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Loophole-free argument for physicality of electromagnetic potential from
-  causal structure of flux quantization</h3>
-                    <p><strong>Authors:</strong> Konrad Schlichtholz, Marcin Markiewicz</p>
-                    <p>  Recent work by Vaidman [Phys. Rev. A 86,040101 (2012)] showed that
-Aharonov-Bohm effect can be explained in terms of local fields, thus
-effectively restating an old problem of physicality of potentials. In this
-work, we propose an argument demonstrating the physicality of electromagnetic
-potential (upon the assumption of locality) based on the causal structure in
-flux quantization setup. Crucially, we discuss the fundamental difference
-between the considered setup and the Aharonov-Bohm experiment that allows for
-avoiding Vaidman's loophole in our scenario.
+                    <h3>CaKE: Circuit-aware Editing Enables Generalizable Knowledge Learners</h3>
+                    <p><strong>Authors:</strong> Yunzhi Yao, Jizhan Fang, Jia-Chen Gu, Ningyu Zhang, Shumin Deng, Huajun Chen, Nanyun Peng</p>
+                    <p>  Knowledge Editing (KE) enables the modification of outdated or incorrect
+information in large language models (LLMs). While existing KE methods can
+update isolated facts, they struggle to generalize these updates to multi-hop
+reasoning tasks that depend on the modified knowledge. Through an analysis of
+reasoning circuits -- the neural pathways LLMs use for knowledge-based
+inference, we observe that current layer-localized KE approaches, such as MEMIT
+and WISE, which edit only single or a few model layers, struggle to effectively
+incorporate updated information into these reasoning pathways. To address this
+limitation, we propose CaKE (Circuit-aware Knowledge Editing), a novel method
+that enables more effective integration of updated knowledge in LLMs. CaKE
+leverages strategically curated data, guided by our circuits-based analysis,
+that enforces the model to utilize the modified knowledge, stimulating the
+model to develop appropriate reasoning circuits for newly integrated knowledge.
+Experimental results show that CaKE enables more accurate and consistent use of
+updated knowledge across related reasoning tasks, leading to an average of 20%
+improvement in multi-hop reasoning accuracy on MQuAKE dataset compared to
+existing KE methods. We release the code and data in
+https://github.com/zjunlp/CaKE.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15410v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16356v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Making Online Polls More Accurate: Statistical Methods Explained</h3>
-                    <p><strong>Authors:</strong> Alberto Arletti, Maria Letizia Tanturri, Omar Paccagnella</p>
-                    <p>  Online data has the potential to transform how researchers and companies
-produce election forecasts. Social media surveys, online panels and even
-comments scraped from the internet can offer valuable insights into political
-preferences. However, such data is often affected by significant selection
-bias, as online respondents may not be representative of the overall
-population. At the same time, traditional data collection methods are becoming
-increasingly cost-prohibitive. In this scenario, scientists need instruments to
-be able to draw the most accurate estimate possible from samples drawn online.
-This paper provides an introduction to key statistical methods for mitigating
-bias and improving inference in such cases, with a focus on electoral polling.
-Specifically, it presents the main statistical techniques, categorized into
-weighting, modeling and other approaches. It also offers practical
-recommendations for drawing estimates with measures of uncertainty. Designed
-for both researchers and industry practitioners, this introduction takes a
-hands-on approach, with code available for implementing the main methods.
+                    <h3>DEMNUni: the Sunyaev-Zel'dovich effect in the presence of massive
+  neutrinos and dynamical dark energy</h3>
+                    <p><strong>Authors:</strong> Davide Luchina, Mauro Roncarelli, Matteo Calabrese, Giulio Fabbian, Carmelita Carbone</p>
+                    <p>  In recent years, the study of secondary anisotropies in the Cosmic Microwave
+Background has become a fundamental instrument to test our understanding of
+Cosmology and Astrophysics. Using a set of lightcones produced with the ``Dark
+Energy and Massive Neutrino Universe'' $N$-body simulations we study how
+different dark energy models and neutrino masses impact the properties of the
+Sunyaev-Zel'dovich (SZ) effects, focusing on the signal arising from galaxy
+clusters and groups. We analyse the distribution of values, Compton-$y$
+parameter for the thermal SZ effect and $\Delta T/T$ for the kinematic SZ
+effect, and study their angular power spectra. We find that the distribution of
+logarithmic Compton parameter can be fitted with a skewed Gaussian, with a mean
+that, at fixed dark energy model, decreases linearly with an approximate slope
+of $10 f_\nu$. Regarding the power spectrum of the thermal SZ effect, we find
+that an increase in $\sum {m_\nu}$ is observed as a power-law scaling with
+respect to $\sigma_8^{\mathrm{cb}}$, with exponents ranging from 7.2 to 8.2. We
+also find that four cosmological models, one with $\sum {m_\nu} = 0.16$ eV and
+three with $\sum {m_\nu} = 0.32$ eV, fit equally well the Planck data for the
+Compton-$y$. For all the \texttt{DEMNUni} models we forecast the cumulative
+signal-to-noise for thermal SZ observations with the LAT instrument of Simons
+Observatory; furthermore, we compute a tailored $\chi_\mathrm{SNR}^2$ estimator
+to infer if they can be distinguished from the reference $\Lambda$CDM. We also
+provide estimates for the power spectrum of the cluster component of the
+kinematic SZ effect, in all the different cosmological scenarios.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15395v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16355v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
                 <li>
-                    <h3>Orbital eccentricity in a neutron star - black hole binary</h3>
-                    <p><strong>Authors:</strong> Gonzalo Morras, Geraint Pratten, Patricia Schmidt</p>
-                    <p>  The observation of gravitational waves from merging black holes and neutron
-stars provides a unique opportunity to discern information about their
-astrophysical environment. Two signatures that are considered powerful tracers
-to distinguish between different binary formation channels are
-general-relativistic spin-induced orbital precession and orbital eccentricity.
-Both effects leave characteristic imprints in the gravitational-wave signal
-that can be extracted from observations. To date, neither precession nor
-eccentricity have been discerned in neutron star - black hole binaries. Here we
-report the first measurement of orbital eccentricity in a neutron star - black
-hole binary. Using, for the first time, a waveform model that incorporates
-precession and eccentricity, we perform Bayesian inference on the event
-GW200105 and infer a median orbital eccentricity of $e_{20}\sim 0.145$ at an
-orbital period of $0.1$s, excluding zero at more than $99\%$ confidence. We
-find inconclusive evidence for the presence of precession, consistent with
-previous, non-eccentric results. Our result implies a fraction of these
-binaries will exhibit orbital eccentricity even at small separations,
-suggesting formation through mechanisms involving dynamical interactions beyond
-isolated binary evolution. Future observations will reveal the contribution of
-eccentric neutron star - black hole binaries to the total merger rate across
-cosmic time.
+                    <h3>Hypercyclicity of Weighted shifts on weighted Bergman and Dirichlet
+  spaces</h3>
+                    <p><strong>Authors:</strong> Bibhash Kumar Das, Aneesh Mundayadan</p>
+                    <p>  Let $B_w$ and $F_w$ denote, respectively, the weighted backward and forward
+shift operators defined on the weighted Bergman space $A^p_{\phi}$, or the
+weighted Dirichlet space ${D}^p_{\phi}$ of the unit disc, where the weight
+function $\phi(z)$ is mostly radial. We first obtain sufficient conditions for
+$B_w$ and $F_w$ to be continuous on these spaces. For radial weights, we derive
+norm estimates for coefficient functionals on $A^p_{\phi}$ and $D^p_{\phi}$,
+and using those estimates we infer when the weighted shifts or their adjoints
+are hypercyclic. We also deal with a non-radial case.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.15393v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/19/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.16354v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/20/2025</p>
                 </li>
             </ul>
         </section>
