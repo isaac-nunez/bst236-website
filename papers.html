@@ -117,256 +117,276 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Dancing with Critiques: Enhancing LLM Reasoning with Stepwise Natural
-  Language Self-Critique</h3>
-                    <p><strong>Authors:</strong> Yansi Li, Jiahao Xu, Tian Liang, Xingyu Chen, Zhiwei He, Qiuzhi Liu, Rui Wang, Zhuosheng Zhang, Zhaopeng Tu, Haitao Mi, Dong Yu</p>
-                    <p>  Enhancing the reasoning capabilities of large language models (LLMs),
-particularly for complex tasks requiring multi-step logical deductions, remains
-a significant challenge. Traditional inference time scaling methods utilize
-scalar reward signals from process reward models to evaluate candidate
-reasoning steps, but these scalar rewards lack the nuanced qualitative
-information essential for understanding and justifying each step. In this
-paper, we propose a novel inference-time scaling approach -- stepwise natural
-language self-critique (PANEL), which employs self-generated natural language
-critiques as feedback to guide the step-level search process. By generating
-rich, human-readable critiques for each candidate reasoning step, PANEL retains
-essential qualitative information, facilitating better-informed decision-making
-during inference. This approach bypasses the need for task-specific verifiers
-and the associated training overhead, making it broadly applicable across
-diverse tasks. Experimental results on challenging reasoning benchmarks,
-including AIME and GPQA, demonstrate that PANEL significantly enhances
-reasoning performance, outperforming traditional scalar reward-based methods.
-Our code is available at https://github.com/puddingyeah/PANEL to support and
-encourage future research in this promising field.
+                    <h3>Equivariant Image Modeling</h3>
+                    <p><strong>Authors:</strong> Ruixiao Dong, Mengde Xu, Zigang Geng, Li Li, Han Hu, Shuyang Gu</p>
+                    <p>  Current generative models, such as autoregressive and diffusion approaches,
+decompose high-dimensional data distribution learning into a series of simpler
+subtasks. However, inherent conflicts arise during the joint optimization of
+these subtasks, and existing solutions fail to resolve such conflicts without
+sacrificing efficiency or scalability. We propose a novel equivariant image
+modeling framework that inherently aligns optimization targets across subtasks
+by leveraging the translation invariance of natural visual signals. Our method
+introduces (1) column-wise tokenization which enhances translational symmetry
+along the horizontal axis, and (2) windowed causal attention which enforces
+consistent contextual relationships across positions. Evaluated on
+class-conditioned ImageNet generation at 256x256 resolution, our approach
+achieves performance comparable to state-of-the-art AR models while using fewer
+computational resources. Systematic analysis demonstrates that enhanced
+equivariance reduces inter-task conflicts, significantly improving zero-shot
+generalization and enabling ultra-long image synthesis. This work establishes
+the first framework for task-aligned decomposition in generative modeling,
+offering insights into efficient parameter sharing and conflict-free
+optimization. The code and models are publicly available at
+https://github.com/drx-code/EquivariantModeling.
 </p>
-                    <p><a href="http://arxiv.org/abs/2503.17363v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18948v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Gumbel-Softmax Flow Matching with Straight-Through Guidance for
-  Controllable Biological Sequence Generation</h3>
-                    <p><strong>Authors:</strong> Sophia Tang, Yinuo Zhang, Alexander Tong, Pranam Chatterjee</p>
-                    <p>  Flow matching in the continuous simplex has emerged as a promising strategy
-for DNA sequence design, but struggles to scale to higher simplex dimensions
-required for peptide and protein generation. We introduce Gumbel-Softmax Flow
-and Score Matching, a generative framework on the simplex based on a novel
-Gumbel-Softmax interpolant with a time-dependent temperature. Using this
-interpolant, we introduce Gumbel-Softmax Flow Matching by deriving a
-parameterized velocity field that transports from smooth categorical
-distributions to distributions concentrated at a single vertex of the simplex.
-We alternatively present Gumbel-Softmax Score Matching which learns to regress
-the gradient of the probability density. Our framework enables high-quality,
-diverse generation and scales efficiently to higher-dimensional simplices. To
-enable training-free guidance, we propose Straight-Through Guided Flows
-(STGFlow), a classifier-based guidance method that leverages straight-through
-estimators to steer the unconditional velocity field toward optimal vertices of
-the simplex. STGFlow enables efficient inference-time guidance using
-classifiers pre-trained on clean sequences, and can be used with any discrete
-flow method. Together, these components form a robust framework for
-controllable de novo sequence generation. We demonstrate state-of-the-art
-performance in conditional DNA promoter design, sequence-only protein
-generation, and target-binding peptide design for rare disease treatment.
+                    <h3>DINO in the Room: Leveraging 2D Foundation Models for 3D Segmentation</h3>
+                    <p><strong>Authors:</strong> Karim Abou Zeid, Kadir Yilmaz, Daan de Geus, Alexander Hermans, David Adrian, Timm Linder, Bastian Leibe</p>
+                    <p>  Vision foundation models (VFMs) trained on large-scale image datasets provide
+high-quality features that have significantly advanced 2D visual recognition.
+However, their potential in 3D vision remains largely untapped, despite the
+common availability of 2D images alongside 3D point cloud datasets. While
+significant research has been dedicated to 2D-3D fusion, recent
+state-of-the-art 3D methods predominantly focus on 3D data, leaving the
+integration of VFMs into 3D models underexplored. In this work, we challenge
+this trend by introducing DITR, a simple yet effective approach that extracts
+2D foundation model features, projects them to 3D, and finally injects them
+into a 3D point cloud segmentation model. DITR achieves state-of-the-art
+results on both indoor and outdoor 3D semantic segmentation benchmarks. To
+enable the use of VFMs even when images are unavailable during inference, we
+further propose to distill 2D foundation models into a 3D backbone as a
+pretraining task. By initializing the 3D backbone with knowledge distilled from
+2D VFMs, we create a strong basis for downstream 3D segmentation tasks,
+ultimately boosting performance across various datasets.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17361v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18944v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Position: Interactive Generative Video as Next-Generation Game Engine</h3>
-                    <p><strong>Authors:</strong> Jiwen Yu, Yiran Qin, Haoxuan Che, Quande Liu, Xintao Wang, Pengfei Wan, Di Zhang, Xihui Liu</p>
-                    <p>  Modern game development faces significant challenges in creativity and cost
-due to predetermined content in traditional game engines. Recent breakthroughs
-in video generation models, capable of synthesizing realistic and interactive
-virtual environments, present an opportunity to revolutionize game creation. In
-this position paper, we propose Interactive Generative Video (IGV) as the
-foundation for Generative Game Engines (GGE), enabling unlimited novel content
-generation in next-generation gaming. GGE leverages IGV's unique strengths in
-unlimited high-quality content synthesis, physics-aware world modeling,
-user-controlled interactivity, long-term memory capabilities, and causal
-reasoning. We present a comprehensive framework detailing GGE's core modules
-and a hierarchical maturity roadmap (L0-L4) to guide its evolution. Our work
-charts a new course for game development in the AI era, envisioning a future
-where AI-powered generative systems fundamentally reshape how games are created
-and experienced.
+                    <h3>Video-T1: Test-Time Scaling for Video Generation</h3>
+                    <p><strong>Authors:</strong> Fangfu Liu, Hanyang Wang, Yimo Cai, Kaiyan Zhang, Xiaohang Zhan, Yueqi Duan</p>
+                    <p>  With the scale capability of increasing training data, model size, and
+computational cost, video generation has achieved impressive results in digital
+creation, enabling users to express creativity across various domains.
+Recently, researchers in Large Language Models (LLMs) have expanded the scaling
+to test-time, which can significantly improve LLM performance by using more
+inference-time computation. Instead of scaling up video foundation models
+through expensive training costs, we explore the power of Test-Time Scaling
+(TTS) in video generation, aiming to answer the question: if a video generation
+model is allowed to use non-trivial amount of inference-time compute, how much
+can it improve generation quality given a challenging text prompt. In this
+work, we reinterpret the test-time scaling of video generation as a searching
+problem to sample better trajectories from Gaussian noise space to the target
+video distribution. Specifically, we build the search space with test-time
+verifiers to provide feedback and heuristic algorithms to guide searching
+process. Given a text prompt, we first explore an intuitive linear search
+strategy by increasing noise candidates at inference time. As full-step
+denoising all frames simultaneously requires heavy test-time computation costs,
+we further design a more efficient TTS method for video generation called
+Tree-of-Frames (ToF) that adaptively expands and prunes video branches in an
+autoregressive manner. Extensive experiments on text-conditioned video
+generation benchmarks demonstrate that increasing test-time compute
+consistently leads to significant improvements in the quality of videos.
+Project page: https://liuff19.github.io/Video-T1
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17359v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18942v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Dereflection Any Image with Diffusion Priors and Diversified Data</h3>
-                    <p><strong>Authors:</strong> Jichen Hu, Chen Yang, Zanwei Zhou, Jiemin Fang, Xiaokang Yang, Qi Tian, Wei Shen</p>
-                    <p>  Reflection removal of a single image remains a highly challenging task due to
-the complex entanglement between target scenes and unwanted reflections.
-Despite significant progress, existing methods are hindered by the scarcity of
-high-quality, diverse data and insufficient restoration priors, resulting in
-limited generalization across various real-world scenarios. In this paper, we
-propose Dereflection Any Image, a comprehensive solution with an efficient data
-preparation pipeline and a generalizable model for robust reflection removal.
-First, we introduce a dataset named Diverse Reflection Removal (DRR) created by
-randomly rotating reflective mediums in target scenes, enabling variation of
-reflection angles and intensities, and setting a new benchmark in scale,
-quality, and diversity. Second, we propose a diffusion-based framework with
-one-step diffusion for deterministic outputs and fast inference. To ensure
-stable learning, we design a three-stage progressive training strategy,
-including reflection-invariant finetuning to encourage consistent outputs
-across varying reflection patterns that characterize our dataset. Extensive
-experiments show that our method achieves SOTA performance on both common
-benchmarks and challenging in-the-wild images, showing superior generalization
-across diverse real-world scenes.
+                    <h3>Exploring Training and Inference Scaling Laws in Generative Retrieval</h3>
+                    <p><strong>Authors:</strong> Hongru Cai, Yongqi Li, Ruifeng Yuan, Wenjie Wang, Zhen Zhang, Wenjie Li, Tat-Seng Chua</p>
+                    <p>  Generative retrieval has emerged as a novel paradigm that leverages large
+language models (LLMs) to autoregressively generate document identifiers.
+Although promising, the mechanisms that underpin its performance and
+scalability remain largely unclear. We conduct a systematic investigation of
+training and inference scaling laws in generative retrieval, exploring how
+model size, training data scale, and inference-time compute jointly influence
+retrieval performance. To address the lack of suitable metrics, we propose a
+novel evaluation measure inspired by contrastive entropy and generation loss,
+providing a continuous performance signal that enables robust comparisons
+across diverse generative retrieval methods. Our experiments show that
+n-gram-based methods demonstrate strong alignment with both training and
+inference scaling laws, especially when paired with larger LLMs. Furthermore,
+increasing inference computation yields substantial performance gains,
+revealing that generative retrieval can significantly benefit from higher
+compute budgets at inference. Across these settings, LLaMA models consistently
+outperform T5 models, suggesting a particular advantage for larger decoder-only
+models in generative retrieval. Taken together, our findings underscore that
+model sizes, data availability, and inference computation interact to unlock
+the full potential of generative retrieval, offering new insights for designing
+and optimizing future systems.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17347v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18941v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Align Your Rhythm: Generating Highly Aligned Dance Poses with
-  Gating-Enhanced Rhythm-Aware Feature Representation</h3>
-                    <p><strong>Authors:</strong> Congyi Fan, Jian Guan, Xuanjia Zhao, Dongli Xu, Youtian Lin, Tong Ye, Pengming Feng, Haiwei Pan</p>
-                    <p>  Automatically generating natural, diverse and rhythmic human dance movements
-driven by music is vital for virtual reality and film industries. However,
-generating dance that naturally follows music remains a challenge, as existing
-methods lack proper beat alignment and exhibit unnatural motion dynamics. In
-this paper, we propose Danceba, a novel framework that leverages gating
-mechanism to enhance rhythm-aware feature representation for music-driven dance
-generation, which achieves highly aligned dance poses with enhanced rhythmic
-sensitivity. Specifically, we introduce Phase-Based Rhythm Extraction (PRE) to
-precisely extract rhythmic information from musical phase data, capitalizing on
-the intrinsic periodicity and temporal structures of music. Additionally, we
-propose Temporal-Gated Causal Attention (TGCA) to focus on global rhythmic
-features, ensuring that dance movements closely follow the musical rhythm. We
-also introduce Parallel Mamba Motion Modeling (PMMM) architecture to separately
-model upper and lower body motions along with musical features, thereby
-improving the naturalness and diversity of generated dance movements. Extensive
-experiments confirm that Danceba outperforms state-of-the-art methods,
-achieving significantly better rhythmic alignment and motion diversity. Project
-page: https://danceba.github.io/ .
+                    <h3>Training-free Diffusion Acceleration with Bottleneck Sampling</h3>
+                    <p><strong>Authors:</strong> Ye Tian, Xin Xia, Yuxi Ren, Shanchuan Lin, Xing Wang, Xuefeng Xiao, Yunhai Tong, Ling Yang, Bin Cui</p>
+                    <p>  Diffusion models have demonstrated remarkable capabilities in visual content
+generation but remain challenging to deploy due to their high computational
+cost during inference. This computational burden primarily arises from the
+quadratic complexity of self-attention with respect to image or video
+resolution. While existing acceleration methods often compromise output quality
+or necessitate costly retraining, we observe that most diffusion models are
+pre-trained at lower resolutions, presenting an opportunity to exploit these
+low-resolution priors for more efficient inference without degrading
+performance. In this work, we introduce Bottleneck Sampling, a training-free
+framework that leverages low-resolution priors to reduce computational overhead
+while preserving output fidelity. Bottleneck Sampling follows a high-low-high
+denoising workflow: it performs high-resolution denoising in the initial and
+final stages while operating at lower resolutions in intermediate steps. To
+mitigate aliasing and blurring artifacts, we further refine the resolution
+transition points and adaptively shift the denoising timesteps at each stage.
+We evaluate Bottleneck Sampling on both image and video generation tasks, where
+extensive experiments demonstrate that it accelerates inference by up to
+3$\times$ for image generation and 2.5$\times$ for video generation, all while
+maintaining output quality comparable to the standard full-resolution sampling
+process across multiple evaluation metrics. Code is available at:
+https://github.com/tyfeld/Bottleneck-Sampling
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17340v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18940v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Pow3R: Empowering Unconstrained 3D Reconstruction with Camera and Scene
-  Priors</h3>
-                    <p><strong>Authors:</strong> Wonbong Jang, Philippe Weinzaepfel, Vincent Leroy, Lourdes Agapito, Jerome Revaud</p>
-                    <p>  We present Pow3r, a novel large 3D vision regression model that is highly
-versatile in the input modalities it accepts. Unlike previous feed-forward
-models that lack any mechanism to exploit known camera or scene priors at test
-time, Pow3r incorporates any combination of auxiliary information such as
-intrinsics, relative pose, dense or sparse depth, alongside input images,
-within a single network. Building upon the recent DUSt3R paradigm, a
-transformer-based architecture that leverages powerful pre-training, our
-lightweight and versatile conditioning acts as additional guidance for the
-network to predict more accurate estimates when auxiliary information is
-available. During training we feed the model with random subsets of modalities
-at each iteration, which enables the model to operate under different levels of
-known priors at test time. This in turn opens up new capabilities, such as
-performing inference in native image resolution, or point-cloud completion. Our
-experiments on 3D reconstruction, depth completion, multi-view depth
-prediction, multi-view stereo, and multi-view pose estimation tasks yield
-state-of-the-art results and confirm the effectiveness of Pow3r at exploiting
-all available information. The project webpage is
-https://europe.naverlabs.com/pow3r.
+                    <h3>Video SimpleQA: Towards Factuality Evaluation in Large Video Language
+  Models</h3>
+                    <p><strong>Authors:</strong> Meng Cao, Pengfei Hu, Yingyao Wang, Jihao Gu, Haoran Tang, Haoze Zhao, Jiahua Dong, Wangbo Yu, Ge Zhang, Ian Reid, Xiaodan Liang</p>
+                    <p>  Recent advancements in Large Video Language Models (LVLMs) have highlighted
+their potential for multi-modal understanding, yet evaluating their factual
+grounding in video contexts remains a critical unsolved challenge. To address
+this gap, we introduce Video SimpleQA, the first comprehensive benchmark
+tailored for factuality evaluation of LVLMs. Our work distinguishes from
+existing video benchmarks through the following key features: 1) Knowledge
+required: demanding integration of external knowledge beyond the explicit
+narrative; 2) Fact-seeking question: targeting objective, undisputed events or
+relationships, avoiding subjective interpretation; 3) Definitive & short-form
+answer: Answers are crafted as unambiguous and definitively correct in a short
+format, enabling automated evaluation through LLM-as-a-judge frameworks with
+minimal scoring variance; 4) External-source verified: All annotations undergo
+rigorous validation against authoritative external references to ensure the
+reliability; 5) Temporal reasoning required: The annotated question types
+encompass both static single-frame understanding and dynamic temporal
+reasoning, explicitly evaluating LVLMs factuality under the long-context
+dependencies. We extensively evaluate 41 state-of-the-art LVLMs and summarize
+key findings as follows: 1) Current LVLMs exhibit notable deficiencies in
+factual adherence, particularly for open-source models. The best-performing
+model Gemini-1.5-Pro achieves merely an F-score of 54.4%; 2) Test-time compute
+paradigms show insignificant performance gains, revealing fundamental
+constraints for enhancing factuality through post-hoc computation; 3)
+Retrieval-Augmented Generation demonstrates consistent improvements at the cost
+of additional inference time overhead, presenting a critical
+efficiency-performance trade-off.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17316v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18923v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Numerical Investigation of Preferential Flow Paths in Enzymatically
-  Induced Calcite Precipitation supported by Bayesian Model Analysis</h3>
-                    <p><strong>Authors:</strong> Rebecca Kohlhaas, Johannes Hommel, Felix Weinhardt, Holger Class, Sergey Oladyshkin, Bernd Flemisch</p>
-                    <p>  The usability of enzymatically induced calcium carbonate precipitation (EICP)
-as a method for altering porous-media properties, soil stabilization, or
-biocementation depends on our ability to predict the spatial distribution of
-the precipitated calcium carbonate in porous media. While current REV-scale
-models are able to reproduce the main features of laboratory experiments, they
-neglect effects like the formation of preferential flow paths and the
-appearance of multiple polymorphs of calcium carbonate with differing
-properties. We show that extending an existing EICP model by the conceptual
-assumption of a mobile precipitate, amorphous calcium carbonate (ACC), allows
-for the formation of preferential flow paths when the initial porosity is
-heterogeneous. We apply sensitivity analysis and Bayesian inference to gain an
-understanding of the influence of characteristic parameters of ACC that are
-uncertain or unknown and compare two variations of the model based on different
-formulations of the ACC detachment term to analyse the plausibility of our
-hypothesis. An arbitrary Polynomial Chaos (aPC) surrogate model is trained
-based on the full model and used to reduce the computational cost of this
-study.
+                    <h3>Causal Links Between Anthropogenic Emissions and Air Pollution Dynamics
+  in Delhi</h3>
+                    <p><strong>Authors:</strong> Sourish Das, Sudeep Shukla, Alka Yadav, Anirban Chakraborti</p>
+                    <p>  Air pollution poses significant health and environmental challenges,
+particularly in rapidly urbanizing regions. Delhi-National Capital Region
+experiences air pollution episodes due to complex interactions between
+anthropogenic emissions and meteorological conditions. Understanding the causal
+drivers of key pollutants such as $PM_{2.5}$ and ground $O_3$ is crucial for
+developing effective mitigation strategies. This study investigates the causal
+links of anthropogenic emissions on $PM_{2.5}$ and $O_3$ concentrations using
+predictive modeling and causal inference techniques. Integrating
+high-resolution air quality data from Jan 2018 to Aug 2023 across 32 monitoring
+stations, we develop predictive regression models that incorporate
+meteorological variables (temperature and relative humidity), pollutant
+concentrations ($NO_2, SO_2, CO$), and seasonal harmonic components to capture
+both diurnal and annual cycles. Here, we show that reductions in anthropogenic
+emissions lead to significant decreases in $PM_{2.5}$ levels, whereas their
+effect on $O_3$ remains marginal and statistically insignificant. To address
+spatial heterogeneity, we employ Gaussian Process modeling. Further, we use
+Granger causality analysis and counterfactual simulation to establish direct
+causal links. Validation using real-world data from the COVID-19 lockdown
+confirms that reduced emissions led to a substantial drop in $PM_{2.5}$ but
+only a slight, insignificant change in $O_3$. The findings highlight the
+necessity of targeted emission reduction policies while emphasizing the need
+for integrated strategies addressing both particulate and ozone pollution.
+These insights are crucial for policymakers designing air pollution
+interventions in other megacities, and offer a scalable methodology for
+tackling complex urban air pollution through data-driven decision-making.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17314v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18912v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Linear sigma model with quarks and Polyakov loop in rotation: phase
-  diagrams, Tolman-Ehrenfest law and mechanical properties</h3>
-                    <p><strong>Authors:</strong> Pracheta Singha, Sergiu Busuioc, Victor E. Ambrus, Maxim N. Chernodub</p>
-                    <p>  We study the effect of rotation on the confining and chiral properties of QCD
-using the Polyakov-enhanced linear sigma model coupled to quarks. Working in
-the homogeneous approximation, we obtain the phase diagram at finite
-temperature, baryon density and angular frequency, taking into account the
-causality constraint enforced by the spectral boundary conditions at a
-cylindrical surface. We explicitly address various limits with respect to
-system size, angular frequency and chemical potential. We demonstrate that, in
-this model, the critical temperatures of both transitions diminish in response
-to the increasing rotation, being in contradiction with the first-principle
-lattice results. In the limit of large volume, the thermodynamics of the model
-is consistent with the Tolman-Ehrenfest law. We also compute the mechanical
-characteristics of rotating plasma such as the moment of inertia and the $K_4$
-shape coefficient.
+                    <h3>FFN Fusion: Rethinking Sequential Computation in Large Language Models</h3>
+                    <p><strong>Authors:</strong> Akhiad Bercovich, Mohammad Dabbah, Omri Puny, Ido Galil, Amnon Geifman, Yonatan Geifman, Izhak Golan, Ehud Karpas, Itay Levy, Zach Moshe, Najeeb Nabwani, Tomer Ronen, Itamar Schen, Elad Segal, Ido Shahaf, Oren Tropp, Ran Zilberstein, Ran El-Yaniv</p>
+                    <p>  We introduce FFN Fusion, an architectural optimization technique that reduces
+sequential computation in large language models by identifying and exploiting
+natural opportunities for parallelization. Our key insight is that sequences of
+Feed-Forward Network (FFN) layers, particularly those remaining after the
+removal of specific attention layers, can often be parallelized with minimal
+accuracy impact. We develop a principled methodology for identifying and fusing
+such sequences, transforming them into parallel operations that significantly
+reduce inference latency while preserving model behavior. Applying these
+techniques to Llama-3.1-405B-Instruct, we create Llama-Nemotron-Ultra-253B-Base
+(Ultra-253B-Base), an efficient and soon-to-be publicly available model that
+achieves a 1.71X speedup in inference latency and 35X lower per-token cost
+while maintaining strong performance across benchmarks. Through extensive
+experiments on models from 49B to 253B parameters, we demonstrate that FFN
+Fusion becomes increasingly effective at larger scales and can complement
+existing optimization techniques like quantization and pruning. Most
+intriguingly, we find that even full transformer blocks containing both
+attention and FFN layers can sometimes be parallelized, suggesting new
+directions for neural architecture design.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17291v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18908v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Calibration Strategies for Robust Causal Estimation: Theoretical and
-  Empirical Insights on Propensity Score Based Estimators</h3>
-                    <p><strong>Authors:</strong> Jan Rabenseifner, Sven Klaassen, Jannis Kueck, Philipp Bach</p>
-                    <p>  The partitioning of data for estimation and calibration critically impacts
-the performance of propensity score based estimators like inverse probability
-weighting (IPW) and double/debiased machine learning (DML) frameworks. We
-extend recent advances in calibration techniques for propensity score
-estimation, improving the robustness of propensity scores in challenging
-settings such as limited overlap, small sample sizes, or unbalanced data. Our
-contributions are twofold: First, we provide a theoretical analysis of the
-properties of calibrated estimators in the context of DML. To this end, we
-refine existing calibration frameworks for propensity score models, with a
-particular emphasis on the role of sample-splitting schemes in ensuring valid
-causal inference. Second, through extensive simulations, we show that
-calibration reduces variance of inverse-based propensity score estimators while
-also mitigating bias in IPW, even in small-sample regimes. Notably, calibration
-improves stability for flexible learners (e.g., gradient boosting) while
-preserving the doubly robust properties of DML. A key insight is that, even
-when methods perform well without calibration, incorporating a calibration step
-does not degrade performance, provided that an appropriate sample-splitting
-approach is chosen.
+                    <h3>Statistical Proof of Execution (SPEX)</h3>
+                    <p><strong>Authors:</strong> Michele Dallachiesa, Antonio Pitasi, David Pinger, Josh Goodbody, Luis Vaello</p>
+                    <p>  Many real-world applications are increasingly incorporating automated
+decision-making, driven by the widespread adoption of ML/AI inference for
+planning and guidance. This study examines the growing need for verifiable
+computing in autonomous decision-making. We formalize the problem of verifiable
+computing and introduce a sampling-based protocol that is significantly faster,
+more cost-effective, and simpler than existing methods. Furthermore, we tackle
+the challenges posed by non-determinism, proposing a set of strategies to
+effectively manage common scenarios.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17290v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18899v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
                 <li>
-                    <h3>Recovering Pulse Waves from Video Using Deep Unrolling and Deep
-  Equilibrium Models</h3>
-                    <p><strong>Authors:</strong> Vineet R Shenoy, Suhas Lohit, Hassan Mansour, Rama Chellappa, Tim K. Marks</p>
-                    <p>  Camera-based monitoring of vital signs, also known as imaging
-photoplethysmography (iPPG), has seen applications in driver-monitoring,
-perfusion assessment in surgical settings, affective computing, and more. iPPG
-involves sensing the underlying cardiac pulse from video of the skin and
-estimating vital signs such as the heart rate or a full pulse waveform. Some
-previous iPPG methods impose model-based sparse priors on the pulse signals and
-use iterative optimization for pulse wave recovery, while others use end-to-end
-black-box deep learning methods. In contrast, we introduce methods that combine
-signal processing and deep learning methods in an inverse problem framework.
-Our methods estimate the underlying pulse signal and heart rate from facial
-video by learning deep-network-based denoising operators that leverage deep
-algorithm unfolding and deep equilibrium models. Experiments show that our
-methods can denoise an acquired signal from the face and infer the correct
-underlying pulse rate, achieving state-of-the-art heart rate estimation
-performance on well-known benchmarks, all with less than one-fifth the number
-of learnable parameters as the closest competing method.
+                    <h3>xKV: Cross-Layer SVD for KV-Cache Compression</h3>
+                    <p><strong>Authors:</strong> Chi-Chih Chang, Chien-Yu Lin, Yash Akhauri, Wei-Cheng Lin, Kai-Chiang Wu, Luis Ceze, Mohamed S. Abdelfattah</p>
+                    <p>  Large Language Models (LLMs) with long context windows enable powerful
+applications but come at the cost of high memory consumption to store the Key
+and Value states (KV-Cache). Recent studies attempted to merge KV-cache from
+multiple layers into shared representations, yet these approaches either
+require expensive pretraining or rely on assumptions of high per-token cosine
+similarity across layers which generally does not hold in practice. We find
+that the dominant singular vectors are remarkably well-aligned across multiple
+layers of the KV-Cache. Exploiting this insight, we propose xKV, a simple
+post-training method that applies Singular Value Decomposition (SVD) on the
+KV-Cache of grouped layers. xKV consolidates the KV-Cache of multiple layers
+into a shared low-rank subspace, significantly reducing KV-Cache sizes. Through
+extensive evaluations on the RULER long-context benchmark with widely-used LLMs
+(e.g., Llama-3.1 and Qwen2.5), xKV achieves up to 6.8x higher compression rates
+than state-of-the-art inter-layer technique while improving accuracy by 2.7%.
+Moreover, xKV is compatible with the emerging Multi-Head Latent Attention (MLA)
+(e.g., DeepSeek-Coder-V2), yielding a notable 3x compression rates on coding
+tasks without performance degradation. These results highlight xKV's strong
+capability and versatility in addressing memory bottlenecks for long-context
+LLM inference. Our code is publicly available at:
+https://github.com/abdelfattah-lab/xKV.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.17269v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/21/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.18893v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/24/2025</p>
                 </li>
             </ul>
         </section>
