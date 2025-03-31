@@ -122,287 +122,272 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Mobile-VideoGPT: Fast and Accurate Video Understanding Language Model</h3>
-                    <p><strong>Authors:</strong> Abdelrahman Shaker, Muhammad Maaz, Chenhui Gou, Hamid Rezatofighi, Salman Khan, Fahad Shahbaz Khan</p>
-                    <p>  Video understanding models often struggle with high computational
-requirements, extensive parameter counts, and slow inference speed, making them
-inefficient for practical use. To tackle these challenges, we propose
-Mobile-VideoGPT, an efficient multimodal framework designed to operate with
-fewer than a billion parameters. Unlike traditional video large multimodal
-models (LMMs), Mobile-VideoGPT consists of lightweight dual visual encoders,
-efficient projectors, and a small language model (SLM), enabling real-time
-throughput. To further improve efficiency, we present an Attention-Based Frame
-Scoring mechanism to select the key-frames, along with an efficient token
-projector that prunes redundant visual tokens and preserves essential
-contextual cues. We evaluate our model across well-established six video
-understanding benchmarks (e.g., MVBench, EgoSchema, NextQA, and PercepTest).
-Our results show that Mobile-VideoGPT-0.5B can generate up to 46 tokens per
-second while outperforming existing state-of-the-art 0.5B-parameter models by 6
-points on average with 40% fewer parameters and more than 2x higher throughput.
-Our code and models are publicly available at:
-https://github.com/Amshaker/Mobile-VideoGPT.
+                    <h3>Think Before Recommend: Unleashing the Latent Reasoning Power for
+  Sequential Recommendation</h3>
+                    <p><strong>Authors:</strong> Jiakai Tang, Sunhao Dai, Teng Shi, Jun Xu, Xu Chen, Wen Chen, Wu Jian, Yuning Jiang</p>
+                    <p>  Sequential Recommendation (SeqRec) aims to predict the next item by capturing
+sequential patterns from users' historical interactions, playing a crucial role
+in many real-world recommender systems. However, existing approaches
+predominantly adopt a direct forward computation paradigm, where the final
+hidden state of the sequence encoder serves as the user representation. We
+argue that this inference paradigm, due to its limited computational depth,
+struggles to model the complex evolving nature of user preferences and lacks a
+nuanced understanding of long-tail items, leading to suboptimal performance. To
+address this issue, we propose \textbf{ReaRec}, the first inference-time
+computing framework for recommender systems, which enhances user
+representations through implicit multi-step reasoning. Specifically, ReaRec
+autoregressively feeds the sequence's last hidden state into the sequential
+recommender while incorporating special reasoning position embeddings to
+decouple the original item encoding space from the multi-step reasoning space.
+Moreover, we introduce two lightweight reasoning-based learning methods,
+Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), to
+further effectively exploit ReaRec's reasoning potential. Extensive experiments
+on five public real-world datasets and different SeqRec architectures
+demonstrate the generality and effectiveness of our proposed ReaRec.
+Remarkably, post-hoc analyses reveal that ReaRec significantly elevates the
+performance ceiling of multiple sequential recommendation backbones by
+approximately 30\%-50\%. Thus, we believe this work can open a new and
+promising avenue for future research in inference-time computing for sequential
+recommendation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21782v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22675v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Lumina-Image 2.0: A Unified and Efficient Image Generative Framework</h3>
-                    <p><strong>Authors:</strong> Qi Qin, Le Zhuo, Yi Xin, Ruoyi Du, Zhen Li, Bin Fu, Yiting Lu, Jiakang Yuan, Xinyue Li, Dongyang Liu, Xiangyang Zhu, Manyuan Zhang, Will Beddow, Erwann Millon, Victor Perez, Wenhai Wang, Conghui He, Bo Zhang, Xiaohong Liu, Hongsheng Li, Yu Qiao, Chang Xu, Peng Gao</p>
-                    <p>  We introduce Lumina-Image 2.0, an advanced text-to-image generation framework
-that achieves significant progress compared to previous work, Lumina-Next.
-Lumina-Image 2.0 is built upon two key principles: (1) Unification - it adopts
-a unified architecture (Unified Next-DiT) that treats text and image tokens as
-a joint sequence, enabling natural cross-modal interactions and allowing
-seamless task expansion. Besides, since high-quality captioners can provide
-semantically well-aligned text-image training pairs, we introduce a unified
-captioning system, Unified Captioner (UniCap), specifically designed for T2I
-generation tasks. UniCap excels at generating comprehensive and accurate
-captions, accelerating convergence and enhancing prompt adherence. (2)
-Efficiency - to improve the efficiency of our proposed model, we develop
-multi-stage progressive training strategies and introduce inference
-acceleration techniques without compromising image quality. Extensive
-evaluations on academic benchmarks and public text-to-image arenas show that
-Lumina-Image 2.0 delivers strong performances even with only 2.6B parameters,
-highlighting its scalability and design efficiency. We have released our
-training details, code, and models at
-https://github.com/Alpha-VLLM/Lumina-Image-2.0.
+                    <h3>A Unified Approach for Estimating Various Treatment Effects in Causal
+  Inference</h3>
+                    <p><strong>Authors:</strong> Kuan-Hsun Wu, Li-Pang Chen</p>
+                    <p>  In this paper, we introduce a unified estimator to analyze various treatment
+effects in causal inference, including but not limited to the average treatment
+effect (ATE) and the quantile treatment effect (QTE). The proposed estimator is
+developed under the statistical functional and cumulative distribution function
+structure, which leads to a flexible and robust estimator and covers some
+frequent treatment effects. In addition, our approach also takes variable
+selection into account, so that informative and network structure in
+confounders can be identified and be implemented in our estimation procedure.
+The theoretical properties, including variable selection consistency and
+asymptotic normality of the statistical functional estimator, are established.
+Various treatment effects estimations are also conducted in numerical studies,
+and the results reveal that the proposed estimator generally outperforms the
+existing methods and is more efficient than its competitors.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21758v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22616v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Collab: Controlled Decoding using Mixture of Agents for LLM Alignment</h3>
-                    <p><strong>Authors:</strong> Souradip Chakraborty, Sujay Bhatt, Udari Madhushani Sehwag, Soumya Suvra Ghosal, Jiahao Qiu, Mengdi Wang, Dinesh Manocha, Furong Huang, Alec Koppel, Sumitra Ganesh</p>
-                    <p>  Alignment of Large Language models (LLMs) is crucial for safe and trustworthy
-deployment in applications. Reinforcement learning from human feedback (RLHF)
-has emerged as an effective technique to align LLMs to human preferences and
-broader utilities, but it requires updating billions of model parameters, which
-is computationally expensive. Controlled Decoding, by contrast, provides a
-mechanism for aligning a model at inference time without retraining. However,
-single-agent decoding approaches often struggle to adapt to diverse tasks due
-to the complexity and variability inherent in these tasks. To strengthen the
-test-time performance w.r.t the target task, we propose a mixture of
-agent-based decoding strategies leveraging the existing off-the-shelf aligned
-LLM policies. Treating each prior policy as an agent in the spirit of mixture
-of agent collaboration, we develop a decoding method that allows for
-inference-time alignment through a token-level selection strategy among
-multiple agents. For each token, the most suitable LLM is dynamically chosen
-from a pool of models based on a long-term utility metric. This
-policy-switching mechanism ensures optimal model selection at each step,
-enabling efficient collaboration and alignment among LLMs during decoding.
-Theoretical analysis of our proposed algorithm establishes optimal performance
-with respect to the target task represented via a target reward for the given
-off-the-shelf models. We conduct comprehensive empirical evaluations with
-open-source aligned models on diverse tasks and preferences, which demonstrates
-the merits of this approach over single-agent decoding baselines. Notably,
-Collab surpasses the current SoTA decoding strategy, achieving an improvement
-of up to 1.56x in average reward and 71.89% in GPT-4 based win-tie rate.
+                    <h3>Generative Latent Neural PDE Solver using Flow Matching</h3>
+                    <p><strong>Authors:</strong> Zijie Li, Anthony Zhou, Amir Barati Farimani</p>
+                    <p>  Autoregressive next-step prediction models have become the de-facto standard
+for building data-driven neural solvers to forecast time-dependent partial
+differential equations (PDEs). Denoise training that is closely related to
+diffusion probabilistic model has been shown to enhance the temporal stability
+of neural solvers, while its stochastic inference mechanism enables ensemble
+predictions and uncertainty quantification. In principle, such training
+involves sampling a series of discretized diffusion timesteps during both
+training and inference, inevitably increasing computational overhead. In
+addition, most diffusion models apply isotropic Gaussian noise on structured,
+uniform grids, limiting their adaptability to irregular domains. We propose a
+latent diffusion model for PDE simulation that embeds the PDE state in a
+lower-dimensional latent space, which significantly reduces computational
+costs. Our framework uses an autoencoder to map different types of meshes onto
+a unified structured latent grid, capturing complex geometries. By analyzing
+common diffusion paths, we propose to use a coarsely sampled noise schedule
+from flow matching for both training and testing. Numerical experiments show
+that the proposed model outperforms several deterministic baselines in both
+accuracy and long-term stability, highlighting the potential of diffusion-based
+approaches for robust data-driven PDE learning.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21720v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22600v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>As easy as PIE: understanding when pruning causes language models to
-  disagree</h3>
-                    <p><strong>Authors:</strong> Pietro Tropeano, Maria Maistro, Tuukka Ruotsalo, Christina Lioma</p>
-                    <p>  Language Model (LM) pruning compresses the model by removing weights, nodes,
-or other parts of its architecture. Typically, pruning focuses on the resulting
-efficiency gains at the cost of effectiveness. However, when looking at how
-individual data points are affected by pruning, it turns out that a particular
-subset of data points always bears most of the brunt (in terms of reduced
-accuracy) when pruning, but this effect goes unnoticed when reporting the mean
-accuracy of all data points. These data points are called PIEs and have been
-studied in image processing, but not in NLP. In a study of various NLP
-datasets, pruning methods, and levels of compression, we find that PIEs impact
-inference quality considerably, regardless of class frequency, and that BERT is
-more prone to this than BiLSTM. We also find that PIEs contain a high amount of
-data points that have the largest influence on how well the model generalises
-to unseen data. This means that when pruning, with seemingly moderate loss to
-accuracy across all data points, we in fact hurt tremendously those data points
-that matter the most. We trace what makes PIEs both hard and impactful to
-inference to their overall longer and more semantically complex text. These
-findings are novel and contribute to understanding how LMs are affected by
-pruning. The code is available at: https://github.com/pietrotrope/AsEasyAsPIE
+                    <h3>A Framework for Cryptographic Verifiability of End-to-End AI Pipelines</h3>
+                    <p><strong>Authors:</strong> Kar Balan, Robert Learney, Tim Wood</p>
+                    <p>  The increasing integration of Artificial Intelligence across multiple
+industry sectors necessitates robust mechanisms for ensuring transparency,
+trust, and auditability of its development and deployment. This topic is
+particularly important in light of recent calls in various jurisdictions to
+introduce regulation and legislation on AI safety. In this paper, we propose a
+framework for complete verifiable AI pipelines, identifying key components and
+analyzing existing cryptographic approaches that contribute to verifiability
+across different stages of the AI lifecycle, from data sourcing to training,
+inference, and unlearning. This framework could be used to combat
+misinformation by providing cryptographic proofs alongside AI-generated assets
+to allow downstream verification of their provenance and correctness. Our
+findings underscore the importance of ongoing research to develop cryptographic
+tools that are not only efficient for isolated AI processes, but that are
+efficiently `linkable' across different processes within the AI pipeline, to
+support the development of end-to-end verifiable AI technologies.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21714v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22573v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Flashlights: Prospects for constraining the Initial Mass Function around
-  cosmic noon with caustic-crossing events</h3>
-                    <p><strong>Authors:</strong> Ashish Kumar Meena, Sung Kei Li, Adi Zitrin, Patrick L. Kelly, Tom Broadhurst, Wenlei Chen, Jose M. Diego, Alexei V. Filippenko, Lukas J. Furtak, Liliya L. R. Williams</p>
-                    <p>  The Flashlights program with the Hubble Space Telescope imaged the six Hubble
-Frontier Fields galaxy clusters in two epochs and detected twenty transients.
-These are primarily expected to be caustic-crossing events (CCEs) where bright
-stars in distant lensed galaxies, typically at redshift $z\approx1$--3, get
-temporarily magnified close to cluster caustics. Since CCEs are generally
-biased toward more massive and luminous stars, they offer a unique route for
-probing the high end of the stellar mass function. We take advantage of the
-Flashlights event statistics to place preliminary constraints on the stellar
-initial mass function (IMF) around cosmic noon. The photometry (along with
-spectral information) of lensed arcs is used to infer their various stellar
-properties, and stellar synthesis models are used to evolve a recent stellar
-population in them. We estimate the microlens surface density near each arc
-and, together with existing lens models and simple formalism for CCEs,
-calculate the expected rate for a given IMF. We find that, on average, a
-Salpeter-like IMF ($\alpha=2.35$) underpredicts the number of observed CCEs by
-a factor of ${\sim}0.7$, and a top-heavy IMF ($\alpha=1.00$) overpredicts by a
-factor of ${\sim}1.7$, suggesting that the average IMF slope may lie somewhere
-in between. However, given the large uncertainties associated with estimating
-the stellar populations, these results are strongly model-dependent.
-Nevertheless, we introduce a useful framework for constraining the IMF using
-CCEs. Observations with JWST are already yielding many more CCEs and will soon
-enable more stringent constraints on the IMF at a range of redshifts.
+                    <h3>Benchmarking Ultra-Low-Power $μ$NPUs</h3>
+                    <p><strong>Authors:</strong> Josh Millar, Yushan Huang, Sarab Sethi, Hamed Haddadi, Anil Madhavapeddy</p>
+                    <p>  Efficient on-device neural network (NN) inference has various advantages over
+cloud-based processing, including predictable latency, enhanced privacy,
+greater reliability, and reduced operating costs for vendors. This has sparked
+the recent rapid development of microcontroller-scale NN accelerators, often
+referred to as neural processing units ($\mu$NPUs), designed specifically for
+ultra-low-power applications.
+  In this paper we present the first comparative evaluation of a number of
+commercially-available $\mu$NPUs, as well as the first independent benchmarks
+for several of these platforms. We develop and open-source a model compilation
+framework to enable consistent benchmarking of quantized models across diverse
+$\mu$NPU hardware. Our benchmark targets end-to-end performance and includes
+model inference latency, power consumption, and memory overhead, alongside
+other factors. The resulting analysis uncovers both expected performance trends
+as well as surprising disparities between hardware specifications and actual
+performance, including $\mu$NPUs exhibiting unexpected scaling behaviors with
+increasing model complexity. Our framework provides a foundation for further
+evaluation of $\mu$NPU platforms alongside valuable insights for both hardware
+designers and software developers in this rapidly evolving space.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21706v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22567v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Enabling Robust Exoplanet Atmospheric Retrievals with Gaussian Processes</h3>
-                    <p><strong>Authors:</strong> Yoav Rotman, Luis Welbanks, Michael R. Line, Peter McGill, Michael Radica, Matthew C. Nixon</p>
-                    <p>  Atmospheric retrievals are essential tools for interpreting exoplanet
-transmission and eclipse spectra, enabling quantitative constraints on the
-chemical composition, aerosol properties, and thermal structure of planetary
-atmospheres. The James Webb Space Telescope (JWST) offers unprecedented
-spectral precision, resolution, and wavelength coverage, unlocking
-transformative insights into the formation, evolution, climate, and potential
-habitability of planetary systems. However, this opportunity is accompanied by
-challenges: modeling assumptions and unaccounted-for noise or signal sources
-can bias retrieval outcomes and their interpretation. To address these
-limitations, we introduce a Gaussian Process (GP)-aided atmospheric retrieval
-framework that flexibly accounts for unmodeled features in exoplanet spectra,
-whether global or localized. We validate this method on synthetic JWST
-observations and show that GP-aided retrievals reduce bias in inferred
-abundances and better capture model-data mismatches than traditional
-approaches. We also introduce the concept of mean squared error to quantify the
-trade-off between bias and variance, arguing that this metric more accurately
-reflects retrieval performance than bias alone. We then reanalyze the
-NIRISS/SOSS JWST transmission spectrum of WASP-96 b, finding that GP-aided
-retrievals yield broader constraints on CO$_2$ and H$_2$O, alleviating tension
-between previous retrieval results and equilibrium predictions. Our GP
-framework provides precise and accurate constraints while highlighting regions
-where models fail to explain the data. As JWST matures and future facilities
-come online, a deeper understanding of the limitations of both data and models
-will be essential, and GP-enabled retrievals like the one presented here offer
-a principled path forward.
+                    <h3>Niyama : Breaking the Silos of LLM Inference Serving</h3>
+                    <p><strong>Authors:</strong> Kanishk Goel, Jayashree Mohan, Nipun Kwatra, Ravi Shreyas Anupindi, Ramachandran Ramjee</p>
+                    <p>  The widespread adoption of Large Language Models (LLMs) has enabled diverse
+applications with very different latency requirements. Existing LLM serving
+frameworks rely on siloed infrastructure with coarse-grained workload
+segregation -- interactive and batch -- leading to inefficient resource
+utilization and limited support for fine-grained Quality-of-Service (QoS)
+differentiation. This results in operational inefficiencies, over-provisioning
+and poor load management during traffic surges.
+  We present Niyama, a novel QoS-driven inference serving system that enables
+efficient co-scheduling of diverse workloads on shared infrastructure. Niyama
+introduces fine-grained QoS classification allowing applications to specify
+precise latency requirements, and dynamically adapts scheduling decisions based
+on real-time system state. Leveraging the predictable execution characteristics
+of LLM inference, Niyama implements a dynamic chunking mechanism to improve
+overall throughput while maintaining strict QoS guarantees. Additionally,
+Niyama employs a hybrid prioritization policy that balances fairness and
+efficiency, and employs selective request relegation that enables graceful
+service degradation during overload conditions. Our evaluation demonstrates
+that Niyama increases serving capacity by 32% compared to current siloed
+deployments, while maintaining QoS guarantees. Notably, under extreme load, our
+system reduces SLO violations by an order of magnitude compared to current
+strategies.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21702v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22562v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>MAVERIX: Multimodal Audio-Visual Evaluation Reasoning IndeX</h3>
-                    <p><strong>Authors:</strong> Liuyue Xie, George Z. Wei, Avik Kuthiala, Ce Zheng, Ananya Bal, Mosam Dabhi, Liting Wen, Taru Rustagi, Ethan Lai, Sushil Khyalia, Rohan Choudhury, Morteza Ziyadi, Xu Zhang, Hao Yang, László A. Jeni</p>
-                    <p>  Frontier models have either been language-only or have primarily focused on
-vision and language modalities. Although recent advancements in models with
-vision and audio understanding capabilities have shown substantial progress,
-the field lacks a standardized evaluation framework for thoroughly assessing
-their cross-modality perception performance. We introduce MAVERIX~(Multimodal
-Audio-Visual Evaluation Reasoning IndeX), a novel benchmark with 700 videos and
-2,556 questions explicitly designed to evaluate multimodal models through tasks
-that necessitate close integration of video and audio information. MAVERIX
-uniquely provides models with audiovisual tasks, closely mimicking the
-multimodal perceptual experiences available to humans during inference and
-decision-making processes. To our knowledge, MAVERIX is the first benchmark
-aimed explicitly at assessing comprehensive audiovisual integration.
-Experiments with state-of-the-art models, including Gemini 1.5 Pro and o1, show
-performance approaching human levels (around 70% accuracy), while human experts
-reach near-ceiling performance (95.1%). With standardized evaluation protocols,
-a rigorously annotated pipeline, and a public toolkit, MAVERIX establishes a
-challenging testbed for advancing audiovisual multimodal intelligence.
+                    <h3>Approximate stationarity in disjunctive optimization: concepts,
+  qualification conditions, and application to MPCCs</h3>
+                    <p><strong>Authors:</strong> Isabella Käming, Patrick Mehlitz</p>
+                    <p>  In this paper, we are concerned with stationarity conditions and
+qualification conditions for optimization problems with disjunctive
+constraints. This class covers, among others, optimization problems with
+complementarity, vanishing, or switching constraints which are notoriously
+challenging due to their highly combinatorial structure. The focus of our study
+is twofold. First, we investigate approximate stationarity conditions and the
+associated strict constraint qualifications which can be used to infer
+stationarity of local minimizers. While such concepts are already known in the
+context of so-called Mordukhovich-stationarity, we introduce suitable
+extensions associated with strong stationarity. Second, a qualification
+condition is established which, based on an approximately Mordukhovich- or
+strongly stationary point, can be used to infer its Mordukhovich- or strong
+stationarity, respectively. In contrast to the aforementioned strict constraint
+qualifications, this condition depends on the involved sequences justifying
+approximate stationarity and, thus, is not a constraint qualification in the
+narrower sense. However, it is much easier to verify as it merely requires to
+check the (positive) linear independence of a certain family of gradients. In
+fact, it provides a characterization of stationarity and, thus, is weaker than
+these strict constraint qualifications. In order to illustrate the obtained
+findings, they are applied to optimization problems with complementarity
+constraints where they can be naturally extended to the well-known concepts of
+weak and Clarke-stationarity.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21699v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22551v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Progressive Rendering Distillation: Adapting Stable Diffusion for
-  Instant Text-to-Mesh Generation without 3D Data</h3>
-                    <p><strong>Authors:</strong> Zhiyuan Ma, Xinyue Liang, Rongyuan Wu, Xiangyu Zhu, Zhen Lei, Lei Zhang</p>
-                    <p>  It is highly desirable to obtain a model that can generate high-quality 3D
-meshes from text prompts in just seconds. While recent attempts have adapted
-pre-trained text-to-image diffusion models, such as Stable Diffusion (SD), into
-generators of 3D representations (e.g., Triplane), they often suffer from poor
-quality due to the lack of sufficient high-quality 3D training data. Aiming at
-overcoming the data shortage, we propose a novel training scheme, termed as
-Progressive Rendering Distillation (PRD), eliminating the need for 3D
-ground-truths by distilling multi-view diffusion models and adapting SD into a
-native 3D generator. In each iteration of training, PRD uses the U-Net to
-progressively denoise the latent from random noise for a few steps, and in each
-step it decodes the denoised latent into 3D output. Multi-view diffusion
-models, including MVDream and RichDreamer, are used in joint with SD to distill
-text-consistent textures and geometries into the 3D outputs through score
-distillation. Since PRD supports training without 3D ground-truths, we can
-easily scale up the training data and improve generation quality for
-challenging text prompts with creative concepts. Meanwhile, PRD can accelerate
-the inference speed of the generation model in just a few steps. With PRD, we
-train a Triplane generator, namely TriplaneTurbo, which adds only $2.5\%$
-trainable parameters to adapt SD for Triplane generation. TriplaneTurbo
-outperforms previous text-to-3D generators in both efficiency and quality.
-Specifically, it can produce high-quality 3D meshes in 1.2 seconds and
-generalize well for challenging text input. The code is available at
-https://github.com/theEricMa/TriplaneTurbo.
+                    <h3>SafeCast: Risk-Responsive Motion Forecasting for Autonomous Vehicles</h3>
+                    <p><strong>Authors:</strong> Haicheng Liao, Hanlin Kong, Bin Rao, Bonan Wang, Chengyue Wang, Guyang Yu, Yuming Huang, Ruru Tang, Chengzhong Xu, Zhenning Li</p>
+                    <p>  Accurate motion forecasting is essential for the safety and reliability of
+autonomous driving (AD) systems. While existing methods have made significant
+progress, they often overlook explicit safety constraints and struggle to
+capture the complex interactions among traffic agents, environmental factors,
+and motion dynamics. To address these challenges, we present SafeCast, a
+risk-responsive motion forecasting model that integrates safety-aware
+decision-making with uncertainty-aware adaptability. SafeCast is the first to
+incorporate the Responsibility-Sensitive Safety (RSS) framework into motion
+forecasting, encoding interpretable safety rules--such as safe distances and
+collision avoidance--based on traffic norms and physical principles. To further
+enhance robustness, we introduce the Graph Uncertainty Feature (GUF), a
+graph-based module that injects learnable noise into Graph Attention Networks,
+capturing real-world uncertainties and enhancing generalization across diverse
+scenarios. We evaluate SafeCast on four real-world benchmark datasets--Next
+Generation Simulation (NGSIM), Highway Drone (HighD), ApolloScape, and the
+Macao Connected Autonomous Driving (MoCAD)--covering highway, urban, and
+mixed-autonomy traffic environments. Our model achieves state-of-the-art (SOTA)
+accuracy while maintaining a lightweight architecture and low inference
+latency, underscoring its potential for real-time deployment in safety-critical
+AD systems.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21694v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22541v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>Exploiting synergies between JWST and cosmic 21-cm observations to
-  uncover star formation in the early Universe</h3>
-                    <p><strong>Authors:</strong> Jiten Dhandha, Thomas Gessey-Jones, Harry T. J. Bevins, Simon Pochinda, Anastasia Fialkov, Sandro Tacchella, Eloy de Lera Acedo, Saurabh Singh, Rennan Barkana</p>
-                    <p>  In the current era of JWST, we continue to uncover a wealth of information
-about the Universe deep into the Epoch of Reionization. In this work, we run a
-suite of simulations using the code 21cmSPACE, to explore the astrophysical
-properties of galaxies in the early Universe, and their impact on high-redshift
-observables. We use multi-wavelength observational data including the global
-21-cm signal and power spectrum limits from SARAS~3 and HERA respectively,
-present-day diffuse X-ray and radio backgrounds, and UV luminosity functions
-(UVLFs) from HST and JWST in the range $z=6-14.5$ to derive our constraints. We
-constrain a flexible model of halo-mass and redshift dependent star-formation
-efficiency (SFE), defined as the gas fraction converted into stars, and find
-that it is best described by little to no redshift evolution at $z\approx6-10$
-and rapid evolution at $z\approx10-15$. We derive Bayesian functional posterior
-distributions for the SFE across this redshift range, inferring that a halo of
-mass $M_h=10^{10}\text{M}_\odot$ has an efficiency of $2-3\%$ at $z\lesssim10$,
-$12\%$ at $z=12$ and $26\%$ at $z=15$. We also find, through synergy between
-SARAS~3 and UVLFs, that the minimum circular velocity for star-formation in
-halos is $V_c = 16.9^{+25.7}_{-9.5}\text{km s}^{-1}$ or equivalently
-$\log_{10}(M_\text{crit}/\text{M}_\odot) = 8.29^{+1.21}_{-1.08}$ at $z=6$.
-Alongside these star-formation constraints, we find the X-ray and radio
-efficiencies of early galaxies to be $f_X = 0.5^{+6.3}_{-0.3}$ and $f_r
-\lesssim 11.7$ respectively, improving upon existing works that do not use UVLF
-data. Our results demonstrate the critical role of UVLFs in constraining the
-early Universe, and its synergies with 21-cm observations, alongside other
-multi-wavelength observational datasets.
+                    <h3>LIM: Large Interpolator Model for Dynamic Reconstruction</h3>
+                    <p><strong>Authors:</strong> Remy Sabathier, Niloy J. Mitra, David Novotny</p>
+                    <p>  Reconstructing dynamic assets from video data is central to many in computer
+vision and graphics tasks. Existing 4D reconstruction approaches are limited by
+category-specific models or slow optimization-based methods. Inspired by the
+recent Large Reconstruction Model (LRM), we present the Large Interpolation
+Model (LIM), a transformer-based feed-forward solution, guided by a novel
+causal consistency loss, for interpolating implicit 3D representations across
+time. Given implicit 3D representations at times $t_0$ and $t_1$, LIM produces
+a deformed shape at any continuous time $t\in[t_0,t_1]$, delivering
+high-quality interpolated frames in seconds. Furthermore, LIM allows explicit
+mesh tracking across time, producing a consistently uv-textured mesh sequence
+ready for integration into existing production pipelines. We also use LIM, in
+conjunction with a diffusion-based multiview generator, to produce dynamic 4D
+reconstructions from monocular videos. We evaluate LIM on various dynamic
+datasets, benchmarking against image-space interpolation methods (e.g., FiLM)
+and direct triplane linear interpolation, and demonstrate clear advantages. In
+summary, LIM is the first feed-forward model capable of high-speed tracked 4D
+asset reconstruction across diverse categories.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21687v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22537v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
                 <li>
-                    <h3>A friendly introduction to triangular transport</h3>
-                    <p><strong>Authors:</strong> Maximilian Ramgraber, Daniel Sharp, Mathieu Le Provost, Youssef Marzouk</p>
-                    <p>  Decision making under uncertainty is a cross-cutting challenge in science and
-engineering. Most approaches to this challenge employ probabilistic
-representations of uncertainty. In complicated systems accessible only via data
-or black-box models, however, these representations are rarely known. We
-discuss how to characterize and manipulate such representations using
-triangular transport maps, which approximate any complex probability
-distribution as a transformation of a simple, well-understood distribution. The
-particular structure of triangular transport guarantees many desirable
-mathematical and computational properties that translate well into solving
-practical problems. Triangular maps are actively used for density estimation,
-(conditional) generative modelling, Bayesian inference, data assimilation,
-optimal experimental design, and related tasks. While there is ample literature
-on the development and theory of triangular transport methods, this manuscript
-provides a detailed introduction for scientists interested in employing measure
-transport without assuming a formal mathematical background. We build intuition
-for the key foundations of triangular transport, discuss many aspects of its
-practical implementation, and outline the frontiers of this field.
+                    <h3>An integrated method for clustering and association network inference</h3>
+                    <p><strong>Authors:</strong> Jeanne Tous, Julien Chiquet</p>
+                    <p>  We consider high dimensional Gaussian graphical models inference. These
+models provide a rigorous framework to describe a network of statistical
+dependencies between entities, such as genes in genomic regulation studies or
+species in ecology. Penalized methods, including the standard Graphical-Lasso,
+are well-known approaches to infer the parameters of these models. As the
+number of variables in the model (of entities in the network) grow, the network
+inference and interpretation become more complex. We propose Normal-Block, a
+new model that clusters variables and consider a network at the cluster level.
+Normal-Block both adds structure to the network and reduces its size. We build
+on Graphical-Lasso to add a penalty on the network's edges and limit the
+detection of spurious dependencies, we also propose a zero-inflated version of
+the model to account for real-world data properties. For the inference
+procedure, we propose a direct heuristic method and another more rigorous one
+that simultaneously infers the clustering of variables and the association
+network between clusters, using a penalized variational
+Expectation-Maximization approach. An implementation of the model in R, in a
+package called normalblockr, is available on github
+(https://github.com/jeannetous/normalblockr). We present the results in terms
+of clustering and network inference using both simulated data and various types
+of real-world data (proteomics, words occurrences on webpages, and microbiota
+distribution).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.21673v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/27/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.22467v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/28/2025</p>
                 </li>
             </ul>
         </section>
