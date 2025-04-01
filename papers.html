@@ -123,271 +123,256 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Think Before Recommend: Unleashing the Latent Reasoning Power for
-  Sequential Recommendation</h3>
-                    <p><strong>Authors:</strong> Jiakai Tang, Sunhao Dai, Teng Shi, Jun Xu, Xu Chen, Wen Chen, Wu Jian, Yuning Jiang</p>
-                    <p>  Sequential Recommendation (SeqRec) aims to predict the next item by capturing
-sequential patterns from users' historical interactions, playing a crucial role
-in many real-world recommender systems. However, existing approaches
-predominantly adopt a direct forward computation paradigm, where the final
-hidden state of the sequence encoder serves as the user representation. We
-argue that this inference paradigm, due to its limited computational depth,
-struggles to model the complex evolving nature of user preferences and lacks a
-nuanced understanding of long-tail items, leading to suboptimal performance. To
-address this issue, we propose \textbf{ReaRec}, the first inference-time
-computing framework for recommender systems, which enhances user
-representations through implicit multi-step reasoning. Specifically, ReaRec
-autoregressively feeds the sequence's last hidden state into the sequential
-recommender while incorporating special reasoning position embeddings to
-decouple the original item encoding space from the multi-step reasoning space.
-Moreover, we introduce two lightweight reasoning-based learning methods,
-Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), to
-further effectively exploit ReaRec's reasoning potential. Extensive experiments
-on five public real-world datasets and different SeqRec architectures
-demonstrate the generality and effectiveness of our proposed ReaRec.
-Remarkably, post-hoc analyses reveal that ReaRec significantly elevates the
-performance ceiling of multiple sequential recommendation backbones by
-approximately 30\%-50\%. Thus, we believe this work can open a new and
-promising avenue for future research in inference-time computing for sequential
-recommendation.
+                    <h3>Easi3R: Estimating Disentangled Motion from DUSt3R Without Training</h3>
+                    <p><strong>Authors:</strong> Xingyu Chen, Yue Chen, Yuliang Xiu, Andreas Geiger, Anpei Chen</p>
+                    <p>  Recent advances in DUSt3R have enabled robust estimation of dense point
+clouds and camera parameters of static scenes, leveraging Transformer network
+architectures and direct supervision on large-scale 3D datasets. In contrast,
+the limited scale and diversity of available 4D datasets present a major
+bottleneck for training a highly generalizable 4D model. This constraint has
+driven conventional 4D methods to fine-tune 3D models on scalable dynamic video
+data with additional geometric priors such as optical flow and depths. In this
+work, we take an opposite path and introduce Easi3R, a simple yet efficient
+training-free method for 4D reconstruction. Our approach applies attention
+adaptation during inference, eliminating the need for from-scratch pre-training
+or network fine-tuning. We find that the attention layers in DUSt3R inherently
+encode rich information about camera and object motion. By carefully
+disentangling these attention maps, we achieve accurate dynamic region
+segmentation, camera pose estimation, and 4D dense point map reconstruction.
+Extensive experiments on real-world dynamic videos demonstrate that our
+lightweight attention adaptation significantly outperforms previous
+state-of-the-art methods that are trained or finetuned on extensive dynamic
+datasets. Our code is publicly available for research purpose at
+https://easi3r.github.io/
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22675v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24391v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>A Unified Approach for Estimating Various Treatment Effects in Causal
-  Inference</h3>
-                    <p><strong>Authors:</strong> Kuan-Hsun Wu, Li-Pang Chen</p>
-                    <p>  In this paper, we introduce a unified estimator to analyze various treatment
-effects in causal inference, including but not limited to the average treatment
-effect (ATE) and the quantile treatment effect (QTE). The proposed estimator is
-developed under the statistical functional and cumulative distribution function
-structure, which leads to a flexible and robust estimator and covers some
-frequent treatment effects. In addition, our approach also takes variable
-selection into account, so that informative and network structure in
-confounders can be identified and be implemented in our estimation procedure.
-The theoretical properties, including variable selection consistency and
-asymptotic normality of the statistical functional estimator, are established.
-Various treatment effects estimations are also conducted in numerical studies,
-and the results reveal that the proposed estimator generally outperforms the
-existing methods and is more efficient than its competitors.
+                    <h3>RIG: Synergizing Reasoning and Imagination in End-to-End Generalist
+  Policy</h3>
+                    <p><strong>Authors:</strong> Zhonghan Zhao, Wenwei Zhang, Haian Huang, Kuikun Liu, Jianfei Gao, Gaoang Wang, Kai Chen</p>
+                    <p>  Reasoning before action and imagining potential outcomes (i.e., world models)
+are essential for embodied agents operating in complex open-world environments.
+Yet, prior work either incorporates only one of these abilities in an
+end-to-end agent or integrates multiple specialized models into an agent
+system, limiting the learning efficiency and generalization of the policy.
+Thus, this paper makes the first attempt to synergize Reasoning and Imagination
+in an end-to-end Generalist policy, termed RIG. To train RIG in an end-to-end
+manner, we construct a data pipeline that progressively integrates and enriches
+the content of imagination and reasoning in the trajectories collected from
+existing agents. The joint learning of reasoning and next image generation
+explicitly models the inherent correlation between reasoning, action, and
+dynamics of environments, and thus exhibits more than $17\times$ sample
+efficiency improvements and generalization in comparison with previous works.
+During inference, RIG first reasons about the next action, produces potential
+action, and then predicts the action outcomes, which offers the agent a chance
+to review and self-correct based on the imagination before taking real actions.
+Experimental results show that the synergy of reasoning and imagination not
+only improves the robustness, generalization, and interoperability of
+generalist policy but also enables test-time scaling to enhance overall
+performance.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22616v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24388v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>Generative Latent Neural PDE Solver using Flow Matching</h3>
-                    <p><strong>Authors:</strong> Zijie Li, Anthony Zhou, Amir Barati Farimani</p>
-                    <p>  Autoregressive next-step prediction models have become the de-facto standard
-for building data-driven neural solvers to forecast time-dependent partial
-differential equations (PDEs). Denoise training that is closely related to
-diffusion probabilistic model has been shown to enhance the temporal stability
-of neural solvers, while its stochastic inference mechanism enables ensemble
-predictions and uncertainty quantification. In principle, such training
-involves sampling a series of discretized diffusion timesteps during both
-training and inference, inevitably increasing computational overhead. In
-addition, most diffusion models apply isotropic Gaussian noise on structured,
-uniform grids, limiting their adaptability to irregular domains. We propose a
-latent diffusion model for PDE simulation that embeds the PDE state in a
-lower-dimensional latent space, which significantly reduces computational
-costs. Our framework uses an autoencoder to map different types of meshes onto
-a unified structured latent grid, capturing complex geometries. By analyzing
-common diffusion paths, we propose to use a coarsely sampled noise schedule
-from flow matching for both training and testing. Numerical experiments show
-that the proposed model outperforms several deterministic baselines in both
-accuracy and long-term stability, highlighting the potential of diffusion-based
-approaches for robust data-driven PDE learning.
+                    <h3>Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for
+  Large Language Models</h3>
+                    <p><strong>Authors:</strong> Rui Wang, Hongru Wang, Boyang Xue, Jianhui Pang, Shudong Liu, Yi Chen, Jiahao Qiu, Derek Fai Wong, Heng Ji, Kam-Fai Wong</p>
+                    <p>  Recent advancements in Large Language Models (LLMs) have significantly
+enhanced their ability to perform complex reasoning tasks, transitioning from
+fast and intuitive thinking (System 1) to slow and deep reasoning (System 2).
+While System 2 reasoning improves task accuracy, it often incurs substantial
+computational costs due to its slow thinking nature and inefficient or
+unnecessary reasoning behaviors. In contrast, System 1 reasoning is
+computationally efficient but leads to suboptimal performance. Consequently, it
+is critical to balance the trade-off between performance (benefits) and
+computational costs (budgets), giving rise to the concept of reasoning economy.
+In this survey, we provide a comprehensive analysis of reasoning economy in
+both the post-training and test-time inference stages of LLMs, encompassing i)
+the cause of reasoning inefficiency, ii) behavior analysis of different
+reasoning patterns, and iii) potential solutions to achieve reasoning economy.
+By offering actionable insights and highlighting open challenges, we aim to
+shed light on strategies for improving the reasoning economy of LLMs, thereby
+serving as a valuable resource for advancing research in this evolving area. We
+also provide a public repository to continually track developments in this
+fast-evolving field.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22600v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24377v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>A Framework for Cryptographic Verifiability of End-to-End AI Pipelines</h3>
-                    <p><strong>Authors:</strong> Kar Balan, Robert Learney, Tim Wood</p>
-                    <p>  The increasing integration of Artificial Intelligence across multiple
-industry sectors necessitates robust mechanisms for ensuring transparency,
-trust, and auditability of its development and deployment. This topic is
-particularly important in light of recent calls in various jurisdictions to
-introduce regulation and legislation on AI safety. In this paper, we propose a
-framework for complete verifiable AI pipelines, identifying key components and
-analyzing existing cryptographic approaches that contribute to verifiability
-across different stages of the AI lifecycle, from data sourcing to training,
-inference, and unlearning. This framework could be used to combat
-misinformation by providing cryptographic proofs alongside AI-generated assets
-to allow downstream verification of their provenance and correctness. Our
-findings underscore the importance of ongoing research to develop cryptographic
-tools that are not only efficient for isolated AI processes, but that are
-efficiently `linkable' across different processes within the AI pipeline, to
-support the development of end-to-end verifiable AI technologies.
+                    <h3>ERUPT: Efficient Rendering with Unposed Patch Transformer</h3>
+                    <p><strong>Authors:</strong> Maxim V. Shugaev, Vincent Chen, Maxim Karrenbach, Kyle Ashley, Bridget Kennedy, Naresh P. Cuntoor</p>
+                    <p>  This work addresses the problem of novel view synthesis in diverse scenes
+from small collections of RGB images. We propose ERUPT (Efficient Rendering
+with Unposed Patch Transformer) a state-of-the-art scene reconstruction model
+capable of efficient scene rendering using unposed imagery. We introduce
+patch-based querying, in contrast to existing pixel-based queries, to reduce
+the compute required to render a target view. This makes our model highly
+efficient both during training and at inference, capable of rendering at 600
+fps on commercial hardware. Notably, our model is designed to use a learned
+latent camera pose which allows for training using unposed targets in datasets
+with sparse or inaccurate ground truth camera pose. We show that our approach
+can generalize on large real-world data and introduce a new benchmark dataset
+(MSVS-1M) for latent view synthesis using street-view imagery collected from
+Mapillary. In contrast to NeRF and Gaussian Splatting, which require dense
+imagery and precise metadata, ERUPT can render novel views of arbitrary scenes
+with as few as five unposed input images. ERUPT achieves better rendered image
+quality than current state-of-the-art methods for unposed image synthesis
+tasks, reduces labeled data requirements by ~95\% and decreases computational
+requirements by an order of magnitude, providing efficient novel view synthesis
+for diverse real-world scenes.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22573v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24374v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>Benchmarking Ultra-Low-Power $μ$NPUs</h3>
-                    <p><strong>Authors:</strong> Josh Millar, Yushan Huang, Sarab Sethi, Hamed Haddadi, Anil Madhavapeddy</p>
-                    <p>  Efficient on-device neural network (NN) inference has various advantages over
-cloud-based processing, including predictable latency, enhanced privacy,
-greater reliability, and reduced operating costs for vendors. This has sparked
-the recent rapid development of microcontroller-scale NN accelerators, often
-referred to as neural processing units ($\mu$NPUs), designed specifically for
-ultra-low-power applications.
-  In this paper we present the first comparative evaluation of a number of
-commercially-available $\mu$NPUs, as well as the first independent benchmarks
-for several of these platforms. We develop and open-source a model compilation
-framework to enable consistent benchmarking of quantized models across diverse
-$\mu$NPU hardware. Our benchmark targets end-to-end performance and includes
-model inference latency, power consumption, and memory overhead, alongside
-other factors. The resulting analysis uncovers both expected performance trends
-as well as surprising disparities between hardware specifications and actual
-performance, including $\mu$NPUs exhibiting unexpected scaling behaviors with
-increasing model complexity. Our framework provides a foundation for further
-evaluation of $\mu$NPU platforms alongside valuable insights for both hardware
-designers and software developers in this rapidly evolving space.
+                    <h3>Adapting Vision Foundation Models for Real-time Ultrasound Image
+  Segmentation</h3>
+                    <p><strong>Authors:</strong> Xiaoran Zhang, Eric Z. Chen, Lin Zhao, Xiao Chen, Yikang Liu, Boris Maihe, James S. Duncan, Terrence Chen, Shanhui Sun</p>
+                    <p>  We propose a novel approach that adapts hierarchical vision foundation models
+for real-time ultrasound image segmentation. Existing ultrasound segmentation
+methods often struggle with adaptability to new tasks, relying on costly manual
+annotations, while real-time approaches generally fail to match
+state-of-the-art performance. To overcome these limitations, we introduce an
+adaptive framework that leverages the vision foundation model Hiera to extract
+multi-scale features, interleaved with DINOv2 representations to enhance visual
+expressiveness. These enriched features are then decoded to produce precise and
+robust segmentation. We conduct extensive evaluations on six public datasets
+and one in-house dataset, covering both cardiac and thyroid ultrasound
+segmentation. Experiments show that our approach outperforms state-of-the-art
+methods across multiple datasets and excels with limited supervision,
+surpassing nnUNet by over 20\% on average in the 1\% and 10\% data settings.
+Our method achieves $\sim$77 FPS inference speed with TensorRT on a single GPU,
+enabling real-time clinical applications.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22567v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24368v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>Niyama : Breaking the Silos of LLM Inference Serving</h3>
-                    <p><strong>Authors:</strong> Kanishk Goel, Jayashree Mohan, Nipun Kwatra, Ravi Shreyas Anupindi, Ramachandran Ramjee</p>
-                    <p>  The widespread adoption of Large Language Models (LLMs) has enabled diverse
-applications with very different latency requirements. Existing LLM serving
-frameworks rely on siloed infrastructure with coarse-grained workload
-segregation -- interactive and batch -- leading to inefficient resource
-utilization and limited support for fine-grained Quality-of-Service (QoS)
-differentiation. This results in operational inefficiencies, over-provisioning
-and poor load management during traffic surges.
-  We present Niyama, a novel QoS-driven inference serving system that enables
-efficient co-scheduling of diverse workloads on shared infrastructure. Niyama
-introduces fine-grained QoS classification allowing applications to specify
-precise latency requirements, and dynamically adapts scheduling decisions based
-on real-time system state. Leveraging the predictable execution characteristics
-of LLM inference, Niyama implements a dynamic chunking mechanism to improve
-overall throughput while maintaining strict QoS guarantees. Additionally,
-Niyama employs a hybrid prioritization policy that balances fairness and
-efficiency, and employs selective request relegation that enables graceful
-service degradation during overload conditions. Our evaluation demonstrates
-that Niyama increases serving capacity by 32% compared to current siloed
-deployments, while maintaining QoS guarantees. Notably, under extreme load, our
-system reduces SLO violations by an order of magnitude compared to current
-strategies.
+                    <h3>The structure and topology of an amorphous metal-organic framework</h3>
+                    <p><strong>Authors:</strong> Thomas C. Nicholas, Daniel F. Thomas du Toit, Louise A. M. Rosset, Davide M. Proserpio, Andrew L. Goodwin, Volker L. Deringer</p>
+                    <p>  Amorphous metal-organic frameworks are an important emerging materials class
+that combine the attractive physical properties of the amorphous state with the
+versatility of metal-organic framework (MOF) chemistry. The structures of
+amorphous MOFs have largely been inferred by drawing analogies to crystalline
+polymorphs and inorganic glasses, but ultimately the validity of such
+structural models has been challenging to establish either experimentally or
+computationally. Here we use a unified data-driven approach, combining
+experimental scattering data and active machine learning for interatomic
+potentials, to determine the structure of an amorphous zeolitic imidazolate
+framework (a-ZIF) -- the canonical amorphous MOF. Our results reveal clear
+differences between the structure of a-ZIF and that of other amorphous
+tetrahedral networks, allowing us to invalidate the long-standing assumption
+that these inorganic and hybrid glasses are topologically equivalent. To this
+end, we introduce a systematic notation for the network topology of amorphous
+solids, building a bridge to the successful use of topology analysis in
+crystalline MOFs and to materials informatics. Our work provides insights into
+the structure and topology of the archetypal amorphous MOF and opens up new
+avenues for modelling and understanding amorphous framework materials more
+generally.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22562v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24367v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>Approximate stationarity in disjunctive optimization: concepts,
-  qualification conditions, and application to MPCCs</h3>
-                    <p><strong>Authors:</strong> Isabella Käming, Patrick Mehlitz</p>
-                    <p>  In this paper, we are concerned with stationarity conditions and
-qualification conditions for optimization problems with disjunctive
-constraints. This class covers, among others, optimization problems with
-complementarity, vanishing, or switching constraints which are notoriously
-challenging due to their highly combinatorial structure. The focus of our study
-is twofold. First, we investigate approximate stationarity conditions and the
-associated strict constraint qualifications which can be used to infer
-stationarity of local minimizers. While such concepts are already known in the
-context of so-called Mordukhovich-stationarity, we introduce suitable
-extensions associated with strong stationarity. Second, a qualification
-condition is established which, based on an approximately Mordukhovich- or
-strongly stationary point, can be used to infer its Mordukhovich- or strong
-stationarity, respectively. In contrast to the aforementioned strict constraint
-qualifications, this condition depends on the involved sequences justifying
-approximate stationarity and, thus, is not a constraint qualification in the
-narrower sense. However, it is much easier to verify as it merely requires to
-check the (positive) linear independence of a certain family of gradients. In
-fact, it provides a characterization of stationarity and, thus, is weaker than
-these strict constraint qualifications. In order to illustrate the obtained
-findings, they are applied to optimization problems with complementarity
-constraints where they can be naturally extended to the well-known concepts of
-weak and Clarke-stationarity.
+                    <h3>Query and Conquer: Execution-Guided SQL Generation</h3>
+                    <p><strong>Authors:</strong> Łukasz Borchmann, Marek Wydmuch</p>
+                    <p>  We propose a novel approach for generating complex outputs that significantly
+improves accuracy in text-to-SQL tasks. Our method leverages execution results
+to select the most semantically consistent query from multiple candidates,
+enabling smaller, cost-effective models to surpass computationally intensive
+reasoning methods such as o1, o3-mini, and DeepSeek R1 while reducing inference
+cost by as much as 30 times. It integrates effortlessly with existing models,
+offering a practical and scalable pathway to state-of-the-art SQL generation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22551v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24364v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>SafeCast: Risk-Responsive Motion Forecasting for Autonomous Vehicles</h3>
-                    <p><strong>Authors:</strong> Haicheng Liao, Hanlin Kong, Bin Rao, Bonan Wang, Chengyue Wang, Guyang Yu, Yuming Huang, Ruru Tang, Chengzhong Xu, Zhenning Li</p>
-                    <p>  Accurate motion forecasting is essential for the safety and reliability of
-autonomous driving (AD) systems. While existing methods have made significant
-progress, they often overlook explicit safety constraints and struggle to
-capture the complex interactions among traffic agents, environmental factors,
-and motion dynamics. To address these challenges, we present SafeCast, a
-risk-responsive motion forecasting model that integrates safety-aware
-decision-making with uncertainty-aware adaptability. SafeCast is the first to
-incorporate the Responsibility-Sensitive Safety (RSS) framework into motion
-forecasting, encoding interpretable safety rules--such as safe distances and
-collision avoidance--based on traffic norms and physical principles. To further
-enhance robustness, we introduce the Graph Uncertainty Feature (GUF), a
-graph-based module that injects learnable noise into Graph Attention Networks,
-capturing real-world uncertainties and enhancing generalization across diverse
-scenarios. We evaluate SafeCast on four real-world benchmark datasets--Next
-Generation Simulation (NGSIM), Highway Drone (HighD), ApolloScape, and the
-Macao Connected Autonomous Driving (MoCAD)--covering highway, urban, and
-mixed-autonomy traffic environments. Our model achieves state-of-the-art (SOTA)
-accuracy while maintaining a lightweight architecture and low inference
-latency, underscoring its potential for real-time deployment in safety-critical
-AD systems.
+                    <h3>NoProp: Training Neural Networks without Back-propagation or
+  Forward-propagation</h3>
+                    <p><strong>Authors:</strong> Qinyu Li, Yee Whye Teh, Razvan Pascanu</p>
+                    <p>  The canonical deep learning approach for learning requires computing a
+gradient term at each layer by back-propagating the error signal from the
+output towards each learnable parameter. Given the stacked structure of neural
+networks, where each layer builds on the representation of the layer below,
+this approach leads to hierarchical representations. More abstract features
+live on the top layers of the model, while features on lower layers are
+expected to be less abstract. In contrast to this, we introduce a new learning
+method named NoProp, which does not rely on either forward or backwards
+propagation. Instead, NoProp takes inspiration from diffusion and flow matching
+methods, where each layer independently learns to denoise a noisy target. We
+believe this work takes a first step towards introducing a new family of
+gradient-free learning methods, that does not learn hierarchical
+representations -- at least not in the usual sense. NoProp needs to fix the
+representation at each layer beforehand to a noised version of the target,
+learning a local denoising process that can then be exploited at inference. We
+demonstrate the effectiveness of our method on MNIST, CIFAR-10, and CIFAR-100
+image classification benchmarks. Our results show that NoProp is a viable
+learning algorithm which achieves superior accuracy, is easier to use and
+computationally more efficient compared to other existing back-propagation-free
+methods. By departing from the traditional gradient based learning paradigm,
+NoProp alters how credit assignment is done within the network, enabling more
+efficient distributed learning as well as potentially impacting other
+characteristics of the learning process.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22541v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24322v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>LIM: Large Interpolator Model for Dynamic Reconstruction</h3>
-                    <p><strong>Authors:</strong> Remy Sabathier, Niloy J. Mitra, David Novotny</p>
-                    <p>  Reconstructing dynamic assets from video data is central to many in computer
-vision and graphics tasks. Existing 4D reconstruction approaches are limited by
-category-specific models or slow optimization-based methods. Inspired by the
-recent Large Reconstruction Model (LRM), we present the Large Interpolation
-Model (LIM), a transformer-based feed-forward solution, guided by a novel
-causal consistency loss, for interpolating implicit 3D representations across
-time. Given implicit 3D representations at times $t_0$ and $t_1$, LIM produces
-a deformed shape at any continuous time $t\in[t_0,t_1]$, delivering
-high-quality interpolated frames in seconds. Furthermore, LIM allows explicit
-mesh tracking across time, producing a consistently uv-textured mesh sequence
-ready for integration into existing production pipelines. We also use LIM, in
-conjunction with a diffusion-based multiview generator, to produce dynamic 4D
-reconstructions from monocular videos. We evaluate LIM on various dynamic
-datasets, benchmarking against image-space interpolation methods (e.g., FiLM)
-and direct triplane linear interpolation, and demonstrate clear advantages. In
-summary, LIM is the first feed-forward model capable of high-speed tracked 4D
-asset reconstruction across diverse categories.
+                    <h3>Can Test-Time Scaling Improve World Foundation Model?</h3>
+                    <p><strong>Authors:</strong> Wenyan Cong, Hanqing Zhu, Peihao Wang, Bangya Liu, Dejia Xu, Kevin Wang, David Z. Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang</p>
+                    <p>  World foundation models, which simulate the physical world by predicting
+future states from current observations and inputs, have become central to many
+applications in physical intelligence, including autonomous driving and
+robotics. However, these models require substantial computational resources for
+pretraining and are further constrained by available data during post-training.
+As such, scaling computation at test time emerges as both a critical and
+practical alternative to traditional model enlargement or re-training. In this
+work, we introduce SWIFT, a test-time scaling framework tailored for WFMs.
+SWIFT integrates our extensible WFM evaluation toolkit with process-level
+inference strategies, including fast tokenization, probability-based Top-K
+pruning, and efficient beam search. Empirical results on the COSMOS model
+demonstrate that test-time scaling exists even in a compute-optimal way. Our
+findings reveal that test-time scaling laws hold for WFMs and that SWIFT
+provides a scalable and effective pathway for improving WFM inference without
+retraining or increasing model size. The code is available at
+https://github.com/Mia-Cong/SWIFT.git.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22537v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24320v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
                 <li>
-                    <h3>An integrated method for clustering and association network inference</h3>
-                    <p><strong>Authors:</strong> Jeanne Tous, Julien Chiquet</p>
-                    <p>  We consider high dimensional Gaussian graphical models inference. These
-models provide a rigorous framework to describe a network of statistical
-dependencies between entities, such as genes in genomic regulation studies or
-species in ecology. Penalized methods, including the standard Graphical-Lasso,
-are well-known approaches to infer the parameters of these models. As the
-number of variables in the model (of entities in the network) grow, the network
-inference and interpretation become more complex. We propose Normal-Block, a
-new model that clusters variables and consider a network at the cluster level.
-Normal-Block both adds structure to the network and reduces its size. We build
-on Graphical-Lasso to add a penalty on the network's edges and limit the
-detection of spurious dependencies, we also propose a zero-inflated version of
-the model to account for real-world data properties. For the inference
-procedure, we propose a direct heuristic method and another more rigorous one
-that simultaneously infers the clustering of variables and the association
-network between clusters, using a penalized variational
-Expectation-Maximization approach. An implementation of the model in R, in a
-package called normalblockr, is available on github
-(https://github.com/jeannetous/normalblockr). We present the results in terms
-of clustering and network inference using both simulated data and various types
-of real-world data (proteomics, words occurrences on webpages, and microbiota
-distribution).
+                    <h3>Selective Inference in Graphical Models via Maximum Likelihood</h3>
+                    <p><strong>Authors:</strong> Sofia Guglielmini, Gerda Claeskens, Snigdha Panigrahi</p>
+                    <p>  The graphical lasso is a widely used algorithm for fitting undirected
+Gaussian graphical models. However, for inference on functionals of edge values
+in the learned graph, standard tools lack formal statistical guarantees, such
+as control of the type I error rate. In this paper, we introduce a selective
+inference method for asymptotically valid inference after graphical lasso
+selection with added randomization. We obtain a selective likelihood,
+conditional on the event of selection, through a change of variable on the
+known density of the randomization variables. Our method enables interval
+estimation and hypothesis testing for a wide range of functionals of edge
+values in the learned graph using the conditional maximum likelihood estimate.
+Our numerical studies show that introducing a small amount of randomization:
+(i) greatly increases power and yields substantially shorter intervals compared
+to other conditional inference methods, including data splitting; (ii) ensures
+intervals of bounded length in high-dimensional settings where data splitting
+is infeasible due to insufficient samples for inference; (iii) enables
+inference for a wide range of inferential targets in the learned graph,
+including measures of node influence and connectivity between nodes.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2503.22467v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 3/28/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2503.24311v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 3/31/2025</p>
                 </li>
             </ul>
         </section>
