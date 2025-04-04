@@ -126,275 +126,270 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Slot-Level Robotic Placement via Visual Imitation from Single Human
-  Video</h3>
-                    <p><strong>Authors:</strong> Dandan Shan, Kaichun Mo, Wei Yang, Yu-Wei Chao, David Fouhey, Dieter Fox, Arsalan Mousavian</p>
-                    <p>  The majority of modern robot learning methods focus on learning a set of
-pre-defined tasks with limited or no generalization to new tasks. Extending the
-robot skillset to novel tasks involves gathering an extensive amount of
-training data for additional tasks. In this paper, we address the problem of
-teaching new tasks to robots using human demonstration videos for repetitive
-tasks (e.g., packing). This task requires understanding the human video to
-identify which object is being manipulated (the pick object) and where it is
-being placed (the placement slot). In addition, it needs to re-identify the
-pick object and the placement slots during inference along with the relative
-poses to enable robot execution of the task. To tackle this, we propose SLeRP,
-a modular system that leverages several advanced visual foundation models and a
-novel slot-level placement detector Slot-Net, eliminating the need for
-expensive video demonstrations for training. We evaluate our system using a new
-benchmark of real-world videos. The evaluation results show that SLeRP
-outperforms several baselines and can be deployed on a real robot.
+                    <h3>Concept Lancet: Image Editing with Compositional Representation
+  Transplant</h3>
+                    <p><strong>Authors:</strong> Jinqi Luo, Tianjiao Ding, Kwan Ho Ryan Chan, Hancheng Min, Chris Callison-Burch, René Vidal</p>
+                    <p>  Diffusion models are widely used for image editing tasks. Existing editing
+methods often design a representation manipulation procedure by curating an
+edit direction in the text embedding or score space. However, such a procedure
+faces a key challenge: overestimating the edit strength harms visual
+consistency while underestimating it fails the editing task. Notably, each
+source image may require a different editing strength, and it is costly to
+search for an appropriate strength via trial-and-error. To address this
+challenge, we propose Concept Lancet (CoLan), a zero-shot plug-and-play
+framework for principled representation manipulation in diffusion-based image
+editing. At inference time, we decompose the source input in the latent (text
+embedding or diffusion score) space as a sparse linear combination of the
+representations of the collected visual concepts. This allows us to accurately
+estimate the presence of concepts in each image, which informs the edit. Based
+on the editing task (replace/add/remove), we perform a customized concept
+transplant process to impose the corresponding editing direction. To
+sufficiently model the concept space, we curate a conceptual representation
+dataset, CoLan-150K, which contains diverse descriptions and scenarios of
+visual terms and phrases for the latent dictionary. Experiments on multiple
+diffusion-based image editing baselines show that methods equipped with CoLan
+achieve state-of-the-art performance in editing effectiveness and consistency
+preservation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01959v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02828v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in
-  One Step</h3>
-                    <p><strong>Authors:</strong> Hanyang Wang, Fangfu Liu, Jiawei Chi, Yueqi Duan</p>
-                    <p>  Recovering 3D scenes from sparse views is a challenging task due to its
-inherent ill-posed problem. Conventional methods have developed specialized
-solutions (e.g., geometry regularization or feed-forward deterministic model)
-to mitigate the issue. However, they still suffer from performance degradation
-by minimal overlap across input views with insufficient visual information.
-Fortunately, recent video generative models show promise in addressing this
-challenge as they are capable of generating video clips with plausible 3D
-structures. Powered by large pretrained video diffusion models, some pioneering
-research start to explore the potential of video generative prior and create 3D
-scenes from sparse views. Despite impressive improvements, they are limited by
-slow inference time and the lack of 3D constraint, leading to inefficiencies
-and reconstruction artifacts that do not align with real-world geometry
-structure. In this paper, we propose VideoScene to distill the video diffusion
-model to generate 3D scenes in one step, aiming to build an efficient and
-effective tool to bridge the gap from video to 3D. Specifically, we design a
-3D-aware leap flow distillation strategy to leap over time-consuming redundant
-information and train a dynamic denoising policy network to adaptively
-determine the optimal leap timestep during inference. Extensive experiments
-demonstrate that our VideoScene achieves faster and superior 3D scene
-generation results than previous video diffusion models, highlighting its
-potential as an efficient tool for future video to 3D applications. Project
-Page: https://hanyang-21.github.io/VideoScene
+                    <h3>Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual
+  Editing</h3>
+                    <p><strong>Authors:</strong> Xiangyu Zhao, Peiyuan Zhang, Kexian Tang, Hao Li, Zicheng Zhang, Guangtao Zhai, Junchi Yan, Hua Yang, Xue Yang, Haodong Duan</p>
+                    <p>  Large Multi-modality Models (LMMs) have made significant progress in visual
+understanding and generation, but they still face challenges in General Visual
+Editing, particularly in following complex instructions, preserving appearance
+consistency, and supporting flexible input formats. To address this gap, we
+introduce RISEBench, the first benchmark for evaluating Reasoning-Informed
+viSual Editing (RISE). RISEBench focuses on four key reasoning types: Temporal,
+Causal, Spatial, and Logical Reasoning. We curate high-quality test cases for
+each category and propose an evaluation framework that assesses Instruction
+Reasoning, Appearance Consistency, and Visual Plausibility with both human
+judges and an LMM-as-a-judge approach. Our experiments reveal that while
+GPT-4o-Native significantly outperforms other open-source and proprietary
+models, even this state-of-the-art system struggles with logical reasoning
+tasks, highlighting an area that remains underexplored. As an initial effort,
+RISEBench aims to provide foundational insights into reasoning-aware visual
+editing and to catalyze future research. Though still in its early stages, we
+are committed to continuously expanding and refining the benchmark to support
+more comprehensive, reliable, and scalable evaluations of next-generation
+multimodal systems. Our code and data will be released at
+https://github.com/PhoenixZ810/RISEBench.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01956v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02826v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>The LLM Wears Prada: Analysing Gender Bias and Stereotypes through
-  Online Shopping Data</h3>
-                    <p><strong>Authors:</strong> Massimiliano Luca, Ciro Beneduce, Bruno Lepri, Jacopo Staiano</p>
-                    <p>  With the wide and cross-domain adoption of Large Language Models, it becomes
-crucial to assess to which extent the statistical correlations in training
-data, which underlie their impressive performance, hide subtle and potentially
-troubling biases. Gender bias in LLMs has been widely investigated from the
-perspectives of works, hobbies, and emotions typically associated with a
-specific gender. In this study, we introduce a novel perspective. We
-investigate whether LLMs can predict an individual's gender based solely on
-online shopping histories and whether these predictions are influenced by
-gender biases and stereotypes. Using a dataset of historical online purchases
-from users in the United States, we evaluate the ability of six LLMs to
-classify gender and we then analyze their reasoning and products-gender
-co-occurrences. Results indicate that while models can infer gender with
-moderate accuracy, their decisions are often rooted in stereotypical
-associations between product categories and gender. Furthermore, explicit
-instructions to avoid bias reduce the certainty of model predictions, but do
-not eliminate stereotypical patterns. Our findings highlight the persistent
-nature of gender biases in LLMs and emphasize the need for robust
-bias-mitigation strategies.
+                    <h3>ALMA uncovers optically thin and multi-component CO gas in the
+  outflowing circumnuclear disk of NGC1068</h3>
+                    <p><strong>Authors:</strong> Yuze Zhang, Serena Viti, Santiago García-Burillo, Ko-Yun Huang</p>
+                    <p>  Active galactic nuclei (AGNs) influence their host galaxies through winds and
+jets that can drive molecular outflows, traceable with CO line emissions using
+the Atacama Large Millimeter Array (ALMA). Recent studies leveraging ALMA data
+have proposed a three-dimensional outflow geometry in the nearby Seyfert II
+galaxy NGC 1068, a key target for AGN unification theories. Using ALMA
+observations of CO(2-1), CO(3-2), and CO(6-5) transitions at roughly 0.1
+arcseconds (approximately 7 parsecs) resolution, we analyzed the temperature,
+density, and kinematics of NGC 1068's circumnuclear disk (CND), focusing on the
+molecular outflow. Through local thermodynamic equilibrium (LTE) analysis, we
+derived column densities and rotational temperatures, indicating optically thin
+gas and CO-to-H2 (XCO) conversion factors between 4.8 and 9.6 times smaller
+than the Milky Way value. The inferred molecular mass outflow rate is mostly
+below 5.5 solar masses per year, with the dominant contribution northeast of
+the AGN. After subtracting the rotation curve of the CND, we modeled averaged
+line profiles in each region using single and multi-component Gaussian fits.
+Several profiles within or near the AGN wind bicone required multiple
+components with significant velocity shifts, suggesting multi-component complex
+outflow kinematics. We observe lateral variation in CO kinematics along the AGN
+wind bicone and a misalignment between the molecular and ionized outflow
+directions. These results imply that the dynamic impact of the ionized AGN wind
+on the molecular gas in the CND may be limited. However, the molecular outflow
+shows a complex, asymmetric structure.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01951v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02758v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Critical Thinking: Which Kinds of Complexity Govern Optimal Reasoning
-  Length?</h3>
-                    <p><strong>Authors:</strong> Celine Lee, Alexander M. Rush, Keyon Vafa</p>
-                    <p>  Large language models (LLMs) often benefit from verbalized reasoning at
-inference time, but it remains unclear which aspects of task difficulty these
-extra reasoning tokens address. To investigate this question, we formalize a
-framework using deterministic finite automata (DFAs). DFAs offer a formalism
-through which we can characterize task complexity through measurable properties
-such as run length (number of reasoning steps required) and state-space size
-(decision complexity). We first show that across different tasks and models of
-different sizes and training paradigms, there exists an optimal amount of
-reasoning tokens such that the probability of producing a correct solution is
-maximized. We then investigate which properties of complexity govern this
-critical length: we find that task instances with longer corresponding
-underlying DFA runs (i.e. demand greater latent state-tracking requirements)
-correlate with longer reasoning lengths, but, surprisingly, that DFA size (i.e.
-state-space complexity) does not. We then demonstrate an implication of these
-findings: being able to predict the optimal number of reasoning tokens for new
-problems and filtering out non-optimal length answers results in consistent
-accuracy improvements.
+                    <h3>Echoes of the hidden: Uncovering coordination beyond network structure</h3>
+                    <p><strong>Authors:</strong> Shahar Somin, Tom Cohen, Jeremy Kepner, Alex Pentland</p>
+                    <p>  The study of connectivity and coordination has drawn increasing attention in
+recent decades due to their central role in driving markets, shaping societal
+dynamics, and influencing biological systems. Traditionally, observable
+connections, such as phone calls, financial transactions, or social media
+connections, have been used to infer coordination and connectivity. However,
+incomplete, encrypted, or fragmented data, alongside the ubiquity of
+communication platforms and deliberate obfuscation, often leave many real-world
+connections hidden. In this study, we demonstrate that coordinating individuals
+exhibit shared bursty activity patterns, enabling their detection even when
+observable links between them are sparse or entirely absent. We further propose
+a generative model based on the network of networks formalism to account for
+the mechanisms driving this collaborative burstiness, attributing it to shock
+propagation across networks rather than isolated individual behavior. Model
+simulations demonstrate that when observable connection density is below 70\%,
+burstiness significantly improves coordination detection compared to
+state-of-the-art temporal and structural methods. This work provides a new
+perspective on community and coordination dynamics, advancing both theoretical
+understanding and practical detection. By laying the foundation for identifying
+hidden connections beyond observable network structures, it enables detection
+across different platforms, alongside enhancing system behavior understanding,
+informed decision-making, and risk mitigation.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01935v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02757v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Hessian-aware Training for Enhancing DNNs Resilience to Parameter
-  Corruptions</h3>
-                    <p><strong>Authors:</strong> Tahmid Hasan Prato, Seijoon Kim, Lizhong Chen, Sanghyun Hong</p>
-                    <p>  Deep neural networks are not resilient to parameter corruptions: even a
-single-bitwise error in their parameters in memory can cause an accuracy drop
-of over 10%, and in the worst cases, up to 99%. This susceptibility poses great
-challenges in deploying models on computing platforms, where adversaries can
-induce bit-flips through software or bitwise corruptions may occur naturally.
-Most prior work addresses this issue with hardware or system-level approaches,
-such as integrating additional hardware components to verify a model's
-integrity at inference. However, these methods have not been widely deployed as
-they require infrastructure or platform-wide modifications.
-  In this paper, we propose a new approach to addressing this issue: training
-models to be more resilient to bitwise corruptions to their parameters. Our
-approach, Hessian-aware training, promotes models with $flatter$ loss surfaces.
-We show that, while there have been training methods, designed to improve
-generalization through Hessian-based approaches, they do not enhance resilience
-to parameter corruptions. In contrast, models trained with our method
-demonstrate increased resilience to parameter corruptions, particularly with a
-20$-$50% reduction in the number of bits whose individual flipping leads to a
-90$-$100% accuracy drop. Moreover, we show the synergy between ours and
-existing hardware and system-level defenses.
+                    <h3>GEOPARD: Geometric Pretraining for Articulation Prediction in 3D Shapes</h3>
+                    <p><strong>Authors:</strong> Pradyumn Goyal, Dmitry Petrov, Sheldon Andrews, Yizhak Ben-Shabat, Hsueh-Ti Derek Liu, Evangelos Kalogerakis</p>
+                    <p>  We present GEOPARD, a transformer-based architecture for predicting
+articulation from a single static snapshot of a 3D shape. The key idea of our
+method is a pretraining strategy that allows our transformer to learn plausible
+candidate articulations for 3D shapes based on a geometric-driven search
+without manual articulation annotation. The search automatically discovers
+physically valid part motions that do not cause detachments or collisions with
+other shape parts. Our experiments indicate that this geometric pretraining
+strategy, along with carefully designed choices in our transformer
+architecture, yields state-of-the-art results in articulation inference in the
+PartNet-Mobility dataset.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01933v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02747v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Review, Refine, Repeat: Understanding Iterative Decoding of AI Agents
-  with Dynamic Evaluation and Selection</h3>
-                    <p><strong>Authors:</strong> Souradip Chakraborty, Mohammadreza Pourreza, Ruoxi Sun, Yiwen Song, Nino Scherrer, Jindong Gu, Furong Huang, Amrit Singh Bedi, Ahmad Beirami, Hamid Palangi, Tomas Pfister</p>
-                    <p>  While AI agents have shown remarkable performance at various tasks, they
-still struggle with complex multi-modal applications, structured generation and
-strategic planning. Improvements via standard fine-tuning is often impractical,
-as solving agentic tasks usually relies on black box API access without control
-over model parameters. Inference-time methods such as Best-of-N (BON) sampling
-offer a simple yet effective alternative to improve performance. However, BON
-lacks iterative feedback integration mechanism. Hence, we propose Iterative
-Agent Decoding (IAD) which combines iterative refinement with dynamic candidate
-evaluation and selection guided by a verifier. IAD differs in how feedback is
-designed and integrated, specifically optimized to extract maximal signal from
-reward scores. We conduct a detailed comparison of baselines across key metrics
-on Sketch2Code, Text2SQL, and Webshop where IAD consistently outperforms
-baselines, achieving 3--6% absolute gains on Sketch2Code and Text2SQL (with and
-without LLM judges) and 8--10% gains on Webshop across multiple metrics. To
-better understand the source of IAD's gains, we perform controlled experiments
-to disentangle the effect of adaptive feedback from stochastic sampling, and
-find that IAD's improvements are primarily driven by verifier-guided
-refinement, not merely sampling diversity. We also show that both IAD and BON
-exhibit inference-time scaling with increased compute when guided by an optimal
-verifier. Our analysis highlights the critical role of verifier quality in
-effective inference-time optimization and examines the impact of noisy and
-sparse rewards on scaling behavior. Together, these findings offer key insights
-into the trade-offs and principles of effective inference-time optimization.
+                    <h3>Sequential Binary Hypothesis Testing with Competing Agents under
+  Information Asymmetry</h3>
+                    <p><strong>Authors:</strong> Aneesh Raghavan, M. Umar B. Niazi, Karl H. Johansson</p>
+                    <p>  This paper concerns sequential hypothesis testing in competitive multi-agent
+systems where agents exchange potentially manipulated information.
+Specifically, a two-agent scenario is studied where each agent aims to
+correctly infer the true state of nature while optimizing decision speed and
+accuracy. At each iteration, agents collect private observations, update their
+beliefs, and share (possibly corrupted) belief signals with their counterparts
+before deciding whether to stop and declare a state, or continue gathering more
+information. The analysis yields three main results: (1)~when agents share
+information strategically, the optimal signaling policy involves
+equal-probability randomization between truthful and inverted beliefs;
+(2)~agents maximize performance by relying solely on their own observations for
+belief updating while using received information only to anticipate their
+counterpart's stopping decision; and (3)~the agent reaching their confidence
+threshold first cause the other agent to achieve a higher conditional
+probability of error. Numerical simulations further demonstrate that agents
+with higher KL divergence in their conditional distributions gain competitive
+advantage. Furthermore, our results establish that information sharing --
+despite strategic manipulation -- reduces overall system stopping time compared
+to non-interactive scenarios, which highlights the inherent value of
+communication even in this competitive setup.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01931v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02743v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Is the Reversal Curse a Binding Problem? Uncovering Limitations of
-  Transformers from a Basic Generalization Failure</h3>
-                    <p><strong>Authors:</strong> Boshi Wang, Huan Sun</p>
-                    <p>  Despite their impressive capabilities, LLMs exhibit a basic generalization
-failure known as the Reversal Curse, where they struggle to learn reversible
-factual associations. Understanding why this occurs could help identify
-weaknesses in current models and advance their generalization and robustness.
-In this paper, we conjecture that the Reversal Curse in LLMs is a manifestation
-of the long-standing binding problem in cognitive science, neuroscience and AI.
-Specifically, we identify two primary causes of the Reversal Curse stemming
-from transformers' limitations in conceptual binding: the inconsistency and
-entanglements of concept representations. We perform a series of experiments
-that support these conjectures. Our exploration leads to a model design based
-on JEPA (Joint-Embedding Predictive Architecture) that for the first time
-breaks the Reversal Curse without side-stepping it with specialized data
-augmentation or non-causal masking, and moreover, generalization could be
-further improved by incorporating special memory layers that support
-disentangled concept representations. We demonstrate that the skill of reversal
-unlocks a new kind of memory integration that enables models to solve
-large-scale arithmetic reasoning problems via parametric forward-chaining,
-outperforming frontier LLMs based on non-parametric memory and prolonged
-explicit reasoning.
+                    <h3>Universal low-density power laws of the dc conductivity and Hall
+  constant in the self-consistent Born approximation</h3>
+                    <p><strong>Authors:</strong> Giacomo Morpurgo, Christophe Berthod, Thierry Giamarchi</p>
+                    <p>  The dc conductivity tensor of two-dimensional one-band metals with weak
+pointlike disorder and magnetic field is studied in the self-consistent Born
+approximation, with special emphasis on the regime of low carrier density. In
+this theory, the Kubo conductivity is a functional of the electron dispersion
+and local (momentum-independent) electron self-energy, which is itself a causal
+functional of the dispersion and disorder strength. We obtain exact closed
+expressions for the asymptotic low-density conductivities at zero temperature
+in the form of power laws of the density and disorder strength with universal
+exponents. The crossover to the semiclassical regime of high density is studied
+numerically, as well as the temperature dependence. Our model and results may
+be relevant to interpret linear magneto-transport experiments performed in the
+metallic regime of gated two-dimensional semiconductors.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01928v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02739v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Representing Flow Fields with Divergence-Free Kernels for Reconstruction</h3>
-                    <p><strong>Authors:</strong> Xingyu Ni, Jingrui Xing, Xingqiao Li, Bin Wang, Baoquan Chen</p>
-                    <p>  Accurately reconstructing continuous flow fields from sparse or indirect
-measurements remains an open challenge, as existing techniques often suffer
-from oversmoothing artifacts, reliance on heterogeneous architectures, and the
-computational burden of enforcing physics-informed losses in implicit neural
-representations (INRs). In this paper, we introduce a novel flow field
-reconstruction framework based on divergence-free kernels (DFKs), which
-inherently enforce incompressibility while capturing fine structures without
-relying on hierarchical or heterogeneous representations. Through qualitative
-analysis and quantitative ablation studies, we identify the matrix-valued
-radial basis functions derived from Wendland's $\mathcal{C}^4$ polynomial
-(DFKs-Wen4) as the optimal form of analytically divergence-free approximation
-for velocity fields, owing to their favorable numerical properties, including
-compact support, positive definiteness, and second-order differentiablility.
-Experiments across various reconstruction tasks, spanning data compression,
-inpainting, super-resolution, and time-continuous flow inference, has
-demonstrated that DFKs-Wen4 outperform INRs and other divergence-free
-representations in both reconstruction accuracy and computational efficiency
-while requiring the fewest trainable parameters.
+                    <h3>ERPO: Advancing Safety Alignment via Ex-Ante Reasoning Preference
+  Optimization</h3>
+                    <p><strong>Authors:</strong> Kehua Feng, Keyan Ding, Jing Yu, Menghan Li, Yuhao Wang, Tong Xu, Xinda Wang, Qiang Zhang, Huajun Chen</p>
+                    <p>  Recent advancements in large language models (LLMs) have accelerated progress
+toward artificial general intelligence, yet their potential to generate harmful
+content poses critical safety challenges. Existing alignment methods often
+struggle to cover diverse safety scenarios and remain vulnerable to adversarial
+attacks. In this work, we propose Ex-Ante Reasoning Preference Optimization
+(ERPO), a novel safety alignment framework that equips LLMs with explicit
+preemptive reasoning through Chain-of-Thought and provides clear evidence for
+safety judgments by embedding predefined safety rules. Specifically, our
+approach consists of three stages: first, equipping the model with Ex-Ante
+reasoning through supervised fine-tuning (SFT) using a constructed reasoning
+module; second, enhancing safety, usefulness, and efficiency via Direct
+Preference Optimization (DPO); and third, mitigating inference latency with a
+length-controlled iterative preference optimization strategy. Experiments on
+multiple open-source LLMs demonstrate that ERPO significantly enhances safety
+performance while maintaining response efficiency.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01913v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02725v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>Multi-fidelity Parameter Estimation Using Conditional Diffusion Models</h3>
-                    <p><strong>Authors:</strong> Caroline Tatsuoka, Minglei Yang, Dongbin Xiu, Guannan Zhang</p>
-                    <p>  We present a multi-fidelity method for uncertainty quantification of
-parameter estimates in complex systems, leveraging generative models trained to
-sample the target conditional distribution. In the Bayesian inference setting,
-traditional parameter estimation methods rely on repeated simulations of
-potentially expensive forward models to determine the posterior distribution of
-the parameter values, which may result in computationally intractable
-workflows. Furthermore, methods such as Markov Chain Monte Carlo (MCMC)
-necessitate rerunning the entire algorithm for each new data observation,
-further increasing the computational burden. Hence, we propose a novel method
-for efficiently obtaining posterior distributions of parameter estimates for
-high-fidelity models given data observations of interest. The method first
-constructs a low-fidelity, conditional generative model capable of amortized
-Bayesian inference and hence rapid posterior density approximation over a
-wide-range of data observations. When higher accuracy is needed for a specific
-data observation, the method employs adaptive refinement of the density
-approximation. It uses outputs from the low-fidelity generative model to refine
-the parameter sampling space, ensuring efficient use of the computationally
-expensive high-fidelity solver. Subsequently, a high-fidelity, unconditional
-generative model is trained to achieve greater accuracy in the target posterior
-distribution. Both low- and high- fidelity generative models enable efficient
-sampling from the target posterior and do not require repeated simulation of
-the high-fidelity forward model. We demonstrate the effectiveness of the
-proposed method on several numerical examples, including cases with multi-modal
-densities, as well as an application in plasma physics for a runaway electron
-simulation model.
+                    <h3>Learning Phase Distortion with Selective State Space Models for Video
+  Turbulence Mitigation</h3>
+                    <p><strong>Authors:</strong> Xingguang Zhang, Nicholas Chimitt, Xijun Wang, Yu Yuan, Stanley H. Chan</p>
+                    <p>  Atmospheric turbulence is a major source of image degradation in long-range
+imaging systems. Although numerous deep learning-based turbulence mitigation
+(TM) methods have been proposed, many are slow, memory-hungry, and do not
+generalize well. In the spatial domain, methods based on convolutional
+operators have a limited receptive field, so they cannot handle a large spatial
+dependency required by turbulence. In the temporal domain, methods relying on
+self-attention can, in theory, leverage the lucky effects of turbulence, but
+their quadratic complexity makes it difficult to scale to many frames.
+Traditional recurrent aggregation methods face parallelization challenges.
+  In this paper, we present a new TM method based on two concepts: (1) A
+turbulence mitigation network based on the Selective State Space Model
+(MambaTM). MambaTM provides a global receptive field in each layer across
+spatial and temporal dimensions while maintaining linear computational
+complexity. (2) Learned Latent Phase Distortion (LPD). LPD guides the state
+space model. Unlike classical Zernike-based representations of phase
+distortion, the new LPD map uniquely captures the actual effects of turbulence,
+significantly improving the model's capability to estimate degradation by
+reducing the ill-posedness. Our proposed method exceeds current
+state-of-the-art networks on various synthetic and real-world TM benchmarks
+with significantly faster inference speed. The code is available at
+http://github.com/xg416/MambaTM.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01894v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02697v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
                 <li>
-                    <h3>CoMatcher: Multi-View Collaborative Feature Matching</h3>
-                    <p><strong>Authors:</strong> Jintao Zhang, Zimin Xia, Mingyue Dong, Shuhan Shen, Linwei Yue, Xianwei Zheng</p>
-                    <p>  This paper proposes a multi-view collaborative matching strategy for reliable
-track construction in complex scenarios. We observe that the pairwise matching
-paradigms applied to image set matching often result in ambiguous estimation
-when the selected independent pairs exhibit significant occlusions or extreme
-viewpoint changes. This challenge primarily stems from the inherent uncertainty
-in interpreting intricate 3D structures based on limited two-view observations,
-as the 3D-to-2D projection leads to significant information loss. To address
-this, we introduce CoMatcher, a deep multi-view matcher to (i) leverage
-complementary context cues from different views to form a holistic 3D scene
-understanding and (ii) utilize cross-view projection consistency to infer a
-reliable global solution. Building on CoMatcher, we develop a groupwise
-framework that fully exploits cross-view relationships for large-scale matching
-tasks. Extensive experiments on various complex scenarios demonstrate the
-superiority of our method over the mainstream two-view matching paradigm.
+                    <h3>Joint Modeling of Spatial Dependencies Across Multiple Subjects in
+  Multiplexed Tissue Imaging</h3>
+                    <p><strong>Authors:</strong> Joel Eliason, Arvind Rao, Timothy L Frankel, Michele Peruzzi</p>
+                    <p>  The tumor microenvironment (TME) is a spatially heterogeneous ecosystem where
+cellular interactions shape tumor progression and response to therapy.
+Multiplexed imaging technologies enable high-resolution spatial
+characterization of the TME, yet statistical methods for analyzing
+multi-subject spatial tissue data remain limited. We propose a Bayesian
+hierarchical model for inferring spatial dependencies in multiplexed imaging
+datasets across multiple subjects. Our model represents the TME as a
+multivariate log-Gaussian Cox process, where spatial intensity functions of
+different cell types are governed by a latent multivariate Gaussian process. By
+pooling information across subjects, we estimate spatial correlation functions
+that capture within-type and cross-type dependencies, enabling interpretable
+inference about disease-specific cellular organization. We validate our method
+using simulations, demonstrating robustness to latent factor specification and
+spatial resolution. We apply our approach to two multiplexed imaging datasets:
+pancreatic cancer and colorectal cancer, revealing distinct spatial
+organization patterns across disease subtypes and highlighting tumor-immune
+interactions that differentiate immune-permissive and immune-exclusive
+microenvironments. These findings provide insight into mechanisms of immune
+evasion and may inform novel therapeutic strategies. Our approach offers a
+principled framework for modeling spatial dependencies in multi-subject data,
+with broader applicability to spatially resolved omics and imaging studies. An
+R package, available online, implements our methods.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.01872v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/2/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.02693v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/3/2025</p>
                 </li>
             </ul>
         </section>
