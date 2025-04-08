@@ -130,279 +130,271 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Bonsai: Interpretable Tree-Adaptive Grounded Reasoning</h3>
-                    <p><strong>Authors:</strong> Kate Sanders, Benjamin Van Durme</p>
-                    <p>  To develop general-purpose collaborative agents, humans need reliable AI
-systems that can (1) adapt to new domains and (2) transparently reason with
-uncertainty to allow for verification and correction. Black-box models
-demonstrate powerful data processing abilities but do not satisfy these
-criteria due to their opaqueness, domain specificity, and lack of uncertainty
-awareness. We introduce Bonsai, a compositional and probabilistic reasoning
-system that generates adaptable inference trees by retrieving relevant
-grounding evidence and using it to compute likelihoods of sub-claims derived
-from broader natural language inferences. Bonsai's reasoning power is tunable
-at test-time via evidence scaling and it demonstrates reliable handling of
-varied domains including transcripts, photographs, videos, audio, and
-databases. Question-answering and human alignment experiments demonstrate that
-Bonsai matches the performance of domain-specific black-box methods while
-generating interpretable, grounded, and uncertainty-aware reasoning traces.
+                    <h3>Gaussian Mixture Flow Matching Models</h3>
+                    <p><strong>Authors:</strong> Hansheng Chen, Kai Zhang, Hao Tan, Zexiang Xu, Fujun Luan, Leonidas Guibas, Gordon Wetzstein, Sai Bi</p>
+                    <p>  Diffusion models approximate the denoising distribution as a Gaussian and
+predict its mean, whereas flow matching models reparameterize the Gaussian mean
+as flow velocity. However, they underperform in few-step sampling due to
+discretization error and tend to produce over-saturated colors under
+classifier-free guidance (CFG). To address these limitations, we propose a
+novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the
+mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a
+multi-modal flow velocity distribution, which can be learned with a KL
+divergence loss. We demonstrate that GMFlow generalizes previous diffusion and
+flow matching models where a single Gaussian is learned with an $L_2$ denoising
+loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic
+denoising distributions and velocity fields for precise few-step sampling.
+Furthermore, we introduce a novel probabilistic guidance scheme that mitigates
+the over-saturation issues of CFG and improves image generation quality.
+Extensive experiments demonstrate that GMFlow consistently outperforms flow
+matching baselines in generation quality, achieving a Precision of 0.942 with
+only 6 sampling steps on ImageNet 256$\times$256.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03640v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05304v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>The Spectrum of Gravitational Waves from Annihilating Domain Walls</h3>
-                    <p><strong>Authors:</strong> Alessio Notari, Fabrizio Rompineve, Francisco Torrenti</p>
-                    <p>  Networks of cosmic domain walls can form in the early Universe as a
-consequence of the spontaneous breaking of discrete symmetries. We study the
-production of a cosmological background of gravitational waves (GWs) from such
-networks, when they annihilate due to a small explicit symmetry breaking term.
-Averaging over several 3+1-dimensional high-resolution lattice field
-simulations, we obtain a GW spectrum with the following characteristics: (1) a
-broad asymmetric peak, roughly located at frequency $f\sim 2 H_{\rm gw}$, where
-$H_{\rm gw}$ is the Hubble rate at the end of GW production, shortly after
-annihilation, (2) a doubly broken power spectrum $\propto k^{-n}$, with initial
-slope $n \sim 0.5$ after the main peak and $n \sim 1.8$ at high $f$, while the
-low frequency region $f<f_p$ agrees with the causality behavior $\sim k^3$.
-Additionally, extending previous results, we find that GW production continues
-to be efficient until a value of the Hubble scale $H_{\text gw}$ that is
-roughly an order of magnitude smaller than the naive estimate $\sigma H =
-\Delta V$, where $\sigma$ is the wall tension and $\Delta V$ the size of the
-symmetry breaking term, thereby leading to a $O(100)$ larger GW signal. We find
-such results to be robust when changing the shape of the scalar field potential
-or including a time-dependent symmetry breaking term. Our findings have
-important implications for GW searches, especially in light of the reported
-evidence for a stochastic GW background in Pulsar Timing Array data.
+                    <h3>InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</h3>
+                    <p><strong>Authors:</strong> Sai Kumar Dwivedi, Dimitrije Antić, Shashank Tripathi, Omid Taheri, Cordelia Schmid, Michael J. Black, Dimitrios Tzionas</p>
+                    <p>  We introduce InteractVLM, a novel method to estimate 3D contact points on
+human bodies and objects from single in-the-wild images, enabling accurate
+human-object joint reconstruction in 3D. This is challenging due to occlusions,
+depth ambiguities, and widely varying object shapes. Existing methods rely on
+3D contact annotations collected via expensive motion-capture systems or
+tedious manual labeling, limiting scalability and generalization. To overcome
+this, InteractVLM harnesses the broad visual knowledge of large Vision-Language
+Models (VLMs), fine-tuned with limited 3D contact data. However, directly
+applying these models is non-trivial, as they reason only in 2D, while
+human-object contact is inherently 3D. Thus we introduce a novel
+Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D
+space via multi-view rendering, (2) trains a novel multi-view localization
+model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D.
+Additionally, we propose a new task called Semantic Human Contact estimation,
+where human contact predictions are conditioned explicitly on object semantics,
+enabling richer interaction modeling. InteractVLM outperforms existing work on
+contact estimation and also facilitates 3D reconstruction from an in-the wild
+image. Code and models are available at https://interactvlm.is.tue.mpg.de.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03636v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05303v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Do Larger Language Models Imply Better Reasoning? A Pretraining Scaling
-  Law for Reasoning</h3>
-                    <p><strong>Authors:</strong> Xinyi Wang, Shawn Tan, Mingyu Jin, William Yang Wang, Rameswar Panda, Yikang Shen</p>
-                    <p>  Large Language Models (LLMs) have demonstrated remarkable capabilities across
-a wide range of tasks requiring complex reasoning. However, the effects of
-scaling on their reasoning abilities remain insufficiently understood. In this
-paper, we introduce a synthetic multihop reasoning environment designed to
-closely replicate the structure and distribution of real-world large-scale
-knowledge graphs. Our reasoning task involves completing missing edges in the
-graph, which requires advanced multi-hop reasoning and mimics real-world
-reasoning scenarios. To evaluate this, we pretrain language models (LMs) from
-scratch solely on triples from the incomplete graph and assess their ability to
-infer the missing edges. Interestingly, we observe that overparameterization
-can impair reasoning performance due to excessive memorization. We investigate
-different factors that affect this U-shaped loss curve, including graph
-structure, model size, and training steps. To predict the optimal model size
-for a specific knowledge graph, we find an empirical scaling that linearly maps
-the knowledge graph search entropy to the optimal model size. This work
-provides new insights into the relationship between scaling and reasoning in
-LLMs, shedding light on possible ways to optimize their performance for
-reasoning tasks.
+                    <h3>SmolVLM: Redefining small and efficient multimodal models</h3>
+                    <p><strong>Authors:</strong> Andrés Marafioti, Orr Zohar, Miquel Farré, Merve Noyan, Elie Bakouch, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf</p>
+                    <p>  Large Vision-Language Models (VLMs) deliver exceptional performance but
+require significant computational resources, limiting their deployment on
+mobile and edge devices. Smaller VLMs typically mirror design choices of larger
+models, such as extensive image tokenization, leading to inefficient GPU memory
+usage and constrained practicality for on-device applications.
+  We introduce SmolVLM, a series of compact multimodal models specifically
+engineered for resource-efficient inference. We systematically explore
+architectural configurations, tokenization strategies, and data curation
+optimized for low computational overhead. Through this, we identify key design
+choices that yield substantial performance gains on image and video tasks with
+minimal memory footprints.
+  Our smallest model, SmolVLM-256M, uses less than 1GB GPU memory during
+inference and outperforms the 300-times larger Idefics-80B model, despite an
+18-month development gap. Our largest model, at 2.2B parameters, rivals
+state-of-the-art VLMs consuming twice the GPU memory. SmolVLM models extend
+beyond static images, demonstrating robust video comprehension capabilities.
+  Our results emphasize that strategic architectural optimizations, aggressive
+yet efficient tokenization, and carefully curated training data significantly
+enhance multimodal performance, facilitating practical, energy-efficient
+deployments at significantly smaller scales.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03635v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05299v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Enhancing Causal Effect Estimation with Diffusion-Generated Data</h3>
-                    <p><strong>Authors:</strong> Li Chen, Xiaotong Shen, Wei Pan</p>
-                    <p>  Estimating causal effects from observational data is inherently challenging
-due to the lack of observable counterfactual outcomes and even the presence of
-unmeasured confounding. Traditional methods often rely on restrictive,
-untestable assumptions or necessitate valid instrumental variables,
-significantly limiting their applicability and robustness. In this paper, we
-introduce Augmented Causal Effect Estimation (ACEE), an innovative approach
-that utilizes synthetic data generated by a diffusion model to enhance causal
-effect estimation. By fine-tuning pre-trained generative models, ACEE simulates
-counterfactual scenarios that are otherwise unobservable, facilitating accurate
-estimation of individual and average treatment effects even under unmeasured
-confounding. Unlike conventional methods, ACEE relaxes the stringent
-unconfoundedness assumption, relying instead on an empirically checkable
-condition. Additionally, a bias-correction mechanism is introduced to mitigate
-synthetic data inaccuracies. We provide theoretical guarantees demonstrating
-the consistency and efficiency of the ACEE estimator, alongside comprehensive
-empirical validation through simulation studies and benchmark datasets. Results
-confirm that ACEE significantly improves causal estimation accuracy,
-particularly in complex settings characterized by nonlinear relationships and
-heteroscedastic noise.
+                    <h3>Truthful or Fabricated? Using Causal Attribution to Mitigate Reward
+  Hacking in Explanations</h3>
+                    <p><strong>Authors:</strong> Pedro Ferreira, Wilker Aziz, Ivan Titov</p>
+                    <p>  Chain-of-thought explanations are widely used to inspect the decision process
+of large language models (LLMs) and to evaluate the trustworthiness of model
+outputs, making them important for effective collaboration between LLMs and
+humans. We demonstrate that preference optimization - a key step in the
+alignment phase - can inadvertently reduce the faithfulness of these
+explanations. This occurs because the reward model (RM), which guides
+alignment, is tasked with optimizing both the expected quality of the response
+and the appropriateness of the explanations (e.g., minimizing bias or adhering
+to safety standards), creating potential conflicts. The RM lacks a mechanism to
+assess the consistency between the model's internal decision process and the
+generated explanation. Consequently, the LLM may engage in "reward hacking" by
+producing a final response that scores highly while giving an explanation
+tailored to maximize reward rather than accurately reflecting its reasoning. To
+address this issue, we propose enriching the RM's input with a causal
+attribution of the prediction, allowing the RM to detect discrepancies between
+the generated self-explanation and the model's decision process. In controlled
+settings, we show that this approach reduces the tendency of the LLM to
+generate misleading explanations.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03630v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05294v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer
-  Models</h3>
-                    <p><strong>Authors:</strong>  NVIDIA,  :, Aaron Blakeman, Aarti Basant, Abhinav Khattar, Adithya Renduchintala, Akhiad Bercovich, Aleksander Ficek, Alexis Bjorlin, Ali Taghibakhshi, Amala Sanjay Deshmukh, Ameya Sunil Mahabaleshwarkar, Andrew Tao, Anna Shors, Ashwath Aithal, Ashwin Poojary, Ayush Dattagupta, Balaram Buddharaju, Bobby Chen, Boris Ginsburg, Boxin Wang, Brandon Norick, Brian Butterfield, Bryan Catanzaro, Carlo del Mundo, Chengyu Dong, Christine Harvey, Christopher Parisien, Dan Su, Daniel Korzekwa, Danny Yin, Daria Gitman, David Mosallanezhad, Deepak Narayanan, Denys Fridman, Dima Rekesh, Ding Ma, Dmytro Pykhtar, Dong Ahn, Duncan Riach, Dusan Stosic, Eileen Long, Elad Segal, Ellie Evans, Eric Chung, Erick Galinkin, Evelina Bakhturina, Ewa Dobrowolska, Fei Jia, Fuxiao Liu, Gargi Prasad, Gerald Shen, Guilin Liu, Guo Chen, Haifeng Qian, Helen Ngo, Hongbin Liu, Hui Li, Igor Gitman, Ilia Karmanov, Ivan Moshkov, Izik Golan, Jan Kautz, Jane Polak Scowcroft, Jared Casper, Jarno Seppanen, Jason Lu, Jason Sewall, Jiaqi Zeng, Jiaxuan You, Jimmy Zhang, Jing Zhang, Jining Huang, Jinze Xue, Jocelyn Huang, Joey Conway, John Kamalu, Jon Barker, Jonathan Cohen, Joseph Jennings, Jupinder Parmar, Karan Sapra, Kari Briski, Kateryna Chumachenko, Katherine Luna, Keshav Santhanam, Kezhi Kong, Kirthi Sivamani, Krzysztof Pawelec, Kumar Anik, Kunlun Li, Lawrence McAfee, Leon Derczynski, Lindsey Pavao, Luis Vega, Lukas Voegtle, Maciej Bala, Maer Rodrigues de Melo, Makesh Narsimhan Sreedhar, Marcin Chochowski, Markus Kliegl, Marta Stepniewska-Dziubinska, Matthieu Le, Matvei Novikov, Mehrzad Samadi, Michael Andersch, Michael Evans, Miguel Martinez, Mike Chrzanowski, Mike Ranzinger, Mikolaj Blaz, Misha Smelyanskiy, Mohamed Fawzy, Mohammad Shoeybi, Mostofa Patwary, Nayeon Lee, Nima Tajbakhsh, Ning Xu, Oleg Rybakov, Oleksii Kuchaiev, Olivier Delalleau, Osvald Nitski, Parth Chadha, Pasha Shamis, Paulius Micikevicius, Pavlo Molchanov, Peter Dykas, Philipp Fischer, Pierre-Yves Aquilanti, Piotr Bialecki, Prasoon Varshney, Pritam Gundecha, Przemek Tredak, Rabeeh Karimi, Rahul Kandu, Ran El-Yaniv, Raviraj Joshi, Roger Waleffe, Ruoxi Zhang, Sabrina Kavanaugh, Sahil Jain, Samuel Kriman, Sangkug Lym, Sanjeev Satheesh, Saurav Muralidharan, Sean Narenthiran, Selvaraj Anandaraj, Seonmyeong Bak, Sergey Kashirsky, Seungju Han, Shantanu Acharya, Shaona Ghosh, Sharath Turuvekere Sreenivas, Sharon Clay, Shelby Thomas, Shrimai Prabhumoye, Shubham Pachori, Shubham Toshniwal, Shyamala Prayaga, Siddhartha Jain, Sirshak Das, Slawek Kierat, Somshubra Majumdar, Song Han, Soumye Singhal, Sriharsha Niverty, Stefania Alborghetti, Suseella Panguluri, Swetha Bhendigeri, Syeda Nahida Akter, Szymon Migacz, Tal Shiri, Terry Kong, Timo Roman, Tomer Ronen, Trisha Saar, Tugrul Konuk, Tuomas Rintamaki, Tyler Poon, Ushnish De, Vahid Noroozi, Varun Singh, Vijay Korthikanti, Vitaly Kurin, Wasi Uddin Ahmad, Wei Du, Wei Ping, Wenliang Dai, Wonmin Byeon, Xiaowei Ren, Yao Xu, Yejin Choi, Yian Zhang, Ying Lin, Yoshi Suhara, Zhiding Yu, Zhiqi Li, Zhiyu Li, Zhongbo Zhu, Zhuolin Yang, Zijia Chen</p>
-                    <p>  As inference-time scaling becomes critical for enhanced reasoning
-capabilities, it is increasingly becoming important to build models that are
-efficient to infer. We introduce Nemotron-H, a family of 8B and 56B/47B hybrid
-Mamba-Transformer models designed to reduce inference cost for a given accuracy
-level. To achieve this goal, we replace the majority of self-attention layers
-in the common Transformer model architecture with Mamba layers that perform
-constant computation and require constant memory per generated token. We show
-that Nemotron-H models offer either better or on-par accuracy compared to other
-similarly-sized state-of-the-art open-sourced Transformer models (e.g.,
-Qwen-2.5-7B/72B and Llama-3.1-8B/70B), while being up to 3$\times$ faster at
-inference. To further increase inference speed and reduce the memory required
-at inference time, we created Nemotron-H-47B-Base from the 56B model using a
-new compression via pruning and distillation technique called MiniPuzzle.
-Nemotron-H-47B-Base achieves similar accuracy to the 56B model, but is 20%
-faster to infer. In addition, we introduce an FP8-based training recipe and
-show that it can achieve on par results with BF16-based training. This recipe
-is used to train the 56B model. All Nemotron-H models will be released, with
-support in Hugging Face, NeMo, and Megatron-LM.
+                    <h3>The challenge of uncertainty quantification of large language models in
+  medicine</h3>
+                    <p><strong>Authors:</strong> Zahra Atf, Seyed Amir Ahmad Safavi-Naini, Peter R. Lewis, Aref Mahjoubfar, Nariman Naderi, Thomas R. Savage, Ali Soroush</p>
+                    <p>  This study investigates uncertainty quantification in large language models
+(LLMs) for medical applications, emphasizing both technical innovations and
+philosophical implications. As LLMs become integral to clinical
+decision-making, accurately communicating uncertainty is crucial for ensuring
+reliable, safe, and ethical AI-assisted healthcare. Our research frames
+uncertainty not as a barrier but as an essential part of knowledge that invites
+a dynamic and reflective approach to AI design. By integrating advanced
+probabilistic methods such as Bayesian inference, deep ensembles, and Monte
+Carlo dropout with linguistic analysis that computes predictive and semantic
+entropy, we propose a comprehensive framework that manages both epistemic and
+aleatoric uncertainties. The framework incorporates surrogate modeling to
+address limitations of proprietary APIs, multi-source data integration for
+better context, and dynamic calibration via continual and meta-learning.
+Explainability is embedded through uncertainty maps and confidence metrics to
+support user trust and clinical interpretability. Our approach supports
+transparent and ethical decision-making aligned with Responsible and Reflective
+AI principles. Philosophically, we advocate accepting controlled ambiguity
+instead of striving for absolute predictability, recognizing the inherent
+provisionality of medical knowledge.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03624v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05278v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>AIR: A Systematic Analysis of Annotations, Instructions, and Response
-  Pairs in Preference Dataset</h3>
-                    <p><strong>Authors:</strong> Bingxiang He, Wenbin Zhang, Jiaxi Song, Cheng Qian, Zixuan Fu, Bowen Sun, Ning Ding, Haiwen Hong, Longtao Huang, Hui Xue, Ganqu Cui, Wanxiang Che, Zhiyuan Liu, Maosong Sun</p>
-                    <p>  Preference learning is critical for aligning large language models (LLMs)
-with human values, yet its success hinges on high-quality datasets comprising
-three core components: Preference \textbf{A}nnotations, \textbf{I}nstructions,
-and \textbf{R}esponse Pairs. Current approaches conflate these components,
-obscuring their individual impacts and hindering systematic optimization. In
-this work, we propose \textbf{AIR}, a component-wise analysis framework that
-systematically isolates and optimizes each component while evaluating their
-synergistic effects. Through rigorous experimentation, AIR reveals actionable
-principles: annotation simplicity (point-wise generative scoring), instruction
-inference stability (variance-based filtering across LLMs), and response pair
-quality (moderate margins + high absolute scores). When combined, these
-principles yield +5.3 average gains over baseline method, even with only 14k
-high-quality pairs. Our work shifts preference dataset design from ad hoc
-scaling to component-aware optimization, offering a blueprint for efficient,
-reproducible alignment.
+                    <h3>AnomalousNet: A Hybrid Approach with Attention U-Nets and Change Point
+  Detection for Accurate Characterization of Anomalous Diffusion in Video Data</h3>
+                    <p><strong>Authors:</strong> Yusef Ahsini, Marc Escoto, J. Alberto Conejero</p>
+                    <p>  Anomalous diffusion occurs in a wide range of systems, including protein
+transport within cells, animal movement in complex habitats, pollutant
+dispersion in groundwater, and nanoparticle motion in synthetic materials.
+Accurately estimating the anomalous diffusion exponent and the diffusion
+coefficient from the particle trajectories is essential to distinguish between
+sub-diffusive, super-diffusive, or normal diffusion regimes. These estimates
+provide a deeper insight into the underlying dynamics of the system,
+facilitating the identification of particle behaviors and the detection of
+changes in diffusion states. However, analyzing short and noisy video data,
+which often yield incomplete and heterogeneous trajectories, poses a
+significant challenge for traditional statistical approaches. We introduce a
+data-driven method that integrates particle tracking, an attention
+  U-Net architecture, and a change-point detection algorithm to address these
+issues. This approach not only infers the anomalous diffusion parameters with
+high accuracy but also identifies temporal transitions between different
+states, even in the presence of noise and limited temporal resolution. Our
+methodology demonstrated strong performance in the 2nd Anomalous Diffusion
+(AnDi) Challenge benchmark within the top submissions for video tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03612v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05271v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Scalable Hypergraph Structure Learning with Diverse Smoothness Priors</h3>
-                    <p><strong>Authors:</strong> Benjamin T. Brown, Haoxiang Zhang, Daniel L. Lau, Gonzalo R. Arce</p>
-                    <p>  In graph signal processing, learning the weighted connections between nodes
-from a set of sample signals is a fundamental task when the underlying
-relationships are not known a priori. This task is typically addressed by
-finding a graph Laplacian on which the observed signals are smooth. With the
-extension of graphs to hypergraphs - where edges can connect more than two
-nodes - graph learning methods have similarly been generalized to hypergraphs.
-However, the absence of a unified framework for calculating total variation has
-led to divergent definitions of smoothness and, consequently, differing
-approaches to hyperedge recovery. We confront this challenge through
-generalization of several previously proposed hypergraph total variations,
-subsequently allowing ease of substitution into a vector based optimization. To
-this end, we propose a novel hypergraph learning method that recovers a
-hypergraph topology from time-series signals based on a smoothness prior. Our
-approach addresses key limitations in prior works, such as hyperedge selection
-and convergence issues, by formulating the problem as a convex optimization
-solved via a forward-backward-forward algorithm, ensuring guaranteed
-convergence. Additionally, we introduce a process that simultaneously limits
-the span of the hyperedge search and maintains a valid hyperedge selection set.
-In doing so, our method becomes scalable in increasingly complex network
-structures. The experimental results demonstrate improved performance, in terms
-of accuracy, over other state-of-the-art hypergraph inference methods;
-furthermore, we empirically show our method to be robust to total variation
-terms, biased towards global smoothness, and scalable to larger hypergraphs.
+                    <h3>Learning to Reason Over Time: Timeline Self-Reflection for Improved
+  Temporal Reasoning in Language Models</h3>
+                    <p><strong>Authors:</strong> Adrián Bazaga, Rexhina Blloshmi, Bill Byrne, Adrià de Gispert</p>
+                    <p>  Large Language Models (LLMs) have emerged as powerful tools for generating
+coherent text, understanding context, and performing reasoning tasks. However,
+they struggle with temporal reasoning, which requires processing time-related
+information such as event sequencing, durations, and inter-temporal
+relationships. These capabilities are critical for applications including
+question answering, scheduling, and historical analysis. In this paper, we
+introduce TISER, a novel framework that enhances the temporal reasoning
+abilities of LLMs through a multi-stage process that combines timeline
+construction with iterative self-reflection. Our approach leverages test-time
+scaling to extend the length of reasoning traces, enabling models to capture
+complex temporal dependencies more effectively. This strategy not only boosts
+reasoning accuracy but also improves the traceability of the inference process.
+Experimental results demonstrate state-of-the-art performance across multiple
+benchmarks, including out-of-distribution test sets, and reveal that TISER
+enables smaller open-source models to surpass larger closed-weight models on
+challenging temporal reasoning tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03583v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05258v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Coupling hydrodynamics with comoving frame radiative transfer. III. The
-  wind regime of early-type B hypergiants</h3>
-                    <p><strong>Authors:</strong> M. Bernini-Peron, A. A. C. Sander, F. Najarro, G. N. Sabhahit, D. Pauli, R. R. Lefever, J. S. Vink, V. Ramachandran, L. M. Oskinova, G. González-Torà, E. C. Schösser</p>
-                    <p>  Context. B hypergiants (BHGs) are important for understanding high-mass
-stellar evolution. While they are in a similar parameter space of B supergiants
-(BSGs), some BHGs are known to be luminous blue variables (LBVs). Their spectra
-with absorption and emission features resemble Of/WNh stars. Yet, their wind
-physics and their evolutionary connections are not clear. Aims. In this study,
-we aim to understand (i) the atmospheric and wind structure, (ii) the
-wind-launching and -driving mechanisms, and (iii) the spectrum formation of
-early-type BHGs. As an observational prototype, we use zet1 Sco (B1.5Ia+).
-Methods. Using the atmosphere code PoWRhd, we calculated the first
-hydrodynamically consistent models at the BHG domain. They give insights into
-the radiative driving of the calculated wind regimes and enable us to study the
-influence of clumping and X-rays on the resulting wind structure. Results. Our
-consistent model reproduces the main spectral features of zet1 Sco. The
-obtained mass-loss rate is higher than that of similar spectral type BSGs.
-However, the wind optical depth of BHGs is way below unity, making them less of
-a transition type. To reproduce zet1 Sco's spectrum, we needed low clumping
-with subsonic onset. The wind has a shallow-gradient velocity profile,
-deviating from the beta law, and is mainly driven by Fe III opacity.
-Conclusions. Our study suggests that despite more mass loss, early-type
-Galactic BHGs have winds relatively similar to BSGs. Their winds are not thick
-enough to characterize them as "transition-type" stars, unlike Of/WNh, implying
-that emission features arise more easily in cooler than in hotter stars. The
-spectral BHG appearance is likely connected to atmospheric inhomogeneities
-below the sonic point. To reach an appearance similar to LBVs, BHGs need to be
-either closer to the Eddington limit or have higher wind clumping than inferred
-for zeta1 Sco.
+                    <h3>PINNverse: Accurate parameter estimation in differential equations from
+  noisy data with constrained physics-informed neural networks</h3>
+                    <p><strong>Authors:</strong> Marius Almanstötter, Roman Vetter, Dagmar Iber</p>
+                    <p>  Parameter estimation for differential equations from measured data is an
+inverse problem prevalent across quantitative sciences. Physics-Informed Neural
+Networks (PINNs) have emerged as effective tools for solving such problems,
+especially with sparse measurements and incomplete system information. However,
+PINNs face convergence issues, stability problems, overfitting, and complex
+loss function design. Here we introduce PINNverse, a training paradigm that
+addresses these limitations by reformulating the learning process as a
+constrained differential optimization problem. This approach achieves a dynamic
+balance between data loss and differential equation residual loss during
+training while preventing overfitting. PINNverse combines the advantages of
+PINNs with the Modified Differential Method of Multipliers to enable
+convergence on any point on the Pareto front. We demonstrate robust and
+accurate parameter estimation from noisy data in four classical ODE and PDE
+models from physics and biology. Our method enables accurate parameter
+inference also when the forward problem is expensive to solve.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03537v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05248v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>Intracluster light is a biased tracer of the dark matter distribution in
-  clusters</h3>
-                    <p><strong>Authors:</strong> J. Butler, G. Martin, N. A. Hatch, F. Pearce, S. Brough, Y. Dubois</p>
-                    <p>  The diffuse stellar component of galaxy clusters known as intracluster light
-(ICL) has been proposed as an observable tracer of the cluster's dark matter
-(DM) halo. Assessing its reliability as a DM tracer requires understanding how
-the intracluster stars are energetically linked to the underlying DM
-distribution, which we investigate at $z\approx0$ in 12 galaxy clusters with
-$M_{178} = 1.18 - 3.71 \times 10^{14}\,\textrm{M}_\odot$ from the Horizon-AGN
-simulation. We quantify the orbital energies of these components by their mean
-specific energies ${\langle \varepsilon \rangle}$, and find that this quantity
-is $\approx$ 25 per cent lower for the intracluster stars than the DM, whilst
-the energetics of the satellite galaxies (a standard DM tracer) are only
-marginally ($\approx$ 5 per cent) higher than the DM. Importantly, the lower
-${\langle \varepsilon \rangle}$ of the intracluster stars compared to the DM is
-robust against the precise separation between the brightest cluster galaxy
-(BCG) and the ICL. The specific energy distribution of ICL stars is
-concentrated towards lower energies and poorly samples the higher energies,
-where much of the DM resides. Consequently, the intracluster stars have
-velocity distributions with lower typical speeds and a more
-centrally-concentrated density profile than the DM. We also find that
-intracluster stars have more radially-biased orbits than the DM, indicating
-these components have distinct orbital distributions. This study demonstrates
-that although the morphology of the ICL may match the DM halo, the ICL is a
-biased tracer of DM, and these biases must be understood in order to infer
-properties of the DM from the ICL.
+                    <h3>Behind the Spotlight: A systematic assessment of outshining using NIRCam
+  medium-bands in the JADES Origins Field</h3>
+                    <p><strong>Authors:</strong> Thomas Harvey, Christopher J. Conselice, Nathan J. Adams, Duncan Austin, Qiong Li, Vadim Rusakov, Lewi Westcott, Caio M. Goolsby, Christopher C. Lovell, Rachel K. Cochrane, Aswin P. Vijayan, James Trussler</p>
+                    <p>  The spatial resolution and sensitivity of JWST's NIRCam instrument has
+revolutionised our ability to probe the internal structure of early galaxies.
+By leveraging deep medium-band imaging in the Jades Origins Field, we assemble
+comprehensive spectral energy distributions (SEDs) using 19 photometric bands
+for over 200 high-redshift galaxies ($z \geq 4.5$). We present an analysis of
+this sample with particular emphasis on investigating the "outshining"
+phenomenon, which can bias the inferred stellar populations by masking the
+presence of evolved stellar populations ($\geq$ 100 Myr) with the light of
+bright, young O and B-type stars. We address this problem by performing
+spatially-resolved SED-fitting of both binned and full pixel-by-pixel
+photometry, which we compare to the traditional integrated approach. We find
+evidence for systematic underestimation of stellar mass in low-mass galaxies
+($\leq 10^9 \rm M_\odot$) with bursty star formation, which can exceed a factor
+of 10 in individual cases, but on average is typically a factor of 1.25-2.5,
+depending on the binning methodology and SFH model used. The observed mass
+offset correlates with burstiness (SFR$_{10 \ \rm Myr}$/SFR$_{100 \ \rm Myr}$)
+and sSFR, such that galaxies with recently rising SFHs have larger mass
+offsets. The integrated SFH models which produce the most consistent stellar
+masses are the double power-law and non-parametric `continuity' models,
+although no integrated model fully reproduces all resolved SFHs. We apply an
+outshining correction factor to the Stellar Mass Function at $z=7$, finding
+little impact within the uncertainties. We conclude that outshining can be
+important in individual low-mass galaxies, but the overall impact is limited
+and should be considered alongside other systematic SED fitting effects.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03518v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05244v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
                 <li>
-                    <h3>A framework for computing upper bounds in passive learning settings</h3>
-                    <p><strong>Authors:</strong> Benjamin Bordais, Daniel Neider</p>
-                    <p>  The task of inferring logical formulas from examples has garnered significant
-attention as a means to assist engineers in creating formal specifications used
-in the design, synthesis, and verification of computing systems. Among various
-approaches, enumeration algorithms have emerged as some of the most effective
-techniques for this task. These algorithms employ advanced strategies to
-systematically enumerate candidate formulas while minimizing redundancies by
-avoiding the generation of syntactically different but semantically equivalent
-formulas. However, a notable drawback is that these algorithms typically do not
-provide guarantees of termination, which poses challenges for their use in
-real-world applications.
-  This paper develops an abstract framework to bound the size of possible
-solutions for a logic inference task, thereby providing a termination guarantee
-for enumeration algorithms through the introduction of a sufficient stopping
-criterion. The proposed framework is designed with flexibility in mind and is
-applicable to a broad spectrum of practically relevant logical formalisms,
-including Modal Logic, Linear Temporal Logic, Computation Tree Logic,
-Alternating-time Temporal Logic, and even selected inference task for finite
-automata. In addition, our approach enabled us to develop a new class of
-algorithms that enumerate over the semantics of formulas rather than their
-syntactic representations, offering new possibilities for reducing redundancy.
+                    <h3>Bayesian local clustering of age-period mortality surfaces across
+  multiple countries</h3>
+                    <p><strong>Authors:</strong> Giovanni Romanò, Emanuele Aliverti, Daniele Durante</p>
+                    <p>  Although traditional literature on mortality modeling has focused on single
+countries in isolation, recent contributions have progressively moved toward
+joint models for multiple countries. Besides favoring borrowing of information
+to improve age-period forecasts, this perspective has also potentials to infer
+local similarities among countries' mortality patterns in specific age classes
+and periods that could unveil unexplored demographic trends, while guiding the
+design of targeted policies. Advancements along this latter relevant direction
+are currently undermined by the lack of a multi-country model capable of
+incorporating the core structures of age-period mortality surfaces together
+with clustering patterns among countries that are not global, but rather vary
+locally across different combinations of ages and periods. We cover this gap by
+developing a novel Bayesian model for log-mortality rates that characterizes
+the age structure of mortality through a B-spline expansion whose
+country-specific dynamic coefficients encode both changes of this age structure
+across periods and also local clustering patterns among countries under a
+time-dependent random partition prior for these country-specific dynamic
+coefficients. While flexible, this formulation admits tractable posterior
+inference leveraging a suitably-designed Gibbs-sampler. The application to
+mortality data from 14 countries unveils local similarities highlighting both
+previously-recognized demographic phenomena and also yet-unexplored trends.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.03517v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/4/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.05240v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/7/2025</p>
                 </li>
             </ul>
         </section>
