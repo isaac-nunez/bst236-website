@@ -131,270 +131,293 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>Gaussian Mixture Flow Matching Models</h3>
-                    <p><strong>Authors:</strong> Hansheng Chen, Kai Zhang, Hao Tan, Zexiang Xu, Fujun Luan, Leonidas Guibas, Gordon Wetzstein, Sai Bi</p>
-                    <p>  Diffusion models approximate the denoising distribution as a Gaussian and
-predict its mean, whereas flow matching models reparameterize the Gaussian mean
-as flow velocity. However, they underperform in few-step sampling due to
-discretization error and tend to produce over-saturated colors under
-classifier-free guidance (CFG). To address these limitations, we propose a
-novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the
-mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a
-multi-modal flow velocity distribution, which can be learned with a KL
-divergence loss. We demonstrate that GMFlow generalizes previous diffusion and
-flow matching models where a single Gaussian is learned with an $L_2$ denoising
-loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic
-denoising distributions and velocity fields for precise few-step sampling.
-Furthermore, we introduce a novel probabilistic guidance scheme that mitigates
-the over-saturation issues of CFG and improves image generation quality.
-Extensive experiments demonstrate that GMFlow consistently outperforms flow
-matching baselines in generation quality, achieving a Precision of 0.942 with
-only 6 sampling steps on ImageNet 256$\times$256.
+                    <h3>Constraining the [CII] luminosity function from the power spectrum of
+  line intensity maps at redshift 3.6</h3>
+                    <p><strong>Authors:</strong> Elena Marcuzzo, Cristiano Porciani, Emilio Romano-Díaz, Prachi Khatri</p>
+                    <p>  Forthcoming measurements of the line-intensity-mapping power spectrum (PS)
+are expected to set precious constraints on several quantities of astrophysical
+and cosmological interest. Our study targets the [CII] luminosity function (LF)
+at high redshift, which is still highly uncertain, in particular at the faint
+end. As an example of future opportunities, we present forecasts for the Deep
+Spectroscopic Survey (DSS) that will be conducted with the Fred Young
+Submillimeter Telescope at $z \simeq 3.6$ and also make predictions for
+eventual $10\times$ wider and/or $\sqrt{10}\times$ more sensitive surveys. The
+halo-occupation properties of [CII] emitters in the MARIGOLD simulations
+provide us with the motivation to abundance match two versions of the ALPINE LF
+against the halo mass function. We employ the resulting luminosity-mass
+relation within the halo model to predict the expected PS signal and its
+uncertainty. Finally, we use Bayesian inference to analyse mock PS data and
+forecast what constraints could be achieved on the first two moments of the LF
+and on Schechter fits. Depending on the actual LF, the DSS will measure the
+clustering and shot-noise amplitudes of the PS with a signal-to-noise ratio of
+$\sim 3$ or higher. However, degeneracies with the bias parameter and
+redshift-space distortions make it unfeasible to extract the first moment of
+the LF. Even the widest and most sensitive survey we consider can only
+constrain it with a $50\%$ uncertainty. By jointly fitting the PS and the LF,
+we directly constrain Schechter-function parameters. We find that the
+normalisation and the cutoff luminosity are precisely and accurately measured
+while the faint-end slope remains highly uncertain (unless the true value
+approaches $-2$). Overall, increasing the survey sensitivity at fixed sky
+coverage yields greater improvements than covering a larger area at fixed
+sensitivity.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05304v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06266v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</h3>
-                    <p><strong>Authors:</strong> Sai Kumar Dwivedi, Dimitrije Antić, Shashank Tripathi, Omid Taheri, Cordelia Schmid, Michael J. Black, Dimitrios Tzionas</p>
-                    <p>  We introduce InteractVLM, a novel method to estimate 3D contact points on
-human bodies and objects from single in-the-wild images, enabling accurate
-human-object joint reconstruction in 3D. This is challenging due to occlusions,
-depth ambiguities, and widely varying object shapes. Existing methods rely on
-3D contact annotations collected via expensive motion-capture systems or
-tedious manual labeling, limiting scalability and generalization. To overcome
-this, InteractVLM harnesses the broad visual knowledge of large Vision-Language
-Models (VLMs), fine-tuned with limited 3D contact data. However, directly
-applying these models is non-trivial, as they reason only in 2D, while
-human-object contact is inherently 3D. Thus we introduce a novel
-Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D
-space via multi-view rendering, (2) trains a novel multi-view localization
-model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D.
-Additionally, we propose a new task called Semantic Human Contact estimation,
-where human contact predictions are conditioned explicitly on object semantics,
-enabling richer interaction modeling. InteractVLM outperforms existing work on
-contact estimation and also facilitates 3D reconstruction from an in-the wild
-image. Code and models are available at https://interactvlm.is.tue.mpg.de.
+                    <h3>Hogwild! Inference: Parallel LLM Generation via Concurrent Attention</h3>
+                    <p><strong>Authors:</strong> Gleb Rodionov, Roman Garipov, Alina Shutova, George Yakushev, Vage Egiazarian, Anton Sinitsin, Denis Kuznedelev, Dan Alistarh</p>
+                    <p>  Large Language Models (LLMs) have demonstrated the ability to tackle
+increasingly complex tasks through advanced reasoning, long-form content
+generation, and tool use. Solving these tasks often involves long
+inference-time computations. In human problem solving, a common strategy to
+expedite work is collaboration: by dividing the problem into sub-tasks,
+exploring different strategies concurrently, etc. Recent research has shown
+that LLMs can also operate in parallel by implementing explicit cooperation
+frameworks, such as voting mechanisms or the explicit creation of independent
+sub-tasks that can be executed in parallel. However, each of these frameworks
+may not be suitable for all types of tasks, which can hinder their
+applicability. In this work, we propose a different design approach: we run LLM
+"workers" in parallel , allowing them to synchronize via a concurrently-updated
+attention cache and prompt these workers to decide how best to collaborate. Our
+approach allows the instances to come up with their own collaboration strategy
+for the problem at hand, all the while "seeing" each other's partial progress
+in the concurrent cache. We implement this approach via Hogwild! Inference: a
+parallel LLM inference engine where multiple instances of the same LLM run in
+parallel with the same attention cache, with "instant" access to each other's
+generated tokens. Hogwild! inference takes advantage of Rotary Position
+Embeddings (RoPE) to avoid recomputation while improving parallel hardware
+utilization. We find that modern reasoning-capable LLMs can perform inference
+with shared Key-Value cache out of the box, without additional fine-tuning.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05303v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06261v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>SmolVLM: Redefining small and efficient multimodal models</h3>
-                    <p><strong>Authors:</strong> Andrés Marafioti, Orr Zohar, Miquel Farré, Merve Noyan, Elie Bakouch, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf</p>
-                    <p>  Large Vision-Language Models (VLMs) deliver exceptional performance but
-require significant computational resources, limiting their deployment on
-mobile and edge devices. Smaller VLMs typically mirror design choices of larger
-models, such as extensive image tokenization, leading to inefficient GPU memory
-usage and constrained practicality for on-device applications.
-  We introduce SmolVLM, a series of compact multimodal models specifically
-engineered for resource-efficient inference. We systematically explore
-architectural configurations, tokenization strategies, and data curation
-optimized for low computational overhead. Through this, we identify key design
-choices that yield substantial performance gains on image and video tasks with
-minimal memory footprints.
-  Our smallest model, SmolVLM-256M, uses less than 1GB GPU memory during
-inference and outperforms the 300-times larger Idefics-80B model, despite an
-18-month development gap. Our largest model, at 2.2B parameters, rivals
-state-of-the-art VLMs consuming twice the GPU memory. SmolVLM models extend
-beyond static images, demonstrating robust video comprehension capabilities.
-  Our results emphasize that strategic architectural optimizations, aggressive
-yet efficient tokenization, and carefully curated training data significantly
-enhance multimodal performance, facilitating practical, energy-efficient
-deployments at significantly smaller scales.
+                    <h3>A systematic method to identify runaways from star clusters produced
+  from single-binary interactions: A case study of M67</h3>
+                    <p><strong>Authors:</strong> A. Herrera-Urquieta, N. Leigh, J. Pinto, G. Díaz-Cerda, S. M. Grondin, J. J. Webb, R. Mathieu, T. Ryu, A. Geller, M. Kounkel, S. Toonen, M. Vilaxa-Campos</p>
+                    <p>  One hypothesis for runaway stars (RSs) is that they are ejected from star
+clusters with high velocities relative to the cluster center-of-mass motion.
+There are two competing mechanisms for their production: supernova-based
+ejections in binaries, where one companion explodes, leaves no remnant, and
+launches the other companion at the instantaneous orbital velocity, and the
+disintegration of triples (or higher-order multiples), which produces a
+recoiled runaway binary (RB) and an RS. We search for RS candidates using data
+from the Gaia DR3 survey with a focus on triple disintegration since in this
+case the product is always a binary and a single star that should be moving in
+opposite directions. We created a systematic methodology to look for candidate
+RS-RB runaway pairs produced from the disintegration of bound three-body
+systems formed from single-binary interactions based on momentum conservation
+and causality. The method we use is general and can be applied to any cluster
+with a 5D kinematic data set. We used our criteria to search for these pairs in
+a 150 pc circular field of view surrounding the open cluster M67, which we used
+as a benchmark cluster to test the robustness of our method. Our results reveal
+only one RS-RB pair that is consistent with all of our selection criteria out
+of an initial sample of $10^8$ pairs.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05299v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06252v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>Truthful or Fabricated? Using Causal Attribution to Mitigate Reward
-  Hacking in Explanations</h3>
-                    <p><strong>Authors:</strong> Pedro Ferreira, Wilker Aziz, Ivan Titov</p>
-                    <p>  Chain-of-thought explanations are widely used to inspect the decision process
-of large language models (LLMs) and to evaluate the trustworthiness of model
-outputs, making them important for effective collaboration between LLMs and
-humans. We demonstrate that preference optimization - a key step in the
-alignment phase - can inadvertently reduce the faithfulness of these
-explanations. This occurs because the reward model (RM), which guides
-alignment, is tasked with optimizing both the expected quality of the response
-and the appropriateness of the explanations (e.g., minimizing bias or adhering
-to safety standards), creating potential conflicts. The RM lacks a mechanism to
-assess the consistency between the model's internal decision process and the
-generated explanation. Consequently, the LLM may engage in "reward hacking" by
-producing a final response that scores highly while giving an explanation
-tailored to maximize reward rather than accurately reflecting its reasoning. To
-address this issue, we propose enriching the RM's input with a causal
-attribution of the prediction, allowing the RM to detect discrepancies between
-the generated self-explanation and the model's decision process. In controlled
-settings, we show that this approach reduces the tendency of the LLM to
-generate misleading explanations.
+                    <h3>Decentralized Federated Domain Generalization with Style Sharing: A
+  Formal Modeling and Convergence Analysis</h3>
+                    <p><strong>Authors:</strong> Shahryar Zehtabi, Dong-Jun Han, Seyyedali Hosseinalipour, Christopher G. Brinton</p>
+                    <p>  Much of the federated learning (FL) literature focuses on settings where
+local dataset statistics remain the same between training and testing time.
+Recent advances in domain generalization (DG) aim to use data from source
+(training) domains to train a model that generalizes well to data from unseen
+target (testing) domains. In this paper, we are motivated by two major gaps in
+existing work on FL and DG: (1) the lack of formal mathematical analysis of DG
+objectives and training processes; and (2) DG research in FL being limited to
+the conventional star-topology architecture. Addressing the second gap, we
+develop $\textit{Decentralized Federated Domain Generalization with Style
+Sharing}$ ($\texttt{StyleDDG}$), a fully decentralized DG algorithm designed to
+allow devices in a peer-to-peer network to achieve DG based on sharing style
+information inferred from their datasets. Additionally, we fill the first gap
+by providing the first systematic approach to mathematically analyzing
+style-based DG training optimization. We cast existing centralized DG
+algorithms within our framework, and employ their formalisms to model
+$\texttt{StyleDDG}$. Based on this, we obtain analytical conditions under which
+a sub-linear convergence rate of $\texttt{StyleDDG}$ can be obtained. Through
+experiments on two popular DG datasets, we demonstrate that $\texttt{StyleDDG}$
+can obtain significant improvements in accuracy across target domains with
+minimal added communication overhead compared to decentralized gradient methods
+that do not employ style sharing.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05294v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06235v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>The challenge of uncertainty quantification of large language models in
-  medicine</h3>
-                    <p><strong>Authors:</strong> Zahra Atf, Seyed Amir Ahmad Safavi-Naini, Peter R. Lewis, Aref Mahjoubfar, Nariman Naderi, Thomas R. Savage, Ali Soroush</p>
-                    <p>  This study investigates uncertainty quantification in large language models
-(LLMs) for medical applications, emphasizing both technical innovations and
-philosophical implications. As LLMs become integral to clinical
-decision-making, accurately communicating uncertainty is crucial for ensuring
-reliable, safe, and ethical AI-assisted healthcare. Our research frames
-uncertainty not as a barrier but as an essential part of knowledge that invites
-a dynamic and reflective approach to AI design. By integrating advanced
-probabilistic methods such as Bayesian inference, deep ensembles, and Monte
-Carlo dropout with linguistic analysis that computes predictive and semantic
-entropy, we propose a comprehensive framework that manages both epistemic and
-aleatoric uncertainties. The framework incorporates surrogate modeling to
-address limitations of proprietary APIs, multi-source data integration for
-better context, and dynamic calibration via continual and meta-learning.
-Explainability is embedded through uncertainty maps and confidence metrics to
-support user trust and clinical interpretability. Our approach supports
-transparent and ethical decision-making aligned with Responsible and Reflective
-AI principles. Philosophically, we advocate accepting controlled ambiguity
-instead of striving for absolute predictability, recognizing the inherent
-provisionality of medical knowledge.
+                    <h3>Encoder-Decoder Gemma: Improving the Quality-Efficiency Trade-Off via
+  Adaptation</h3>
+                    <p><strong>Authors:</strong> Biao Zhang, Fedor Moiseev, Joshua Ainslie, Paul Suganthan, Min Ma, Surya Bhupatiraju, Fede Lebron, Orhan Firat, Armand Joulin, Zhe Dong</p>
+                    <p>  While decoder-only large language models (LLMs) have shown impressive
+results, encoder-decoder models are still widely adopted in real-world
+applications for their inference efficiency and richer encoder representation.
+In this paper, we study a novel problem: adapting pretrained decoder-only LLMs
+to encoder-decoder, with the goal of leveraging the strengths of both
+approaches to achieve a more favorable quality-efficiency trade-off. We argue
+that adaptation not only enables inheriting the capability of decoder-only LLMs
+but also reduces the demand for computation compared to pretraining from
+scratch. We rigorously explore different pretraining objectives and parameter
+initialization/optimization techniques. Through extensive experiments based on
+Gemma 2 (2B and 9B) and a suite of newly pretrained mT5-sized models (up to
+1.6B), we demonstrate the effectiveness of adaptation and the advantage of
+encoder-decoder LLMs. Under similar inference budget, encoder-decoder LLMs
+achieve comparable (often better) pretraining performance but substantially
+better finetuning performance than their decoder-only counterpart. For example,
+Gemma 2B-2B outperforms Gemma 2B by $\sim$7\% after instruction tuning.
+Encoder-decoder adaptation also allows for flexible combination of
+different-sized models, where Gemma 9B-2B significantly surpasses Gemma 2B-2B
+by $>$3\%. The adapted encoder representation also yields better results on
+SuperGLUE. We will release our checkpoints to facilitate future research.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05278v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06225v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>AnomalousNet: A Hybrid Approach with Attention U-Nets and Change Point
-  Detection for Accurate Characterization of Anomalous Diffusion in Video Data</h3>
-                    <p><strong>Authors:</strong> Yusef Ahsini, Marc Escoto, J. Alberto Conejero</p>
-                    <p>  Anomalous diffusion occurs in a wide range of systems, including protein
-transport within cells, animal movement in complex habitats, pollutant
-dispersion in groundwater, and nanoparticle motion in synthetic materials.
-Accurately estimating the anomalous diffusion exponent and the diffusion
-coefficient from the particle trajectories is essential to distinguish between
-sub-diffusive, super-diffusive, or normal diffusion regimes. These estimates
-provide a deeper insight into the underlying dynamics of the system,
-facilitating the identification of particle behaviors and the detection of
-changes in diffusion states. However, analyzing short and noisy video data,
-which often yield incomplete and heterogeneous trajectories, poses a
-significant challenge for traditional statistical approaches. We introduce a
-data-driven method that integrates particle tracking, an attention
-  U-Net architecture, and a change-point detection algorithm to address these
-issues. This approach not only infers the anomalous diffusion parameters with
-high accuracy but also identifies temporal transitions between different
-states, even in the presence of noise and limited temporal resolution. Our
-methodology demonstrated strong performance in the 2nd Anomalous Diffusion
-(AnDi) Challenge benchmark within the top submissions for video tasks.
+                    <h3>Randomization Inference in Two-Sided Market Experiments</h3>
+                    <p><strong>Authors:</strong> Jizhou Liu, Azeem M. Shaikh, Panos Toulis</p>
+                    <p>  Randomized experiments are increasingly employed in two-sided markets, such
+as buyer-seller platforms, to evaluate treatment effects from marketplace
+interventions. These experiments must reflect the underlying two-sided market
+structure in their design (e.g., sellers and buyers), making them particularly
+challenging to analyze. In this paper, we propose a randomization inference
+framework to analyze outcomes from such two-sided experiments. Our approach is
+finite-sample valid under sharp null hypotheses for any test statistic and
+maintains asymptotic validity under weak null hypotheses through
+studentization. Moreover, we provide heuristic guidance for choosing among
+multiple valid randomization tests to enhance statistical power, which we
+demonstrate empirically. Finally, we demonstrate the performance of our
+methodology through a series of simulation studies.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05271v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06215v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>Learning to Reason Over Time: Timeline Self-Reflection for Improved
-  Temporal Reasoning in Language Models</h3>
-                    <p><strong>Authors:</strong> Adrián Bazaga, Rexhina Blloshmi, Bill Byrne, Adrià de Gispert</p>
-                    <p>  Large Language Models (LLMs) have emerged as powerful tools for generating
-coherent text, understanding context, and performing reasoning tasks. However,
-they struggle with temporal reasoning, which requires processing time-related
-information such as event sequencing, durations, and inter-temporal
-relationships. These capabilities are critical for applications including
-question answering, scheduling, and historical analysis. In this paper, we
-introduce TISER, a novel framework that enhances the temporal reasoning
-abilities of LLMs through a multi-stage process that combines timeline
-construction with iterative self-reflection. Our approach leverages test-time
-scaling to extend the length of reasoning traces, enabling models to capture
-complex temporal dependencies more effectively. This strategy not only boosts
-reasoning accuracy but also improves the traceability of the inference process.
-Experimental results demonstrate state-of-the-art performance across multiple
-benchmarks, including out-of-distribution test sets, and reveal that TISER
-enables smaller open-source models to surpass larger closed-weight models on
-challenging temporal reasoning tasks.
+                    <h3>From 128K to 4M: Efficient Training of Ultra-Long Context Large Language
+  Models</h3>
+                    <p><strong>Authors:</strong> Chejian Xu, Wei Ping, Peng Xu, Zihan Liu, Boxin Wang, Mohammad Shoeybi, Bo Li, Bryan Catanzaro</p>
+                    <p>  Long-context capabilities are essential for a wide range of applications,
+including document and video understanding, in-context learning, and
+inference-time scaling, all of which require models to process and reason over
+long sequences of text and multimodal data. In this work, we introduce a
+efficient training recipe for building ultra-long context LLMs from aligned
+instruct model, pushing the boundaries of context lengths from 128K to 1M, 2M,
+and 4M tokens. Our approach leverages efficient continued pretraining
+strategies to extend the context window and employs effective instruction
+tuning to maintain the instruction-following and reasoning abilities. Our
+UltraLong-8B, built on Llama3.1-Instruct with our recipe, achieves
+state-of-the-art performance across a diverse set of long-context benchmarks.
+Importantly, models trained with our approach maintain competitive performance
+on standard benchmarks, demonstrating balanced improvements for both long and
+short context tasks. We further provide an in-depth analysis of key design
+choices, highlighting the impacts of scaling strategies and data composition.
+Our findings establish a robust framework for efficiently scaling context
+lengths while preserving general model capabilities. We release all model
+weights at: https://ultralong.github.io/.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05258v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06214v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>PINNverse: Accurate parameter estimation in differential equations from
-  noisy data with constrained physics-informed neural networks</h3>
-                    <p><strong>Authors:</strong> Marius Almanstötter, Roman Vetter, Dagmar Iber</p>
-                    <p>  Parameter estimation for differential equations from measured data is an
-inverse problem prevalent across quantitative sciences. Physics-Informed Neural
-Networks (PINNs) have emerged as effective tools for solving such problems,
-especially with sparse measurements and incomplete system information. However,
-PINNs face convergence issues, stability problems, overfitting, and complex
-loss function design. Here we introduce PINNverse, a training paradigm that
-addresses these limitations by reformulating the learning process as a
-constrained differential optimization problem. This approach achieves a dynamic
-balance between data loss and differential equation residual loss during
-training while preventing overfitting. PINNverse combines the advantages of
-PINNs with the Modified Differential Method of Multipliers to enable
-convergence on any point on the Pareto front. We demonstrate robust and
-accurate parameter estimation from noisy data in four classical ODE and PDE
-models from physics and biology. Our method enables accurate parameter
-inference also when the forward problem is expensive to solve.
+                    <h3>WoundAmbit: Bridging State-of-the-Art Semantic Segmentation and
+  Real-World Wound Care</h3>
+                    <p><strong>Authors:</strong> Vanessa Borst, Timo Dittus, Tassilo Dege, Astrid Schmieder, Samuel Kounev</p>
+                    <p>  Chronic wounds affect a large population, particularly the elderly and
+diabetic patients, who often exhibit limited mobility and co-existing health
+conditions. Automated wound monitoring via mobile image capture can reduce
+in-person physician visits by enabling remote tracking of wound size. Semantic
+segmentation is key to this process, yet wound segmentation remains
+underrepresented in medical imaging research. To address this, we benchmark
+state-of-the-art deep learning models from general-purpose vision, medical
+imaging, and top methods from public wound challenges. For fair comparison, we
+standardize training, data augmentation, and evaluation, conducting
+cross-validationto minimize partitioning bias. We also assess real-world
+deployment aspects, including generalization to an out-of-distribution wound
+dataset, computational efficiency, and interpretability. Additionally, we
+propose a reference object-based approach to convert AI-generated masks into
+clinically relevant wound size estimates, and evaluate this, along with mask
+quality, for the best models based on physician assessments. Overall, the
+transformer-based TransNeXt showed the highest levels of generalizability.
+Despite variations in inference times, all models processed at least one image
+per second on the CPU, which is deemed adequate for the intended application.
+Interpretability analysis typically revealed prominent activations in wound
+regions, emphasizing focus on clinically relevant features. Expert evaluation
+showed high mask approval for all analyzed models, with VWFormer and ConvNeXtS
+backbone performing the best. Size retrieval accuracy was similar across
+models, and predictions closely matched expert annotations. Finally, we
+demonstrate how our AI-driven wound size estimation framework, WoundAmbit, can
+be integrated into a custom telehealth system. Our code will be made available
+on GitHub upon publication.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05248v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06185v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>Behind the Spotlight: A systematic assessment of outshining using NIRCam
-  medium-bands in the JADES Origins Field</h3>
-                    <p><strong>Authors:</strong> Thomas Harvey, Christopher J. Conselice, Nathan J. Adams, Duncan Austin, Qiong Li, Vadim Rusakov, Lewi Westcott, Caio M. Goolsby, Christopher C. Lovell, Rachel K. Cochrane, Aswin P. Vijayan, James Trussler</p>
-                    <p>  The spatial resolution and sensitivity of JWST's NIRCam instrument has
-revolutionised our ability to probe the internal structure of early galaxies.
-By leveraging deep medium-band imaging in the Jades Origins Field, we assemble
-comprehensive spectral energy distributions (SEDs) using 19 photometric bands
-for over 200 high-redshift galaxies ($z \geq 4.5$). We present an analysis of
-this sample with particular emphasis on investigating the "outshining"
-phenomenon, which can bias the inferred stellar populations by masking the
-presence of evolved stellar populations ($\geq$ 100 Myr) with the light of
-bright, young O and B-type stars. We address this problem by performing
-spatially-resolved SED-fitting of both binned and full pixel-by-pixel
-photometry, which we compare to the traditional integrated approach. We find
-evidence for systematic underestimation of stellar mass in low-mass galaxies
-($\leq 10^9 \rm M_\odot$) with bursty star formation, which can exceed a factor
-of 10 in individual cases, but on average is typically a factor of 1.25-2.5,
-depending on the binning methodology and SFH model used. The observed mass
-offset correlates with burstiness (SFR$_{10 \ \rm Myr}$/SFR$_{100 \ \rm Myr}$)
-and sSFR, such that galaxies with recently rising SFHs have larger mass
-offsets. The integrated SFH models which produce the most consistent stellar
-masses are the double power-law and non-parametric `continuity' models,
-although no integrated model fully reproduces all resolved SFHs. We apply an
-outshining correction factor to the Stellar Mass Function at $z=7$, finding
-little impact within the uncertainties. We conclude that outshining can be
-important in individual low-mass galaxies, but the overall impact is limited
-and should be considered alongside other systematic SED fitting effects.
+                    <h3>On Soft Clustering For Correlation Estimators: Model Uncertainty,
+  Differentiability, and Surrogates</h3>
+                    <p><strong>Authors:</strong> Edward Berman, Sneh Pandya, Jacqueline McCleary, Marko Shuntov, Caitlin Casey, Nicole Drakos, Andreas Faisst, Steven Gillman, Ghassem Gozaliasl, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Wilfried Mercier, Diana Scognamiglio,  COSMOS-Web,  :, The JWST Cosmic Origins Survey</p>
+                    <p>  Properly estimating correlations between objects at different spatial scales
+necessitates $\mathcal{O}(n^2)$ distance calculations. For this reason, most
+widely adopted packages for estimating correlations use clustering algorithms
+to approximate local trends. However, methods for quantifying the error
+introduced by this clustering have been understudied. In response, we present
+an algorithm for estimating correlations that is probabilistic in the way that
+it clusters objects, enabling us to quantify the uncertainty caused by
+clustering simply through model inference. These soft clustering assignments
+enable correlation estimators that are theoretically differentiable with
+respect to their input catalogs. Thus, we also build a theoretical framework
+for differentiable correlation functions and describe their utility in
+comparison to existing surrogate models. Notably, we find that repeated
+normalization and distance function calls slow gradient calculations and that
+sparse Jacobians destabilize precision, pointing towards either approximate or
+surrogate methods as a necessary solution to exact gradients from correlation
+functions. To that end, we close with a discussion of surrogate models as
+proxies for correlation functions. We provide an example that demonstrates the
+efficacy of surrogate models to enable gradient-based optimization of
+astrophysical model parameters, successfully minimizing a correlation function
+output. Our numerical experiments cover science cases across cosmology, from
+point spread function (PSF) modeling efforts to gravitational simulations to
+galaxy intrinsic alignment (IA).
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05244v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06174v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
                 <li>
-                    <h3>Bayesian local clustering of age-period mortality surfaces across
-  multiple countries</h3>
-                    <p><strong>Authors:</strong> Giovanni Romanò, Emanuele Aliverti, Daniele Durante</p>
-                    <p>  Although traditional literature on mortality modeling has focused on single
-countries in isolation, recent contributions have progressively moved toward
-joint models for multiple countries. Besides favoring borrowing of information
-to improve age-period forecasts, this perspective has also potentials to infer
-local similarities among countries' mortality patterns in specific age classes
-and periods that could unveil unexplored demographic trends, while guiding the
-design of targeted policies. Advancements along this latter relevant direction
-are currently undermined by the lack of a multi-country model capable of
-incorporating the core structures of age-period mortality surfaces together
-with clustering patterns among countries that are not global, but rather vary
-locally across different combinations of ages and periods. We cover this gap by
-developing a novel Bayesian model for log-mortality rates that characterizes
-the age structure of mortality through a B-spline expansion whose
-country-specific dynamic coefficients encode both changes of this age structure
-across periods and also local clustering patterns among countries under a
-time-dependent random partition prior for these country-specific dynamic
-coefficients. While flexible, this formulation admits tractable posterior
-inference leveraging a suitably-designed Gibbs-sampler. The application to
-mortality data from 14 countries unveils local similarities highlighting both
-previously-recognized demographic phenomena and also yet-unexplored trends.
+                    <h3>Enhancing Primary Teacher Training through Academic Portfolios in
+  Advanced Mathematics Courses</h3>
+                    <p><strong>Authors:</strong> Carlos Rojas Bruna</p>
+                    <p>  The gap between theory and practice in mathematics education, particularly in
+primary-teacher education, necessitates innovative teaching methodologies. This
+paper explores the implementation of academic portfolios as a teaching
+innovation in Algebra and Number Systems I and II courses within the primary
+teacher education programme at Pontificia Universidad Cat\'olica de Chile. The
+methodology involved integrating academic portfolios to align course content
+with essential learning outcomes for future teaching roles. Implementation
+begins with a negotiation between students and teachers to establish a learning
+contract, followed by an overview of course rules, content, objectives,
+materials, and grading rubrics. Preliminary findings indicate that this
+innovative method enhances engagement with mathematical concepts, improves
+assessment efficacy in teacher training, and may contribute to enhanced
+preparation of primary mathematics teachers. The study highlights the role of
+portfolios in making students active participants in their learning,
+significantly enhancing the educational experience of teacher candidates. These
+findings suggest a promising avenue for future educational assessments and
+methodologies in mathematics, indicating that academic portfolios can bridge
+the gap between theoretical knowledge and practical applications in mathematics
+teacher education, potentially enhancing teacher preparation. While this study
+shows promising results, further research with larger samples and longer
+timeframes would be beneficial to establish causality and long-term impacts.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.05240v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/7/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.06159v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/8/2025</p>
                 </li>
             </ul>
         </section>
