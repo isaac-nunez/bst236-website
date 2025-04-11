@@ -133,268 +133,290 @@
         
         
         
+        
         <section id="papers-section">
             <h2>Latest Papers in Causal Inference</h2>
             <ul id="papersList">
                 <li>
-                    <h3>A geometric ensemble method for Bayesian inference</h3>
-                    <p><strong>Authors:</strong> Andrey A Popov</p>
-                    <p>  Conventional approximations to Bayesian inference rely on either
-approximations by statistics such as mean and covariance or by point particles.
-Recent advances such as the ensemble Gaussian mixture filter have generalized
-these notions to sums of parameterized distributions. This work presents a new
-methodology for approximating Bayesian inference by sums of uniform
-distributions on convex polytopes. The methodology presented herein is
-developed from the simplest convex polytope filter that takes advantage of
-uniform prior and measurement uncertainty, to an operationally viable ensemble
-filter with Kalmanized approximations to updating convex polytopes. Numerical
-results on the Ikeda map show the viability of this methodology in the
-low-dimensional setting, and numerical results on the Lorenz '96 equations
-similarly show viability in the high-dimensional setting.
+                    <h3>Geo4D: Leveraging Video Generators for Geometric 4D Scene Reconstruction</h3>
+                    <p><strong>Authors:</strong> Zeren Jiang, Chuanxia Zheng, Iro Laina, Diane Larlus, Andrea Vedaldi</p>
+                    <p>  We introduce Geo4D, a method to repurpose video diffusion models for
+monocular 3D reconstruction of dynamic scenes. By leveraging the strong dynamic
+prior captured by such video models, Geo4D can be trained using only synthetic
+data while generalizing well to real data in a zero-shot manner. Geo4D predicts
+several complementary geometric modalities, namely point, depth, and ray maps.
+It uses a new multi-modal alignment algorithm to align and fuse these
+modalities, as well as multiple sliding windows, at inference time, thus
+obtaining robust and accurate 4D reconstruction of long videos. Extensive
+experiments across multiple benchmarks show that Geo4D significantly surpasses
+state-of-the-art video depth estimation methods, including recent methods such
+as MonST3R, which are also designed to handle dynamic scenes.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07084v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07961v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>Self-Steering Language Models</h3>
-                    <p><strong>Authors:</strong> Gabriel Grand, Joshua B. Tenenbaum, Vikash K. Mansinghka, Alexander K. Lew, Jacob Andreas</p>
-                    <p>  While test-time reasoning enables language models to tackle complex tasks,
-searching or planning in natural language can be slow, costly, and error-prone.
-But even when LMs struggle to emulate the precise reasoning steps needed to
-solve a problem, they often excel at describing its abstract structure--both
-how to verify solutions and how to search for them. This paper introduces
-DisCIPL, a method for "self-steering" LMs where a Planner model generates a
-task-specific inference program that is executed by a population of Follower
-models. Our approach equips LMs with the ability to write recursive search
-procedures that guide LM inference, enabling new forms of verifiable and
-efficient reasoning. When instantiated with a small Follower (e.g.,
-Llama-3.2-1B), DisCIPL matches (and sometimes outperforms) much larger models,
-including GPT-4o and o1, on challenging constrained generation tasks. In
-decoupling planning from execution, our work opens up a design space of
-highly-parallelized Monte Carlo inference strategies that outperform standard
-best-of-N sampling, require no finetuning, and can be implemented automatically
-by existing LMs.
+                    <h3>Dynamic Cheatsheet: Test-Time Learning with Adaptive Memory</h3>
+                    <p><strong>Authors:</strong> Mirac Suzgun, Mert Yuksekgonul, Federico Bianchi, Dan Jurafsky, James Zou</p>
+                    <p>  Despite their impressive performance on complex tasks, current language
+models (LMs) typically operate in a vacuum: Each input query is processed
+separately, without retaining insights from previous attempts. Here, we present
+Dynamic Cheatsheet (DC), a lightweight framework that endows a black-box LM
+with a persistent, evolving memory. Rather than repeatedly re-discovering or
+re-committing the same solutions and mistakes, DC enables models to store and
+reuse accumulated strategies, code snippets, and general problem-solving
+insights at inference time. This test-time learning enhances performance
+substantially across a range of tasks without needing explicit ground-truth
+labels or human feedback. Leveraging DC, Claude 3.5 Sonnet's accuracy more than
+doubled on AIME math exams once it began retaining algebraic insights across
+questions. Similarly, GPT-4o's success rate on Game of 24 increased from 10% to
+99% after the model discovered and reused a Python-based solution. In tasks
+prone to arithmetic mistakes, such as balancing equations, DC enabled GPT-4o
+and Claude to reach near-perfect accuracy by recalling previously validated
+code, whereas their baselines stagnated around 50%. Beyond arithmetic
+challenges, DC yields notable accuracy gains on knowledge-demanding tasks.
+Claude achieved a 9% improvement in GPQA-Diamond and an 8% boost on MMLU-Pro
+problems. Crucially, DC's memory is self-curated, focusing on concise,
+transferable snippets rather than entire transcript. Unlike finetuning or
+static retrieval methods, DC adapts LMs' problem-solving skills on the fly,
+without modifying their underlying parameters. Overall, our findings present DC
+as a promising approach for augmenting LMs with persistent memory, bridging the
+divide between isolated inference events and the cumulative, experience-driven
+learning characteristic of human cognition.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07081v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07952v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>DeduCE: Deductive Consistency as a Framework to Evaluate LLM Reasoning</h3>
-                    <p><strong>Authors:</strong> Atharva Pandey, Kshitij Dubey, Rahul Sharma, Amit Sharma</p>
-                    <p>  Despite great performance on Olympiad-level reasoning problems, frontier
-large language models can still struggle on high school math when presented
-with novel problems outside standard benchmarks. Going beyond final accuracy,
-we propose a deductive consistency metric to analyze chain-of-thought output
-from language models (LMs).Formally, deductive reasoning involves two subtasks:
-understanding a set of input premises and inferring the conclusions that follow
-from them. The proposed metric studies LMs' performance on these subtasks, with
-the goal of explaining LMs' reasoning errors on novel problems: how well do LMs
-understand input premises with increasing context lengths, and how well can
-they infer conclusions over multiple reasoning hops? Since existing benchmarks
-may be memorized, we develop a pipeline to evaluate LMs' deductive consistency
-on novel, perturbed versions of benchmark problems. On novel grade school math
-problems (GSM-8k), we find that LMs are fairly robust to increasing number of
-input premises, but suffer significant accuracy decay as the number of
-reasoning hops is increased. Interestingly, these errors are masked in the
-original benchmark as all models achieve near 100% accuracy. As we increase the
-number of solution steps using a synthetic dataset, prediction over multiple
-hops still remains the major source of error compared to understanding input
-premises. Other factors, such as shifts in language style or natural
-propagation of early errors do not explain the trends. Our analysis provides a
-new view to characterize LM reasoning -- as computations over a window of input
-premises and reasoning hops -- that can provide unified evaluation across
-problem domains.
+                    <h3>HoloPart: Generative 3D Part Amodal Segmentation</h3>
+                    <p><strong>Authors:</strong> Yunhan Yang, Yuan-Chen Guo, Yukun Huang, Zi-Xin Zou, Zhipeng Yu, Yangguang Li, Yan-Pei Cao, Xihui Liu</p>
+                    <p>  3D part amodal segmentation--decomposing a 3D shape into complete,
+semantically meaningful parts, even when occluded--is a challenging but crucial
+task for 3D content creation and understanding. Existing 3D part segmentation
+methods only identify visible surface patches, limiting their utility. Inspired
+by 2D amodal segmentation, we introduce this novel task to the 3D domain and
+propose a practical, two-stage approach, addressing the key challenges of
+inferring occluded 3D geometry, maintaining global shape consistency, and
+handling diverse shapes with limited training data. First, we leverage existing
+3D part segmentation to obtain initial, incomplete part segments. Second, we
+introduce HoloPart, a novel diffusion-based model, to complete these segments
+into full 3D parts. HoloPart utilizes a specialized architecture with local
+attention to capture fine-grained part geometry and global shape context
+attention to ensure overall shape consistency. We introduce new benchmarks
+based on the ABO and PartObjaverse-Tiny datasets and demonstrate that HoloPart
+significantly outperforms state-of-the-art shape completion methods. By
+incorporating HoloPart with existing segmentation techniques, we achieve
+promising results on 3D part amodal segmentation, opening new avenues for
+applications in geometry editing, animation, and material assignment.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07080v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07943v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>A Survey on Personalized and Pluralistic Preference Alignment in Large
-  Language Models</h3>
-                    <p><strong>Authors:</strong> Zhouhang Xie, Junda Wu, Yiran Shen, Yu Xia, Xintong Li, Aaron Chang, Ryan Rossi, Sachin Kumar, Bodhisattwa Prasad Majumder, Jingbo Shang, Prithviraj Ammanabrolu, Julian McAuley</p>
-                    <p>  Personalized preference alignment for large language models (LLMs), the
-process of tailoring LLMs to individual users' preferences, is an emerging
-research direction spanning the area of NLP and personalization. In this
-survey, we present an analysis of works on personalized alignment and modeling
-for LLMs. We introduce a taxonomy of preference alignment techniques, including
-training time, inference time, and additionally, user-modeling based methods.
-We provide analysis and discussion on the strengths and limitations of each
-group of techniques and then cover evaluation, benchmarks, as well as open
-problems in the field.
+                    <h3>Semantically Encoding Activity Labels for Context-Aware Human Activity
+  Recognition</h3>
+                    <p><strong>Authors:</strong> Wen Ge, Guanyi Mou, Emmanuel O. Agu, Kyumin Lee</p>
+                    <p>  Prior work has primarily formulated CA-HAR as a multi-label classification
+problem, where model inputs are time-series sensor data and target labels are
+binary encodings representing whether a given activity or context occurs. These
+CA-HAR methods either predicted each label independently or manually imposed
+relationships using graphs. However, both strategies often neglect an essential
+aspect: activity labels have rich semantic relationships. For instance,
+walking, jogging, and running activities share similar movement patterns but
+differ in pace and intensity, indicating that they are semantically related.
+Consequently, prior CA-HAR methods often struggled to accurately capture these
+inherent and nuanced relationships, particularly on datasets with noisy labels
+typically used for CA-HAR or situations where the ideal sensor type is
+unavailable (e.g., recognizing speech without audio sensors). To address this
+limitation, we propose SEAL, which leverage LMs to encode CA-HAR activity
+labels to capture semantic relationships. LMs generate vector embeddings that
+preserve rich semantic information from natural language. Our SEAL approach
+encodes input-time series sensor data from smart devices and their associated
+activity and context labels (text) as vector embeddings. During training, SEAL
+aligns the sensor data representations with their corresponding
+activity/context label embeddings in a shared embedding space. At inference
+time, SEAL performs a similarity search, returning the CA-HAR label with the
+embedding representation closest to the input data. Although LMs have been
+widely explored in other domains, surprisingly, their potential in CA-HAR has
+been underexplored, making our approach a novel contribution to the field. Our
+research opens up new possibilities for integrating more advanced LMs into
+CA-HAR tasks.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07070v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07916v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>HalluciNot: Hallucination Detection Through Context and Common Knowledge
-  Verification</h3>
-                    <p><strong>Authors:</strong> Bibek Paudel, Alexander Lyzhov, Preetam Joshi, Puneet Anand</p>
-                    <p>  This paper introduces a comprehensive system for detecting hallucinations in
-large language model (LLM) outputs in enterprise settings. We present a novel
-taxonomy of LLM responses specific to hallucination in enterprise applications,
-categorizing them into context-based, common knowledge, enterprise-specific,
-and innocuous statements. Our hallucination detection model HDM-2 validates LLM
-responses with respect to both context and generally known facts (common
-knowledge). It provides both hallucination scores and word-level annotations,
-enabling precise identification of problematic content. To evaluate it on
-context-based and common-knowledge hallucinations, we introduce a new dataset
-HDMBench. Experimental results demonstrate that HDM-2 out-performs existing
-approaches across RagTruth, TruthfulQA, and HDMBench datasets. This work
-addresses the specific challenges of enterprise deployment, including
-computational efficiency, domain specialization, and fine-grained error
-identification. Our evaluation dataset, model weights, and inference code are
-publicly available.
+                    <h3>Fast Adaptation with Behavioral Foundation Models</h3>
+                    <p><strong>Authors:</strong> Harshit Sikchi, Andrea Tirinzoni, Ahmed Touati, Yingchen Xu, Anssi Kanervisto, Scott Niekum, Amy Zhang, Alessandro Lazaric, Matteo Pirotta</p>
+                    <p>  Unsupervised zero-shot reinforcement learning (RL) has emerged as a powerful
+paradigm for pretraining behavioral foundation models (BFMs), enabling agents
+to solve a wide range of downstream tasks specified via reward functions in a
+zero-shot fashion, i.e., without additional test-time learning or planning.
+This is achieved by learning self-supervised task embeddings alongside
+corresponding near-optimal behaviors and incorporating an inference procedure
+to directly retrieve the latent task embedding and associated policy for any
+given reward function. Despite promising results, zero-shot policies are often
+suboptimal due to errors induced by the unsupervised training process, the
+embedding, and the inference procedure. In this paper, we focus on devising
+fast adaptation strategies to improve the zero-shot performance of BFMs in a
+few steps of online interaction with the environment while avoiding any
+performance drop during the adaptation process. Notably, we demonstrate that
+existing BFMs learn a set of skills containing more performant policies than
+those identified by their inference procedure, making them well-suited for fast
+adaptation. Motivated by this observation, we propose both actor-critic and
+actor-only fast adaptation strategies that search in the low-dimensional
+task-embedding space of the pre-trained BFM to rapidly improve the performance
+of its zero-shot policies on any downstream task. Notably, our approach
+mitigates the initial "unlearning" phase commonly observed when fine-tuning
+pre-trained RL models. We evaluate our fast adaptation strategies on top of
+four state-of-the-art zero-shot RL methods in multiple navigation and
+locomotion domains. Our results show that they achieve 10-40% improvement over
+their zero-shot performance in a few tens of episodes, outperforming existing
+baselines.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07069v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07896v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>$Π$-NeSy: A Possibilistic Neuro-Symbolic Approach</h3>
-                    <p><strong>Authors:</strong> Ismaïl Baaj, Pierre Marquis</p>
-                    <p>  In this article, we introduce a neuro-symbolic approach that combines a
-low-level perception task performed by a neural network with a high-level
-reasoning task performed by a possibilistic rule-based system. The goal is to
-be able to derive for each input instance the degree of possibility that it
-belongs to a target (meta-)concept. This (meta-)concept is connected to
-intermediate concepts by a possibilistic rule-based system. The probability of
-each intermediate concept for the input instance is inferred using a neural
-network. The connection between the low-level perception task and the
-high-level reasoning task lies in the transformation of neural network outputs
-modeled by probability distributions (through softmax activation) into
-possibility distributions. The use of intermediate concepts is valuable for the
-explanation purpose: using the rule-based system, the classification of an
-input instance as an element of the (meta-)concept can be justified by the fact
-that intermediate concepts have been recognized.
-  From the technical side, our contribution consists of the design of efficient
-methods for defining the matrix relation and the equation system associated
-with a possibilistic rule-based system. The corresponding matrix and equation
-are key data structures used to perform inferences from a possibilistic
-rule-based system and to learn the values of the rule parameters in such a
-system according to a training data sample. Furthermore, leveraging recent
-results on the handling of inconsistent systems of fuzzy relational equations,
-an approach for learning rule parameters according to multiple training data
-samples is presented. Experiments carried out on the MNIST addition problems
-and the MNIST Sudoku puzzles problems highlight the effectiveness of our
-approach compared with state-of-the-art neuro-symbolic ones.
+                    <h3>SpecReason: Fast and Accurate Inference-Time Compute via Speculative
+  Reasoning</h3>
+                    <p><strong>Authors:</strong> Rui Pan, Yinwei Dai, Zhihao Zhang, Gabriele Oliaro, Zhihao Jia, Ravi Netravali</p>
+                    <p>  Recent advances in inference-time compute have significantly improved
+performance on complex tasks by generating long chains of thought (CoTs) using
+Large Reasoning Models (LRMs). However, this improved accuracy comes at the
+cost of high inference latency due to the length of generated reasoning
+sequences and the autoregressive nature of decoding. Our key insight in
+tackling these overheads is that LRM inference, and the reasoning that it
+embeds, is highly tolerant of approximations: complex tasks are typically
+broken down into simpler steps, each of which brings utility based on the
+semantic insight it provides for downstream steps rather than the exact tokens
+it generates. Accordingly, we introduce SpecReason, a system that automatically
+accelerates LRM inference by using a lightweight model to (speculatively) carry
+out simpler intermediate reasoning steps and reserving the costly base model
+only to assess (and potentially correct) the speculated outputs. Importantly,
+SpecReason's focus on exploiting the semantic flexibility of thinking tokens in
+preserving final-answer accuracy is complementary to prior speculation
+techniques, most notably speculative decoding, which demands token-level
+equivalence at each step. Across a variety of reasoning benchmarks, SpecReason
+achieves 1.5-2.5$\times$ speedup over vanilla LRM inference while improving
+accuracy by 1.0-9.9\%. Compared to speculative decoding without SpecReason,
+their combination yields an additional 19.4-44.2\% latency reduction. We
+open-source SpecReason at https://github.com/ruipeterpan/specreason.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07055v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07891v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>Distilling Textual Priors from LLM to Efficient Image Fusion</h3>
-                    <p><strong>Authors:</strong> Ran Zhang, Xuanhua He, Ke Cao, Liu Liu, Li Zhang, Man Zhou, Jie Zhang</p>
-                    <p>  Multi-modality image fusion aims to synthesize a single, comprehensive image
-from multiple source inputs. Traditional approaches, such as CNNs and GANs,
-offer efficiency but struggle to handle low-quality or complex inputs. Recent
-advances in text-guided methods leverage large model priors to overcome these
-limitations, but at the cost of significant computational overhead, both in
-memory and inference time. To address this challenge, we propose a novel
-framework for distilling large model priors, eliminating the need for text
-guidance during inference while dramatically reducing model size. Our framework
-utilizes a teacher-student architecture, where the teacher network incorporates
-large model priors and transfers this knowledge to a smaller student network
-via a tailored distillation process. Additionally, we introduce spatial-channel
-cross-fusion module to enhance the model's ability to leverage textual priors
-across both spatial and channel dimensions. Our method achieves a favorable
-trade-off between computational efficiency and fusion quality. The distilled
-network, requiring only 10\% of the parameters and inference time of the
-teacher network, retains 90\% of its performance and outperforms existing SOTA
-methods. Extensive experiments demonstrate the effectiveness of our approach.
-The implementation will be made publicly available as an open-source resource.
+                    <h3>Token Level Routing Inference System for Edge Devices</h3>
+                    <p><strong>Authors:</strong> Jianshu She, Wenhao Zheng, Zhengzhong Liu, Hongyi Wang, Eric Xing, Huaxiu Yao, Qirong Ho</p>
+                    <p>  The computational complexity of large language model (LLM) inference
+significantly constrains their deployment efficiency on edge devices. In
+contrast, small language models offer faster decoding and lower resource
+consumption but often suffer from degraded response quality and heightened
+susceptibility to hallucinations. To address this trade-off, collaborative
+decoding, in which a large model assists in generating critical tokens, has
+emerged as a promising solution. This paradigm leverages the strengths of both
+model types by enabling high-quality inference through selective intervention
+of the large model, while maintaining the speed and efficiency of the smaller
+model. In this work, we present a novel collaborative decoding inference system
+that allows small models to perform on-device inference while selectively
+consulting a cloud-based large model for critical token generation. Remarkably,
+the system achieves a 60% performance gain on CommonsenseQA using only a 0.5B
+model on an M1 MacBook, with under 7% of tokens generation uploaded to the
+large model in the cloud.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.07029v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07878v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>SIGMAN:Scaling 3D Human Gaussian Generation with Millions of Assets</h3>
-                    <p><strong>Authors:</strong> Yuhang Yang, Fengqi Liu, Yixing Lu, Qin Zhao, Pingyu Wu, Wei Zhai, Ran Yi, Yang Cao, Lizhuang Ma, Zheng-Jun Zha, Junting Dong</p>
-                    <p>  3D human digitization has long been a highly pursued yet challenging task.
-Existing methods aim to generate high-quality 3D digital humans from single or
-multiple views, but remain primarily constrained by current paradigms and the
-scarcity of 3D human assets. Specifically, recent approaches fall into several
-paradigms: optimization-based and feed-forward (both single-view regression and
-multi-view generation with reconstruction). However, they are limited by slow
-speed, low quality, cascade reasoning, and ambiguity in mapping low-dimensional
-planes to high-dimensional space due to occlusion and invisibility,
-respectively. Furthermore, existing 3D human assets remain small-scale,
-insufficient for large-scale training. To address these challenges, we propose
-a latent space generation paradigm for 3D human digitization, which involves
-compressing multi-view images into Gaussians via a UV-structured VAE, along
-with DiT-based conditional generation, we transform the ill-posed
-low-to-high-dimensional mapping problem into a learnable distribution shift,
-which also supports end-to-end inference. In addition, we employ the multi-view
-optimization approach combined with synthetic data to construct the HGS-1M
-dataset, which contains $1$ million 3D Gaussian assets to support the
-large-scale training. Experimental results demonstrate that our paradigm,
-powered by large-scale training, produces high-quality 3D human Gaussians with
-intricate textures, facial details, and loose clothing deformation.
+                    <h3>Horizons, throats and bounces in hybrid metric-Palatini gravity with a
+  non-zero potential</h3>
+                    <p><strong>Authors:</strong> Gabriel I. Róis, José Tarciso S. S. Junior, Francisco S. N. Lobo, Manuel E. Rodrigues</p>
+                    <p>  This work conducts an in-depth exploration of exact electrically charged
+solutions, including traversable wormholes, black holes, and black bounces,
+within the framework of the scalar-tensor representation of hybrid
+metric-Palatini gravity (HMPG) with a non-zero scalar potential. By integrating
+principles from both the metric and Palatini formulations, HMPG provides a
+flexible approach to addressing persistent challenges in General Relativity
+(GR), such as the late-time cosmic acceleration and the nature of dark matter.
+Under the assumption of spherical symmetry, we employ an inverse problem
+technique to derive exact solutions in both the Jordan and Einstein conformal
+frames. This method naturally leads to configurations involving either
+canonical or phantom scalar fields. A thorough examination of horizon
+structures, throat conditions, asymptotic behaviour, and curvature regularity
+(via the Kretschmann scalar) reveals the intricate causal structures permitted
+by this theoretical model. The analysis uncovers a diverse range of geometric
+configurations, with the phantom sector exhibiting a notably richer spectrum of
+solutions than the canonical case. These solutions encompass traversable
+wormholes, black universe models, where the interior of a black hole evolves
+into an expanding cosmological phase rather than a singularity, as well as
+black bounce structures and multi-horizon black holes. The results demonstrate
+that introducing a non-zero scalar potential within HMPG significantly expands
+the array of possible gravitational solutions, yielding complex causal and
+curvature properties that go beyond standard GR. Consequently, HMPG stands out
+as a powerful theoretical framework for modelling extreme astrophysical
+environments, where deviations from classical gravity are expected to play a
+crucial role.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.06982v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07861v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>AWDIT: An Optimal Weak Database Isolation Tester</h3>
-                    <p><strong>Authors:</strong> Lasse Møldrup, Andreas Pavlogiannis</p>
-                    <p>  In order to achieve low latency, high throughput, and partition tolerance,
-modern databases forgo strong transaction isolation for weak isolation
-guarantees. However, several production databases have been found to suffer
-from isolation bugs, breaking their data-consistency contract. Black-box
-testing is a prominent technique for detecting isolation bugs, by checking
-whether histories of database transactions adhere to a prescribed isolation
-level.
-  Testing databases on realistic workloads of large size requires isolation
-testers to be as efficient as possible, a requirement that has initiated a
-study of the complexity of isolation testing. Although testing strong isolation
-has been known to be NP-complete, weak isolation levels were recently shown to
-be testable in polynomial time, which has propelled the scalability of testing
-tools. However, existing testers have a large polynomial complexity,
-restricting testing to workloads of only moderate size, which is not typical of
-large-scale databases.
-  In this work, we develop AWDIT, a highly-efficient and provably optimal
-tester for weak database isolation. Given a history $H$ of size $n$ and $k$
-sessions, AWDIT tests whether H satisfies the most common weak isolation levels
-of Read Committed (RC), Read Atomic (RA), and Causal Consistency (CC) in time
-$O(n^{3/2})$, $O(n^{3/2})$, and $O(n \cdot k)$, respectively, improving
-significantly over the state of the art. Moreover, we prove that AWDIT is
-essentially optimal, in the sense that there is a conditional lower bound of
-$n^{3/2}$ for any weak isolation level between RC and CC. Our experiments show
-that AWDIT is significantly faster than existing, highly optimized testers;
-e.g., for the $\sim$20% largest histories, AWDIT obtains an average speedup of
-$245\times$, $193\times$, and $62\times$ for RC, RA, and CC, respectively, over
-the best baseline.
+                    <h3>AerialVG: A Challenging Benchmark for Aerial Visual Grounding by
+  Exploring Positional Relations</h3>
+                    <p><strong>Authors:</strong> Junli Liu, Qizhi Chen, Zhigang Wang, Yiwen Tang, Yiting Zhang, Chi Yan, Dong Wang, Xuelong Li, Bin Zhao</p>
+                    <p>  Visual grounding (VG) aims to localize target objects in an image based on
+natural language descriptions. In this paper, we propose AerialVG, a new task
+focusing on visual grounding from aerial views. Compared to traditional VG,
+AerialVG poses new challenges, \emph{e.g.}, appearance-based grounding is
+insufficient to distinguish among multiple visually similar objects, and
+positional relations should be emphasized. Besides, existing VG models struggle
+when applied to aerial imagery, where high-resolution images cause significant
+difficulties. To address these challenges, we introduce the first AerialVG
+dataset, consisting of 5K real-world aerial images, 50K manually annotated
+descriptions, and 103K objects. Particularly, each annotation in AerialVG
+dataset contains multiple target objects annotated with relative spatial
+relations, requiring models to perform comprehensive spatial reasoning.
+Furthermore, we propose an innovative model especially for the AerialVG task,
+where a Hierarchical Cross-Attention is devised to focus on target regions, and
+a Relation-Aware Grounding module is designed to infer positional relations.
+Experimental results validate the effectiveness of our dataset and method,
+highlighting the importance of spatial reasoning in aerial visual grounding.
+The code and dataset will be released.
 </p>
-                    <p><a href="http://arxiv.org/abs/2504.06975v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07836v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
                 <li>
-                    <h3>HIP 15429: a newborn Be star on an eccentric binary orbit</h3>
-                    <p><strong>Authors:</strong> Johanna Müller-Horn, Kareem El-Badry, Hans-Walter Rix, Tomer Shenar, Rhys Seeburger, Jaime Villasenor, Julia Bodensteiner, W. David Latham, Allyson Bieryla, A. Lars Buchhave, Howard Isaacson, W. Andrew Howard</p>
-                    <p>  We identified a new post-interaction binary, HIP 15429, consisting of a
-stripped star and a recently formed, rapidly rotating Be star companion ($v
-\sin i \approx 270$ km/s) sharing many similarities with recently identified
-bloated stripped stars. From orbital fitting of multi-epoch radial velocities
-we find a 221-day period. We also find an eccentricity of $e=0.52$, which is
-unexpectedly high as tides are expected to have circularised the orbit
-efficiently during the presumed recent mass transfer. The formation of a
-circumbinary disk during the mass transfer phase or the presence of an unseen
-tertiary companion might explain the orbit's high eccentricity. We determined
-physical parameters for both stars by fitting the spectra of the disentangled
-binary components and multi-band photometry. The stripped nature of the donor
-star is affirmed by its high luminosity at a low inferred mass ($\lesssim 1
-\mathrm{M}_\odot$) and imprints of CNO-processed material in the surface
-abundances. The donor's relatively large radius and cool temperature
-($T_{\mathrm{eff}} = 13.5 \pm 0.5$ kK) suggest that it has only recently ceased
-mass transfer. Evolutionary models assuming a 5-6 $\mathrm{M}_\odot$ progenitor
-can reproduce these parameters and imply that the binary is currently evolving
-towards a stage where the donor becomes a subdwarf orbiting a Be star. The
-remarkably high eccentricity of HIP 15429 challenges standard tidal evolution
-models, suggesting either inefficient tidal dissipation or external influences,
-such as a tertiary companion or circumbinary disk. This underscores the need to
-identify and characterise more post-mass transfer binaries to benchmark and
-refine theoretical models of binary evolution.
+                    <h3>Pychop: Emulating Low-Precision Arithmetic in Numerical Methods and
+  Neural Networks</h3>
+                    <p><strong>Authors:</strong> Erin Carson, Xinye Chen</p>
+                    <p>  Motivated by the growing demand for low-precision arithmetic in computational
+science, we exploit lower-precision emulation in Python -- widely regarded as
+the dominant programming language for numerical analysis and machine learning.
+Low-precision training has revolutionized deep learning by enabling more
+efficient computation and reduced memory and energy consumption while
+maintaining model fidelity. To better enable numerical experimentation with and
+exploration of low precision computation, we developed the Pychop library,
+which supports customizable floating-point formats and a comprehensive set of
+rounding modes in Python, allowing users to benefit from fast, low-precision
+emulation in numerous applications. Pychop also introduces interfaces for both
+PyTorch and JAX, enabling efficient low-precision emulation on GPUs for neural
+network training and inference with unparalleled flexibility.
+  In this paper, we offer a comprehensive exposition of the design,
+implementation, validation, and practical application of Pychop, establishing
+it as a foundational tool for advancing efficient mixed-precision algorithms.
+Furthermore, we present empirical results on low-precision emulation for image
+classification and object detection using published datasets, illustrating the
+sensitivity of the use of low precision and offering valuable insights into its
+impact. Pychop enables in-depth investigations into the effects of numerical
+precision, facilitates the development of novel hardware accelerators, and
+integrates seamlessly into existing deep learning workflows. Software and
+experimental code are publicly available at
+https://github.com/inEXASCALE/pychop.
 </p>
-                    <p><a href="http://arxiv.org/pdf/2504.06973v1" target="_blank">Read PDF</a></p>
-                    <p><strong>Submitted on:</strong> 4/9/2025</p>
+                    <p><a href="http://arxiv.org/pdf/2504.07835v1" target="_blank">Read PDF</a></p>
+                    <p><strong>Submitted on:</strong> 4/10/2025</p>
                 </li>
             </ul>
         </section>
